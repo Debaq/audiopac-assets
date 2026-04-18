@@ -1,0 +1,104 @@
+{
+  "id": "logoaud-latam-v1",
+  "version": "1.0.0",
+  "name": "Logoaudiometría LatAm (SRT + Discriminación)",
+  "category": "logoaudiometry",
+  "description_md": "# Logoaudiometría LatAm\n\nPack neutro para Latinoamérica: lista de 20 bisílabos balanceados estilo Tato para SRT (umbral de recepción del habla) y 25 monosílabos fonéticamente balanceados para test de discriminación. Incluye plantilla SRT adaptativa con bracketing descendente-ascendente.\n\nEl usuario debe grabar su propia voz para cada token en /estimulos antes de ejecutar los tests.",
+  "requirements": "recording",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Tato JM (1949). Logoaudiometría. Libros de la Facultad, Buenos Aires.", "url": null },
+    { "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "SRT_LATAM_BISIL",
+      "name": "SRT bisílabos LatAm",
+      "test_type": "CUSTOM",
+      "description": "Umbral de recepción del habla (SRT) con bisílabos balanceados. Método descendente-ascendente con bracketing. Requiere grabar la lista SRT_LATAM_BISIL_A en /estimulos.",
+      "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":50,"srt":{"stimulus_list_code":"SRT_LATAM_BISIL_A","start_level_db":50,"words_per_level":4,"step_down_db":10,"step_up_db":5,"min_level_db":0,"max_level_db":90,"threshold_pass_ratio":0.5,"max_total_trials":40}},
+      "is_standard": 1
+    }
+  ],
+  "lists": [
+    {
+      "code": "SRT_LATAM_BISIL_A",
+      "name": "SRT Bisílabos LatAm A",
+      "category": "srt",
+      "language": "es",
+      "country_code": "LATAM",
+      "description": "Lista de 20 bisílabos balanceados (estilo Tato) — SRT umbral de recepción del habla",
+      "items": [
+        { "pos": 1,  "token": "casa",   "keywords": null },
+        { "pos": 2,  "token": "mesa",   "keywords": null },
+        { "pos": 3,  "token": "perro",  "keywords": null },
+        { "pos": 4,  "token": "libro",  "keywords": null },
+        { "pos": 5,  "token": "árbol",  "keywords": null },
+        { "pos": 6,  "token": "pelo",   "keywords": null },
+        { "pos": 7,  "token": "mano",   "keywords": null },
+        { "pos": 8,  "token": "niño",   "keywords": null },
+        { "pos": 9,  "token": "agua",   "keywords": null },
+        { "pos": 10, "token": "leche",  "keywords": null },
+        { "pos": 11, "token": "noche",  "keywords": null },
+        { "pos": 12, "token": "madre",  "keywords": null },
+        { "pos": 13, "token": "padre",  "keywords": null },
+        { "pos": 14, "token": "silla",  "keywords": null },
+        { "pos": 15, "token": "pluma",  "keywords": null },
+        { "pos": 16, "token": "papel",  "keywords": null },
+        { "pos": 17, "token": "puerta", "keywords": null },
+        { "pos": 18, "token": "barco",  "keywords": null },
+        { "pos": 19, "token": "gato",   "keywords": null },
+        { "pos": 20, "token": "llave",  "keywords": null }
+      ]
+    },
+    {
+      "code": "DISC_LATAM_MONO_A",
+      "name": "Discriminación Monosílabos LatAm A",
+      "category": "discrimination",
+      "language": "es",
+      "country_code": "LATAM",
+      "description": "25 monosílabos fonéticamente balanceados para test de discriminación",
+      "items": [
+        { "pos": 1,  "token": "sol",  "keywords": null },
+        { "pos": 2,  "token": "pan",  "keywords": null },
+        { "pos": 3,  "token": "mar",  "keywords": null },
+        { "pos": 4,  "token": "luz",  "keywords": null },
+        { "pos": 5,  "token": "fin",  "keywords": null },
+        { "pos": 6,  "token": "voz",  "keywords": null },
+        { "pos": 7,  "token": "pie",  "keywords": null },
+        { "pos": 8,  "token": "tres", "keywords": null },
+        { "pos": 9,  "token": "dos",  "keywords": null },
+        { "pos": 10, "token": "sal",  "keywords": null },
+        { "pos": 11, "token": "paz",  "keywords": null },
+        { "pos": 12, "token": "mal",  "keywords": null },
+        { "pos": 13, "token": "miel", "keywords": null },
+        { "pos": 14, "token": "cruz", "keywords": null },
+        { "pos": 15, "token": "rey",  "keywords": null },
+        { "pos": 16, "token": "mes",  "keywords": null },
+        { "pos": 17, "token": "pez",  "keywords": null },
+        { "pos": 18, "token": "tren", "keywords": null },
+        { "pos": 19, "token": "flor", "keywords": null },
+        { "pos": 20, "token": "gris", "keywords": null },
+        { "pos": 21, "token": "mil",  "keywords": null },
+        { "pos": 22, "token": "sed",  "keywords": null },
+        { "pos": 23, "token": "sur",  "keywords": null },
+        { "pos": 24, "token": "red",  "keywords": null },
+        { "pos": 25, "token": "tos",  "keywords": null }
+      ]
+    }
+  ],
+  "interpretation": {
+    "metric": "srt_db",
+    "norms_by_age": [
+      { "age_min": 11, "age_max": 60, "normal_min": 20, "mild_min": 40, "severe_max": 60 }
+    ],
+    "description_md": "SRT normal ≤20 dB HL. SRT debe coincidir ±10 dB con el promedio tonal (PTA) de las frecuencias conversacionales; mayor discrepancia sugiere componente retrococlear o simulación."
+  },
+  "metadata": {
+    "recommended": true,
+    "target_population": "adults",
+    "requires_recording": true,
+    "estimated_duration_min": 8
+  }
+}

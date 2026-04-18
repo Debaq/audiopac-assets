@@ -1,0 +1,78 @@
+{
+  "id": "pac-limens-v1",
+  "version": "1.0.0",
+  "name": "Limens diferenciales (DLF / DLD / DLI)",
+  "category": "pac.limens",
+  "description_md": "# Diferencias limen\n\nPruebas psicoacústicas de discriminación fina: frecuencia (DLF), duración (DLD) e intensidad (DLI). Cada test presenta pares de tonos y el paciente responde igual/distinto. Pensadas para evaluar resolución espectral, temporal y de amplitud del sistema auditivo.\n\nUmbrales normales aproximados: DLF ~3-5 Hz a 1 kHz, DLD ~20-30 ms sobre 200 ms, DLI ~0.5-1 dB a 60 dB SL.",
+  "requirements": "ninguno",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Moore BCJ (1973). Frequency difference limens for short-duration tones. J Acoust Soc Am 54:610-619", "url": null },
+    { "citation": "Abel SM (1972). Duration discrimination of noise and tone bursts. J Acoust Soc Am 51:1219-1223", "url": null },
+    { "citation": "Jesteadt W, Wier CC, Green DM (1977). Intensity discrimination as a function of frequency and sensation level. J Acoust Soc Am 61:169-177", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "DLF_SCREEN",
+      "name": "DLF screening (Δf=20Hz @ 1kHz)",
+      "test_type": "CUSTOM",
+      "description": "Discriminación frecuencial - Pares de tonos: ¿iguales o diferentes? Δf=20Hz sobre 1000Hz. Paciente responde \"igual\" o \"distinto\", examinador marca.",
+      "config_json": {"tones":{"A":{"label":"1000Hz","frequency":1000},"B":{"label":"1020Hz","frequency":1020}},"duration_ms":300,"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "DLF_FINE",
+      "name": "DLF fino (Δf=5Hz @ 1kHz)",
+      "test_type": "CUSTOM",
+      "description": "Discriminación frecuencial fina - Δf=5Hz, cercano a umbral normal (~3-5Hz). Pares igual/distinto.",
+      "config_json": {"tones":{"A":{"label":"1000Hz","frequency":1000},"B":{"label":"1005Hz","frequency":1005}},"duration_ms":400,"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "DLD_SCREEN",
+      "name": "DLD screening (200 vs 250ms)",
+      "test_type": "CUSTOM",
+      "description": "Discriminación de duración - Pares de tonos mismo Hz, distinta duración. Paciente responde \"igual\" o \"distinto\".",
+      "config_json": {"frequency":1000,"tones":{"A":{"label":"200ms","duration_ms":200},"B":{"label":"250ms","duration_ms":250}},"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "DLD_FINE",
+      "name": "DLD fino (200 vs 215ms)",
+      "test_type": "CUSTOM",
+      "description": "Discriminación de duración fina - Δd=15ms, cercano a umbral normal.",
+      "config_json": {"frequency":1000,"tones":{"A":{"label":"200ms","duration_ms":200},"B":{"label":"215ms","duration_ms":215}},"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "DLI_SCREEN",
+      "name": "DLI screening (Δ=3 dB)",
+      "test_type": "CUSTOM",
+      "description": "Diferencia Limen de Intensidad - Pares de tonos mismo Hz/dur, distinta intensidad. A=60 dB, B=63 dB. Paciente responde ¿igual o distinto?",
+      "config_json": {"frequency":1000,"tones":{"A":{"label":"60 dB","frequency":1000,"duration_ms":400,"level_db":60},"B":{"label":"63 dB","frequency":1000,"duration_ms":400,"level_db":63}},"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "DLI_FINE",
+      "name": "DLI fino (Δ=1 dB)",
+      "test_type": "CUSTOM",
+      "description": "DLI fino - Δ=1 dB, cercano al umbral de Weber normal (~0.5-1 dB a 60 dB SL).",
+      "config_json": {"frequency":1000,"tones":{"A":{"label":"60 dB","frequency":1000,"duration_ms":400,"level_db":60},"B":{"label":"61 dB","frequency":1000,"duration_ms":400,"level_db":61}},"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    }
+  ],
+  "lists": [],
+  "interpretation": {
+    "metric": "accuracy_pct",
+    "norms_by_age": [
+      { "age_min": 11, "age_max": 60, "normal_min": 80, "mild_min": 65, "severe_max": 64 }
+    ],
+    "description_md": "En versión screening (paso grande) normales >80%; en versión fina (cerca de umbral) >65% es aceptable. Rendimiento muy bajo en fino con normal en screening sugiere resolución psicoacústica reducida."
+  },
+  "metadata": {
+    "recommended": false,
+    "target_population": "adults",
+    "estimated_duration_min": 15
+  }
+}

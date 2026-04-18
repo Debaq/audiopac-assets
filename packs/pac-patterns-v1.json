@@ -1,0 +1,79 @@
+{
+  "id": "pac-patterns-v1",
+  "version": "1.0.0",
+  "name": "Pruebas de Patrones Tonales (FPT / DPT / PPS / Memoria)",
+  "category": "pac.patterns",
+  "description_md": "# Patrones Tonales\n\nBatería de pruebas de procesamiento auditivo central (PAC) que evalúa la capacidad de reconocer patrones temporales y de frecuencia, así como la memoria auditiva secuencial. Incluye el Frequency Pattern Test (FPT/PPS) de Pinheiro, Duration Pattern Test (DPT/DPS) de Musiek, versiones extendidas de 5 tonos y tareas de memoria secuencial de 5 a 7 tonos.\n\nPoblación objetivo: niños desde 7 años y adultos. Rendimiento <70% en adultos sugiere compromiso temporal / de reconocimiento de patrones.",
+  "requirements": "ninguno",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Pinheiro ML, Ptacek PH (1971). Reversals in the perception of noise and tone patterns. J Acoust Soc Am 49:1856-1860", "url": null },
+    { "citation": "Musiek FE, Baran JA, Pinheiro ML (1990). Duration pattern recognition in normal subjects and patients with cerebral and cochlear lesions. Audiology 29:304-313", "url": null },
+    { "citation": "Musiek FE (1994). Frequency (pitch) and duration pattern tests. J Am Acad Audiol 5:265-268", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "FPT_STD",
+      "name": "FPT (Pinheiro 880/1122)",
+      "test_type": "PPS",
+      "description": "Frequency Pattern Test - Variante Pinheiro con tonos grave 880Hz y agudo 1122Hz, 150ms",
+      "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1122}},"duration_ms":150,"isi_ms":200,"iri_ms":5000,"envelope_ms":10,"pattern_length":3,"practice_sequences":["LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL"],"test_sequences":["LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL","LHH","HLL"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "PPS_LONG",
+      "name": "PPS extendido (5 tonos)",
+      "test_type": "PPS",
+      "description": "Patrón de frecuencia de 5 tonos para detección de déficits leves en adultos",
+      "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":200,"isi_ms":300,"iri_ms":7000,"envelope_ms":10,"pattern_length":5,"practice_sequences":["LHLHL","HLHLH","LLHHL","HHLLH","LHHLL"],"test_sequences":["LHLHL","HLHLH","LLHHL","HHLLH","LHHLL","HLLHH","LHLLH","HLHLL","LLHLH","HHLHL","LHLHH","HLHLL","LLHHH","HHLLL","LHHLH","HLLHL","LHLHL","HLHLH","LLHHL","HHLLH"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "DPT_LONG",
+      "name": "DPT extendido (5 tonos)",
+      "test_type": "DPS",
+      "description": "Patrón de duración de 5 tonos para detección de déficits leves en adultos",
+      "config_json": {"frequency":1000,"tones":{"L":{"label":"Largo","duration_ms":500},"C":{"label":"Corto","duration_ms":250}},"isi_ms":300,"iri_ms":7000,"envelope_ms":10,"pattern_length":5,"practice_sequences":["LCLCL","CLCLC","LLCCL","CCLLC","LCCLL"],"test_sequences":["LCLCL","CLCLC","LLCCL","CCLLC","LCCLL","CLLCC","LCLLC","CLCLL","LLCLC","CCLCL","LCLCC","CLCLL","LLCCC","CCLLL","LCCLC","CLLCL","LCLCL","CLCLC","LLCCL","CCLLC"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "MEM_SEQ_5",
+      "name": "Memoria secuencial (5 tonos)",
+      "test_type": "CUSTOM",
+      "description": "Memoria auditiva secuencial - Patrones de 5 tonos. Paciente repite la secuencia. Evalúa retención a corto plazo.",
+      "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":250,"isi_ms":400,"iri_ms":6000,"envelope_ms":10,"pattern_length":5,"practice_sequences":["LHLHL","HLHLH","LLHHL"],"test_sequences":["LHLHL","HLHLH","LLHHL","HHLLH","LHHLL","HLLHH","LHLLH","HLHLL","LLHLH","HHLHL","LHLHH","HLHLL","LLHHH","HHLLL","LHHLH","HLLHL"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "MEM_SEQ_6",
+      "name": "Memoria secuencial (6 tonos)",
+      "test_type": "CUSTOM",
+      "description": "Memoria auditiva secuencial - Patrones de 6 tonos, carga superior.",
+      "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":250,"isi_ms":400,"iri_ms":7000,"envelope_ms":10,"pattern_length":6,"practice_sequences":["LHLHLH","HLHLHL","LLHHLL"],"test_sequences":["LHLHLH","HLHLHL","LLHHLL","HHLLHH","LHHLLH","HLLHHL","LHLLHH","HLHLLH","LLHLHL","HHLHLH","LHLHHL","HLHLLL","LLHHHL","HHLLLH","LHHLHL","HLLHLH"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "MEM_SEQ_7",
+      "name": "Memoria secuencial (7 tonos)",
+      "test_type": "CUSTOM",
+      "description": "Memoria auditiva secuencial - Patrones de 7 tonos, límite del span auditivo típico.",
+      "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":250,"isi_ms":400,"iri_ms":8000,"envelope_ms":10,"pattern_length":7,"practice_sequences":["LHLHLHL","HLHLHLH","LLHHLLH"],"test_sequences":["LHLHLHL","HLHLHLH","LLHHLLH","HHLLHHL","LHHLLHH","HLLHHLL","LHLLHHL","HLHLLHH","LLHLHLH","HHLHLHL","LHLHHLH","HLHLLLH","LLHHHLL","HHLLLHH","LHHLHLL","HLLHLHH"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    }
+  ],
+  "lists": [],
+  "interpretation": {
+    "metric": "accuracy_pct",
+    "norms_by_age": [
+      { "age_min": 7, "age_max": 10, "normal_min": 70, "mild_min": 50, "severe_max": 49 },
+      { "age_min": 11, "age_max": 60, "normal_min": 85, "mild_min": 70, "severe_max": 69 }
+    ],
+    "description_md": "Rendimiento <70% en adultos sugiere compromiso temporal / de reconocimiento de patrones (vías corticales y cuerpo calloso). Evaluar por oído — asimetrías >15% son sugerentes de lesión hemisférica contralateral."
+  },
+  "metadata": {
+    "recommended": true,
+    "target_population": "adults_children",
+    "estimated_duration_min": 12
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "pac-temporal-v1",
+  "version": "1.0.0",
+  "name": "Procesamiento Temporal (Gap / TOJ / FGC)",
+  "category": "pac.temporal",
+  "description_md": "# Procesamiento temporal\n\nBatería de pruebas de resolución temporal y orden temporal: detección de gap entre tonos (GAP 20/10/5 ms), Temporal Order Judgement binaural (L/R con ISI 100 y 40 ms) y gap de frecuencia (FGC — cambios breves de pitch en un tono sostenido).\n\nUmbrales adultos normales: gap ~2-5 ms, TOJ ~20-30 ms. Alteración de estas tareas apunta a déficits de integración temporal centrales.",
+  "requirements": "ninguno",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Plomp R (1964). Rate of decay of auditory sensation. J Acoust Soc Am 36:277-282", "url": null },
+    { "citation": "Pinheiro ML, Musiek FE (1985). Assessment of central auditory dysfunction: Foundations and clinical correlates. Williams & Wilkins.", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "GAP_20",
+      "name": "Gap detection (20 ms)",
+      "test_type": "CUSTOM",
+      "description": "Detección de gap de 20 ms entre 2 tonos de 1000 Hz. Pregunta al paciente: ¿escuchó uno o dos tonos? Items \"A\" = catch (un solo tono), \"AA\" = par separado por 20 ms.",
+      "config_json": {"frequency":1000,"tones":{"A":{"label":"Tono","frequency":1000,"duration_ms":300}},"duration_ms":300,"isi_ms":20,"iri_ms":4000,"envelope_ms":5,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "GAP_10",
+      "name": "Gap detection (10 ms)",
+      "test_type": "CUSTOM",
+      "description": "Detección de gap de 10 ms. Nivel intermedio, umbral adulto normal ~2-5 ms.",
+      "config_json": {"frequency":1000,"tones":{"A":{"label":"Tono","frequency":1000,"duration_ms":300}},"duration_ms":300,"isi_ms":10,"iri_ms":4000,"envelope_ms":3,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "GAP_5",
+      "name": "Gap detection (5 ms)",
+      "test_type": "CUSTOM",
+      "description": "Detección de gap de 5 ms. Cerca del umbral normal. Envelope corto (2 ms) para no enmascarar el gap.",
+      "config_json": {"frequency":1000,"tones":{"A":{"label":"Tono","frequency":1000,"duration_ms":300}},"duration_ms":300,"isi_ms":5,"iri_ms":4000,"envelope_ms":2,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "TOJ_BIN",
+      "name": "TOJ binaural (orden temporal L/R)",
+      "test_type": "CUSTOM",
+      "description": "Temporal Order Judgement - Tono L (1000 Hz a oído izquierdo) y tono R (1000 Hz a oído derecho) con ISI variable. Paciente responde ¿izquierda-derecha o derecha-izquierda? ISI 100 ms.",
+      "config_json": {"tones":{"L":{"label":"Izq","frequency":1000,"duration_ms":150,"ear":"left"},"R":{"label":"Der","frequency":1000,"duration_ms":150,"ear":"right"}},"isi_ms":100,"iri_ms":4000,"envelope_ms":10,"pattern_length":2,"practice_sequences":["LR","RL","LR","RL"],"test_sequences":["LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "TOJ_FAST",
+      "name": "TOJ binaural rápido (ISI 40 ms)",
+      "test_type": "CUSTOM",
+      "description": "TOJ con ISI 40 ms, más cerca del umbral adulto (~20-30 ms). Orden L/R.",
+      "config_json": {"tones":{"L":{"label":"Izq","frequency":1000,"duration_ms":100,"ear":"left"},"R":{"label":"Der","frequency":1000,"duration_ms":100,"ear":"right"}},"isi_ms":40,"iri_ms":4000,"envelope_ms":5,"pattern_length":2,"practice_sequences":["LR","RL","LR","RL"],"test_sequences":["LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "FGC_SCREEN",
+      "name": "Gap con cambio de frecuencia - screening",
+      "test_type": "CUSTOM",
+      "description": "Gap de frecuencia. Tono de ~300 ms; puede ser continuo (A) o tener un cambio breve de pitch en el medio (B = cambio de 200 Hz, C = cambio de 500 Hz). El paciente responde igual/diferente. Útil como índice de resolución espectral temporal.",
+      "config_json": {"tones":{"F":{"label":"Base 1 kHz","frequency":1000,"duration_ms":120},"G":{"label":"Cambio +200 Hz","frequency":1200,"duration_ms":60},"H":{"label":"Cambio +500 Hz","frequency":1500,"duration_ms":60}},"isi_ms":0,"iri_ms":2500,"envelope_ms":2,"pattern_length":3,"practice_sequences":["FFF","FHF","FFF","FGF"],"test_sequences":["FFF","FGF","FHF","FFF","FGF","FHF","FFF","FGF","FFF","FHF","FGF","FFF","FHF","FGF","FFF","FHF","FGF","FFF","FHF","FGF"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    }
+  ],
+  "lists": [],
+  "interpretation": {
+    "metric": "gap_ms",
+    "norms_by_age": [
+      { "age_min": 11, "age_max": 60, "normal_min": 0, "mild_min": 0, "severe_max": 0 }
+    ],
+    "description_md": "Gap mínimo detectado consistentemente en adultos normales: ~2-5 ms. TOJ binaural normal ~20-30 ms. Umbrales mayores (gap >10 ms o TOJ >60 ms) sugieren déficit de procesamiento temporal."
+  },
+  "metadata": {
+    "recommended": true,
+    "target_population": "adults_children",
+    "estimated_duration_min": 15
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-04-17",
+  "updated_at": "2026-04-18",
   "catalogs": [
     {
       "id": "sharvard-es",
@@ -46,6 +46,151 @@
           "channels": 1
         }
       ]
+    }
+  ],
+  "packs": [
+    {
+      "id": "pac-patterns-v1",
+      "version": "1.0.0",
+      "name": "Pruebas de Patrones Tonales (FPT / DPT / PPS / Memoria)",
+      "category": "pac.patterns",
+      "requirements": "ninguno",
+      "license": "CC-BY-SA",
+      "url": "packs/pac-patterns-v1.json",
+      "sha256": "b5bd7e503d74dd4a403fa8356473be8f780b0a77306496a786e8cf6682590290",
+      "bytes": 6217
+    },
+    {
+      "id": "pps-pinheiro-v1",
+      "version": "1.0.0",
+      "name": "PPS Estándar (Pinheiro)",
+      "category": "pac.patterns",
+      "requirements": "ninguno",
+      "license": "CC-BY-SA",
+      "url": "packs/pps-pinheiro-v1.json",
+      "sha256": "aa391772c2fe424efc47ea7a8393a411398e4038993ed9d7eae936c9d24ad3c0",
+      "bytes": 2643
+    },
+    {
+      "id": "dps-musiek-v1",
+      "version": "1.0.0",
+      "name": "DPS Estándar (Musiek)",
+      "category": "pac.patterns",
+      "requirements": "ninguno",
+      "license": "CC-BY-SA",
+      "url": "packs/dps-musiek-v1.json",
+      "sha256": "060a01acb8242fbea39bc9ec4cf30a5083667d3e5c51d06f32898f424f6372b0",
+      "bytes": 2712
+    },
+    {
+      "id": "pac-limens-v1",
+      "version": "1.0.0",
+      "name": "Limens diferenciales (DLF / DLD / DLI)",
+      "category": "pac.limens",
+      "requirements": "ninguno",
+      "license": "CC-BY-SA",
+      "url": "packs/pac-limens-v1.json",
+      "sha256": "f99fea328d0a2419d02b6a70f14747c08ea97848c2505931ce1cfb30f1c83f58",
+      "bytes": 6205
+    },
+    {
+      "id": "pac-temporal-v1",
+      "version": "1.0.0",
+      "name": "Procesamiento Temporal (Gap / TOJ / FGC)",
+      "category": "pac.temporal",
+      "requirements": "ninguno",
+      "license": "CC-BY-SA",
+      "url": "packs/pac-temporal-v1.json",
+      "sha256": "4704d411fa7aee5028d2143e100a88baded218c4d481ac32c90ced605a76aa09",
+      "bytes": 5845
+    },
+    {
+      "id": "pac-binaural-v1",
+      "version": "1.0.0",
+      "name": "Integración Binaural (ILD / Dicótico NV / Fusión)",
+      "category": "pac.binaural",
+      "requirements": "ninguno",
+      "license": "CC-BY-SA",
+      "url": "packs/pac-binaural-v1.json",
+      "sha256": "a04d2670d423089480e5f7505e862752e5ee6c5163def2b5b2d4fec909cf8546",
+      "bytes": 3974
+    },
+    {
+      "id": "pac-noise-v1",
+      "version": "1.0.0",
+      "name": "Pruebas con ruido (GIN / RGD / NBN)",
+      "category": "pac.noise",
+      "requirements": "ninguno",
+      "license": "CC-BY-SA",
+      "url": "packs/pac-noise-v1.json",
+      "sha256": "e149e14a98c813f950f152a7700a142f7a64f91cb7ea4d7e0a930ef4cda1e5c4",
+      "bytes": 5512
+    },
+    {
+      "id": "pac-mld-v1",
+      "version": "1.0.0",
+      "name": "MLD - Masking Level Difference",
+      "category": "pac.mld",
+      "requirements": "ninguno",
+      "license": "CC-BY-SA",
+      "url": "packs/pac-mld-v1.json",
+      "sha256": "146817fc03efb78fb3bfa5d4d963e75a0aa440441a52cceb9be52273fac32daf",
+      "bytes": 2941
+    },
+    {
+      "id": "logoaud-latam-v1",
+      "version": "1.0.0",
+      "name": "Logoaudiometría LatAm (SRT + Discriminación)",
+      "category": "logoaudiometry",
+      "requirements": "recording",
+      "license": "CC-BY-SA",
+      "url": "packs/logoaud-latam-v1.json",
+      "sha256": "2042fb83c4daa2b2ac65e709bb948bf73b621aa120a8ae82bcc59275b7204193",
+      "bytes": 5479
+    },
+    {
+      "id": "logoaud-us-es-v1",
+      "version": "1.0.0",
+      "name": "Logoaudiometría US-ES (SRT bisílabos hispanos EEUU)",
+      "category": "logoaudiometry",
+      "requirements": "recording",
+      "license": "CC-BY-SA",
+      "url": "packs/logoaud-us-es-v1.json",
+      "sha256": "f1d132e01b1da3f303aaf25a0b4e1b29bb705e45bdd01506047d104c04874492",
+      "bytes": 3497
+    },
+    {
+      "id": "dichotic-digits-es-v1",
+      "version": "1.0.0",
+      "name": "Dichotic Digits ES",
+      "category": "dichotic",
+      "requirements": "recording",
+      "license": "CC-BY-SA",
+      "url": "packs/dichotic-digits-es-v1.json",
+      "sha256": "a8704b2618a9d835260e517fcc972f095b65240cc5201b47bb6ea5575f404a5c",
+      "bytes": 4038
+    },
+    {
+      "id": "hint-es-v1",
+      "version": "1.0.0",
+      "name": "HINT-ES Custom (SRT adaptativo en ruido)",
+      "category": "hint",
+      "requirements": "recording",
+      "license": "CC-BY-SA",
+      "url": "packs/hint-es-v1.json",
+      "sha256": "7876ae63aab3963eab026ffaa7054634542819cd0b6d2eddd4fc71b527f1d255",
+      "bytes": 2707
+    },
+    {
+      "id": "sharvard-es-v1",
+      "version": "1.0.0",
+      "name": "Sharvard ES (peninsular) - HINT L01",
+      "category": "hint",
+      "requirements": "audio_pack",
+      "license": "CC-BY",
+      "url": "packs/sharvard-es-v1.json",
+      "sha256": "7f90353be53dede163d4a6a9f3ac414f40af47c787a8d566d5a71fc4a7089b6f",
+      "bytes": 2634
     }
   ]
 }

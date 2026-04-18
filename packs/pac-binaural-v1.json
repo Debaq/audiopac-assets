@@ -1,0 +1,53 @@
+{
+  "id": "pac-binaural-v1",
+  "version": "1.0.0",
+  "name": "Integración Binaural (ILD / Dicótico NV / Fusión)",
+  "category": "pac.binaural",
+  "description_md": "# Integración binaural\n\nPruebas de integración y separación binaural no verbal: lateralización por ILD (diferencia interaural de intensidad), escucha dicótica no verbal con tonos y fusión binaural tonal. Evalúa la capacidad del tronco cerebral y corteza para integrar/separar información proveniente de ambos oídos.\n\nRequiere auriculares estéreo calibrados. No requiere grabación de voz.",
+  "requirements": "ninguno",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Kimura D (1961). Cerebral dominance and the perception of verbal stimuli. Can J Psychol 15:166-171", "url": null },
+    { "citation": "Matzker J (1959). Two new methods for the assessment of central auditory functions in cases of brain disease. Ann Otol Rhinol Laryngol 68:1185-1197", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "ILD_LAT",
+      "name": "Lateralización por ILD",
+      "test_type": "CUSTOM",
+      "description": "Lateralización por diferencia interaural de intensidad. C=centrado (1.0/1.0), L=lateralizado izq (1.0/0.3), R=lateralizado der (0.3/1.0). Paciente indica si el tono se escucha al centro, izquierda o derecha.",
+      "config_json": {"frequency":1000,"tones":{"C":{"label":"Centro","frequency":1000,"duration_ms":500,"gain_l":1.0,"gain_r":1.0},"L":{"label":"Izq","frequency":1000,"duration_ms":500,"gain_l":1.0,"gain_r":0.3},"R":{"label":"Der","frequency":1000,"duration_ms":500,"gain_l":0.3,"gain_r":1.0}},"isi_ms":2000,"iri_ms":3000,"envelope_ms":20,"pattern_length":1,"practice_sequences":["C","L","R","C","L","R"],"test_sequences":["C","L","R","L","C","R","R","L","C","L","R","C","C","R","L","R","C","L","L","C","R","C","L","R"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "DICHOTIC_NV",
+      "name": "Dichotic no verbal (tonos L≠R)",
+      "test_type": "CUSTOM",
+      "description": "Escucha dicótica no verbal - Secuencias distintas L y R simultáneas. Paciente reporta lo oído en cada oído. Formato patrón: \"IZQ|DER\" (ej. \"LHL|HLH\").",
+      "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":250,"isi_ms":350,"iri_ms":7000,"envelope_ms":10,"pattern_length":3,"practice_sequences":["LHL|HLH","HLH|LHL","LLH|HHL","HHL|LLH"],"test_sequences":["LHL|HLH","HLH|LHL","LLH|HHL","HHL|LLH","LHH|HLL","HLL|LHH","LHL|HHL","HLH|LLH","LLH|HLH","HHL|LHL","LHL|LHH","HLH|HLL","LLH|LHL","HHL|HLH","LHH|HHL","HLL|LLH"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    },
+    {
+      "code": "FUSION_BIN",
+      "name": "Fusión binaural tonal",
+      "test_type": "CUSTOM",
+      "description": "Fusión binaural - Tono partido: mitad temporal al oído L, otra mitad al R. Se presenta como patrón alternado. \"A|B\" con ambos el mismo token fusiona perceptualmente.",
+      "config_json": {"frequency":1000,"tones":{"A":{"label":"Tono","frequency":1000,"duration_ms":200}},"isi_ms":100,"iri_ms":3000,"envelope_ms":10,"pattern_length":2,"practice_sequences":["AA|AA","A|A"],"test_sequences":["A|A","AA|AA","A|A","AA|AA","A|A","AA|AA","A|A","AA|AA","A|A","AA|AA","A|A","AA|AA"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    }
+  ],
+  "lists": [],
+  "interpretation": {
+    "metric": "asymmetry_pct",
+    "norms_by_age": [
+      { "age_min": 11, "age_max": 60, "normal_min": 85, "mild_min": 70, "severe_max": 69 }
+    ],
+    "description_md": "Lateralización correcta >85% en adultos normales. Asimetrías grandes o errores sistemáticos sugieren alteración del procesamiento binaural (tronco cerebral bajo o cuerpo calloso)."
+  },
+  "metadata": {
+    "recommended": false,
+    "target_population": "adults",
+    "estimated_duration_min": 10
+  }
+}

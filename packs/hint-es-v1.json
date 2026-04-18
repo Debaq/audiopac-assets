@@ -1,0 +1,47 @@
+{
+  "id": "hint-es-v1",
+  "version": "1.0.0",
+  "name": "HINT-ES Custom (SRT adaptativo en ruido)",
+  "category": "hint",
+  "description_md": "# HINT-ES (plantilla vacía)\n\nUmbral de recepción del habla en ruido (SRT-SNR) con frases balanceadas. Adapta el SNR por bracketing. Ruido rosa fijo; voz = ruido + SNR. Scoring por palabras clave.\n\nLa lista HINT_ES_CUSTOM_A se instala vacía — el usuario graba sus propias frases y marca las palabras clave en /estimulos. Idealmente 10+ frases con 3-5 keywords cada una.",
+  "requirements": "recording",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Nilsson M, Soli SD, Sullivan JA (1994). Development of the Hearing in Noise Test for the measurement of speech reception thresholds in quiet and in noise. J Acoust Soc Am 95:1085-1099", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "HINT_ES_CUSTOM",
+      "name": "HINT-ES (SRT adaptativo en ruido)",
+      "test_type": "CUSTOM",
+      "description": "Umbral de recepción del habla en ruido (SRT-SNR) con frases balanceadas. Adapta el SNR por bracketing. Ruido rosa fijo; voz = ruido + SNR. Requiere grabar lista HINT_ES_CUSTOM_A con palabras clave marcadas en /estimulos.",
+      "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":65,"hint":{"stimulus_list_code":"HINT_ES_CUSTOM_A","start_snr_db":5,"noise_level_db":60,"noise_type":"pink","sentences_per_level":4,"threshold_pass_ratio":0.5,"step_down_db":4,"step_up_db":2,"min_snr_db":-10,"max_snr_db":20,"max_total_trials":40}},
+      "is_standard": 1
+    }
+  ],
+  "lists": [
+    {
+      "code": "HINT_ES_CUSTOM_A",
+      "name": "HINT-ES Custom A",
+      "category": "sentence",
+      "language": "es",
+      "country_code": "LATAM",
+      "description": "Lista de frases para HINT adaptativo (SRT en ruido). Grabá frases propias y marcá las palabras clave. Idealmente 10+ frases, 3–5 keywords por frase.",
+      "items": []
+    }
+  ],
+  "interpretation": {
+    "metric": "srt_db",
+    "norms_by_age": [
+      { "age_min": 11, "age_max": 60, "normal_min": -10, "mild_min": -3, "severe_max": 5 }
+    ],
+    "description_md": "SRT-SNR normal en adultos jóvenes con HINT en ruido rosa: aprox. -3 a -6 dB. Umbrales positivos (>0 dB SNR requerido para entender 50%) sugieren dificultad para extraer habla en ruido y son compatibles con hipoacusia sensorioneural o presbiacusia cognitiva."
+  },
+  "metadata": {
+    "recommended": false,
+    "target_population": "adults",
+    "requires_recording": true,
+    "estimated_duration_min": 10
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "sharvard-es-v1",
+  "version": "1.0.0",
+  "name": "Sharvard ES (peninsular) - HINT L01",
+  "category": "hint",
+  "description_md": "# Sharvard ES — HINT\n\nPlantilla HINT (SRT-SNR adaptativo) apuntando a la lista Sharvard L01 (10 frases en español peninsular). Sharvard es la adaptación al español del corpus Harvard de frases fonéticamente balanceadas; se distribuyen 70 listas de 10 frases cada una con 5 palabras clave por frase.\n\nClona la plantilla para usar otras listas (L02-L70). Requiere instalar el catálogo Sharvard ES y descargar el pack de audio (voz femenina o masculina) desde releases.",
+  "requirements": "audio_pack",
+  "license": "CC-BY",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Aubanel V, García Lecumberri ML, Cooke M (2014). The Sharvard Corpus: A phonemically-balanced Spanish sentence resource for audiology. Int J Audiol 53(9):633-641", "url": "https://zenodo.org/records/3547446" },
+    { "citation": "Nilsson M, Soli SD, Sullivan JA (1994). Development of the Hearing in Noise Test. J Acoust Soc Am 95:1085-1099", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "HINT_SHARVARD_L01",
+      "name": "HINT-ES Sharvard Lista 1",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L01 (10 frases peninsular ES). Clona la plantilla para usar otra lista (L02-L70). Requiere instalar el catálogo Sharvard ES + pack de audio desde /catalogos.",
+      "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":65,"hint":{"stimulus_list_code":"SHARVARD_ES_L01","start_snr_db":5,"noise_level_db":60,"noise_type":"pink","sentences_per_level":4,"threshold_pass_ratio":0.5,"step_down_db":4,"step_up_db":2,"min_snr_db":-10,"max_snr_db":20,"max_total_trials":30}},
+      "is_standard": 1
+    }
+  ],
+  "lists": [],
+  "lists_ref": "catalogs/sharvard-es-v1.json",
+  "interpretation": {
+    "metric": "srt_db",
+    "norms_by_age": [
+      { "age_min": 18, "age_max": 40, "normal_min": -10, "mild_min": -3, "severe_max": 5 }
+    ],
+    "description_md": "SRT-SNR típico en adultos normoyentes con Sharvard/ruido rosa binaural: aprox. -5 a -8 dB. Valores menos negativos o positivos apuntan a dificultad con el habla en ruido (hipoacusia coclear, presbiacusia o déficit de procesamiento)."
+  },
+  "metadata": {
+    "recommended": true,
+    "target_population": "adults",
+    "requires_audio_pack": true,
+    "audio_pack_release_tag": "sharvard-audio-v1",
+    "estimated_duration_min": 5
+  }
+}

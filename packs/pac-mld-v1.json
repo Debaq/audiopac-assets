@@ -1,0 +1,37 @@
+{
+  "id": "pac-mld-v1",
+  "version": "1.0.0",
+  "name": "MLD - Masking Level Difference",
+  "category": "pac.mld",
+  "description_md": "# Masking Level Difference (MLD)\n\nPrueba binaural clásica que evalúa la capacidad del tronco cerebral (complejo olivar superior) para extraer señal en ruido usando claves de fase interaural. Tono de 500 Hz enmascarado en ruido blanco en dos condiciones: SoNo (homófasica, difícil) y SπNo (tono invertido 180° entre oídos, fácil).\n\nMLD normal ≥10 dB. MLD reducido sugiere alteración de tronco cerebral bajo. Requiere auricular estéreo calibrado.",
+  "requirements": "ninguno",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Hirsh IJ (1948). The influence of interaural phase on interaural summation and inhibition. J Acoust Soc Am 20:536-544", "url": null },
+    { "citation": "Wilson RH, Moncrieff DW, Townsend EA, Pillion AL (2003). Development of a 500-Hz masking-level difference protocol for clinic use. J Am Acad Audiol 14:1-8", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "MLD_STD",
+      "name": "MLD - Masking Level Difference",
+      "test_type": "CUSTOM",
+      "description": "MLD clásico a 500 Hz. Tono enmascarado en ruido blanco. Dos condiciones: SoNo (homófasica) y SπNo (tono invertido 180° en oído derecho). MLD normal ≥10 dB. Tokens A=SoNo tono, B=SoNo catch, C=SπNo tono (10 dB menos), D=SπNo catch. Auricular estéreo obligatorio.",
+      "config_json": {"tones":{"A":{"label":"SoNo + tono","kind":"tone","frequency":500,"duration_ms":500,"level_db":60,"noise_mix":{"noise_type":"white","level_db":65}},"B":{"label":"SoNo catch","kind":"noise","noise_type":"white","duration_ms":500,"level_db":65},"C":{"label":"SπNo + tono","kind":"tone","frequency":500,"duration_ms":500,"level_db":50,"phase_invert_right":true,"noise_mix":{"noise_type":"white","level_db":65}},"D":{"label":"SπNo catch","kind":"noise","noise_type":"white","duration_ms":500,"level_db":65}},"isi_ms":1000,"iri_ms":3000,"envelope_ms":20,"pattern_length":1,"practice_sequences":["A","B","C","D","A","C"],"test_sequences":["A","C","B","A","C","D","A","C","A","C","B","A","C","D","A","C","B","A","C","D"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    }
+  ],
+  "lists": [],
+  "interpretation": {
+    "metric": "accuracy_pct",
+    "norms_by_age": [
+      { "age_min": 11, "age_max": 60, "normal_min": 85, "mild_min": 70, "severe_max": 69 }
+    ],
+    "description_md": "En normales la detección del tono en condición SπNo debe ser ≥85% aunque el tono esté 10 dB más bajo que en SoNo (evidencia de MLD ≥10 dB). Detección de C muy inferior a A con catches rechazados sugiere MLD reducido y alteración del procesamiento binaural en tronco bajo."
+  },
+  "metadata": {
+    "recommended": false,
+    "target_population": "adults",
+    "estimated_duration_min": 5
+  }
+}

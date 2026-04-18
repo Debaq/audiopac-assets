@@ -1,0 +1,69 @@
+{
+  "id": "pac-noise-v1",
+  "version": "1.0.0",
+  "name": "Pruebas con ruido (GIN / RGD / NBN)",
+  "category": "pac.noise",
+  "description_md": "# Pruebas con generador de ruido\n\nBatería que usa estímulos de ruido blanco y banda angosta para evaluar resolución temporal. Incluye GIN (Gaps-in-Noise, Musiek 2005), variantes de Random Gap Detection en ruido (20/10/5 ms) y ruido de banda angosta centrado en 1 kHz para enmascaramiento.\n\nUmbral adulto normal para GIN: ~4-6 ms. Rendimiento alterado apunta a déficit de procesamiento temporal central.",
+  "requirements": "ninguno",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Musiek FE, Shinn JB, Jirsa R, Bamiou DE, Baran JA, Zaida E (2005). GIN (Gaps-In-Noise) test performance in subjects with confirmed central auditory nervous system involvement. Ear Hear 26:608-618", "url": null },
+    { "citation": "Keith RW (2000). Random Gap Detection Test. Auditec, St. Louis.", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "GIN_STD",
+      "name": "GIN - Detección de gaps en ruido",
+      "test_type": "CUSTOM",
+      "description": "Gaps in Noise (adaptado). Cada ítem: 3 s de ruido blanco con 0 o 1 gap en el medio. Gaps de 2, 4, 6, 10, 15 o 20 ms. Paciente indica si oyó un silencio. Tokens: A=sin gap, B=2ms, C=4ms, D=6ms, E=10ms, F=15ms, G=20ms.",
+      "config_json": {"tones":{"A":{"label":"Sin gap","kind":"noise","noise_type":"white","duration_ms":3000},"B":{"label":"Gap 2 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":2},"C":{"label":"Gap 4 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":4},"D":{"label":"Gap 6 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":6},"E":{"label":"Gap 10 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":10},"F":{"label":"Gap 15 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":15},"G":{"label":"Gap 20 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":20}},"isi_ms":800,"iri_ms":3500,"envelope_ms":15,"pattern_length":1,"practice_sequences":["G","A","F","E","A","G"],"test_sequences":["G","A","F","E","D","A","C","B","G","F","A","E","D","C","A","B","G","F","E","A","D","C","B","A","G","F","E","D","C","B"],"channel":"binaural","level_db":65},
+      "is_standard": 1
+    },
+    {
+      "code": "RGD_20",
+      "name": "RGD ruido - gap 20 ms",
+      "test_type": "CUSTOM",
+      "description": "Random Gap Detection en ruido. 2 bursts de ruido blanco (50 ms cada uno) separados por 20 ms. Token A = 1 burst solo, AA = 2 bursts. Paciente: ¿uno o dos?",
+      "config_json": {"tones":{"A":{"label":"Burst","kind":"noise","noise_type":"white","duration_ms":50}},"isi_ms":20,"iri_ms":3500,"envelope_ms":3,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":65},
+      "is_standard": 1
+    },
+    {
+      "code": "RGD_10",
+      "name": "RGD ruido - gap 10 ms",
+      "test_type": "CUSTOM",
+      "description": "Idem RGD pero ISI 10 ms. Cerca del umbral adulto normal.",
+      "config_json": {"tones":{"A":{"label":"Burst","kind":"noise","noise_type":"white","duration_ms":50}},"isi_ms":10,"iri_ms":3500,"envelope_ms":2,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":65},
+      "is_standard": 1
+    },
+    {
+      "code": "RGD_5",
+      "name": "RGD ruido - gap 5 ms",
+      "test_type": "CUSTOM",
+      "description": "Idem RGD pero ISI 5 ms. Umbral exigente.",
+      "config_json": {"tones":{"A":{"label":"Burst","kind":"noise","noise_type":"white","duration_ms":50}},"isi_ms":5,"iri_ms":3500,"envelope_ms":1,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":65},
+      "is_standard": 1
+    },
+    {
+      "code": "NBN_SCREEN",
+      "name": "Ruido de banda angosta - screening",
+      "test_type": "CUSTOM",
+      "description": "Ítem único de 2 s de ruido de banda angosta centrado en 1000 Hz (ancho 200 Hz). Útil como estímulo de enmascaramiento o verificación auditiva general. Token N = ruido centrado.",
+      "config_json": {"tones":{"N":{"label":"NBN 1 kHz","kind":"noise","noise_type":"narrow","center_hz":1000,"bandwidth_hz":200,"duration_ms":2000}},"isi_ms":500,"iri_ms":3000,"envelope_ms":15,"pattern_length":1,"practice_sequences":["N","N"],"test_sequences":["N","N","N","N","N","N","N","N","N","N"],"channel":"binaural","level_db":60},
+      "is_standard": 1
+    }
+  ],
+  "lists": [],
+  "interpretation": {
+    "metric": "gap_ms",
+    "norms_by_age": [
+      { "age_min": 11, "age_max": 60, "normal_min": 0, "mild_min": 0, "severe_max": 0 }
+    ],
+    "description_md": "GIN: umbral normal adulto ~4-6 ms (aprox. percent-correct ≥54% al umbral del estudio de Musiek). Umbrales >8 ms o baja detección global sugieren déficit temporal central."
+  },
+  "metadata": {
+    "recommended": true,
+    "target_population": "adults_children",
+    "estimated_duration_min": 12
+  }
+}

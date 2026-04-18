@@ -1,0 +1,66 @@
+{
+  "id": "dichotic-digits-es-v1",
+  "version": "1.0.0",
+  "name": "Dichotic Digits ES",
+  "category": "dichotic",
+  "description_md": "# Dichotic Digits (español)\n\nPrueba de dígitos dicóticos en español. Pares de 2 dígitos simultáneos, uno por oído. Dos modos: recuerdo libre (paciente reporta todo lo que recuerda) y dirigido (evaluador indica qué oído reportar primero). Se excluye el dígito 7 (\"siete\", bisílabo) para mantener todos los tokens mono/bisílabos cortos.\n\nEvalúa integración binaural y separación. Útil para PAC y lateralización hemisférica. Requiere grabar la lista DICHOTIC_DIGITS_ES en /estimulos.",
+  "requirements": "recording",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Musiek FE (1983). Assessment of central auditory dysfunction: The dichotic digit test revisited. Ear Hear 4:79-83", "url": null },
+    { "citation": "Kimura D (1961). Cerebral dominance and the perception of verbal stimuli. Can J Psychol 15:166-171", "url": null }
+  ],
+  "tests": [
+    {
+      "code": "DD_ES_FREE",
+      "name": "Dichotic Digits ES — Recuerdo libre",
+      "test_type": "CUSTOM",
+      "description": "Prueba de dígitos dicóticos en español. Pares de 2 dígitos simultáneos (uno por oído). Modo libre: el paciente reporta todos los dígitos que recuerde. Requiere grabar la lista DICHOTIC_DIGITS_ES en /estimulos.",
+      "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":55,"dichotic_digits":{"stimulus_list_code":"DICHOTIC_DIGITS_ES","num_pairs":20,"digits_per_ear":2,"isi_ms":300,"level_db":55,"mode":"free"}},
+      "is_standard": 1
+    },
+    {
+      "code": "DD_ES_DIRECTED",
+      "name": "Dichotic Digits ES — Recuerdo dirigido",
+      "test_type": "CUSTOM",
+      "description": "Prueba de dígitos dicóticos en español. Pares de 2 dígitos simultáneos (uno por oído). Modo dirigido: el evaluador indica qué oído reportar primero (alterna L/R). Requiere grabar la lista DICHOTIC_DIGITS_ES en /estimulos.",
+      "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":55,"dichotic_digits":{"stimulus_list_code":"DICHOTIC_DIGITS_ES","num_pairs":20,"digits_per_ear":2,"isi_ms":300,"level_db":55,"mode":"directed"}},
+      "is_standard": 1
+    }
+  ],
+  "lists": [
+    {
+      "code": "DICHOTIC_DIGITS_ES",
+      "name": "Dichotic Digits ES",
+      "category": "dichotic_digits",
+      "language": "es",
+      "country_code": "LATAM",
+      "description": "Dígitos 1–9 excluyendo 7 (bisílabo). Para test dicótico de dígitos",
+      "items": [
+        { "pos": 1, "token": "uno",    "keywords": null },
+        { "pos": 2, "token": "dos",    "keywords": null },
+        { "pos": 3, "token": "tres",   "keywords": null },
+        { "pos": 4, "token": "cuatro", "keywords": null },
+        { "pos": 5, "token": "cinco",  "keywords": null },
+        { "pos": 6, "token": "seis",   "keywords": null },
+        { "pos": 7, "token": "ocho",   "keywords": null },
+        { "pos": 8, "token": "nueve",  "keywords": null }
+      ]
+    }
+  ],
+  "interpretation": {
+    "metric": "asymmetry_pct",
+    "norms_by_age": [
+      { "age_min": 7,  "age_max": 10, "normal_min": 70, "mild_min": 55, "severe_max": 54 },
+      { "age_min": 11, "age_max": 60, "normal_min": 90, "mild_min": 75, "severe_max": 74 }
+    ],
+    "description_md": "Adultos normales ≥90% por oído. Ventaja del oído derecho (REA) típica ~5-10%. Asimetrías marcadas (>20%) o bajo rendimiento bilateral sugieren alteración central; déficit específico del oído izquierdo puede apuntar a lesión hemisférica izquierda o del cuerpo calloso."
+  },
+  "metadata": {
+    "recommended": true,
+    "target_population": "adults_children",
+    "requires_recording": true,
+    "estimated_duration_min": 10
+  }
+}
