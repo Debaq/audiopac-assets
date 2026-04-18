@@ -21,6 +21,10 @@
       "audio_packs": [
         {
           "voice": "F",
+          "label": "Voz femenina",
+          "gender": "female",
+          "speaker_id": "ES-F-01",
+          "description": "Hablante nativa de español peninsular (Castellano). Grabación pro del corpus Sharvard original (Zenodo 3547446). Útil para alternar con voz masculina en test-retest y evaluación binaural.",
           "release_tag": "sharvard-audio-v1",
           "asset_name": "sharvard-es-f-v1.tar.gz",
           "sha256": "5ff76b2283007f42709628a33a5b45237d38bb1c6e16b7a6e5a0848450334dd3",
@@ -30,6 +34,10 @@
         },
         {
           "voice": "M",
+          "label": "Voz masculina",
+          "gender": "male",
+          "speaker_id": "ES-M-01",
+          "description": "Hablante nativo de español peninsular (Castellano). Grabación pro del corpus Sharvard original (Zenodo 3547446). Útil para alternar con voz femenina en test-retest y evaluación binaural.",
           "release_tag": "sharvard-audio-v1",
           "asset_name": "sharvard-es-m-v1.tar.gz",
           "sha256": "c89dfabbdf96847714287d65f3389d026905f9b790c96fac772c674bd787f917",
