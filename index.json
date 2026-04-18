@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "updated_at": "2026-04-17",
+  "catalogs": [
+    {
+      "id": "sharvard-es",
+      "name": "Sharvard ES (peninsular)",
+      "version": "1.0.0",
+      "type": "sentence",
+      "language": "es",
+      "region": "ES",
+      "license": "CC-BY",
+      "source": "https://zenodo.org/records/3547446",
+      "citation": "Aubanel, García Lecumberri, Cooke (2014) Int J Audiol 53(9):633-641",
+      "lists": 70,
+      "items": 700,
+      "keywords_per_item": 5,
+      "text_url": "catalogs/sharvard-es-v1.json",
+      "text_sha256": "6d4db257ef77fcc6dde99ce11be65e89d2da90640b950a0578e0e2f681fc43ee",
+      "text_bytes": 211165,
+      "audio_packs": [
+        {
+          "voice": "F",
+          "release_tag": "sharvard-audio-v1",
+          "asset_name": "sharvard-es-f-v1.tar.gz",
+          "sha256": "5ff76b2283007f42709628a33a5b45237d38bb1c6e16b7a6e5a0848450334dd3",
+          "bytes": 130114985,
+          "format": "wav",
+          "channels": 1
+        },
+        {
+          "voice": "M",
+          "release_tag": "sharvard-audio-v1",
+          "asset_name": "sharvard-es-m-v1.tar.gz",
+          "sha256": "c89dfabbdf96847714287d65f3389d026905f9b790c96fac772c674bd787f917",
+          "bytes": 135015044,
+          "format": "wav",
+          "channels": 1
+        }
+      ]
+    }
+  ]
+}

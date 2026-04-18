@@ -1,0 +1,7 @@
+# Audios fuente (pesados, se publican como GitHub Release)
+sources/*/extract/
+sources/*/*.zip
+sources/*/*.tar.gz
+
+# Node
+node_modules/

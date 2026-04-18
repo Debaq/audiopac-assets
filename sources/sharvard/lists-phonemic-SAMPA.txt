@@ -1,0 +1,701 @@
+sent|ortho|SAMPA
+shd001|HAY GEMAS de GRAN VALOR en la TIENDA|a i x e m a s d e g r a n b a l o r e n l a t i e n d a
+shd002|TIENEN un NUEVO PUERTO para BOTAR BARCOS|t i e n e n u n n u e b o p u e r t o p a r a b o t a r b a r k o s
+shd003|Para HACER HIELO, ECHA MÁS AGUA|p a r a a T e r jj e l o e tS a m a s a g u a
+shd004|MANDÓ la POSTAL en un SOBRE de PAPEL GRUESO|m a n d o l a p o s t a l e n u n s o b r e d e p a p e l g r u e s o
+shd005|Se SINTIÓ FELIZ cuando VIO LLEGAR el TREN|s e s i n t i o f e l i T k u a n d o b i o L e g a r e l t r e n
+shd006|PLANTAN un ÁRBOL en el BOSQUE TODOS los AÑOS|p l a n t a n u n a r b o l e n e l b o s k e t o d o s l o s a J o s
+shd007|El CASCO VIEJO de la CIUDAD es MUY AMPLIO|e l k a s k o b i e x o d e l a T i u d a d e s m u i a m p l i o
+shd008|COSIÓ la CAPA ROTA con MUCHA FUERZA|k o s i o l a k a p a rr o t a k o n m u tS a f u e r T a
+shd009|NO LLEVES JERSEY en un DÍA como ÉSTE|n o L e b e s x e r s e i e n u n d i a k o m o e s t e
+shd010|El RELOJ de la PLAZA MARCÓ las CUATRO de la TARDE|e l rr e l o x d e l a p l a T a m a r k o l a s k u a t r o d e l a t a r d e
+shd011|El HOMBRE TIENE los BRAZOS MUY FUERTES|e l o m b r e t i e n e l o s b r a T o s m u i f u e r t e s
+shd012|FALTAN MUCHAS LATAS en las DOS BALDAS|f a l t a n m u tS a s l a t a s e n l a s d o s b a l d a s
+shd013|SACIA tu SED, y LUEGO COME la TARTA|s a T i a t u s e d i l u e g o k o m e l a t a r t a
+shd014|La MULA CORRIÓ NOCHE y DÍA sin PARAR|l a m u l a k o rr i o n o tS e i d i a s i n p a r a r
+shd015|El PAPEL ROJO DIO un POCO de COLOR|e l p a p e l rr o x o d i o u n p o k o d e k o l o r
+shd016|El RATÓN VIO TROZOS de QUESO en el SUELO|e l rr a t o n b i o t r o T o s d e k e s o e n e l s u e l o
+shd017|Las VACAS COMEN HIERBA TIERNA y HENO|l a s b a k a s k o m e n jj e r b a t i e r n a i e n o
+shd018|Los OJOS de la CHICA TIENEN un GRAN BRILLO|l o s o x o s d e l a tS i k a t i e n e n u n g r a n b r i L o
+shd019|La VIEJA SARTÉN TIENE GRASA FRÍA|l a b i e x a s a r t e n t i e n e g r a s a f r i a
+shd020|Se PUEDE LLEVAR la GORRA PUESTA en la CENA|s e p u e d e L e b a r l a g o rr a p u e s t a e n l a T e n a
+shd021|LLENE el FRASCO de CRISTAL con COLA DENSA|L e n e e l f r a s k o d e k r i s t a l k o n k o l a d e n s a
+shd022|Se NOTA un BUEN OLOR a MAR en el AIRE|s e n o t a u n b u e n o l o r a m a r e n e l a i r e
+shd023|No es FÁCIL TENER una TIERRA FÉRTIL sin AGUA|n o e s f a T i l t e n e r u n a t i e rr a f e r t i l s i n a g u a
+shd024|ESTOS COCHES BRILLAN como si FUERAN NUEVOS|e s t o s k o tS e s b r i L a n k o m o s i f u e r a n n u e b o s
+shd025|El PEZ se MOVIÓ y TORCIÓ en la CAÑA de PESCAR|e l p e T s e m o b i o i t o r T i o e n l a k a J a d e p e s k a r
+shd026|Un YATE ENTRÓ en el GRAN PUERTO de la CIUDAD|u n jj a t e e n t r o e n e l g r a n p u e r t o d e l a T i u d a d
+shd027|PEGUÉ los BROCHES a CADA LADO de la BLUSA|p e g e l o s b r o tS e s a k a d a l a d o d e l a b l u s a
+shd028|DIJO que ÉSTA es la MEJOR MARCA de MAÍZ|d i x o k e e s t a e s l a m e x o r m a r k a d e m a i T
+shd029|Una NUBE de POLVO PICA MUCHO en los OJOS|u n a n u b e d e p o l b o p i k a m u tS o e n l o s o x o s
+shd030|El BALÓN ROJO ESTÁ en MANOS del NIÑO|e l b a l o n rr o x o e s t a e n m a n o s d e l n i J o
+shd031|El DUQUE SALIÓ del PARQUE en un COCHE NEGRO|e l d u k e s a l i o d e l p a r k e e n u n k o tS e n e g r o
+shd032|La MUJER TRAJO CAMBIOS de la OTRA TIENDA|l a m u x e r t r a x o k a m b i o s d e l a o t r a t i e n d a
+shd033|COGIÓ una ROSA BLANCA sin HOJAS ni OLOR|k o x i o u n a rr o s a b l a n k a s i n o x a s n i o l o r
+shd034|El AGUA del POZO es FUENTE de BUENA SALUD|e l a g u a d e l p o T o e s f u e n t e d e b u e n a s a l u d
+shd035|El COLOR GRIS ESTÁ MUY de MODA|e l k o l o r g r i s e s t a m u i d e m o d a
+shd036|SABE LLEVAR la ROPA con MUCHO AIRE|s a b e L e b a r l a rr o p a k o n m u tS o a i r e
+shd037|Las BOTAS de ANTE y PIEL TIENEN TACÓN|l a s b o t a s d e a n t e i p i e l t i e n e n t a k o n
+shd038|Los BARRIOS se UNEN en la PARTE CENTRAL de la CIUDAD|l o s b a rr i o s s e u n e n e n l a p a r t e T e n t r a l d e l a T i u d a d
+shd039|QUISO PONER GRIFOS de PLATA en los BAÑOS|k i s o p o n e r g r i f o s d e p l a t a e n l o s b a J o s
+shd040|LLEVA el CUBO a la PARED para REGAR las FLORES|L e b a e l k u b o a l a p a r e d p a r a rr e g a r l a s f l o r e s
+shd041|La CREMA LIMPIA el LATÓN MÁS SUCIO|l a k r e m a l i m p i a e l l a t o n m a s s u T i o
+shd042|La JOVEN ERA la MÁS BELLA para el CHICO|l a x o b e n e r a l a m a s b e L a p a r a e l tS i k o
+shd043|Es FÁCIL VENDER MEDIAS de TALLA GRANDE|e s f a T i l b e n d e r m e d i a s d e t a L a g r a n d e
+shd044|RUEGUEN al FISCAL que PONGA FIN al JUICIO|rr u e g e n a l f i s k a l k e p o n g a f i n a l x u i T i o
+shd045|Los GATOS y los PERROS se ODIAN UNOS a OTROS|l o s g a t o s i l o s p e rr o s s e o d i a n u n o s a o t r o s
+shd046|COMPRÓ una CESTA LLENA de FRUTA para su MADRE|k o m p r o u n a T e s t a L e n a d e f r u t a p a r a s u m a d r e
+shd047|La SIERRA CORTA y PODA los TRONCOS para LEÑA|l a s i e rr a k o r t a i p o d a l o s t r o n k o s p a r a l e J a
+shd048|El POLVO ENTRA por el UMBRAL de la VIEJA CASA|e l p o l b o e n t r a p o r e l u m b r a l d e l a b i e x a k a s a
+shd049|El BANCO que PEGA a la PARED ESTÁ ROTO|e l b a n k o k e p e g a a l a p a r e d e s t a rr o t o
+shd050|El HIELO del CUBO se PUSO VERDE por el LICOR|e l jj e l o d e l k u b o s e p u s o b e r d e p o r e l l i k o r
+shd051|DEBES COSER la FALDA ANTES de SALIR|d e b e s k o s e r l a f a l d a a n t e s d e s a l i r
+shd052|Se USA una SIERRA RADIAL para CORTAR TABLAS|s e u s a u n a s i e rr a rr a d i a l p a r a k o r t a r t a b l a s
+shd053|La CHICA QUIERE una JOYA de ORO BLANCO|l a tS i k a k i e r e u n a x o jj a d e o r o b l a n k o
+shd054|En ESTA ZONA, el AIRE es MUY PURO|e n e s t a T o n a e l a i r e e s m u i p u r o
+shd055|METIÓ un CLAVO en la TABLA para TAPAR el HUECO|m e t i o u n k l a b o e n l a t a b l a p a r a t a p a r e l g u e k o
+shd056|AYER VINO un NUEVO HUÉSPED al HOTEL|a jj e r b i n o u n n u e b o g u e s p e d a l o t e l
+shd057|La HUELLA de SANGRE MOSTRÓ el RASTRO al HOMBRE|l a g u e L a d e s a n g r e m o s t r o e l rr a s t r o a l o m b r e
+shd058|La MUJER se PUDO PONER de PIE otra VEZ|l a m u x e r s e p u d o p o n e r d e p i e o t r a b e T
+shd059|TOMÓ la RUTA MÁS LARGA a su CASA|t o m o l a rr u t a m a s l a r g a a s u k a s a
+shd060|La CHICA del CINE VENDIÓ CINCO BONOS|l a tS i k a d e l T i n e b e n d i o T i n k o b o n o s
+shd061|Una GRIETA en la PRESA CASI CAUSÓ DAÑOS|u n a g r i e t a e n l a p r e s a k a s i k a u s o d a J o s
+shd062|SIEMPRE DICE a los DEMÁS lo que DEBEN HACER|s i e m p r e d i T e a l o s d e m a s l o k e d e b e n a T e r
+shd063|ELLOS QUIEREN, pero NO se HACEN RICOS|e L o s k i e r e n p e r o n o s e a T e n rr i k o s
+shd064|El COJÍN del SOFÁ es de TELA ROJA y SUAVE|e l k o x i n d e l s o f a e s d e t e l a rr o x a i s u a b e
+shd065|El HOMBRE VINO de ARAR el CAMPO de TRIGO|e l o m b r e b i n o d e a r a r e l k a m p o d e t r i g o
+shd066|NUESTROS PLANES NO SON MALOS|n u e s t r o s p l a n e s n o s o n m a l o s
+shd067|La PLAYA se SECA si BAJA MUCHO el AGUA|l a p l a jj a s e s e k a s i b a x a m u tS o e l a g u a
+shd068|PIDIÓ OTRO LIBRO de ARTE en la TIENDA|p i d i o o t r o l i b r o d e a r t e e n l a t i e n d a
+shd069|El HOMBRE ALTO LOGRÓ una BUENA MARCA|e l o m b r e a l t o l o g r o u n a b u e n a m a r k a
+shd070|El TUBO de LATÓN CUBRE la VALLA de HIERRO|e l t u b o d e l a t o n k u b r e l a b a L a d e jj e rr o
+shd071|CORTÓ la LOSA de GRANDES BLOQUES de PIEDRA|k o r t o l a l o s a d e g r a n d e s b l o k e s d e p i e d r a
+shd072|Le DIO a la VIEJA MULA con un PALO CORTO|l e d i o a l a b i e x a m u l a k o n u n p a l o k o r t o
+shd073|HAY MUCHAS FORMAS de HACER las COSAS|a i m u tS a s f o r m a s d e a T e r l a s k o s a s
+shd074|VENDA su RELOJ a ALGUIEN a BUEN PRECIO|b e n d a s u rr e l o x a a l g i e n a b u e n p r e T i o
+shd075|NUEVE HOMBRES CAVAN en las RUINAS del FORTÍN|n u e b e o m b r e s k a b a n e n l a s rr u i n a s d e l f o r t i n
+shd076|El CAER de la LLUVIA HACE un GRATO RUIDO|e l k a e r d e l a L u b i a a T e u n g r a t o rr u i d o
+shd077|HAY PINZAS DENTRO del CUBO de HIELO|a i p i n T a s d e n t r o d e l k u b o d e jj e l o
+shd078|TOME la OTRA SENDA para LLEGAR al LAGO|t o m e l a o t r a s e n d a p a r a L e g a r a l l a g o
+shd079|El PRIMER AÑO de VIDA PASA PRONTO|e l p r i m e r a J o d e b i d a p a s a p r o n t o
+shd080|ESTE MES se PESCA en la COSTA del NORTE|e s t e m e s s e p e s k a e n l a k o s t a d e l n o r t e
+shd081|NO PUEDO LEER su MALA LETRA|n o p u e d o l e e r s u m a l a l e t r a
+shd082|PIDE el FONDO de RENTA al BANCO PRONTO|p i d e e l f o n d o d e rr e n t a a l b a n k o p r o n t o
+shd083|El LAGO BRILLA bajo el VIVO SOL de JUNIO|e l l a g o b r i L a b a x o e l b i b o s o l d e x u n i o
+shd084|VIERON los DAÑOS del CHOQUE en el CASCO del BARCO|b i e r o n l o s d a J o s d e l tS o k e e n e l k a s k o d e l b a r k o
+shd085|La MESA ESTÁ LLENA de TELAS ROJAS|l a m e s a e s t a L e n a d e t e l a s rr o x a s
+shd086|El HOMBRE CAMBIÓ su YEGUA por un BUEY PARDO|e l o m b r e k a m b i o s u jj e g u a p o r u n b u e i p a r d o
+shd087|TAPA la PUERTA con TELAS de LANA GRUESA|t a p a l a p u e r t a k o n t e l a s d e l a n a g r u e s a
+shd088|El AUTOR de CUENTOS para NIÑOS TAMBIÉN es PINTOR|e l a u t o r d e k u e n t o s p a r a n i J o s t a m b i e n e s p i n t o r
+shd089|El MEJOR GUISO se HACE con CARNE de CERDO|e l m e x o r g i s o s e a T e k o n k a r n e d e T e r d o
+shd090|QUITA el DOS cuando SUMES VARIAS CIFRAS|k i t a e l d o s k u a n d o s u m e s b a r i a s T i f r a s
+shd091|VETE YA y VUELVE MÁS TARDE|b e t e jj a i b u e l b e m a s t a r d e
+shd092|HAY que PONER un CLAVO en la PUERTA del SALÓN|a i k e p o n e r u n k l a b o e n l a p u e r t a d e l s a l o n
+shd093|YA TENGO el LÁPIZ AZUL en la MANO|jj a t e n g o e l l a p i T a T u l e n l a m a n o
+shd094|LLENA tu BOLSA con TODAS las COSAS para GUARDAR|L e n a t u b o l s a k o n t o d a s l a s k o s a s p a r a g u a r d a r
+shd095|HAZ las CUENTAS de la TIENDA al FINAL del DÍA|a T l a s k u e n t a s d e l a t i e n d a a l f i n a l d e l d i a
+shd096|El NUEVO CURSO IRÁ MUCHO MEJOR|e l n u e b o k u r s o i r a m u tS o m e x o r
+shd097|COGIÓ el HACHA NUEVA y MARCHÓ al BOSQUE|k o x i o e l a tS a n u e b a i m a r tS o a l b o s k e
+shd098|DIJO la MISMA FRASE TREINTA VECES|d i x o l a m i s m a f r a s e t r e i n t a b e T e s
+shd099|El GATO NEGRO CRIÓ al PERRO con sus HIJOS|e l g a t o n e g r o k r i o a l p e rr o k o n s u s i x o s
+shd100|CRÍA POLLOS DENTRO de un CERCO de METAL|k r i a p o L o s d e n t r o d e u n T e r k o d e m e t a l
+shd101|HAZLO ANTES de que el NIÑO PUEDA VERLO|a T l o a n t e s d e k e e l n i J o p u e d a b e r l o
+shd102|GIRE en la CALLE MAYOR para LLEGAR a la PLAZA|x i r e e n l a k a L e m a jj o r p a r a L e g a r a l a p l a T a
+shd103|Un SOPLO de AIRE FRESCO VIENE BIEN|u n s o p l o d e a i r e f r e s k o b i e n e b i e n
+shd104|El COCHE GRIS VA MARCHA ATRÁS|e l k o tS e g r i s b a m a r tS a a t r a s
+shd105|El RATÓN ESTÁ DENTRO del MONTÓN de HOJAS|e l rr a t o n e s t a d e n t r o d e l m o n t o n d e o x a s
+shd106|El CAUCE del GRAN RÍO es MUY ANCHO|e l k a u T e d e l g r a n rr i o e s m u i a n tS o
+shd107|HOY HAZ TRES LISTAS para las COMPRAS|o i a T t r e s l i s t a s p a r a l a s k o m p r a s
+shd108|GUARDE los DATOS en LIMPIO en una NUEVA NOTA|g u a r d e l o s d a t o s e n l i m p i o e n u n a n u e b a n o t a
+shd109|Se PUEDE VER el MUELLE desde la OTRA PLAYA|s e p u e d e b e r e l m u e L e d e s d e l a o t r a p l a jj a
+shd110|El CASO fue CRUEL para el HOMBRE VIEJO y SABIO|e l k a s o f u e k r u e l p a r a e l o m b r e b i e x o i s a b i o
+shd111|HIZO una BRECHA en la FINA PLACA de METAL|i T o u n a b r e tS a e n l a f i n a p l a k a d e m e t a l
+shd112|PUSO CONTRA la PARED la SILLA de LONA|p u s o k o n t r a l a p a r e d l a s i L a d e l o n a
+shd113|QUEMAR CARBÓN nos DA CALOR en la CASA|k e m a r k a r b o n n o s d a k a l o r e n l a k a s a
+shd114|HAY un FRASCO ALTO de PIE en el SUELO|a i u n f r a s k o a l t o d e p i e e n e l s u e l o
+shd115|ESTAS FRASES HACEN DAÑO a la GENTE|e s t a s f r a s e s a T e n d a J o a l a x e n t e
+shd116|A su CUELLO LARGO le QUEDA BIEN el COLLAR|a s u k u e L o l a r g o l e k e d a b i e n e l k o L a r
+shd117|GIRÓ la BICI por DETRÁS del OTRO PUENTE|x i r o l a b i T i p o r d e t r a s d e l o t r o p u e n t e
+shd118|La ROPA y el HOTEL son GRATIS para los HOMBRES NUEVOS|l a rr o p a i e l o t e l s o n g r a t i s p a r a l o s o m b r e s n u e b o s
+shd119|El HOMBRE se GANÓ una BUENA PAGA AYER|e l o m b r e s e g a n o u n a b u e n a p a g a a jj e r
+shd120|En el MUNDO HAY MUCHO RUIDO y ESTRÉS|e n e l m u n d o a i m u tS o rr u i d o i e s t r e s
+shd121|Los FRENOS del CAMIÓN ECHAN HUMO BLANCO|l o s f r e n o s d e l k a m i o n e tS a n u m o b l a n k o
+shd122|El ROBLE es FUERTE y TAMBIÉN DA SOMBRA|e l rr o b l e e s f u e r t e i t a m b i e n d a s o m b r a
+shd123|El POLVO BLANCO HIZO una MANCHA en la ROPA|e l p o l b o b l a n k o i T o u n a m a n tS a e n l a rr o p a
+shd124|Un GRUPO de CHICOS SALIÓ de la TIENDA AYER|u n g r u p o d e tS i k o s s a l i o d e l a t i e n d a a jj e r
+shd125|Las JUNTAS se SECAN por TANTO SOL y CALOR|l a s x u n t a s s e s e k a n p o r t a n t o s o l i k a l o r
+shd126|La LLUVIA FRÍA SIGUIÓ TODA la TARDE|l a L u b i a f r i a s i g i o t o d a l a t a r d e
+shd127|El PASTEL de CARNE es un PLATO que se SIRVE a los NIÑOS|e l p a s t e l d e k a r n e e s u n p l a t o k e s e s i r b e a l o s n i J o s
+shd128|PUDO LEER la LETRA con las GAFAS GRUESAS|p u d o l e e r l a l e t r a k o n l a s g a f a s g r u e s a s
+shd129|DEJÓ una BREVE NOTA de AMOR a su MUJER|d e x o u n a b r e b e n o t a d e a m o r a s u m u x e r
+shd130|CADA COSA que DICE es SIEMPRE CIERTA|k a d a k o s a k e d i T e e s s i e m p r e T i e r t a
+shd131|Un TROZO del TABLÓN se CLAVÓ en el SUELO de PINO|u n t r o T o d e l t a b l o n s e k l a b o e n e l s u e l o d e p i n o
+shd132|HAY MANCHAS de BARRO en el PUENTE de HIERRO|a i m a n tS a s d e b a rr o e n e l p u e n t e d e jj e rr o
+shd133|Las CALLES ESTÁN HECHAS con BREA DENSA|l a s k a L e s e s t a n e tS a s k o n b r e a d e n s a
+shd134|La CHICA JOVEN DIO una PISTA CLARA|l a tS i k a x o b e n d i o u n a p i s t a k l a r a
+shd135|El NIÑO FUE a JUGAR a CASA de su PRIMO|e l n i J o f u e a x u g a r a k a s a d e s u p r i m o
+shd136|La MUJER HIZO una LARGA LISTA de GASTOS|l a m u x e r i T o u n a l a r g a l i s t a d e g a s t o s
+shd137|DAN de COMER MAÍZ y TRIGO a los POLLOS|d a n d e k o m e r m a i T i t r i g o a l o s p o L o s
+shd138|La LUZ VERDE BRILLÓ FRENTE al BOSQUE|l a l u T b e r d e b r i L o f r e n t e a l b o s k e
+shd139|NUESTRAS TROPAS DARÁN un FUERTE GOLPE|n u e s t r a s t r o p a s d a r a n u n f u e r t e g o l p e
+shd140|Se TUMBÓ en la CAMA y se QUEDÓ TODA la NOCHE|s e t u m b o e n l a k a m a i s e k e d o t o d a l a n o tS e
+shd141|CADA MES ENTRAN a ROBAR en la TIENDA|k a d a m e s e n t r a n a rr o b a r e n l a t i e n d a
+shd142|El NIÑO ROMPIÓ el VASO y TIRÓ el AGUA|e l n i J o rr o m p i o e l b a s o i t i r o e l a g u a
+shd143|Un VIAJE en BARCO es MÁS LENTO que en AVIÓN|u n b i a x e e n b a r k o e s m a s l e n t o k e e n a b i o n
+shd144|ESTE ZUMO SABE MEJOR que OTROS|e s t e T u m o s a b e m e x o r k e o t r o s
+shd145|PON la PIEZA AQUÍ sin DECIR NADA|p o n l a p i e T a a k i s i n d e T i r n a d a
+shd146|Con los PALOS FINOS se HACE MEJOR el FUEGO|k o n l o s p a l o s f i n o s s e a T e m e x o r e l f u e g o
+shd147|Los LIBROS SUELEN TENER TAPA DURA|l o s l i b r o s s u e l e n t e n e r t a p a d u r a
+shd148|La PIEL de la FRUTA se CORTA en TIRAS ANCHAS|l a p i e l d e l a f r u t a s e k o r t a e n t i r a s a n tS a s
+shd149|El CHICO USÓ el CEBO para PESCAR TRUCHAS|e l tS i k o u s o e l T e b o p a r a p e s k a r t r u tS a s
+shd150|Una GOTA de LECHE CAYÓ por el BORDE de la MESA|u n a g o t a d e l e tS e k a jj o p o r e l b o r d e d e l a m e s a
+shd151|Se RÍE AUNQUE le DIGAN COSAS FEAS|s e rr i e a u n k e l e d i g a n k o s a s f e a s
+shd152|Una TAZA de TÉ DEJA DORMIR por la NOCHE|u n a t a T a d e t e d e x a d o r m i r p o r l a n o tS e
+shd153|CORTÓ el HILO de SEDA con las DOS MANOS|k o r t o e l i l o d e s e d a k o n l a s d o s m a n o s
+shd154|CIERRA SIEMPRE la PUERTA de CASA con LLAVE|T i e rr a s i e m p r e l a p u e r t a d e k a s a k o n L a b e
+shd155|La MESA y la SILLA se PLIEGAN para LLEVAR al CAMPO|l a m e s a i l a s i L a s e p l i e g a n p a r a L e b a r a l k a m p o
+shd156|HAY que LUCHAR para GANAR una CAUSA JUSTA|a i k e l u tS a r p a r a g a n a r u n a k a u s a x u s t a
+shd157|Le CEGÓ la NUBE de POLVO que le ENTRÓ en los OJOS|l e T e g o l a n u b e d e p o l b o k e l e e n t r o e n l o s o x o s
+shd158|VINO PRONTO cuando OYÓ SONAR el TIMBRE|b i n o p r o n t o k u a n d o o jj o s o n a r e l t i m b r e
+shd159|DALE al BALÓN con la PUNTA de la BOTA y FUERTE|d a l e a l b a l o n k o n l a p u n t a d e l a b o t a i f u e r t e
+shd160|CREO que la GUERRA es MUY CRUEL para los NIÑOS|k r e o k e l a g e rr a e s m u i k r u e l p a r a l o s n i J o s
+shd161|La RISA del NIÑO nos CAMBIÓ el MAL HUMOR|l a rr i s a d e l n i J o n o s k a m b i o e l m a l u m o r
+shd162|HAY POCO PAPEL, por lo que NO lo GASTO|a i p o k o p a p e l p o r l o k e n o l o g a s t o
+shd163|Una CHISPA QUEMÓ el MANTEL JUSTO en el MEDIO|u n a tS i s p a k e m o e l m a n t e l x u s t o e n e l m e d i o
+shd164|La FALDA ROJA se SECÓ en una PERCHA FINA|l a f a l d a rr o x a s e s e k o e n u n a p e r tS a f i n a
+shd165|TODOS los NIÑOS se RÍEN cuando VAN al CIRCO|t o d o s l o s n i J o s s e rr i e n k u a n d o b a n a l T i r k o
+shd166|Es MEJOR una SILLA ALTA para VER el TENIS|e s m e x o r u n a s i L a a l t a p a r a b e r e l t e n i s
+shd167|Las PERAS VERDES ESTÁN AÚN DURAS|l a s p e r a s b e r d e s e s t a n a u n d u r a s
+shd168|El NUEVO DOCTOR TUVO un GRAVE ERROR|e l n u e b o d o k t o r t u b o u n g r a b e e rr o r
+shd169|LANZÓ la PAJA a TRAVÉS de la PUERTA de la CUADRA|l a n T o l a p a x a a t r a b e s d e l a p u e r t a d e l a k u a d r a
+shd170|El LAGO se HIELA SIEMPRE que HACE FRÍO|e l l a g o s e jj e l a s i e m p r e k e a T e f r i o
+shd171|El TANQUE de GAS TIENE una GRIETA FINA|e l t a n k e d e g a s t i e n e u n a g r i e t a f i n a
+shd172|El CHICO LOGRÓ SALVAR su VIDA en el CICLÓN|e l tS i k o l o g r o s a l b a r s u b i d a e n e l T i k l o n
+shd173|La LUCHA VA a DURAR DOS HORAS|l a l u tS a b a a d u r a r d o s o r a s
+shd174|Se PUSO ROJA cuando le DIO el PRIMER BESO|s e p u s o rr o x a k u a n d o l e d i o e l p r i m e r b e s o
+shd175|HAY MUCHOS BOSQUES en ESTE MONTE|a i m u tS o s b o s k e s e n e s t e m o n t e
+shd176|El BANCO le HIZO al HOMBRE PAGAR su DEUDA|e l b a n k o l e i T o a l o m b r e p a g a r s u d e u d a
+shd177|FUEGOS con HUMO, ni DAN LLAMAS ni CALOR|f u e g o s k o n u m o n i d a n L a m a s n i k a l o r
+shd178|CERRÓ la PUERTA con FUERZA al ENTRAR en CASA|T e rr o l a p u e r t a k o n f u e r T a a l e n t r a r e n k a s a
+shd179|TIRÓ el CARTÓN LEJOS del PATIO del HOTEL|t i r o e l k a r t o n l e x o s d e l p a t i o d e l o t e l
+shd180|La GENTE PIENSA y HABLA de MÁS a VECES|l a x e n t e p i e n s a i a b l a d e m a s a b e T e s
+shd181|La BOMBA DEJÓ TODA la CIUDAD en RUINAS|l a b o m b a d e x o t o d a l a T i u d a d e n rr u i n a s
+shd182|Las PERAS de LATA no TIENEN NINGÚN SABOR|l a s p e r a s d e l a t a n o t i e n e n n i n g u n s a b o r
+shd183|AYER fue el PRIMER DÍA del QUINTO MES|a jj e r f u e e l p r i m e r d i a d e l k i n t o m e s
+shd184|El PERRO SIGUE al CAMIÓN que LLEVA su DUEÑO|e l p e rr o s i g e a l k a m i o n k e L e b a s u d u e J o
+shd185|Un COJÍN BLANDO PARÓ el GOLPE del HOMBRE|u n k o x i n b l a n d o p a r o e l g o l p e d e l o m b r e
+shd186|El JUEZ TRATÓ de CERRAR su CASO PRONTO|e l x u e T t r a t o d e T e rr a r s u k a s o p r o n t o
+shd187|El FUEGO ECHA CHISPAS si SOPLAS FUERTE|e l f u e g o e tS a tS i s p a s s i s o p l a s f u e r t e
+shd188|El SOL SALIÓ por el ESTE como SIEMPRE lo HACE|e l s o l s a l i o p o r e l e s t e k o m o s i e m p r e l o a T e
+shd189|El HOMBRE IBA al BOSQUE a CORTAR LEÑA|e l o m b r e i b a a l b o s k e a k o r t a r l e J a
+shd190|CARGÓ el ARMA con CUATRO BALAS de LATÓN|k a r g o e l a r m a k o n k u a t r o b a l a s d e l a t o n
+shd191|La MADRE BATIÓ el HUEVO para HACER la CENA|l a m a d r e b a t i o e l g u e b o p a r a a T e r l a T e n a
+shd192|La CHICA JOVEN se QUITÓ el GORRO de LANA|l a tS i k a x o b e n s e k i t o e l g o rr o d e l a n a
+shd193|DESPUÉS de un BAÑO FRÍO se DUERME MEJOR|d e s p u e s d e u n b a J o f r i o s e d u e r m e m e x o r
+shd194|Las CARTAS GRANDES se GUARDAN en DOS BALDAS|l a s k a r t a s g r a n d e s s e g u a r d a n e n d o s b a l d a s
+shd195|La GENTE TIENE VARIAS FORMAS de PENSAR|l a x e n t e t i e n e b a r i a s f o r m a s d e p e n s a r
+shd196|El BARCO fue a PIQUE al CHOCAR CONTRA una ROCA|e l b a r k o f u e a p i k e a l tS o k a r k o n t r a u n a rr o k a
+shd197|Su BOLSO de VIAJE está LLENO de PAPEL sin USAR|s u b o l s o d e b i a x e e s t a L e n o d e p a p e l s i n u s a r
+shd198|CIERRA el BOTE con la TAPA de LATÓN DURO|T i e rr a e l b o t e k o n l a t a p a d e l a t o n d u r o
+shd199|Un HOMBRE RECTO NO BURLA la LEY|u n o m b r e rr e k t o n o b u r l a l a l e i
+shd200|HAY un MONTÓN de PLATOS SUCIOS en la MESA|a i u n m o n t o n d e p l a t o s s u T i o s e n l a m e s a
+shd201|HELÓ, NEVÓ y LLOVIÓ en el MISMO DÍA|e l o n e b o i L o b i o e n e l m i s m o d i a
+shd202|PON UNA RAYA para HACER la SUMA|p o n u n a rr a jj a p a r a a T e r l a s u m a
+shd203|El GRUPO se SIENTE MEJOR con la NUEVA GENTE|e l g r u p o s e s i e n t e m e x o r k o n l a n u e b a x e n t e
+shd204|ATE la TAPA lo MÁS FUERTE que PUEDA|a t e l a t a p a l o m a s f u e r t e k e p u e d a
+shd205|HABLÓ con el GUARDIA para SALVAR al POBRE LADRÓN|a b l o k o n e l g u a r d i a p a r a s a l b a r a l p o b r e l a d r o n
+shd206|Las TRUCHAS son PECES que se PESCAN con CAÑA CORTA|l a s t r u tS a s s o n p e T e s k e s e p e s k a n k o n k a J a k o r t a
+shd207|TALLÓ su ROSTRO en un BLOQUE de MÁRMOL BLANCO|t a L o s u rr o s t r o e n u n b l o k e d e m a r m o l b l a n k o
+shd208|La OBRA SIGUIÓ cuando por FIN se SENTÓ la MUJER|l a o b r a s i g i o k u a n d o p o r f i n s e s e n t o l a m u x e r
+shd209|Los CUENTOS de HADAS HACEN SOÑAR a los NIÑOS|l o s k u e n t o s d e a d a s a T e n s o J a r a l o s n i J o s
+shd210|El CHICO CORRIÓ HACIA la GENTE y se PERDIÓ|e l tS i k o k o rr i o a T i a l a x e n t e i s e p e r d i o
+shd211|CORTA el PASTEL de NATA en GRANDES TROZOS|k o r t a e l p a s t e l d e n a t a e n g r a n d e s t r o T o s
+shd212|El CUENCO de COBRE BRILLA con los RAYOS del SOL|e l k u e n k o d e k o b r e b r i L a k o n l o s rr a jj o s d e l s o l
+shd213|HAY que TENER MUCHO VALOR para ESTO|a i k e t e n e r m u tS o b a l o r p a r a e s t o
+shd214|El LIMÓN es AGRIO pero SABE MUY BIEN|e l l i m o n e s a g r i o p e r o s a b e m u i b i e n
+shd215|La LIGA de PAZ se REUNIÓ para TRATAR el TEMA|l a l i g a d e p a T s e rr e u n i o p a r a t r a t a r e l t e m a
+shd216|DEJEN que el FISCAL PIDA el FALLO sobre el CASO|d e x e n k e e l f i s k a l p i d a e l f a L o s o b r e e l k a s o
+shd217|PONGA una REJA de METAL DETRÁS del FUEGO|p o n g a u n a rr e x a d e m e t a l d e t r a s d e l f u e g o
+shd218|PUEDE HABER un CICLÓN en CUATRO DÍAS|p u e d e a b e r u n T i k l o n e n k u a t r o d i a s
+shd219|La MUJER SÓLO LLEVA AROS de ORO|l a m u x e r s o l o L e b a a r o s d e o r o
+shd220|El CLAN VINO TODAS las NOCHES del MES|e l k l a n b i n o t o d a s l a s n o tS e s d e l m e s
+shd221|DOS MÁS SIETE es MENOS que DIEZ|d o s m a s s i e t e e s m e n o s k e d i e T
+shd222|ESTE LIBRO CABE en la PALMA de la MANO|e s t e l i b r o k a b e e n l a p a l m a d e l a m a n o
+shd223|La YEGUA TIRÓ al JOVEN FUERA del CARRO|l a jj e g u a t i r o a l x o b e n f u e r a d e l k a rr o
+shd224|HAY DIEZ BROCHES PUESTOS en ORDEN|a i d i e T b r o tS e s p u e s t o s e n o r d e n
+shd225|LLEVÓ a sus DOS HIJOS a JUGAR al PARQUE|L e b o a s u s d o s i x o s a x u g a r a l p a r k e
+shd226|La BLUSA ESTÁ LIMPIA pero le FALTA un BOTÓN|l a b l u s a e s t a l i m p i a p e r o l e f a l t a u n b o t o n
+shd227|El FRUTO del NOGAL es de COLOR MARRÓN CLARO|e l f r u t o d e l n o g a l e s d e k o l o r m a rr o n k l a r o
+shd228|NUNCA es FÁCIL DAR la RAZÓN a los DEMÁS|n u n k a e s f a T i l d a r l a rr a T o n a l o s d e m a s
+shd229|Un TRAPO SECA el AGUA que HAY en la MESA|u n t r a p o s e k a e l a g u a k e a i e n l a m e s a
+shd230|El POBRE CHICO PERDIÓ el TREN de NUEVO|e l p o b r e tS i k o p e r d i o e l t r e n d e n u e b o
+shd231|TRAE al BEBÉ para que PUEDA DORMIR AQUÍ|t r a e a l b e b e p a r a k e p u e d a d o r m i r a k i
+shd232|COJA la CARTA con el FONDO AZUL CLARO|k o x a l a k a r t a k o n e l f o n d o a T u l k l a r o
+shd233|PONGA el CUBO LLENO DENTRO de la DUCHA|p o n g a e l k u b o L e n o d e n t r o d e l a d u tS a
+shd234|Una TRUCHA con SAL y JAMÓN SABE BIEN|u n a t r u tS a k o n s a l i x a m o n s a b e b i e n
+shd235|PUSO su NOMBRE en la HOJA ANTES de IRSE|p u s o s u n o m b r e e n l a o x a a n t e s d e i r s e
+shd236|La MESA ESTÁ en el SUELO POCO FIRME|l a m e s a e s t a e n e l s u e l o p o k o f i r m e
+shd237|Si HACES la TRENZA MAL, se VA a SOLTAR|s i a T e s l a t r e n T a m a l s e b a a s o l t a r
+shd238|BUSCA en la CALLE una TORRE ALTA y GRIS|b u s k a e n l a k a L e u n a t o rr e a l t a i g r i s
+shd239|Los SOCIOS LLEGAN por lo MENOS a la MITAD del GRUPO|l o s s o T i o s L e g a n p o r l o m e n o s a l a m i t a d d e l g r u p o
+shd240|El NIÑO CASI HIRIÓ al PERRO GRANDE|e l n i J o k a s i i r i o a l p e rr o g r a n d e
+shd241|TIENE una BARRA de HIERRO GRANDE y LARGA|t i e n e u n a b a rr a d e jj e rr o g r a n d e i l a r g a
+shd242|El HOMBRE se LLEVÓ a los CHICOS en un COCHE VIEJO|e l o m b r e s e L e b o a l o s tS i k o s e n u n k o tS e b i e x o
+shd243|El FINAL de ESE CUENTO era CORTO y CLARO|e l f i n a l d e e s e k u e n t o e r a k o r t o i k l a r o
+shd244|SIENTE el AIRE TAN LIMPIO del CAMPO|s i e n t e e l a i r e t a n l i m p i o d e l k a m p o
+shd245|Los NERVIOS se PASAN CUANDO se CIERRA la PUERTA|l o s n e r b i o s s e p a s a n k u a n d o s e T i e rr a l a p u e r t a
+shd246|DEJA las BOTAS SUCIAS al LADO de la PUERTA|d e x a l a s b o t a s s u T i a s a l l a d o d e l a p u e r t a
+shd247|El NIÑO TIENE una CARA MUY DULCE|e l n i J o t i e n e u n a k a r a m u i d u l T e
+shd248|Es MEJOR que te PONGAS la CARGA en el OTRO HOMBRO|e s m e x o r k e t e p o n g a s l a k a r g a e n e l o t r o o m b r o
+shd249|El SUELO FORMA BACHES a lo LARGO de la RUTA|e l s u e l o f o r m a b a tS e s a l o l a r g o d e l a rr u t a
+shd250|HAY CUADROS en ESTA PARED de la CASA|a i k u a d r o s e n e s t a p a r e d d e l a k a s a
+shd251|MANDÓ HIGOS DUROS y GUARDÓ las FRESAS|m a n d o i g o s d u r o s i g u a r d o l a s f r e s a s
+shd252|QUITA ESE DARDO del CORCHO NEGRO|k i t a e s e d a r d o d e l k o r tS o n e g r o
+shd253|Las HOJAS se PONEN de COLOR MARRÓN y se CAEN|l a s o x a s s e p o n e n d e k o l o r m a rr o n i s e k a e n
+shd254|ESTE CARTEL es MÁS FÁCIL de VER|e s t e k a r t e l e s m a s f a T i l d e b e r
+shd255|MOJA el PAÑO para que QUITE el FUERTE OLOR|m o x a e l p a J o p a r a k e k i t e e l f u e r t e o l o r
+shd256|HAY que PONER TRAMPAS para CAZAR OSOS|a i k e p o n e r t r a m p a s p a r a k a T a r o s o s
+shd257|Se USA una CLAVE para HABLAR con una RADIO VIEJA|s e u s a u n a k l a b e p a r a a b l a r k o n u n a rr a d i o b i e x a
+shd258|El VIEJO PLATO NO TIENE BRILLO|e l b i e x o p l a t o n o t i e n e b r i L o
+shd259|CORTAN el AGUA TRES VECES al DÍA|k o r t a n e l a g u a t r e s b e T e s a l d i a
+shd260|La PUNTA de la PLUMA de BRONCE es MUY FINA|l a p u n t a d e l a p l u m a d e b r o n T e e s m u i f i n a
+shd261|QUÉ FELIZ es el NIÑO cuando JUEGA en el PARQUE|k e f e l i T e s e l n i J o k u a n d o x u e g a e n e l p a r k e
+shd262|Se USA CAÑA para la PESCA del SALMÓN de RÍO|s e u s a k a J a p a r a l a p e s k a d e l s a l m o n d e rr i o
+shd263|SÓLO TIENE que IZAR la VELA y ZARPAR|s o l o t i e n e k e i T a r l a b e l a i T a r p a r
+shd264|ESTAS CHICAS VENDEN BOLSOS FALSOS|e s t a s tS i k a s b e n d e n b o l s o s f a l s o s
+shd265|MOVIÓ la GRAN PIEDRA DETRÁS de la VALLA|m o b i o l a g r a n p i e d r a d e t r a s d e l a b a L a
+shd266|TOMÓ su CARGO en MARZO y lo DEJÓ AYER|t o m o s u k a r g o e n m a r T o i l o d e x o a jj e r
+shd267|Se PUEDE MANDAR TODO JUNTO HOY|s e p u e d e m a n d a r t o d o x u n t o o i
+shd268|Al HOMBRE le GUSTA la CARNE BIEN HECHA|a l o m b r e l e g u s t a l a k a r n e b i e n e tS a
+shd269|El BROTE en el TALLO de la PLANTA CRECIÓ LENTO|e l b r o t e e n e l t a L o d e l a p l a n t a k r e T i o l e n t o
+shd270|CUBRIÓ la MESA con una GRAN TELA ROSA|k u b r i o l a m e s a k o n u n a g r a n t e l a rr o s a
+shd271|El HOMBRE VINO con una CAPA NEGRA y LARGA|e l o m b r e b i n o k o n u n a k a p a n e g r a i l a r g a
+shd272|El PLATO de ARROZ y POLLO es GRATIS los LUNES|e l p l a t o d e a rr o T i p o L o e s g r a t i s l o s l u n e s
+shd273|VAMOS a CANTAR TODOS JUNTOS una CANCIÓN|b a m o s a k a n t a r t o d o s x u n t o s u n a k a n T i o n
+shd274|El PRIMER JUEVES es el MEJOR DÍA del MES|e l p r i m e r x u e b e s e s e l m e x o r d i a d e l m e s
+shd275|La OBRA FUE MUY FLOJA hasta el FINAL|l a o b r a f u e m u i f l o x a a s t a e l f i n a l
+shd276|La BOLSA de LANA TIENE un OLOR a MOHO|l a b o l s a d e l a n a t i e n e u n o l o r a m o o
+shd277|Los PECES CAEN en las GRANDES REDES de los BARCOS|l o s p e T e s k a e n e n l a s g r a n d e s rr e d e s d e l o s b a r k o s
+shd278|El CARGO se COBRÓ el DÍA DIEZ del MES|e l k a r g o s e k o b r o e l d i a d i e T d e l m e s
+shd279|Una RUTA con TANTA CUESTA es MALA para los PIES|u n a rr u t a k o n t a n t a k u e s t a e s m a l a p a r a l o s p i e s
+shd280|ENTRÓ AIRE FRESCO por el BORDE de la PUERTA|e n t r o a i r e f r e s k o p o r e l b o r d e d e l a p u e r t a
+shd281|Los PERROS de PURA RAZA SON CAROS|l o s p e rr o s d e p u r a rr a T a s o n k a r o s
+shd282|HIZO su PRIMER CUENTO en ESTE HOTEL|i T o s u p r i m e r k u e n t o e n e s t e o t e l
+shd283|NADIE SABE NADA del ROBO de la PERLA|n a d i e s a b e n a d a d e l rr o b o d e l a p e r l a
+shd284|El POMO de la PUERTA era de un METAL MUY FRÁGIL|e l p o m o d e l a p u e r t a e r a d e u n m e t a l m u i f r a x i l
+shd285|TODOS los NIÑOS VAN a IR al CIRCO|t o d o s l o s n i J o s b a n a i r a l T i r k o
+shd286|El CHICO JOVEN SALTÓ la VERJA GRANDE|e l tS i k o x o b e n s a l t o l a b e r x a g r a n d e
+shd287|El PAJAR era POCO FIRME y TODO se CAYÓ|e l p a x a r e r a p o k o f i r m e i t o d o s e k a jj o
+shd288|CUELGUE las CINTAS de AMBAS RAMAS del ÁRBOL|k u e l g e l a s T i n t a s d e a m b a s rr a m a s d e l a r b o l
+shd289|Si TIRAS de la CUERDA, CAE TODO el GRANO|s i t i r a s d e l a k u e r d a k a e t o d o e l g r a n o
+shd290|La SILLA de ROBLE no TIENE BUENA BASE|l a s i L a d e rr o b l e n o t i e n e b u e n a b a s e
+shd291|Los RESTOS ROTOS MANCHAN el SUELO de PIEDRA|l o s rr e s t o s rr o t o s m a n tS a n e l s u e l o d e p i e d r a
+shd292|ESTAS LETRAS MUESTRAN que GANÓ el JUEGO|e s t a s l e t r a s m u e s t r a n k e g a n o e l x u e g o
+shd293|La OBRA me COSTÓ MUCHAS HORAS de SUDOR|l a o b r a m e k o s t o m u tS a s o r a s d e s u d o r
+shd294|La CHICA HIZO la MEJOR MARCA de la PRUEBA|l a tS i k a i T o l a m e x o r m a r k a d e l a p r u e b a
+shd295|La CHICA de PIEL BLANCA se TUMBÓ al SOL|l a tS i k a d e p i e l b l a n k a s e t u m b o a l s o l
+shd296|El HOMBRE PUDO NADAR hasta LLEGAR a la PLAYA|e l o m b r e p u d o n a d a r a s t a L e g a r a l a p l a jj a
+shd297|En el BARRIL HAY CUATRO TIPOS de VINO|e n e l b a rr i l a i k u a t r o t i p o s d e b i n o
+shd298|La GENTE TIENE FRÍO DENTRO del CINE|l a x e n t e t i e n e f r i o d e n t r o d e l T i n e
+shd299|El LODO ERA DENSO a lo LARGO de la CALLE|e l l o d o e r a d e n s o a l o l a r g o d e l a k a L e
+shd300|SABE de lo que la JOVEN y GENIAL ACTRIZ es CAPAZ|s a b e d e l o k e l a x o b e n i x e n i a l a k t r i T e s k a p a T
+shd301|El PERRO LADRÓ a los NIÑOS de CORTA EDAD|e l p e rr o l a d r o a l o s n i J o s d e k o r t a e d a d
+shd302|El JOVEN VIENE en el NUEVO COCHE de su TÍO|e l x o b e n b i e n e e n e l n u e b o k o tS e d e s u t i o
+shd303|SALTÓ la VALLA y ENTRÓ en el JARDÍN del PARQUE|s a l t o l a b a L a i e n t r o e n e l x a r d i n d e l p a r k e
+shd304|MOJA el PASTEL SECO en la TAZA de CAFÉ|m o x a e l p a s t e l s e k o e n l a t a T a d e k a f e
+shd305|ABRA el LIBRO de INGLÉS en la LECCIÓN DOS|a b r a e l l i b r o d e i n g l e s e n l a l e k T i o n d o s
+shd306|CIERTAS FRUTAS MANCHAN las MANOS de VERDE|T i e r t a s f r u t a s m a n tS a n l a s m a n o s d e b e r d e
+shd307|El HOMBRE LLEVA una PLUMA en su GORRO de CUERO|e l o m b r e L e b a u n a p l u m a e n s u g o rr o d e k u e r o
+shd308|TRATE de PONER OTRO EURO en la HUCHA|t r a t e d e p o n e r o t r o e u r o e n l a u tS a
+shd309|LIMPIÓ la FUNDA del SOFÁ con AGUA FRÍA|l i m p i o l a f u n d a d e l s o f a k o n a g u a f r i a
+shd310|Un KILO de MIEL CUESTA MÁS que los HUEVOS|u n k i l o d e m i e l k u e s t a m a s k e l o s g u e b o s
+shd311|ALLÍ, la MARCA del AGUA es de DOS METROS|a L i l a m a r k a d e l a g u a e s d e d o s m e t r o s
+shd312|PONGA la CARTA DETRÁS de las DOS HOJAS|p o n g a l a k a r t a d e t r a s d e l a s d o s o x a s
+shd313|La MUJER MIRA al RELOJ de PARED sin PARAR|l a m u x e r m i r a a l rr e l o x d e p a r e d s i n p a r a r
+shd314|El PLAZO VENCIÓ el PRIMER DÍA de MAYO|e l p l a T o b e n T i o e l p r i m e r d i a d e m a jj o
+shd315|El ZUMO de UVA y el AGUA se MEZCLAN BIEN|e l T u m o d e u b a i e l a g u a s e m e T k l a n b i e n
+shd316|El CHICO JOVEN es el AUTOR del LIBRO NUEVO|e l tS i k o x o b e n e s e l a u t o r d e l l i b r o n u e b o
+shd317|El CHICO se HIZO una CRESTA y la TIÑÓ de ROJO|e l tS i k o s e i T o u n a k r e s t a i l a t i J o d e rr o x o
+shd318|Los NIÑOS CUENTAN a VECES CUENTOS FALSOS|l o s n i J o s k u e n t a n a b e T e s k u e n t o s f a l s o s
+shd319|El BEBÉ se METE el PIE DENTRO de la BOCA|e l b e b e s e m e t e e l p i e d e n t r o d e l a b o k a
+shd320|ESTA FRASE es la SEÑAL para que el ACTOR SALGA|e s t a f r a s e e s l a s e J a l p a r a k e e l a k t o r s a l g a
+shd321|La CHICA era BUENA con TODA la GENTE de la TIENDA|l a tS i k a e r a b u e n a k o n t o d a l a x e n t e d e l a t i e n d a
+shd322|Una RISA FALSA se OYÓ en el SALÓN de ACTOS|u n a rr i s a f a l s a s e o jj o e n e l s a l o n d e a k t o s
+shd323|La YEGUA LLEGÓ en PRIMER LUGAR a la META|l a jj e g u a L e g o e n p r i m e r l u g a r a l a m e t a
+shd324|COMPRÓ unas BOTAS por CINCO EUROS MENOS|k o m p r o u n a s b o t a s p o r T i n k o e u r o s m e n o s
+shd325|La NIÑA HABLA FRANCÉS MUY BIEN|l a n i J a a b l a f r a n T e s m u i b i e n
+shd326|El VIEJO RELOJ de la PARED MARCA las ONCE|e l b i e x o rr e l o x d e l a p a r e d m a r k a l a s o n T e
+shd327|El HÁBIL RATÓN SALTA sobre el GATO que DUERME|e l a b i l rr a t o n s a l t a s o b r e e l g a t o k e d u e r m e
+shd328|La LUZ del PORCHE se FUNDIÓ AYER NOCHE|l a l u T d e l p o r tS e s e f u n d i o a jj e r n o tS e
+shd329|El AIRE FRÍO PASA a TRAVÉS de la CAPA|e l a i r e f r i o p a s a a t r a b e s d e l a k a p a
+shd330|Lo MEJOR es COSER AMBOS BORDES RECTOS|l o m e x o r e s k o s e r a m b o s b o r d e s rr e k t o s
+shd331|El JEFE es un HOMBRE SECO y POCO JOVIAL|e l x e f e e s u n o m b r e s e k o i p o k o x o b i a l
+shd332|El CHICO SACÓ la PUNTA al LÁPIZ GRIS|e l tS i k o s a k o l a p u n t a a l l a p i T g r i s
+shd333|COGIÓ DOS DADOS para un PRIMER TIRO|k o x i o d o s d a d o s p a r a u n p r i m e r t i r o
+shd334|FRUNCE el CEÑO porque ESTÁ de MAL HUMOR|f r u n T e e l T e J o p o r k e e s t a d e m a l u m o r
+shd335|La LABOR del SASTRE se VE en CADA PRENDA|l a l a b o r d e l s a s t r e s e b e e n k a d a p r e n d a
+shd336|GRAN PARTE del CUENTO TIENE HUMOR|g r a n p a r t e d e l k u e n t o t i e n e u m o r
+shd337|ENTRÉ en la TIENDA pero NO VI a NADIE|e n t r e e n l a t i e n d a p e r o n o b i a n a d i e
+shd338|El JABÓN QUITA MUCHA MÁS GRASA|e l x a b o n k i t a m u tS a m a s g r a s a
+shd339|La NUEVA ROPA no TIENE CUELLOS ALTOS|l a n u e b a rr o p a n o t i e n e k u e L o s a l t o s
+shd340|HAY SÓLO un ÁRBOL de RAMAS LARGAS|a i s o l o u n a r b o l d e rr a m a s l a r g a s
+shd341|AQUEL RAYO CAYÓ sobre el COCHE de su PADRE|a k e l rr a jj o k a jj o s o b r e e l k o tS e d e s u p a d r e
+shd342|SECÓ las GOTAS de AGUA con HOJAS de PAPEL|s e k o l a s g o t a s d e a g u a k o n o x a s d e p a p e l
+shd343|Le PIDIÓ al AMA de LLAVES un MANTEL LIMPIO|l e p i d i o a l a m a d e L a b e s u n m a n t e l l i m p i o
+shd344|La JOVEN MADRE HIZO una CANCIÓN para su NIÑO|l a x o b e n m a d r e i T o u n a k a n T i o n p a r a s u n i J o
+shd345|Para TENER FAMA HAY que TENER SUERTE|p a r a t e n e r f a m a a i k e t e n e r s u e r t e
+shd346|La CERA VIRGEN CUIDA los MUEBLES de ROBLE|l a T e r a b i r x e n k u i d a l o s m u e b l e s d e rr o b l e
+shd347|TODO el VAPOR SALIÓ por la TAPA ROTA|t o d o e l b a p o r s a l i o p o r l a t a p a rr o t a
+shd348|Las HOJAS del ÁRBOL ERAN FRESCAS y CLARAS|l a s o x a s d e l a r b o l e r a n f r e s k a s i k l a r a s
+shd349|Los ZUMOS de FRUTAS son MUY BUENOS para los BEBÉS|l o s T u m o s d e f r u t a s s o n m u i b u e n o s p a r a l o s b e b e s
+shd350|PONGA OTRO TRONCO GRANDE en el FUEGO|p o n g a o t r o t r o n k o g r a n d e e n e l f u e g o
+shd351|COGE una CARTA y PONLA DETRÁS de las DEMÁS|k o x e u n a k a r t a i p o n l a d e t r a s d e l a s d e m a s
+shd352|BUSCA al LADRÓN que ROBÓ el COLLAR de PERLAS|b u s k a a l l a d r o n k e rr o b o e l k o L a r d e p e r l a s
+shd353|Un RAYO de SOL CEGÓ al GATO NEGRO|u n rr a jj o d e s o l T e g o a l g a t o n e g r o
+shd354|Se OYE la MISMA CANCIÓN en CADA SITIO|s e o jj e l a m i s m a k a n T i o n e n k a d a s i t i o
+shd355|Se le CIERRAN los OJOS porque TIENE MUCHO SUEÑO|s e l e T i e rr a n l o s o x o s p o r k e t i e n e m u tS o s u e J o
+shd356|TRATE de TRAZAR FINAS MARCAS de COLOR|t r a t e d e t r a T a r f i n a s m a r k a s d e k o l o r
+shd357|CAE la NIEVE por TODOS los PUEBLOS del NORTE|k a e l a n i e b e p o r t o d o s l o s p u e b l o s d e l n o r t e
+shd358|FUMA una PIPA GRANDE HECHA a MANO|f u m a u n a p i p a g r a n d e e tS a a m a n o
+shd359|El MARTES que VIENE HAY que VOTAR de NUEVO|e l m a r t e s k e b i e n e a i k e b o t a r d e n u e b o
+shd360|DURA el FUERTE OLOR de la VIEJA SIDRA|d u r a e l f u e r t e o l o r d e l a b i e x a s i d r a
+shd361|El TUBO LLENA CASI TODA la ZANJA|e l t u b o L e n a k a s i t o d a l a T a n x a
+shd362|El HILO UNIÓ los DOS BORDES con FUERZA|e l i l o u n i o l o s d o s b o r d e s k o n f u e r T a
+shd363|La PLANTA BAJA ERA una SALA GRANDE|l a p l a n t a b a x a e r a u n a s a l a g r a n d e
+shd364|TODOS los CARDOS se DOBLAN con el FUERTE VIENTO|t o d o s l o s k a r d o s s e d o b l a n k o n e l f u e r t e b i e n t o
+shd365|GANA SIEMPRE para TENER MÁS PREMIOS|g a n a s i e m p r e p a r a t e n e r m a s p r e m i o s
+shd366|El CIERVO se PILLÓ una PATA en una VIEJA TRAMPA|e l T i e r b o s e p i L o u n a p a t a e n u n a b i e x a t r a m p a
+shd367|META la TELA DETRÁS del BORDE del COLCHÓN|m e t a l a t e l a d e t r a s d e l b o r d e d e l k o l tS o n
+shd368|MUCHAS ALGAS CRECEN CERCA de las ROCAS|m u tS a s a l g a s k r e T e n T e r k a d e l a s rr o k a s
+shd369|Un MUEBLE ANCHO CUBRIÓ el HUECO en la SALA|u n m u e b l e a n tS o k u b r i o e l g u e k o e n l a s a l a
+shd370|El JUEGO es un POCO RARO y SIMPLE para los NIÑOS|e l x u e g o e s u n p o k o rr a r o i s i m p l e p a r a l o s n i J o s
+shd371|El PREMIO FINAL se GANA con MUCHO VALOR|e l p r e m i o f i n a l s e g a n a k o n m u tS o b a l o r
+shd372|Los VIENTOS del NORTE TRAEN las GRIPES y FIEBRES|l o s b i e n t o s d e l n o r t e t r a e n l a s g r i p e s i f i e b r e s
+shd373|La HIERBA y las HOJAS se MOJAN con la DÉBIL LLUVIA|l a jj e r b a i l a s o x a s s e m o x a n k o n l a d e b i l L u b i a
+shd374|Se QUEDÓ DENTRO de CASA sin SALIR para NADA|s e k e d o d e n t r o d e k a s a s i n s a l i r p a r a n a d a
+shd375|Los NIÑOS SUELEN TENER MUCHO MIEDO|l o s n i J o s s u e l e n t e n e r m u tS o m i e d o
+shd376|QUITA el FOCO que me HACE DAÑO en los OJOS|k i t a e l f o k o k e m e a T e d a J o e n l o s o x o s
+shd377|AUNQUE su ROPA es CARA, es MUY FEA|a u n k e s u rr o p a e s k a r a e s m u i f e a
+shd378|El PERRO GUIÓ al HOMBRE CIEGO en la CALLE|e l p e rr o g i o a l o m b r e T i e g o e n l a k a L e
+shd379|UNA GRÚA es como un AVE con PATAS LARGAS|u n a g r u a e s k o m o u n a b e k o n p a t a s l a r g a s
+shd380|SUMÓ el PRECIO al TOTAL de las TRES COSAS|s u m o e l p r e T i o a l t o t a l d e l a s t r e s k o s a s
+shd381|HOY en DÍA el POLLO es un PLATO COMÚN|o i e n d i a e l p o L o e s u n p l a t o k o m u n
+shd382|LEE el VERSO en VOZ ALTA y con GRACIA|l e e e l b e r s o e n b o T a l t a i k o n g r a T i a
+shd383|PUSO el VASO DENTRO del HORNO en MARCHA|p u s o e l b a s o d e n t r o d e l o r n o e n m a r tS a
+shd384|El TREN TRAJO al JOVEN a la GRAN CIUDAD|e l t r e n t r a x o a l x o b e n a l a g r a n T i u d a d
+shd385|La VIEJA CASA de TRES PISOS es de PIEDRA|l a b i e x a k a s a d e t r e s p i s o s e s d e p i e d r a
+shd386|Cuando LLEGA el TIEMPO FRÍO se COME PAVO|k u a n d o L e g a e l t i e m p o f r i o s e k o m e p a b o
+shd387|HAY NUEVE CHICAS de PIE en FILA|a i n u e b e tS i k a s d e p i e e n f i l a
+shd388|El OLOR de las ROSAS GUSTA MUCHO a la GENTE|e l o l o r d e l a s rr o s a s g u s t a m u tS o a l a x e n t e
+shd389|CUALQUIER COSA PUEDE CREAR ANSIA|k u a l k i e r k o s a p u e d e k r e a r a n s i a
+shd390|Las NUBES se MUEVEN de FORMA LENTA y RARA|l a s n u b e s s e m u e b e n d e f o r m a l e n t a i rr a r a
+shd391|DEJE su VASO DENTRO de la BOLSA NEGRA|d e x e s u b a s o d e n t r o d e l a b o l s a n e g r a
+shd392|HAY una CONCHA de COLOR ROSA en la PLAYA|a i u n a k o n tS a d e k o l o r rr o s a e n l a p l a jj a
+shd393|PINTA las PUERTAS de ROJO y la PARED GRIS|p i n t a l a s p u e r t a s d e rr o x o i l a p a r e d g r i s
+shd394|Un REY MANDÓ en la NACIÓN VEINTE AÑOS|u n rr e i m a n d o e n l a n a T i o n b e i n t e a J o s
+shd395|La MUJER TIENE MEJOR VISTA que TACTO|l a m u x e r t i e n e m e x o r b i s t a k e t a k t o
+shd396|Una FORMA de ser RICO es NO GASTAR MUCHO|u n a f o r m a d e s e r rr i k o e s n o g a s t a r m u tS o
+shd397|SUMAR de PRISA CAUSÓ un ERROR en la CUENTA|s u m a r d e p r i s a k a u s o u n e rr o r e n l a k u e n t a
+shd398|OYÓ un COCHE LLEGAR a la PUERTA de CASA|o jj o u n k o tS e L e g a r a l a p u e r t a d e k a s a
+shd399|Los TACOS se HUNDEN FÁCIL en el CÉSPED BLANDO|l o s t a k o s s e u n d e n f a T i l e n e l T e s p e d b l a n d o
+shd400|Un BUEN LIBRO DICE lo que HAY que SABER|u n b u e n l i b r o d i T e l o k e a i k e s a b e r
+shd401|Los HOMBRES VAN MÁS ALLÁ del VALLE|l o s o m b r e s b a n m a s a L a d e l b a L e
+shd402|COMPRÓ una FUNDA de SOFÁ de COLOR AZUL|k o m p r o u n a f u n d a d e s o f a d e k o l o r a T u l
+shd403|Se PASÓ CASI TODA la TARDE en la TIENDA|s e p a s o k a s i t o d a l a t a r d e e n l a t i e n d a
+shd404|HAGA el FAVOR de COGER ESE MÓVIL|a g a e l f a b o r d e k o x e r e s e m o b i l
+shd405|El VINO TINTO se HACE con UVA NEGRA|e l b i n o t i n t o s e a T e k o n u b a n e g r a
+shd406|El TRONCO GRUESO CAYÓ DESPUÉS del CORTE|e l t r o n k o g r u e s o k a jj o d e s p u e s d e l k o r t e
+shd407|PONGA la SILLA VIEJA en ESE RINCÓN|p o n g a l a s i L a b i e x a e n e s e rr i n k o n
+shd408|DEJA de SILBAR y MIRA el JUEGO de los CHICOS|d e x a d e s i l b a r i m i r a e l x u e g o d e l o s tS i k o s
+shd409|El TÉ de JAZMÍN TIENE un SABOR DULCE|e l t e d e x a T m i n t i e n e u n s a b o r d u l T e
+shd410|PLANTA un ROSAL CERCA de la PUERTA del PORCHE|p l a n t a u n rr o s a l T e r k a d e l a p u e r t a d e l p o r tS e
+shd411|ABRA la CAJA pero NO ROMPA el CRISTAL|a b r a l a k a x a p e r o n o rr o m p a e l k r i s t a l
+shd412|Las FRASES DULCES LOGRAN MÁS que las DURAS|l a s f r a s e s d u l T e s l o g r a n m a s k e l a s d u r a s
+shd413|El CUADRO TIENE una RAYA NEGRA en MEDIO|e l k u a d r o t i e n e u n a rr a jj a n e g r a e n m e d i o
+shd414|Sin DUDA, el VIENTO SOPLA HOY del NORTE|s i n d u d a e l b i e n t o s o p l a o i d e l n o r t e
+shd415|La RAYA donde los BORDES se UNEN ESTÁ LIMPIA|l a rr a jj a d o n d e l o s b o r d e s s e u n e n e s t a l i m p i a
+shd416|CORTÓ el TRONCO con un GOLPE SECO y FUERTE|k o r t o e l t r o n k o k o n u n g o l p e s e k o i f u e r t e
+shd417|Le DIO como PRUEBA una VIEJA FOTO de su TÍA|l e d i o k o m o p r u e b a u n a b i e x a f o t o d e s u t i a
+shd418|Un MAL PASO en el BAÑO es un GRAN RIESGO|u n m a l p a s o e n e l b a J o e s u n g r a n rr i e s g o
+shd419|El BROCHE de PLATA TIENE DIEZ AÑOS|e l b r o tS e d e p l a t a t i e n e d i e T a J o s
+shd420|Las LUCES del COCHE BRILLAN en el MURO de la CASA|l a s l u T e s d e l k o tS e b r i L a n e n e l m u r o d e l a k a s a
+shd421|Es MEJOR PENSAR un POCO ANTES de HABLAR|e s m e x o r p e n s a r u n p o k o a n t e s d e a b l a r
+shd422|SIENTE el CALOR de ESA DÉBIL LLAMA|s i e n t e e l k a l o r d e e s a d e b i l L a m a
+shd423|El PASTOR DABA PIENSO a sus CERDOS para la CRÍA|e l p a s t o r d a b a p i e n s o a s u s T e r d o s p a r a l a k r i a
+shd424|COGE la SIERRA por el MANGO para HACER FUERZA|k o x e l a s i e rr a p o r e l m a n g o p a r a a T e r f u e r T a
+shd425|El CHICO le DIO CINCO EUROS a un POBRE|e l tS i k o l e d i o T i n k o e u r o s a u n p o b r e
+shd426|Las MOSCAS ZUMBAN con el SOL y el CALOR de JUNIO|l a s m o s k a s T u m b a n k o n e l s o l i e l k a l o r d e x u n i o
+shd427|DALE la MANO a ESTE NIÑO RUBIO|d a l e l a m a n o a e s t e n i J o rr u b i o
+shd428|El GRUPO de GENTE se SUMÓ a la FUERTE LUCHA|e l g r u p o d e x e n t e s e s u m o a l a f u e r t e l u tS a
+shd429|VIERTA el GUISO de la OLLA al PLATO GRANDE|b i e r t a e l g i s o d e l a o L a a l p l a t o g r a n d e
+shd430|SALTA la VALLA y VETE HACIA el BANCO|s a l t a l a b a L a i b e t e a T i a e l b a n k o
+shd431|La SILLA del NIÑO CAYÓ del COCHE en MARCHA|l a s i L a d e l n i J o k a jj o d e l k o tS e e n m a r tS a
+shd432|DETRÁS de la TAPIA BAJA se VE el LAGO|d e t r a s d e l a t a p i a b a x a s e b e e l l a g o
+shd433|Las NUBES ALTAS FLOTAN con la SUAVE BRISA|l a s n u b e s a l t a s f l o t a n k o n l a s u a b e b r i s a
+shd434|El TÉ de la JARRA MARRÓN ESTÁ RICO|e l t e d e l a x a rr a m a rr o n e s t a rr i k o
+shd435|Una GRIETA en la PARED PUEDE CAUSAR un FUEGO|u n a g r i e t a e n l a p a r e d p u e d e k a u s a r u n f u e g o
+shd436|HAY CINCO HUEVOS en el NIDO del ÁRBOL|a i T i n k o g u e b o s e n e l n i d o d e l a r b o l
+shd437|Las FUNDAS de PIEL ESTÁN MUY de MODA|l a s f u n d a s d e p i e l e s t a n m u i d e m o d a
+shd438|Un JARRÓN de ORO es a la VEZ RARO y CARO|u n x a rr o n d e o r o e s a l a b e T rr a r o i k a r o
+shd439|Los PECES COGEN la LOMBRIZ MUY PRONTO|l o s p e T e s k o x e n l a l o m b r i T m u i p r o n t o
+shd440|El MUSGO VERDE CRECE en el LADO NORTE|e l m u s g o b e r d e k r e T e e n e l l a d o n o r t e
+shd441|PON BIEN el NUEVO FOCO en el TECHO|p o n b i e n e l n u e b o f o k o e n e l t e tS o
+shd442|Al HACER la COMPRA, NO te DEJES la SAL|a l a T e r l a k o m p r a n o t e d e x e s l a s a l
+shd443|Un LÁPIZ con MINA BLANDA es MUCHO MEJOR|u n l a p i T k o n m i n a b l a n d a e s m u tS o m e x o r
+shd444|En ESA FINCA se SEMBRÓ MAÍZ y TRIGO|e n e s a f i n k a s e s e m b r o m a i T i t r i g o
+shd445|El CAMIÓN TUVO que PARAR por la FUERTE LLUVIA|e l k a m i o n t u b o k e p a r a r p o r l a f u e r t e L u b i a
+shd446|ECHA SAL ANTES de FREÍR el HUEVO|e tS a s a l a n t e s d e f r e i r e l g u e b o
+shd447|El COLOR de la PARED de la SALA ERA TRISTE|e l k o l o r d e l a p a r e d d e l a s a l a e r a t r i s t e
+shd448|Las HOJAS del PINO no se CAEN en TODO el AÑO|l a s o x a s d e l p i n o n o s e k a e n e n t o d o e l a J o
+shd449|El CARRO IBA BIEN sobre TRES RUEDAS|e l k a rr o i b a b i e n s o b r e t r e s rr u e d a s
+shd450|El HIELO CAUSÓ ALGÚN DESLIZ que OTRO|e l jj e l o k a u s o a l g u n d e s l i T k e o t r o
+shd451|El PINO y el HAYA son lo MEJOR para HACER MUEBLES|e l p i n o i e l a jj a s o n l o m e x o r p a r a a T e r m u e b l e s
+shd452|Se TUMBÓ al SOL en la HIERBA del PARQUE GRANDE|s e t u m b o a l s o l e n l a jj e r b a d e l p a r k e g r a n d e
+shd453|En el BARCO HAY MAPAS en la CAJA FUERTE|e n e l b a r k o a i m a p a s e n l a k a x a f u e r t e
+shd454|La CUERDA UNIÓ los SIETE LIBROS en UNO|l a k u e r d a u n i o l o s s i e t e l i b r o s e n u n o
+shd455|DALE un TROZO de PAN al RATÓN para COMER|d a l e u n t r o T o d e p a n a l rr a t o n p a r a k o m e r
+shd456|El CIELO en el ESTE se TIÑE de ROJO y NEGRO|e l T i e l o e n e l e s t e s e t i J e d e rr o x o i n e g r o
+shd457|Una PIZCA de SAL DA SABOR al GUISO|u n a p i T k a d e s a l d a s a b o r a l g i s o
+shd458|La RUEDA GIRÓ MUY LENTA en la NIEVE|l a rr u e d a x i r o m u i l e n t a e n l a n i e b e
+shd459|La CASA ESTÁ LLENA de BARRO y POLVO|l a k a s a e s t a L e n a d e b a rr o i p o l b o
+shd460|Las HORAS GRATAS PASAN MUY PRONTO|l a s o r a s g r a t a s p a s a n m u i p r o n t o
+shd461|CORTA la CUERDA que ATA los FARDOS de PAJA|k o r t a l a k u e r d a k e a t a l o s f a r d o s d e p a x a
+shd462|La CARNE FRÍA es APTA para ESTE MENÚ|l a k a r n e f r i a e s a p t a p a r a e s t e m e n u
+shd463|La SALA BLANCA ESTÁ LLENA de GENTE|l a s a l a b l a n k a e s t a L e n a d e x e n t e
+shd464|La DUNA se MOVIÓ hasta el MISMO BORDE del AGUA|l a d u n a s e m o b i o a s t a e l m i s m o b o r d e d e l a g u a
+shd465|LIMPIÓ el POZO con un TRAPO y un PALO LARGO|l i m p i o e l p o T o k o n u n t r a p o i u n p a l o l a r g o
+shd466|VIVIÓ CINCO AÑOS con AQUEL PERRO|b i b i o T i n k o a J o s k o n a k e l p e rr o
+shd467|El ARROZ se SUELE SERVIR en PLATOS HONDOS|e l a rr o T s e s u e l e s e r b i r e n p l a t o s o n d o s
+shd468|CORTAN TODA la CARNE en TIRAS FINAS|k o r t a n t o d a l a k a r n e e n t i r a s f i n a s
+shd469|DEBES SERVIR un RON VIEJO a los HOMBRES|d e b e s s e r b i r u n rr o n b i e x o a l o s o m b r e s
+shd470|El JERSEY NUEVO CUELGA de la PERCHA MARRÓN|e l x e r s e i n u e b o k u e l g a d e l a p e r tS a m a rr o n
+shd471|HAY que TENER MUCHO CALOR para SUDAR|a i k e t e n e r m u tS o k a l o r p a r a s u d a r
+shd472|El TIEMPO CAMBIA MUCHO ESTE MES|e l t i e m p o k a m b i a m u tS o e s t e m e s
+shd473|NO hay DUDA de por DÓNDE SOPLA el VIENTO|n o a i d u d a d e p o r d o n d e s o p l a e l b i e n t o
+shd474|IZA la VELA y LLEVA el BARCO al NORTE|i T a l a b e l a i L e b a e l b a r k o a l n o r t e
+shd475|HAY un TRONCO que FLOTA en el RÍO ANCHO|a i u n t r o n k o k e f l o t a e n e l rr i o a n tS o
+shd476|Si PIENSAS al HABLAR DIRÁS las COSAS CLARAS|s i p i e n s a s a l a b l a r d i r a s l a s k o s a s k l a r a s
+shd477|Una BERZA SIEMPRE CRECE MEJOR en la HUERTA|u n a b e r T a s i e m p r e k r e T e m e x o r e n l a g u e r t a
+shd478|El PELO LARGO se PONE LISO con la LLUVIA|e l p e l o l a r g o s e p o n e l i s o k o n l a L u b i a
+shd479|La DEUDA se PAGÓ en el CUARTO MES del AÑO|l a d e u d a s e p a g o e n e l k u a r t o m e s d e l a J o
+shd480|A los FANS del ACTOR les GUSTA el CINE NEGRO|a l o s f a n s d e l a k t o r l e s g u s t a e l T i n e n e g r o
+shd481|El JABÓN FLOTA en el AGUA FRÍA de la DUCHA|e l x a b o n f l o t a e n e l a g u a f r i a d e l a d u tS a
+shd482|Las COSAS MÁS SIMPLES le HACEN FELIZ|l a s k o s a s m a s s i m p l e s l e a T e n f e l i T
+shd483|El GLOBO VOLÓ MUY LEJOS con el VIENTO|e l g l o b o b o l o m u i l e x o s k o n e l b i e n t o
+shd484|El MAGO TIENE un RATÓN DENTRO de la CAJA|e l m a g o t i e n e u n rr a t o n d e n t r o d e l a k a x a
+shd485|La BRISA LLEGÓ hasta el OTRO LADO de la COSTA|l a b r i s a L e g o a s t a e l o t r o l a d o d e l a k o s t a
+shd486|DEBE ser BUENO CREAR un CUENTO de HADAS|d e b e s e r b u e n o k r e a r u n k u e n t o d e a d a s
+shd487|La CARNE de BUEY es MÁS CARA que la de CERDO|l a k a r n e d e b u e i e s m a s k a r a k e l a d e T e r d o
+shd488|El GRUPO se RINDIÓ ANTES del PRIMER TIEMPO|e l g r u p o s e rr i n d i o a n t e s d e l p r i m e r t i e m p o
+shd489|PISE el FRENO SIEMPRE que VAYA a PARAR|p i s e e l f r e n o s i e m p r e k e b a jj a a p a r a r
+shd490|TRAE un COMPÁS BUENO para la QUINTA CLASE|t r a e u n k o m p a s b u e n o p a r a l a k i n t a k l a s e
+shd491|Hasta el MÁS LENTO de TODOS LLEGÓ a la META|a s t a e l m a s l e n t o d e t o d o s L e g o a l a m e t a
+shd492|PULIR una JOYA LLEVA MUCHAS HORAS|p u l i r u n a x o jj a L e b a m u tS a s o r a s
+shd493|De una FORMA u OTRA QUIERE SALIR de CASA|d e u n a f o r m a u o t r a k i e r e s a l i r d e k a s a
+shd494|El OLOR a POLVO SUCIO me PICA la NARIZ|e l o l o r a p o l b o s u T i o m e p i k a l a n a r i T
+shd495|GUARDA TODO el CARBÓN en un SITIO SECO|g u a r d a t o d o e l k a r b o n e n u n s i t i o s e k o
+shd496|La MANCHA del SUELO se HIZO con BETÚN NEGRO|l a m a n tS a d e l s u e l o s e i T o k o n b e t u n n e g r o
+shd497|Los CABLES DEBEN ESTAR DENTRO de la TIERRA|l o s k a b l e s d e b e n e s t a r d e n t r o d e l a t i e rr a
+shd498|La NUEVA RAMPA LLEGA a la CALLE MAYOR|l a n u e b a rr a m p a L e g a a l a k a L e m a jj o r
+shd499|ANDAR con BOTAS por la NIEVE CANSA los PIES|a n d a r k o n b o t a s p o r l a n i e b e k a n s a l o s p i e s
+shd500|El PRECIO es JUSTO para un BUEN RELOJ de PARED|e l p r e T i o e s x u s t o p a r a u n b u e n rr e l o x d e p a r e d
+shd501|USÓ el TORNO para HACER PLANCHAS de BRONCE|u s o e l t o r n o p a r a a T e r p l a n tS a s d e b r o n T e
+shd502|El BARCO se FUE a PIQUE en el RÍO de la CIUDAD|e l b a r k o s e f u e a p i k e e n e l rr i o d e l a T i u d a d
+shd503|La NIEVE TIÑÓ el CÉSPED VERDE de BLANCO|l a n i e b e t i J o e l T e s p e d b e r d e d e b l a n k o
+shd504|OTRA TAZA BLANCA CAYÓ al SUELO|o t r a t a T a b l a n k a k a jj o a l s u e l o
+shd505|La LLAVE ENTRA BIEN en la PUERTA GRANDE|l a L a b e e n t r a b i e n e n l a p u e r t a g r a n d e
+shd506|Se ROMPIÓ un CORDÓN de la BOTA ESE DÍA|s e rr o m p i o u n k o r d o n d e l a b o t a e s e d i a
+shd507|LEE SÓLO lo que MARCA el COMPÁS de las NOTAS|l e e s o l o l o k e m a r k a e l k o m p a s d e l a s n o t a s
+shd508|La MUJER ESTÁ MUY TRISTE HOY|l a m u x e r e s t a m u i t r i s t e o i
+shd509|HAY una GRAN MANCHA de AGUA en el SUELO|a i u n a g r a n m a n tS a d e a g u a e n e l s u e l o
+shd510|MOVIÓ la SILLA un POCO para ABRIR la MESA|m o b i o l a s i L a u n p o k o p a r a a b r i r l a m e s a
+shd511|La CAJA de CARTÓN ESTÁ LLENA de CLAVOS|l a k a x a d e k a r t o n e s t a L e n a d e k l a b o s
+shd512|Un BOLSO GRIS IRÁ BIEN con el TRAJE|u n b o l s o g r i s i r a b i e n k o n e l t r a x e
+shd513|El GATO SIGUIÓ al PERRO por TODA la CALLE|e l g a t o s i g i o a l p e rr o p o r t o d a l a k a L e
+shd514|CUMPLIÓ las LEYES del PAÍS sin MUCHAS GANAS|k u m p l i o l a s l e jj e s d e l p a i s s i n m u tS a s g a n a s
+shd515|La CHICA NUEVA VINO AYER a la TARDE|l a tS i k a n u e b a b i n o a jj e r a l a t a r d e
+shd516|El LICOR se PUEDE HACER con MORAS o FRESAS|e l l i k o r s e p u e d e a T e r k o n m o r a s o f r e s a s
+shd517|El PURO DEJÓ una MANCHA NEGRA en la MESA|e l p u r o d e x o u n a m a n tS a n e g r a e n l a m e s a
+shd518|El LADRÓN que ROBÓ al NIÑO FUE a la CÁRCEL|e l l a d r o n k e rr o b o a l n i J o f u e a l a k a r T e l
+shd519|La TIENDA se CERRÓ ANTES de las OCHO de la TARDE|l a t i e n d a s e T e rr o a n t e s d e l a s o tS o d e l a t a r d e
+shd520|El MÓVIL SONÓ PRONTO y MUY ALTO|e l m o b i l s o n o p r o n t o i m u i a l t o
+shd521|El CHICO NO PUDO SALVAR a NADIE|e l tS i k o n o p u d o s a l b a r a n a d i e
+shd522|Las CALLES del BARRIO son LARGAS y LLENAS de CHARCOS|l a s k a L e s d e l b a rr i o s o n l a r g a s i L e n a s d e tS a r k o s
+shd523|SALIÓ FUERA a VER su GRAN JARDÍN|s a l i o f u e r a a b e r s u g r a n x a r d i n
+shd524|El HOMBRE PROBÓ el MELÓN y le GUSTÓ MUCHO|e l o m b r e p r o b o e l m e l o n i l e g u s t o m u tS o
+shd525|La CHICA PONE una CANCIÓN MIENTRAS HABLAN|l a tS i k a p o n e u n a k a n T i o n m i e n t r a s a b l a n
+shd526|Un HOMBRE con TRAJE AZUL se SENTÓ a la MESA|u n o m b r e k o n t r a x e a T u l s e s e n t o a l a m e s a
+shd527|El JARRÓN QUEDA BIEN CERCA de la PUERTA|e l x a rr o n k e d a b i e n T e r k a d e l a p u e r t a
+shd528|El SUELO LIMPIO PUEDE CAUSAR GOLPES|e l s u e l o l i m p i o p u e d e k a u s a r g o l p e s
+shd529|TOMA un HUEVO y un TÉ TODOS los DÍAS|t o m a u n g u e b o i u n t e t o d o s l o s d i a s
+shd530|El HOMBRE PIDIÓ una TARTA de FRESAS con el CAFÉ|e l o m b r e p i d i o u n a t a r t a d e f r e s a s k o n e l k a f e
+shd531|PERDIÓ el JUEGO y PEGÓ en el SUELO con la BOTA|p e r d i o e l x u e g o i p e g o e n e l s u e l o k o n l a b o t a
+shd532|BAJÓ la CUESTA del MONTE con MIEDO al HIELO|b a x o l a k u e s t a d e l m o n t e k o n m i e d o a l jj e l o
+shd533|La HIERBA CRECIÓ por DETRÁS de NUESTRA VERJA|l a jj e r b a k r e T i o p o r d e t r a s d e n u e s t r a b e r x a
+shd534|COMPRAR una CASA no es FÁCIL en ESTOS TIEMPOS|k o m p r a r u n a k a s a n o e s f a T i l e n e s t o s t i e m p o s
+shd535|El DESVÁN de la CASA ROJA ESTÁ en LLAMAS|e l d e s b a n d e l a k a s a rr o x a e s t a e n L a m a s
+shd536|La OTRA PARTE del PLAN DEBE CAMBIAR|l a o t r a p a r t e d e l p l a n d e b e k a m b i a r
+shd537|TIENE MUCHO VALOR LLEGAR a la FINAL|t i e n e m u tS o b a l o r L e g a r a l a f i n a l
+shd538|El MONTÓN de HOJAS SECAS se PRENDIÓ FUEGO|e l m o n t o n d e o x a s s e k a s s e p r e n d i o f u e g o
+shd539|La LUZ de la LUNA GUÍA al PASTOR al CORRAL|l a l u T d e l a l u n a g i a a l p a s t o r a l k o rr a l
+shd540|La OLLA HIRVIÓ pero la CARNE NO se HIZO|l a o L a i r b i o p e r o l a k a r n e n o s e i T o
+shd541|Los PLANES BUENOS PUEDEN FALLAR sin SUERTE|l o s p l a n e s b u e n o s p u e d e n f a L a r s i n s u e r t e
+shd542|HUBO GRITOS y RISAS cuando se ABRIÓ el TELÓN|u b o g r i t o s i rr i s a s k u a n d o s e a b r i o e l t e l o n
+shd543|La YEGUA TROTÓ por el CAMPO a BUEN RITMO|l a jj e g u a t r o t o p o r e l k a m p o a b u e n rr i d m o
+shd544|Con un SORBO de TÉ se SIENTE MUCHO MEJOR|k o n u n s o r b o d e t e s e s i e n t e m u tS o m e x o r
+shd545|HAY una MANCHA de TINTA SECA en la HOJA|a i u n a m a n tS a d e t i n t a s e k a e n l a o x a
+shd546|COGE las HOJAS y las QUEMAS TODAS en el FUEGO|k o x e l a s o x a s i l a s k e m a s t o d a s e n e l f u e g o
+shd547|La BARCA PARÓ de PRONTO en MEDIO del LAGO|l a b a r k a p a r o d e p r o n t o e n m e d i o d e l l a g o
+shd548|Con un POCO de MIEL se HACE DULCE de LECHE|k o n u n p o k o d e m i e l s e a T e d u l T e d e l e tS e
+shd549|MIRA a las CABRAS MIENTRAS el PERRO LADRA|m i r a a l a s k a b r a s m i e n t r a s e l p e rr o l a d r a
+shd550|TIRA el SEDAL HACIA el BABOR del BARCO|t i r a e l s e d a l a T i a e l b a b o r d e l b a r k o
+shd551|ERA una FIESTA para SACAR FONDOS para los NIÑOS|e r a u n a f i e s t a p a r a s a k a r f o n d o s p a r a l o s n i J o s
+shd552|El AGUA de LLUVIA HIZO COLMAR el VASO|e l a g u a d e L u b i a i T o k o l m a r e l b a s o
+shd553|El JUEZ MANDÓ CALLAR a TODA la GENTE|e l x u e T m a n d o k a L a r a t o d a l a x e n t e
+shd554|TIRÓ de la CUERDA y SONÓ un TIMBRE DÉBIL|t i r o d e l a k u e r d a i s o n o u n t i m b r e d e b i l
+shd555|DIO un PASO MÁS y el PUENTE se CAYÓ|d i o u n p a s o m a s i e l p u e n t e s e k a jj o
+shd556|Un BUEN JABÓN DEJA la PIEL SUAVE|u n b u e n x a b o n d e x a l a p i e l s u a b e
+shd557|USA el LÁPIZ para HACER el PRIMER CUENTO|u s a e l l a p i T p a r a a T e r e l p r i m e r k u e n t o
+shd558|Un BOLSO de PIEL MARRÓN CUELGA de la PERCHA|u n b o l s o d e p i e l m a rr o n k u e l g a d e l a p e r tS a
+shd559|Tu NIÑO es MÁS ALTO que AQUEL OTRO|t u n i J o e s m a s a l t o k e a k e l o t r o
+shd560|El TERCER ACTO de ESTA OBRA fue LARGO|e l t e r T e r a k t o d e e s t a o b r a f u e l a r g o
+shd561|HAY que ZANJAR TODO el TEMA de la VENTA|a i k e T a n x a r t o d o e l t e m a d e l a b e n t a
+shd562|MIRA el GOLPE de BALÓN que TIENE su HIJO|m i r a e l g o l p e d e b a l o n k e t i e n e s u i x o
+shd563|DESPUÉS del BAILE, la CHICA se FUE SOLA|d e s p u e s d e l b a i l e l a tS i k a s e f u e s o l a
+shd564|Un TINTO es un VINO FUERTE con SABOR a FRUTA|u n t i n t o e s u n b i n o f u e r t e k o n s a b o r a f r u t a
+shd565|Los MUEBLES HACEN la SALA MÁS GRANDE|l o s m u e b l e s a T e n l a s a l a m a s g r a n d e
+shd566|La FLOR de la ROSA DURA POCOS DÍAS|l a f l o r d e l a rr o s a d u r a p o k o s d i a s
+shd567|En la CALLE se OYÓ el RUIDO de las HOJAS SECAS|e n l a k a L e s e o jj o e l rr u i d o d e l a s o x a s s e k a s
+shd568|VIO un GATO NEGRO en la CASA de su PRIMO|b i o u n g a t o n e g r o e n l a k a s a d e s u p r i m o
+shd569|La PUERTA CRUJIÓ cuando ENTRÓ el HOMBRE GORDO|l a p u e r t a k r u x i o k u a n d o e n t r o e l o m b r e g o r d o
+shd570|Con el PINO se HACE una BUENA CLASE de PAPEL|k o n e l p i n o s e a T e u n a b u e n a k l a s e d e p a p e l
+shd571|Las PIEDRAS FALSAS BRILLAN y CUESTAN POCO|l a s p i e d r a s f a l s a s b r i L a n i k u e s t a n p o k o
+shd572|Si VUELA de NOCHE, PIERDE MENOS TIEMPO|s i b u e l a d e n o tS e p i e r d e m e n o s t i e m p o
+shd573|CORTA la TELA de ORO en CINTAS FINAS|k o r t a l a t e l a d e o r o e n T i n t a s f i n a s
+shd574|La RAZÓN y la ACCIÓN NO SON lo MISMO|l a rr a T o n i l a a k T i o n n o s o n l o m i s m o
+shd575|MUEVE su BOLSO MIENTRAS ANDA por la CALLE|m u e b e s u b o l s o m i e n t r a s a n d a p o r l a k a L e
+shd576|PEGÓ en la CARA al OTRO HOMBRE con un GUANTE|p e g o e n l a k a r a a l o t r o o m b r e k o n u n g u a n t e
+shd577|El LADRÓN DEJÓ VARIAS PRUEBAS del ROBO|e l l a d r o n d e x o b a r i a s p r u e b a s d e l rr o b o
+shd578|SALE MUCHA AGUA por el TUBO de la CALLE|s a l e m u tS a a g u a p o r e l t u b o d e l a k a L e
+shd579|GIRA el GRIFO y DEJA CORRER el AGUA|x i r a e l g r i f o i d e x a k o rr e r e l a g u a
+shd580|Una TORRE de PIEDRAS se PUEDE TIRAR FÁCIL|u n a t o rr e d e p i e d r a s s e p u e d e t i r a r f a T i l
+shd581|MARCA el SOLAR con un CARTEL con LETRAS en ROJO|m a r k a e l s o l a r k o n u n k a r t e l k o n l e t r a s e n rr o x o
+shd582|El POTRO SALTÓ MUY BIEN la VALLA|e l p o t r o s a l t o m u i b i e n l a b a L a
+shd583|El CICLO de la VIDA TIENE VARIAS FASES|e l T i k l o d e l a b i d a t i e n e b a r i a s f a s e s
+shd584|El HUMO SALE de TODAS las GRIETAS de la CASA|e l u m o s a l e d e t o d a s l a s g r i e t a s d e l a k a s a
+shd585|La PLANTA CRECIÓ MUCHO DETRÁS del JARDÍN|l a p l a n t a k r e T i o m u tS o d e t r a s d e l x a r d i n
+shd586|QUEMÓ la ROPA de LANA con una CHISPA de FUEGO|k e m o l a rr o p a d e l a n a k o n u n a tS i s p a d e f u e g o
+shd587|El HOMBRE COJO ANDA por MEDIO de la VÍA|e l o m b r e k o x o a n d a p o r m e d i o d e l a b i a
+shd588|SIEMPRE nos GUSTA TENER BUEN TIEMPO|s i e m p r e n o s g u s t a t e n e r b u e n t i e m p o
+shd589|El GRAN FOCO de NEÓN ROJO se CAYÓ|e l g r a n f o k o d e n e o n rr o x o s e k a jj o
+shd590|El GRAN SABLE se HIZO con BRONCE PURO|e l g r a n s a b l e s e i T o k o n b r o n T e p u r o
+shd591|El PASTEL de FRUTAS del BOSQUE es MUY RICO|e l p a s t e l d e f r u t a s d e l b o s k e e s m u i rr i k o
+shd592|Se DEJÓ una FALDA de SEDA BLANCA en el HOTEL|s e d e x o u n a f a l d a d e s e d a b l a n k a e n e l o t e l
+shd593|Los NIÑOS TOMAN SOPA de POLLO por la NOCHE|l o s n i J o s t o m a n s o p a d e p o L o p o r l a n o tS e
+shd594|El VIEJO BURRO TIRÓ del FRÁGIL CARRO|e l b i e x o b u rr o t i r o d e l f r a x i l k a rr o
+shd595|El BARCO NEGRO se HUNDIÓ en MEDIO del MAR|e l b a r k o n e g r o s e u n d i o e n m e d i o d e l m a r
+shd596|En las ISLAS, la BRISA del MAR es SUAVE y FRESCA|e n l a s i s l a s l a b r i s a d e l m a r e s s u a b e i f r e s k a
+shd597|VETE YA y PODRÁS LLEGAR a TIEMPO|b e t e jj a i p o d r a s L e g a r a t i e m p o
+shd598|Una TAZA de LECHE es AGUA en su MAYOR PARTE|u n a t a T a d e l e tS e e s a g u a e n s u m a jj o r p a r t e
+shd599|El HOMBRE CIEGO CUENTA CUENTOS a los NIÑOS|e l o m b r e T i e g o k u e n t a k u e n t o s a l o s n i J o s
+shd600|PINTA el CUADRO con TRAZOS GRANDES y NEGROS|p i n t a e l k u a d r o k o n t r a T o s g r a n d e s i n e g r o s
+shd601|MIRA lo que HACE la MUJER en ESA TIENDA|m i r a l o k e a T e l a m u x e r e n e s a t i e n d a
+shd602|NO es FÁCIL VER el FONDO del POZO|n o e s f a T i l b e r e l f o n d o d e l p o T o
+shd603|El TUBO NUEVO se ROMPIÓ en TRES PARTES|e l t u b o n u e b o s e rr o m p i o e n t r e s p a r t e s
+shd604|LIMPIA las BOTAS ANTES de ENTRAR en CASA|l i m p i a l a s b o t a s a n t e s d e e n t r a r e n k a s a
+shd605|Se TALLÓ una LARGA LISTA de NOMBRES en la BASE|s e t a L o u n a l a r g a l i s t a d e n o m b r e s e n l a b a s e
+shd606|El NIÑO SACÓ la LENGUA al OTRO como BURLA|e l n i J o s a k o l a l e n g u a a l o t r o k o m o b u r l a
+shd607|Le GUSTA DECIR COSAS FEAS de la GENTE|l e g u s t a d e T i r k o s a s f e a s d e l a x e n t e
+shd608|En el CUENTO, la CHICA BESA una RANA VERDE|e n e l k u e n t o l a tS i k a b e s a u n a rr a n a b e r d e
+shd609|La MEJOR FORMA de UNIR las HOJAS es con GRAPAS|l a m e x o r f o r m a d e u n i r l a s o x a s e s k o n g r a p a s
+shd610|DILO POCO a POCO, que QUEDE CLARO|d i l o p o k o a p o k o k e k e d e k l a r o
+shd611|El SEÑOR MAYOR se CAYÓ en el JARDÍN de su CASA|e l s e J o r m a jj o r s e k a jj o e n e l x a r d i n d e s u k a s a
+shd612|La BLUSA BLANCA ESTÁ SUCIA de BARRO|l a b l u s a b l a n k a e s t a s u T i a d e b a rr o
+shd613|GANÓ POCO en su VIDA, pero FUE FELIZ|g a n o p o k o e n s u b i d a p e r o f u e f e l i T
+shd614|Cuantas MÁS COSAS QUIERE, MENOS LOGRA|k u a n t a s m a s k o s a s k i e r e m e n o s l o g r a
+shd615|La VACA JOVEN se QUEDÓ en el PRADO por la NOCHE|l a b a k a x o b e n s e k e d o e n e l p r a d o p o r l a n o tS e
+shd616|La YEGUA se MARCHÓ MUCHO ANTES que el POTRO|l a jj e g u a s e m a r tS o m u tS o a n t e s k e e l p o t r o
+shd617|A la TARDE, el CIELO ERA de COLOR AZUL|a l a t a r d e e l T i e l o e r a d e k o l o r a T u l
+shd618|Los DOS NIÑOS TIENEN la MISMA TALLA|l o s d o s n i J o s t i e n e n l a m i s m a t a L a
+shd619|La PUNTA del ÁRBOL se DOBLÓ con el VIENTO FUERTE|l a p u n t a d e l a r b o l s e d o b l o k o n e l b i e n t o f u e r t e
+shd620|PUEDE REÍR a PESAR de que ESTÁ TRISTE|p u e d e rr e i r a p e s a r d e k e e s t a t r i s t e
+shd621|El BOTE GRANDE CAYÓ de la BALDA ALTA|e l b o t e g r a n d e k a jj o d e l a b a l d a a l t a
+shd622|COGE el HILO y COSE el BOTÓN del JERSEY|k o x e e l i l o i k o s e e l b o t o n d e l x e r s e i
+shd623|NO ROMPAS la NUEZ con los DIENTES o las MUELAS|n o rr o m p a s l a n u e T k o n l o s d i e n t e s o l a s m u e l a s
+shd624|Un BOLLO ENTRA MUY BIEN con CAFÉ|u n b o L o e n t r a m u i b i e n k o n k a f e
+shd625|El PINTOR CREE que el CUADRO es de POCO VALOR|e l p i n t o r k r e e k e e l k u a d r o e s d e p o k o b a l o r
+shd626|El LAUREL se USA en MUCHOS GUISOS y SOPAS|e l l a u r e l s e u s a e n m u tS o s g i s o s i s o p a s
+shd627|La OBRA se PUSO en MARCHA con una CANCIÓN LARGA|l a o b r a s e p u s o e n m a r tS a k o n u n a k a n T i o n l a r g a
+shd628|MIRA DETRÁS de la TIENDA para VER la TIERRA|m i r a d e t r a s d e l a t i e n d a p a r a b e r l a t i e rr a
+shd629|Las CASAS VIEJAS son de PIEDRA MUY GRUESA|l a s k a s a s b i e x a s s o n d e p i e d r a m u i g r u e s a
+shd630|Cuando HACE FRÍO se PONE un GORRO de LANA|k u a n d o a T e f r i o s e p o n e u n g o rr o d e l a n a
+shd631|El DOCTOR le PUDO BAJAR la FIEBRE al NIÑO|e l d o k t o r l e p u d o b a x a r l a f i e b r e a l n i J o
+shd632|ESTE NIÑO JUEGA con la BARRA LARGA|e s t e n i J o x u e g a k o n l a b a rr a l a r g a
+shd633|SEMBRÓ MAÍZ en ABRIL pero NO CRECIÓ|s e m b r o m a i T e n a b r i l p e r o n o k r e T i o
+shd634|La CARTA de mi HIJO TIENE MUCHO PESO|l a k a r t a d e m i i x o t i e n e m u tS o p e s o
+shd635|El NIÑO DEBE a su MADRE CUATRO EUROS|e l n i J o d e b e a s u m a d r e k u a t r o e u r o s
+shd636|Los PATOS VUELAN HACIA un PAÍS del NORTE|l o s p a t o s b u e l a n a T i a u n p a i s d e l n o r t e
+shd637|Las DOS CHICAS ESTÁN en el SALÓN de CASA|l a s d o s tS i k a s e s t a n e n e l s a l o n d e k a s a
+shd638|La GORRA ERA BLANCA y MUY GRANDE|l a g o rr a e r a b l a n k a i m u i g r a n d e
+shd639|El PELO de los GATOS TIENE MUCHOS NOMBRES|e l p e l o d e l o s g a t o s t i e n e m u tS o s n o m b r e s
+shd640|Se USÓ la PERLA para un FINO BROCHE de PLATA|s e u s o l a p e r l a p a r a u n f i n o b r o tS e d e p l a t a
+shd641|PRESTÓ su JERSEY a la MUJER FLACA y ALTA|p r e s t o s u x e r s e i a l a m u x e r f l a k a i a l t a
+shd642|CONTÓ un CUENTO de BRUJAS para DARLES MIEDO|k o n t o u n k u e n t o d e b r u x a s p a r a d a r l e s m i e d o
+shd643|El GATO MIRA al RATÓN con MUCHA ANSIA|e l g a t o m i r a a l rr a t o n k o n m u tS a a n s i a
+shd644|Con ESTE TALÓN PUEDE PAGAR su DEUDA|k o n e s t e t a l o n p u e d e p a g a r s u d e u d a
+shd645|El PULPO TIENE OCHO PATAS LARGAS|e l p u l p o t i e n e o tS o p a t a s l a r g a s
+shd646|El SEÑOR SORDO SINTIÓ el MÓVIL VIBRAR|e l s e J o r s o r d o s i n t i o e l m o b i l b i b r a r
+shd647|LLEVÓ las CINCO RESES a la FERIA en un CAMIÓN|L e b o l a s T i n k o rr e s e s a l a f e r i a e n u n k a m i o n
+shd648|LLAMÓ al PERRO por su NOMBRE MUCHAS VECES|L a m o a l p e rr o p o r s u n o m b r e m u tS a s b e T e s
+shd649|El TÉ NO se HACE con AGUA FRÍA|e l t e n o s e a T e k o n a g u a f r i a
+shd650|El TRONCO del ÁRBOL CAYÓ de GOLPE en la CALLE|e l t r o n k o d e l a r b o l k a jj o d e g o l p e e n l a k a L e
+shd651|LLEVA TUS DUDAS al JEFE de ÁREA|L e b a t u s d u d a s a l x e f e d e a r e a
+shd652|VAMOS a DONAR ALGO para la GENTE POBRE|b a m o s a d o n a r a l g o p a r a l a x e n t e p o b r e
+shd653|El NIÑO DUERME TODA la NOCHE con LUZ|e l n i J o d u e r m e t o d a l a n o tS e k o n l u T
+shd654|Las NUBES ALTAS FLOTAN en el CIELO AZUL|l a s n u b e s a l t a s f l o t a n e n e l T i e l o a T u l
+shd655|ENVIÓ al POBRE CHICO en una MISIÓN LARGA|e m b i o a l p o b r e tS i k o e n u n a m i s i o n l a r g a
+shd656|QUIERE GANAR un BUEN PREMIO en la FIESTA|k i e r e g a n a r u n b u e n p r e m i o e n l a f i e s t a
+shd657|Las BASES de las COPAS ALTAS ESTÁN ROTAS|l a s b a s e s d e l a s k o p a s a l t a s e s t a n rr o t a s
+shd658|El RAYO LANZÓ una CHISPA y ARDIÓ el MONTE|e l rr a jj o l a n T o u n a tS i s p a i a r d i o e l m o n t e
+shd659|Un BUQUE de GUERRA SIGUIÓ al BARCO hasta el PUERTO|u n b u k e d e g e rr a s i g i o a l b a r k o a s t a e l p u e r t o
+shd660|El CHICO COMPRÓ la JOYA CARA a su MUJER|e l tS i k o k o m p r o l a x o jj a k a r a a s u m u x e r
+shd661|FIJÓ sus METAS PRONTO y SIGUIÓ hasta el FINAL|f i x o s u s m e t a s p r o n t o i s i g i o a s t a e l f i n a l
+shd662|DALE al BARRO la FORMA de un VASO LARGO|d a l e a l b a rr o l a f o r m a d e u n b a s o l a r g o
+shd663|PONEN SIETE SELLOS en CADA HOJA|p o n e n s i e t e s e L o s e n k a d a o x a
+shd664|Un CORDÓN DURO ATA MEJOR las BOTAS|u n k o r d o n d u r o a t a m e x o r l a s b o t a s
+shd665|Es MUY CRUEL TENER que LUCHAR en la GUERRA|e s m u i k r u e l t e n e r k e l u tS a r e n l a g e rr a
+shd666|La MOSCA SUBIÓ a lo LARGO de la PARED BLANCA|l a m o s k a s u b i o a l o l a r g o d e l a p a r e d b l a n k a
+shd667|Un BONO CUESTA CINCO EUROS los LUNES|u n b o n o k u e s t a T i n k o e u r o s l o s l u n e s
+shd668|LLEVA QUINCE DÍAS en CAMA con FIEBRE|L e b a k i n T e d i a s e n k a m a k o n f i e b r e
+shd669|Su HIJO BATIÓ la MARCA de SALTO en PISTA|s u i x o b a t i o l a m a r k a d e s a l t o e n p i s t a
+shd670|CIERRA la PUERTA con LLAVE para que NO ENTREN|T i e rr a l a p u e r t a k o n L a b e p a r a k e n o e n t r e n
+shd671|El FIN del JUEGO es CREAR un GRAN FONDO|e l f i n d e l x u e g o e s k r e a r u n g r a n f o n d o
+shd672|El DUEÑO CEDIÓ la PISTA de HIELO al GRUPO|e l d u e J o T e d i o l a p i s t a d e jj e l o a l g r u p o
+shd673|ÉSTE es un BUEN MES para ANDAR por el MONTE|e s t e e s u n b u e n m e s p a r a a n d a r p o r e l m o n t e
+shd674|HABLAR con GRACIA SIRVE para GUSTAR a la GENTE|a b l a r k o n g r a T i a s i r b e p a r a g u s t a r a l a x e n t e
+shd675|El JOVEN HOMBRE COMIÓ un BUEN MENÚ|e l x o b e n o m b r e k o m i o u n b u e n m e n u
+shd676|La BALDA ESTÁ LLENA de PASTA y ARROZ|l a b a l d a e s t a L e n a d e p a s t a i a rr o T
+shd677|El CHICO LLEGÓ ALLÍ al SALIR el SOL|e l tS i k o L e g o a L i a l s a l i r e l s o l
+shd678|El MAPA TENÍA una X que SERVÍA de POCO|e l m a p a t e n i a u n a e k i s k e s e r b i a d e p o k o
+shd679|CORTA con el HACHA TODOS los OLMOS SECOS|k o r t a k o n e l a tS a t o d o s l o s o l m o s s e k o s
+shd680|CAVÓ en la TIERRA en BUSCA de ORO y PLATA|k a b o e n l a t i e rr a e n b u s k a d e o r o i p l a t a
+shd681|El RÍO PASA a TRAVÉS del CAMPO de TRIGO|e l rr i o p a s a a t r a b e s d e l k a m p o d e t r i g o
+shd682|Las NIÑAS HABLAN sobre la GRAN NORIA de la FERIA|l a s n i J a s a b l a n s o b r e l a g r a n n o r i a d e l a f e r i a
+shd683|La MESA de CAFÉ ESTÁ MUY ALTA|l a m e s a d e k a f e e s t a m u i a l t a
+shd684|La LEY se HIZO HACE TRES MESES|l a l e i s e i T o a T e t r e s m e s e s
+shd685|PUEDE LEER las FRASES en VOZ ALTA|p u e d e l e e r l a s f r a s e s e n b o T a l t a
+shd686|El JUEZ MANDÓ a PRISIÓN al LADRÓN de BANCOS|e l x u e T m a n d o a p r i s i o n a l l a d r o n d e b a n k o s
+shd687|La CUERDA que ATA al BURRO se ha ROTO del TIRÓN|l a k u e r d a k e a t a a l b u rr o s e a rr o t o d e l t i r o n
+shd688|Un POTRO JOVEN BEBE AGUA de un CUBO|u n p o t r o x o b e n b e b e a g u a d e u n k u b o
+shd689|El SALTO FINAL del CHICO fue PEOR que el OTRO|e l s a l t o f i n a l d e l tS i k o f u e p e o r k e e l o t r o
+shd690|La QUIEBRA del BANCO fue un DURO GOLPE para los DUEÑOS|l a k i e b r a d e l b a n k o f u e u n d u r o g o l p e p a r a l o s d u e J o s
+shd691|El NUEVO REY es el MÁS JOVEN del PAÍS|e l n u e b o rr e i e s e l m a s x o b e n d e l p a i s
+shd692|El PERRO GRANDE TIRÓ de la CUERDA con FUERZA|e l p e rr o g r a n d e t i r o d e l a k u e r d a k o n f u e r T a
+shd693|Las COLES CRECEN PRONTO en un CAMPO FÉRTIL|l a s k o l e s k r e T e n p r o n t o e n u n k a m p o f e r t i l
+shd694|El SABOR del QUESO de CABRA es MEJOR con los AÑOS|e l s a b o r d e l k e s o d e k a b r a e s m e x o r k o n l o s a J o s
+shd695|El PERRO de CAZA se METIÓ bajo el TOLDO de LONA|e l p e rr o d e k a T a s e m e t i o b a x o e l t o l d o d e l o n a
+shd696|ESTA PISTA LARGA fue HECHA para ANDAR|e s t a p i s t a l a r g a f u e e tS a p a r a a n d a r
+shd697|QUITA DIEZ HOJAS de ESE LIBRO|k i t a d i e T o x a s d e e s e l i b r o
+shd698|El TUBO se CAYÓ y PINCHÓ la LLANTA del COCHE|e l t u b o s e k a jj o i p i n tS o l a L a n t a d e l k o tS e
+shd699|El RUMOR SEMBRÓ la DUDA en los MIEMBROS de la JUNTA|e l rr u m o r s e m b r o l a d u d a e n l o s m i e m b r o s d e l a x u n t a
+shd700|ELLA BAILA SUAVE, IGUAL que un CISNE|e L a b a i l a s u a b e i g u a l k e u n T i s n e
