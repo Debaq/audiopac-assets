@@ -1,0 +1,80 @@
+{
+  "id": "palpa-es-v1",
+  "version": "1.0.0",
+  "name": "PALPA-E (Discriminación auditiva fonológica)",
+  "category": "logoaudiometry",
+  "description_md": "# PALPA-E — Subtest auditivo-fonológico\n\nAdaptación al español del **Psycholinguistic Assessment of Language Processing in Aphasia** (Kay, Lesser & Coltheart, 1992; adaptación ES de Valle & Cuetos). Pack texto-only con 40 palabras formando 20 pares mínimos consonánticos balanceados (oclusivas, fricativas, nasales, laterales, vibrantes en posición inicial, media o final).\n\n**Uso**: el evaluador presenta pares al paciente (ej. *pala / bala*) y registra si responde correctamente *igual* o *diferente*. Permite evaluar discriminación fonológica central — útil en sospecha de procesamiento auditivo o afasia receptiva.\n\nEl usuario debe grabar las 40 palabras en /estimulos antes de armar pares.",
+  "requirements": "recording",
+  "license": "CC-BY-SA",
+  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "references": [
+    { "citation": "Kay J, Lesser R, Coltheart M (1992). PALPA: Psycholinguistic Assessments of Language Processing in Aphasia. Lawrence Erlbaum.", "url": null },
+    { "citation": "Valle F, Cuetos F (1995). EPLA: Evaluación del Procesamiento Lingüístico en la Afasia. Lawrence Erlbaum.", "url": null }
+  ],
+  "tests": [],
+  "lists": [
+    {
+      "code": "PALPA_PARES_MIN_ES_A",
+      "name": "PALPA-E Pares mínimos A (40 palabras)",
+      "category": "discrimination",
+      "language": "es",
+      "country_code": "LATAM",
+      "description": "40 palabras → 20 pares mínimos consonánticos (oclusivas sordas/sonoras, fricativas, nasales, laterales, vibrantes). Contraste en posición inicial, media o final. Grabá una palabra por token; armá pares al evaluar.",
+      "items": [
+        { "pos": 1,  "token": "pala",  "keywords": null },
+        { "pos": 2,  "token": "bala",  "keywords": null },
+        { "pos": 3,  "token": "cala",  "keywords": null },
+        { "pos": 4,  "token": "gala",  "keywords": null },
+        { "pos": 5,  "token": "foca",  "keywords": null },
+        { "pos": 6,  "token": "boca",  "keywords": null },
+        { "pos": 7,  "token": "dama",  "keywords": null },
+        { "pos": 8,  "token": "cama",  "keywords": null },
+        { "pos": 9,  "token": "malo",  "keywords": null },
+        { "pos": 10, "token": "palo",  "keywords": null },
+        { "pos": 11, "token": "faro",  "keywords": null },
+        { "pos": 12, "token": "caro",  "keywords": null },
+        { "pos": 13, "token": "bota",  "keywords": null },
+        { "pos": 14, "token": "cota",  "keywords": null },
+        { "pos": 15, "token": "sopa",  "keywords": null },
+        { "pos": 16, "token": "copa",  "keywords": null },
+        { "pos": 17, "token": "mano",  "keywords": null },
+        { "pos": 18, "token": "sano",  "keywords": null },
+        { "pos": 19, "token": "vaso",  "keywords": null },
+        { "pos": 20, "token": "paso",  "keywords": null },
+        { "pos": 21, "token": "mar",   "keywords": null },
+        { "pos": 22, "token": "par",   "keywords": null },
+        { "pos": 23, "token": "ven",   "keywords": null },
+        { "pos": 24, "token": "ten",   "keywords": null },
+        { "pos": 25, "token": "nudo",  "keywords": null },
+        { "pos": 26, "token": "mudo",  "keywords": null },
+        { "pos": 27, "token": "lata",  "keywords": null },
+        { "pos": 28, "token": "rata",  "keywords": null },
+        { "pos": 29, "token": "mesa",  "keywords": null },
+        { "pos": 30, "token": "misa",  "keywords": null },
+        { "pos": 31, "token": "piso",  "keywords": null },
+        { "pos": 32, "token": "peso",  "keywords": null },
+        { "pos": 33, "token": "capa",  "keywords": null },
+        { "pos": 34, "token": "cepa",  "keywords": null },
+        { "pos": 35, "token": "saco",  "keywords": null },
+        { "pos": 36, "token": "seco",  "keywords": null },
+        { "pos": 37, "token": "tela",  "keywords": null },
+        { "pos": 38, "token": "tila",  "keywords": null },
+        { "pos": 39, "token": "rojo",  "keywords": null },
+        { "pos": 40, "token": "cojo",  "keywords": null }
+      ]
+    }
+  ],
+  "interpretation": {
+    "metric": "accuracy_pct",
+    "norms_by_age": [
+      { "age_min": 11, "age_max": 90, "normal_min": 90, "mild_min": 75, "severe_max": 60 }
+    ],
+    "description_md": "**Aciertos esperados en adulto sano: ≥90%** (rendimiento techo). 75–89% sugiere dificultad fonológica leve; <75% indica compromiso significativo de procesamiento auditivo central o receptivo. Los errores tienden a concentrarse en contrastes sordo/sonoro (pala/bala) y punto de articulación cercano (foca/boca)."
+  },
+  "metadata": {
+    "recommended": false,
+    "target_population": "adolescents_adults",
+    "requires_recording": true,
+    "estimated_duration_min": 10
+  }
+}

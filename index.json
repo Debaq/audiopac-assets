@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-04-18T00:00:01Z",
+  "updated_at": "2026-04-18T00:00:02Z",
   "catalogs": [
     {
       "id": "sharvard-es",
@@ -180,6 +180,28 @@
       "url": "packs/hint-es-v1.json",
       "sha256": "7876ae63aab3963eab026ffaa7054634542819cd0b6d2eddd4fc71b527f1d255",
       "bytes": 2707
+    },
+    {
+      "id": "sinb-es-v1",
+      "version": "1.0.0",
+      "name": "SinB-ES (Speech in Babble - SRT en SSN)",
+      "category": "hint",
+      "requirements": "recording",
+      "license": "CC-BY-SA",
+      "url": "packs/sinb-es-v1.json",
+      "sha256": "f03ab1ea45b39d9157526dfb2e73e95dbc087b15bf8c93c0524f7ab8476edbb8",
+      "bytes": 3757
+    },
+    {
+      "id": "palpa-es-v1",
+      "version": "1.0.0",
+      "name": "PALPA-E (Discriminacion auditiva fonologica)",
+      "category": "logoaudiometry",
+      "requirements": "recording",
+      "license": "CC-BY-SA",
+      "url": "packs/palpa-es-v1.json",
+      "sha256": "dfa2c003730e66688a8411ae986fc8484898d1b4fae84108e6ce960d59455ba1",
+      "bytes": 4878
     },
     {
       "id": "sharvard-es-v1",
