@@ -1,6 +1,6 @@
 {
   "id": "pac-patterns-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Pruebas de Patrones Tonales (FPT / DPT / PPS / Memoria)",
   "category": "pac.patterns",
   "description_md": "# Patrones Tonales\n\nBatería de pruebas de procesamiento auditivo central (PAC) que evalúa la capacidad de reconocer patrones temporales y de frecuencia, así como la memoria auditiva secuencial. Incluye el Frequency Pattern Test (FPT/PPS) de Pinheiro, Duration Pattern Test (DPT/DPS) de Musiek, versiones extendidas de 5 tonos y tareas de memoria secuencial de 5 a 7 tonos.\n\nPoblación objetivo: niños desde 7 años y adultos. Rendimiento <70% en adultos sugiere compromiso temporal / de reconocimiento de patrones.",
@@ -71,6 +71,7 @@
     ],
     "description_md": "Rendimiento <70% en adultos sugiere compromiso temporal / de reconocimiento de patrones (vías corticales y cuerpo calloso). Evaluar por oído — asimetrías >15% son sugerentes de lesión hemisférica contralateral."
   },
+  "report_template_md": "## Conclusión clínica — {{test_name}}\n\n**Paciente:** {{patient_name}} ({{patient_age}} años) · **Fecha:** {{date}} · **Evaluador/a:** {{examiner}}\n\n**Resultado:** {{correct}}/{{total}} aciertos ({{accuracy_pct}}%) — {{verdict}}\n\n**RT medio:** {{rt_mean_ms}} ms · **Banda normativa:** {{norm_band}} años\n\n### Interpretación\n\nRendimiento <70% en adultos sugiere compromiso del procesamiento temporal central (vías corticales, cuerpo calloso). Correlacionar con historia clínica, logoaudiometría y pruebas complementarias de PAC.\n\n### Recomendación\n\n- Si *normal*: descartar compromiso de patrones temporales.\n- Si *limítrofe/bajo*: derivar a evaluación PAC ampliada (DPT, GIN, dichotic).\n",
   "metadata": {
     "recommended": true,
     "target_population": "adults_children",
