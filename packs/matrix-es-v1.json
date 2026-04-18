@@ -6,10 +6,19 @@
   "description_md": "# Matrix-ES (Hochmuth 2012)\n\nTest de frases matriz español adaptativo en ruido tipo HINT, pero con respuesta cerrada **5-AFC por columna** (elige 1 palabra entre 10 por cada posición). 5 columnas × 10 palabras = 100 000 frases posibles, todas sintácticamente válidas.\n\nEstructura: **Nombre – Verbo – Número – Objeto – Adjetivo** (ej.: \"Juan compra dos coches rojos\"). La respuesta cerrada reduce efecto lingüístico/contextual y permite test-retest estable.\n\n## Requerimientos\n\nRequiere grabar **50 palabras** (10 por columna) en la lista `MATRIX_ES_A` desde `/estimulos`. Cada estímulo trae `metadata.column` (0-4) que indica a qué columna pertenece. El runner concatena 1 palabra aleatoria de cada columna por trial con 80 ms de gap.\n\n**Atención**: los audios Hochmuth originales (HörTech) son propiedad privada. Este pack publica solo la **estructura** de matriz; la grabación corre por cuenta del usuario con su propio hablante nativo.\n\n## Procedimiento\n\n- Voz + ruido rosa simultáneos, SNR adaptativo por bracketing (step_down 4 dB tras pasar, step_up 2 dB tras fallar)\n- Paso si ≥3/5 palabras correctas por trial (60%)\n- 4 frases por nivel de SNR antes de decidir paso\n- Bracketing clásico: SRT = SNR más bajo con pasada que tiene un fallo por debajo\n\n## Interpretación\n\nSRT-SNR normal en adultos jóvenes en ruido rosa continuo: **~-6 a -9 dB** (valores Hochmuth 2012). Umbrales positivos o cercanos a 0 dB sugieren pérdida coclear o déficit de procesamiento. La respuesta cerrada lo hace más sensible a micro-déficits periférico-cognitivos que HINT de frases abiertas.",
   "requirements": "recording",
   "license": "CC-BY-SA",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "Hochmuth S, Brand T, Zokoll MA, Castro FJ, Wardenga N, Kollmeier B (2012). A Spanish matrix sentence test for assessing speech reception thresholds in noise. Int J Audiol 51(7):536-544", "url": null },
-    { "citation": "Kollmeier B et al (2015). The multilingual matrix test: Principles, applications, and comparison across languages. Int J Audiol 54 Suppl 2:3-16", "url": null }
+    {
+      "citation": "Hochmuth S, Brand T, Zokoll MA, Castro FJ, Wardenga N, Kollmeier B (2012). A Spanish matrix sentence test for assessing speech reception thresholds in noise. Int J Audiol 51(7):536-544",
+      "url": null
+    },
+    {
+      "citation": "Kollmeier B et al (2015). The multilingual matrix test: Principles, applications, and comparison across languages. Int J Audiol 54 Suppl 2:3-16",
+      "url": null
+    }
   ],
   "tests": [
     {
@@ -18,9 +27,15 @@
       "test_type": "CUSTOM",
       "description": "SRT-SNR en ruido rosa con frases matriz cerradas 5-AFC. Grabá 50 palabras (10×5 columnas) en /estimulos lista MATRIX_ES_A.",
       "config_json": {
-        "tones": {}, "isi_ms": 0, "iri_ms": 0, "envelope_ms": 0, "pattern_length": 0,
-        "practice_sequences": [], "test_sequences": [],
-        "channel": "binaural", "level_db": 65,
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
         "matrix": {
           "stimulus_list_code": "MATRIX_ES_A",
           "columns": 5,
@@ -47,8 +62,16 @@
       "estimated_duration_min": 15,
       "min_age_years": 14,
       "references": [
-        { "citation": "Hochmuth S et al. A Spanish matrix sentence test for assessing speech reception thresholds in noise", "year": 2012, "doi": "10.3109/14992027.2012.670731" },
-        { "citation": "Kollmeier B et al. The multilingual matrix test: Principles, applications, and comparison across languages", "year": 2015, "doi": "10.3109/14992027.2015.1020971" }
+        {
+          "citation": "Hochmuth S et al. A Spanish matrix sentence test for assessing speech reception thresholds in noise",
+          "year": 2012,
+          "doi": "10.3109/14992027.2012.670731"
+        },
+        {
+          "citation": "Kollmeier B et al. The multilingual matrix test: Principles, applications, and comparison across languages",
+          "year": 2015,
+          "doi": "10.3109/14992027.2015.1020971"
+        }
       ]
     }
   ],
@@ -61,69 +84,383 @@
       "country_code": "LATAM",
       "description": "50 palabras para Matrix-ES: 10 nombres + 10 verbos + 10 números + 10 objetos + 10 adjetivos. Grabá cada palabra por separado; metadata.column marca a qué columna pertenece (0=nombre, 1=verbo, 2=número, 3=objeto, 4=adjetivo).",
       "items": [
-        { "pos": 1,  "token": "Luis",     "metadata": { "column": 0 } },
-        { "pos": 2,  "token": "Ana",      "metadata": { "column": 0 } },
-        { "pos": 3,  "token": "Pedro",    "metadata": { "column": 0 } },
-        { "pos": 4,  "token": "María",    "metadata": { "column": 0 } },
-        { "pos": 5,  "token": "Juan",     "metadata": { "column": 0 } },
-        { "pos": 6,  "token": "Lola",     "metadata": { "column": 0 } },
-        { "pos": 7,  "token": "Sara",     "metadata": { "column": 0 } },
-        { "pos": 8,  "token": "Berta",    "metadata": { "column": 0 } },
-        { "pos": 9,  "token": "Diego",    "metadata": { "column": 0 } },
-        { "pos": 10, "token": "Nuria",    "metadata": { "column": 0 } },
-
-        { "pos": 11, "token": "compra",   "metadata": { "column": 1 } },
-        { "pos": 12, "token": "vende",    "metadata": { "column": 1 } },
-        { "pos": 13, "token": "trae",     "metadata": { "column": 1 } },
-        { "pos": 14, "token": "tiene",    "metadata": { "column": 1 } },
-        { "pos": 15, "token": "regala",   "metadata": { "column": 1 } },
-        { "pos": 16, "token": "ve",       "metadata": { "column": 1 } },
-        { "pos": 17, "token": "lleva",    "metadata": { "column": 1 } },
-        { "pos": 18, "token": "mira",     "metadata": { "column": 1 } },
-        { "pos": 19, "token": "debe",     "metadata": { "column": 1 } },
-        { "pos": 20, "token": "quiere",   "metadata": { "column": 1 } },
-
-        { "pos": 21, "token": "dos",      "metadata": { "column": 2 } },
-        { "pos": 22, "token": "tres",     "metadata": { "column": 2 } },
-        { "pos": 23, "token": "cuatro",   "metadata": { "column": 2 } },
-        { "pos": 24, "token": "cinco",    "metadata": { "column": 2 } },
-        { "pos": 25, "token": "seis",     "metadata": { "column": 2 } },
-        { "pos": 26, "token": "ocho",     "metadata": { "column": 2 } },
-        { "pos": 27, "token": "nueve",    "metadata": { "column": 2 } },
-        { "pos": 28, "token": "diez",     "metadata": { "column": 2 } },
-        { "pos": 29, "token": "doce",     "metadata": { "column": 2 } },
-        { "pos": 30, "token": "quince",   "metadata": { "column": 2 } },
-
-        { "pos": 31, "token": "coches",   "metadata": { "column": 3 } },
-        { "pos": 32, "token": "anillos",  "metadata": { "column": 3 } },
-        { "pos": 33, "token": "vasos",    "metadata": { "column": 3 } },
-        { "pos": 34, "token": "pelotas",  "metadata": { "column": 3 } },
-        { "pos": 35, "token": "cestos",   "metadata": { "column": 3 } },
-        { "pos": 36, "token": "gorros",   "metadata": { "column": 3 } },
-        { "pos": 37, "token": "cuadros",  "metadata": { "column": 3 } },
-        { "pos": 38, "token": "libros",   "metadata": { "column": 3 } },
-        { "pos": 39, "token": "platos",   "metadata": { "column": 3 } },
-        { "pos": 40, "token": "perros",   "metadata": { "column": 3 } },
-
-        { "pos": 41, "token": "rojos",    "metadata": { "column": 4 } },
-        { "pos": 42, "token": "verdes",   "metadata": { "column": 4 } },
-        { "pos": 43, "token": "nuevos",   "metadata": { "column": 4 } },
-        { "pos": 44, "token": "viejos",   "metadata": { "column": 4 } },
-        { "pos": 45, "token": "caros",    "metadata": { "column": 4 } },
-        { "pos": 46, "token": "pequeños", "metadata": { "column": 4 } },
-        { "pos": 47, "token": "grandes",  "metadata": { "column": 4 } },
-        { "pos": 48, "token": "blancos",  "metadata": { "column": 4 } },
-        { "pos": 49, "token": "mojados",  "metadata": { "column": 4 } },
-        { "pos": 50, "token": "amarillos","metadata": { "column": 4 } }
+        {
+          "pos": 1,
+          "token": "Luis",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 2,
+          "token": "Ana",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 3,
+          "token": "Pedro",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 4,
+          "token": "María",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 5,
+          "token": "Juan",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 6,
+          "token": "Lola",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 7,
+          "token": "Sara",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 8,
+          "token": "Berta",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 9,
+          "token": "Diego",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 10,
+          "token": "Nuria",
+          "metadata": {
+            "column": 0
+          }
+        },
+        {
+          "pos": 11,
+          "token": "compra",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 12,
+          "token": "vende",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 13,
+          "token": "trae",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 14,
+          "token": "tiene",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 15,
+          "token": "regala",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 16,
+          "token": "ve",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 17,
+          "token": "lleva",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 18,
+          "token": "mira",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 19,
+          "token": "debe",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 20,
+          "token": "quiere",
+          "metadata": {
+            "column": 1
+          }
+        },
+        {
+          "pos": 21,
+          "token": "dos",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 22,
+          "token": "tres",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 23,
+          "token": "cuatro",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 24,
+          "token": "cinco",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 25,
+          "token": "seis",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 26,
+          "token": "ocho",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 27,
+          "token": "nueve",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 28,
+          "token": "diez",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 29,
+          "token": "doce",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 30,
+          "token": "quince",
+          "metadata": {
+            "column": 2
+          }
+        },
+        {
+          "pos": 31,
+          "token": "coches",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 32,
+          "token": "anillos",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 33,
+          "token": "vasos",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 34,
+          "token": "pelotas",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 35,
+          "token": "cestos",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 36,
+          "token": "gorros",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 37,
+          "token": "cuadros",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 38,
+          "token": "libros",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 39,
+          "token": "platos",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 40,
+          "token": "perros",
+          "metadata": {
+            "column": 3
+          }
+        },
+        {
+          "pos": 41,
+          "token": "rojos",
+          "metadata": {
+            "column": 4
+          }
+        },
+        {
+          "pos": 42,
+          "token": "verdes",
+          "metadata": {
+            "column": 4
+          }
+        },
+        {
+          "pos": 43,
+          "token": "nuevos",
+          "metadata": {
+            "column": 4
+          }
+        },
+        {
+          "pos": 44,
+          "token": "viejos",
+          "metadata": {
+            "column": 4
+          }
+        },
+        {
+          "pos": 45,
+          "token": "caros",
+          "metadata": {
+            "column": 4
+          }
+        },
+        {
+          "pos": 46,
+          "token": "pequeños",
+          "metadata": {
+            "column": 4
+          }
+        },
+        {
+          "pos": 47,
+          "token": "grandes",
+          "metadata": {
+            "column": 4
+          }
+        },
+        {
+          "pos": 48,
+          "token": "blancos",
+          "metadata": {
+            "column": 4
+          }
+        },
+        {
+          "pos": 49,
+          "token": "mojados",
+          "metadata": {
+            "column": 4
+          }
+        },
+        {
+          "pos": 50,
+          "token": "amarillos",
+          "metadata": {
+            "column": 4
+          }
+        }
       ]
     }
   ],
   "interpretation": {
     "metric": "srt_db",
     "norms_by_age": [
-      { "age_min": 18, "age_max": 40, "normal_min": -7, "mild_min": -3, "severe_max": 3 },
-      { "age_min": 41, "age_max": 65, "normal_min": -5, "mild_min": 0, "severe_max": 5 },
-      { "age_min": 66, "age_max": 90, "normal_min": -2, "mild_min": 3, "severe_max": 8 }
+      {
+        "age_min": 18,
+        "age_max": 40,
+        "normal_min": -7,
+        "mild_min": -3,
+        "severe_max": 3
+      },
+      {
+        "age_min": 41,
+        "age_max": 65,
+        "normal_min": -5,
+        "mild_min": 0,
+        "severe_max": 5
+      },
+      {
+        "age_min": 66,
+        "age_max": 90,
+        "normal_min": -2,
+        "mild_min": 3,
+        "severe_max": 8
+      }
     ],
     "description_md": "**SRT-SNR en Matrix-ES con ruido rosa** (Hochmuth 2012):\n\n- Adultos normoyentes 18-40 a: **-7 a -9 dB**\n- Adultos 41-65 a: **-5 a -7 dB** (leve efecto envejecimiento)\n- >65 a: **-3 a -5 dB**\n\nUmbrales menos negativos o positivos reflejan dificultad para extraer habla del ruido. Matrix (cerrado, 5-AFC) es más estable test-retest (±1 dB) que HINT abierto pero algo menos sensible a disfunción cognitiva porque el pool cerrado reduce la carga lingüística."
   },
@@ -132,5 +469,8 @@
     "target_population": "adults",
     "requires_recording": true,
     "estimated_duration_min": 15
+  },
+  "families": {
+    "hint": "Frases en ruido"
   }
 }

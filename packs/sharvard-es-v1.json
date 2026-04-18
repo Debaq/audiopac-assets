@@ -6,10 +6,19 @@
   "description_md": "# Sharvard ES — HINT con corpus validado\n\nAdaptación al **español peninsular** del corpus **Harvard Sentences** (IEEE 1969) realizada por **Aubanel, García Lecumberri & Cooke (2014)** en la Universidad del País Vasco. Sharvard = \"Spanish Harvard\".\n\n**Características del corpus**:\n\n- **700 frases** organizadas en **70 listas de 10 frases** cada una.\n- **5 palabras clave por frase** (3500 keywords totales) — scoring psicométrico fino.\n- **Balance fonémico** validado: distribución de los 24 fonemas consonánticos y 5 vocálicos del español se acerca a la distribución de frecuencia de uso natural (correlación > 0.9 con Llisterri 1993).\n- **Grabaciones profesionales** en Zenodo (DOI 10.5281/zenodo.3547446): voces F (femenina) y M (masculina) con acento peninsular neutro.\n- **Licencia CC-BY** — uso libre académico y clínico.\n\n**Uso típico**: SRT-SNR adaptativo (HINT paradigm Nilsson 1994) con ruido rosa o SSN. Cada lista es equivalente fonémicamente → permite **test-retest** y **comparación pre/post intervención** sin aprendizaje artificial.\n\nEste pack incluye **solo la plantilla L01** como ejemplo. Para usar todas las 70 listas como tests independientes, instalar `hint-es-clinico-v1`. Para otro par voz/lista, clonar esta plantilla y cambiar `stimulus_list_code: SHARVARD_ES_L02..L70`.\n\n**Requiere**:\n\n1. Instalar catálogo de texto desde `/catalogos` (crea las 70 listas con frases + keywords).\n2. Descargar pack de audio (release `sharvard-audio-v1`, voz F o M) — los 700 WAV se procesan y guardan en `stimuli/`.\n\n**Advertencia dialectal**: Sharvard es peninsular (Castilla). Para población LatAm el vocabulario es comprensible pero el acento (distinción /s/ vs /θ/, /ll/ vs /y/) puede afectar la familiaridad. Para LatAm estricto, usar listas regionales.",
   "requirements": "audio_pack",
   "license": "CC-BY",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "Aubanel V, García Lecumberri ML, Cooke M (2014). The Sharvard Corpus: A phonemically-balanced Spanish sentence resource for audiology. Int J Audiol 53(9):633-641", "url": "https://zenodo.org/records/3547446" },
-    { "citation": "Nilsson M, Soli SD, Sullivan JA (1994). Development of the Hearing in Noise Test. J Acoust Soc Am 95:1085-1099", "url": null }
+    {
+      "citation": "Aubanel V, García Lecumberri ML, Cooke M (2014). The Sharvard Corpus: A phonemically-balanced Spanish sentence resource for audiology. Int J Audiol 53(9):633-641",
+      "url": "https://zenodo.org/records/3547446"
+    },
+    {
+      "citation": "Nilsson M, Soli SD, Sullivan JA (1994). Development of the Hearing in Noise Test. J Acoust Soc Am 95:1085-1099",
+      "url": null
+    }
   ],
   "tests": [
     {
@@ -17,7 +26,30 @@
       "name": "HINT-ES Sharvard Lista 1",
       "test_type": "CUSTOM",
       "description": "SRT-SNR adaptativo con Sharvard L01 (10 frases peninsular ES). Clona la plantilla para usar otra lista (L02-L70). Requiere instalar el catálogo Sharvard ES + pack de audio desde /catalogos.",
-      "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":65,"hint":{"stimulus_list_code":"SHARVARD_ES_L01","start_snr_db":5,"noise_level_db":60,"noise_type":"pink","sentences_per_level":4,"threshold_pass_ratio":0.5,"step_down_db":4,"step_up_db":2,"min_snr_db":-10,"max_snr_db":20,"max_total_trials":30}},
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L01",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
       "is_standard": 1,
       "family": "hint",
       "purpose_md": "Cuantificar el **SRT-SNR** con un corpus **clínicamente validado y reproducible** de frases en español peninsular. Elimina la variabilidad que introduce la grabación casera del usuario — las frases Sharvard están producidas en estudio profesional con niveles RMS uniformizados. Permite **comparar resultados entre pacientes y entre centros** y usar los normativos publicados (Aubanel et al. 2014, Calcus et al. 2019).",
@@ -28,9 +60,19 @@
       "estimated_duration_min": 5,
       "min_age_years": 18,
       "references": [
-        { "citation": "Aubanel V, García Lecumberri ML, Cooke M. The Sharvard Corpus: A phonemically-balanced Spanish sentence resource for audiology", "year": 2014, "doi": "10.3109/14992027.2014.907507" },
-        { "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test", "year": 1994 },
-        { "citation": "IEEE (1969). IEEE recommended practice for speech quality measurements. IEEE Trans Audio Electroacoust 17:225-246", "year": 1969 }
+        {
+          "citation": "Aubanel V, García Lecumberri ML, Cooke M. The Sharvard Corpus: A phonemically-balanced Spanish sentence resource for audiology",
+          "year": 2014,
+          "doi": "10.3109/14992027.2014.907507"
+        },
+        {
+          "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
+          "year": 1994
+        },
+        {
+          "citation": "IEEE (1969). IEEE recommended practice for speech quality measurements. IEEE Trans Audio Electroacoust 17:225-246",
+          "year": 1969
+        }
       ]
     }
   ],
@@ -39,7 +81,13 @@
   "interpretation": {
     "metric": "srt_db",
     "norms_by_age": [
-      { "age_min": 18, "age_max": 40, "normal_min": -10, "mild_min": -3, "severe_max": 5 }
+      {
+        "age_min": 18,
+        "age_max": 40,
+        "normal_min": -10,
+        "mild_min": -3,
+        "severe_max": 5
+      }
     ],
     "description_md": "SRT-SNR típico en adultos normoyentes con Sharvard/ruido rosa binaural: aprox. -5 a -8 dB. Valores menos negativos o positivos apuntan a dificultad con el habla en ruido (hipoacusia coclear, presbiacusia o déficit de procesamiento)."
   },
@@ -49,5 +97,8 @@
     "requires_audio_pack": true,
     "audio_pack_release_tag": "sharvard-audio-v1",
     "estimated_duration_min": 5
+  },
+  "families": {
+    "hint": "Frases en ruido"
   }
 }

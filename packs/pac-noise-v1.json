@@ -6,11 +6,23 @@
   "description_md": "# Pruebas de resolución temporal en ruido\n\nBatería de tareas con **ruido blanco y banda angosta** para evaluar la **resolución temporal auditiva** — capacidad del sistema para detectar interrupciones breves en un estímulo continuo. La ventaja del ruido sobre los tonos es que su espectro ancho elimina pistas tonales residuales en los bordes del gap, aislando el mecanismo temporal puro.\n\n- **GIN** (Gaps-in-Noise, Musiek et al. 2005): prueba clínica estándar de oro para resolución temporal. Sensibilidad 67%, especificidad 94% para lesiones del SNC auditivo en el estudio original.\n- **RGD** (Random Gap Detection, Keith 2000): variante con bursts de ruido y tarea 1 vs 2.\n- **NBN**: ruido de banda angosta para verificación auditiva / enmascaramiento.\n\n**Umbrales normativos** (adulto 18–60 años, audición normal):\n\n- **GIN**: umbral 4–6 ms, porcentaje de aciertos global ≥54% en el paradigma Musiek. >8 ms o aciertos <50% = déficit temporal central.\n- **RGD**: umbral ~2–5 ms (similar al gap entre tonos de pac-temporal, pero con bursts más cortos).\n\nEl **GIN tiene alta sensibilidad clínica** a lesiones corticales/subcorticales: ACV, TEC, EM, tumores. Es menos sensible a hipoacusia periférica moderada que otras pruebas PAC. Se recomienda como prueba de tamizaje en batería PAC adulto.",
   "requirements": "ninguno",
   "license": "CC-BY-SA",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "Musiek FE, Shinn JB, Jirsa R, Bamiou DE, Baran JA, Zaida E (2005). GIN (Gaps-In-Noise) test performance in subjects with confirmed central auditory nervous system involvement. Ear Hear 26:608-618", "url": null },
-    { "citation": "Keith RW (2000). Random Gap Detection Test. Auditec, St. Louis.", "url": null },
-    { "citation": "Shinn JB, Chermak GD, Musiek FE (2009). GIN (Gaps-In-Noise) performance in the pediatric population. J Am Acad Audiol 20:229-238", "url": null }
+    {
+      "citation": "Musiek FE, Shinn JB, Jirsa R, Bamiou DE, Baran JA, Zaida E (2005). GIN (Gaps-In-Noise) test performance in subjects with confirmed central auditory nervous system involvement. Ear Hear 26:608-618",
+      "url": null
+    },
+    {
+      "citation": "Keith RW (2000). Random Gap Detection Test. Auditec, St. Louis.",
+      "url": null
+    },
+    {
+      "citation": "Shinn JB, Chermak GD, Musiek FE (2009). GIN (Gaps-In-Noise) performance in the pediatric population. J Am Acad Audiol 20:229-238",
+      "url": null
+    }
   ],
   "tests": [
     {
@@ -18,7 +30,110 @@
       "name": "GIN - Detección de gaps en ruido",
       "test_type": "CUSTOM",
       "description": "Gaps in Noise (adaptado). Cada ítem: 3 s de ruido blanco con 0 o 1 gap en el medio. Gaps de 2, 4, 6, 10, 15 o 20 ms. Paciente indica si oyó un silencio. Tokens: A=sin gap, B=2ms, C=4ms, D=6ms, E=10ms, F=15ms, G=20ms.",
-      "config_json": {"tones":{"A":{"label":"Sin gap","kind":"noise","noise_type":"white","duration_ms":3000},"B":{"label":"Gap 2 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":2},"C":{"label":"Gap 4 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":4},"D":{"label":"Gap 6 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":6},"E":{"label":"Gap 10 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":10},"F":{"label":"Gap 15 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":15},"G":{"label":"Gap 20 ms","kind":"noise","noise_type":"white","duration_ms":3000,"gap_at_ms":1500,"gap_width_ms":20}},"isi_ms":800,"iri_ms":3500,"envelope_ms":15,"pattern_length":1,"practice_sequences":["G","A","F","E","A","G"],"test_sequences":["G","A","F","E","D","A","C","B","G","F","A","E","D","C","A","B","G","F","E","A","D","C","B","A","G","F","E","D","C","B"],"channel":"binaural","level_db":65},
+      "config_json": {
+        "tones": {
+          "A": {
+            "label": "Sin gap",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 3000
+          },
+          "B": {
+            "label": "Gap 2 ms",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 3000,
+            "gap_at_ms": 1500,
+            "gap_width_ms": 2
+          },
+          "C": {
+            "label": "Gap 4 ms",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 3000,
+            "gap_at_ms": 1500,
+            "gap_width_ms": 4
+          },
+          "D": {
+            "label": "Gap 6 ms",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 3000,
+            "gap_at_ms": 1500,
+            "gap_width_ms": 6
+          },
+          "E": {
+            "label": "Gap 10 ms",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 3000,
+            "gap_at_ms": 1500,
+            "gap_width_ms": 10
+          },
+          "F": {
+            "label": "Gap 15 ms",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 3000,
+            "gap_at_ms": 1500,
+            "gap_width_ms": 15
+          },
+          "G": {
+            "label": "Gap 20 ms",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 3000,
+            "gap_at_ms": 1500,
+            "gap_width_ms": 20
+          }
+        },
+        "isi_ms": 800,
+        "iri_ms": 3500,
+        "envelope_ms": 15,
+        "pattern_length": 1,
+        "practice_sequences": [
+          "G",
+          "A",
+          "F",
+          "E",
+          "A",
+          "G"
+        ],
+        "test_sequences": [
+          "G",
+          "A",
+          "F",
+          "E",
+          "D",
+          "A",
+          "C",
+          "B",
+          "G",
+          "F",
+          "A",
+          "E",
+          "D",
+          "C",
+          "A",
+          "B",
+          "G",
+          "F",
+          "E",
+          "A",
+          "D",
+          "C",
+          "B",
+          "A",
+          "G",
+          "F",
+          "E",
+          "D",
+          "C",
+          "B"
+        ],
+        "channel": "binaural",
+        "level_db": 65
+      },
       "is_standard": 1,
       "family": "pac.noise",
       "purpose_md": "**Estándar clínico** para evaluar **resolución temporal auditiva**. Una de las pruebas PAC con **mejor validación** en el mundo hispano (Shinn, Musiek, Chermak) y con **alta sensibilidad** a lesiones del sistema nervioso auditivo central (67% sensibilidad, 94% especificidad, Musiek et al. 2005). A diferencia del gap entre tonos (pac-temporal GAP_5), el ruido blanco elimina pistas espectrales en los bordes del gap, aislando el procesamiento temporal puro.",
@@ -29,9 +144,19 @@
       "estimated_duration_min": 8,
       "min_age_years": 9,
       "references": [
-        { "citation": "Musiek FE et al. GIN (Gaps-In-Noise) test performance in subjects with confirmed central auditory nervous system involvement", "year": 2005, "doi": "10.1097/01.aud.0000188069.80699.41" },
-        { "citation": "Shinn JB, Chermak GD, Musiek FE. GIN (Gaps-In-Noise) performance in the pediatric population", "year": 2009 },
-        { "citation": "Bamiou DE et al. Auditory temporal processing deficits in patients with insular stroke", "year": 2006 }
+        {
+          "citation": "Musiek FE et al. GIN (Gaps-In-Noise) test performance in subjects with confirmed central auditory nervous system involvement",
+          "year": 2005,
+          "doi": "10.1097/01.aud.0000188069.80699.41"
+        },
+        {
+          "citation": "Shinn JB, Chermak GD, Musiek FE. GIN (Gaps-In-Noise) performance in the pediatric population",
+          "year": 2009
+        },
+        {
+          "citation": "Bamiou DE et al. Auditory temporal processing deficits in patients with insular stroke",
+          "year": 2006
+        }
       ]
     },
     {
@@ -39,7 +164,50 @@
       "name": "RGD ruido - gap 20 ms",
       "test_type": "CUSTOM",
       "description": "Random Gap Detection en ruido. 2 bursts de ruido blanco (50 ms cada uno) separados por 20 ms. Token A = 1 burst solo, AA = 2 bursts. Paciente: ¿uno o dos?",
-      "config_json": {"tones":{"A":{"label":"Burst","kind":"noise","noise_type":"white","duration_ms":50}},"isi_ms":20,"iri_ms":3500,"envelope_ms":3,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":65},
+      "config_json": {
+        "tones": {
+          "A": {
+            "label": "Burst",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 50
+          }
+        },
+        "isi_ms": 20,
+        "iri_ms": 3500,
+        "envelope_ms": 3,
+        "pattern_length": 2,
+        "practice_sequences": [
+          "AA",
+          "A",
+          "AA",
+          "A"
+        ],
+        "test_sequences": [
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "AA"
+        ],
+        "channel": "binaural",
+        "level_db": 65
+      },
       "is_standard": 1,
       "family": "pac.noise",
       "purpose_md": "**Tamizaje de resolución temporal con bursts de ruido**. Variante del paradigma Keith 2000 (RGDT) adaptada. Gap de 20 ms es ~5–10× el umbral normal — detecta compromisos marcados. Complementa al GIN (gap en ruido continuo) explorando el paradigma de **dos eventos discretos**.",
@@ -50,7 +218,10 @@
       "estimated_duration_min": 3,
       "min_age_years": 7,
       "references": [
-        { "citation": "Keith RW. Random Gap Detection Test. Auditec", "year": 2000 }
+        {
+          "citation": "Keith RW. Random Gap Detection Test. Auditec",
+          "year": 2000
+        }
       ]
     },
     {
@@ -58,7 +229,50 @@
       "name": "RGD ruido - gap 10 ms",
       "test_type": "CUSTOM",
       "description": "Idem RGD pero ISI 10 ms. Cerca del umbral adulto normal.",
-      "config_json": {"tones":{"A":{"label":"Burst","kind":"noise","noise_type":"white","duration_ms":50}},"isi_ms":10,"iri_ms":3500,"envelope_ms":2,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":65},
+      "config_json": {
+        "tones": {
+          "A": {
+            "label": "Burst",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 50
+          }
+        },
+        "isi_ms": 10,
+        "iri_ms": 3500,
+        "envelope_ms": 2,
+        "pattern_length": 2,
+        "practice_sequences": [
+          "AA",
+          "A",
+          "AA",
+          "A"
+        ],
+        "test_sequences": [
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "AA"
+        ],
+        "channel": "binaural",
+        "level_db": 65
+      },
       "is_standard": 1,
       "family": "pac.noise",
       "purpose_md": "**Nivel intermedio** de RGD. Gap 10 ms está 2–5× sobre umbral adulto. Discrimina bien entre rendimiento normal y limítrofe.",
@@ -69,7 +283,10 @@
       "estimated_duration_min": 3,
       "min_age_years": 8,
       "references": [
-        { "citation": "Keith RW. Random Gap Detection Test", "year": 2000 }
+        {
+          "citation": "Keith RW. Random Gap Detection Test",
+          "year": 2000
+        }
       ]
     },
     {
@@ -77,7 +294,50 @@
       "name": "RGD ruido - gap 5 ms",
       "test_type": "CUSTOM",
       "description": "Idem RGD pero ISI 5 ms. Umbral exigente.",
-      "config_json": {"tones":{"A":{"label":"Burst","kind":"noise","noise_type":"white","duration_ms":50}},"isi_ms":5,"iri_ms":3500,"envelope_ms":1,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":65},
+      "config_json": {
+        "tones": {
+          "A": {
+            "label": "Burst",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 50
+          }
+        },
+        "isi_ms": 5,
+        "iri_ms": 3500,
+        "envelope_ms": 1,
+        "pattern_length": 2,
+        "practice_sequences": [
+          "AA",
+          "A",
+          "AA",
+          "A"
+        ],
+        "test_sequences": [
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "A",
+          "AA",
+          "AA",
+          "A",
+          "AA",
+          "AA"
+        ],
+        "channel": "binaural",
+        "level_db": 65
+      },
       "is_standard": 1,
       "family": "pac.noise",
       "purpose_md": "**Umbral fino** de RGD. 5 ms está en el borde del umbral adulto normal. Nivel exigente para investigación o seguimiento de compromisos leves.",
@@ -88,7 +348,10 @@
       "estimated_duration_min": 3,
       "min_age_years": 11,
       "references": [
-        { "citation": "Keith RW. Random Gap Detection Test", "year": 2000 }
+        {
+          "citation": "Keith RW. Random Gap Detection Test",
+          "year": 2000
+        }
       ]
     },
     {
@@ -96,7 +359,40 @@
       "name": "Ruido de banda angosta - screening",
       "test_type": "CUSTOM",
       "description": "Ítem único de 2 s de ruido de banda angosta centrado en 1000 Hz (ancho 200 Hz). Útil como estímulo de enmascaramiento o verificación auditiva general. Token N = ruido centrado.",
-      "config_json": {"tones":{"N":{"label":"NBN 1 kHz","kind":"noise","noise_type":"narrow","center_hz":1000,"bandwidth_hz":200,"duration_ms":2000}},"isi_ms":500,"iri_ms":3000,"envelope_ms":15,"pattern_length":1,"practice_sequences":["N","N"],"test_sequences":["N","N","N","N","N","N","N","N","N","N"],"channel":"binaural","level_db":60},
+      "config_json": {
+        "tones": {
+          "N": {
+            "label": "NBN 1 kHz",
+            "kind": "noise",
+            "noise_type": "narrow",
+            "center_hz": 1000,
+            "bandwidth_hz": 200,
+            "duration_ms": 2000
+          }
+        },
+        "isi_ms": 500,
+        "iri_ms": 3000,
+        "envelope_ms": 15,
+        "pattern_length": 1,
+        "practice_sequences": [
+          "N",
+          "N"
+        ],
+        "test_sequences": [
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N"
+        ],
+        "channel": "binaural",
+        "level_db": 60
+      },
       "is_standard": 1,
       "family": "pac.noise",
       "purpose_md": "**Ruido de banda angosta (NBN)** centrado en 1 kHz. No es una prueba PAC per se, sino un **estímulo utilitario**: verificación de audición funcional en 1 kHz, pre-calibración, o señal de enmascaramiento para pruebas monaurales con contralateral. También útil para **acostumbrar al paciente** al estímulo ruido antes de pruebas demandantes (GIN, RGD).",
@@ -107,7 +403,10 @@
       "estimated_duration_min": 2,
       "min_age_years": 5,
       "references": [
-        { "citation": "ANSI S3.6 (2018). Specification for audiometers. American National Standards Institute", "year": 2018 }
+        {
+          "citation": "ANSI S3.6 (2018). Specification for audiometers. American National Standards Institute",
+          "year": 2018
+        }
       ]
     }
   ],
@@ -115,7 +414,13 @@
   "interpretation": {
     "metric": "gap_ms",
     "norms_by_age": [
-      { "age_min": 11, "age_max": 60, "normal_min": 0, "mild_min": 0, "severe_max": 0 }
+      {
+        "age_min": 11,
+        "age_max": 60,
+        "normal_min": 0,
+        "mild_min": 0,
+        "severe_max": 0
+      }
     ],
     "description_md": "**GIN**: umbral normal adulto ~4-6 ms (aprox. percent-correct ≥54% al umbral del estudio de Musiek). Umbrales >8 ms o baja detección global sugieren déficit temporal central. **RGD**: umbral normal ~2–5 ms. Correlacionar con GAP entre tonos (pac-temporal) para triangular."
   },
@@ -123,5 +428,8 @@
     "recommended": true,
     "target_population": "adults_children",
     "estimated_duration_min": 12
+  },
+  "families": {
+    "pac.noise": "Habla en ruido"
   }
 }

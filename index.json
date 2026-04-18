@@ -57,8 +57,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-patterns-v1.json",
-      "sha256": "eaee0e96461d9a4b56e6720c3b9cd3eed5a258a8c63d3f44f308411e2cfe9734",
-      "bytes": 16558
+      "sha256": "c902c21e78ce1b82e579ede28752d8c32a3150a9c354f1140d637960dfb43484",
+      "bytes": 20075
     },
     {
       "id": "pps-pinheiro-v1",
@@ -68,8 +68,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pps-pinheiro-v1.json",
-      "sha256": "5112074c3aca6f661e97db3a393685c7aba05c0bc7ccf713d5a1ba4d131c843f",
-      "bytes": 5630
+      "sha256": "a8cfc7bcfbe95428bf6ecfb53dc702aca8782b96bb81434388643ccf65d085e1",
+      "bytes": 7034
     },
     {
       "id": "dps-musiek-v1",
@@ -79,8 +79,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/dps-musiek-v1.json",
-      "sha256": "69e94e8c6c9a727ea5c5029804f4c4189fd02fc6de0dbc28e9820535dc7b9ef7",
-      "bytes": 5792
+      "sha256": "feee7ec65a4d66cbaf6f1e5bb103a44232a5aaf9967f989bd163d6345e4e9797",
+      "bytes": 7076
     },
     {
       "id": "pac-limens-v1",
@@ -90,8 +90,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-limens-v1.json",
-      "sha256": "0ad28e31e15289d36b4bc2da8e92aaccfafcc10a6f61fef6e95a999f0af113c7",
-      "bytes": 19276
+      "sha256": "e8ce68efcf7fed645f16ca5d649259f1db28ce3de9b74b22f4cb924f31a44ccd",
+      "bytes": 23913
     },
     {
       "id": "pac-temporal-v1",
@@ -101,8 +101,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-temporal-v1.json",
-      "sha256": "a6552b35bc884d74ecc699e5ef3dacaf3f96e4b690baf31feca1f97e756b7a6b",
-      "bytes": 17218
+      "sha256": "27dd9dbf869eb60eb3dad51e81a366c30f43a4b9ddde0bbbe8a3640da8420717",
+      "bytes": 20748
     },
     {
       "id": "pac-binaural-v1",
@@ -112,8 +112,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-binaural-v1.json",
-      "sha256": "1232b64ee254bdb8190452d14a72aaddc834f0ca71f32ccdb3c7cc1a73b7b0e9",
-      "bytes": 12964
+      "sha256": "2b5f0f76adf6d7b291f311e62bd94f9d5c06dff20f5ac4adec062bf319c95cc4",
+      "bytes": 14879
     },
     {
       "id": "pac-noise-v1",
@@ -123,8 +123,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-noise-v1.json",
-      "sha256": "45c28e9a471483064f9d1e5e8b59b061b4462e9b030e8c739ac38738d399fa4e",
-      "bytes": 14852
+      "sha256": "aa43ba2bdf3d2ee98daabd298afdf967b8cc9a0684ccdbca461e0d1a40317a80",
+      "bytes": 18222
     },
     {
       "id": "pac-mld-v1",
@@ -134,8 +134,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-mld-v1.json",
-      "sha256": "6038041246238737cc98ab9074e44c3e7ecac107623bc4ffe6e642a5abd175a1",
-      "bytes": 8964
+      "sha256": "b522d934dffdcc38767570303e50dc4ad6d065d47cf57fb02723aa04620f6079",
+      "bytes": 10196
     },
     {
       "id": "logoaud-latam-v1",
@@ -145,8 +145,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/logoaud-latam-v1.json",
-      "sha256": "c88c05dab37bfd1371edd7bfab162b2ce8c8bb407131374a7d3ec52c2209716f",
-      "bytes": 10830
+      "sha256": "22e76c44d3201969d591919ab3b6e983bffe4b5ef339282fbe747c9c29699001",
+      "bytes": 12995
     },
     {
       "id": "logoaud-us-es-v1",
@@ -156,8 +156,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/logoaud-us-es-v1.json",
-      "sha256": "6cdc1d8cb4f4000ba7a1d57109b5a2a2fb65d8fc7962aaf4b14d71a93ce421fd",
-      "bytes": 7118
+      "sha256": "e5835090ef2a2d30e9624fa97de4bd0c2ba9d13204342efe59588ae2514f2898",
+      "bytes": 8347
     },
     {
       "id": "dichotic-digits-es-v1",
@@ -167,8 +167,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/dichotic-digits-es-v1.json",
-      "sha256": "a7e9d47cd614aabd950327ac4e4a0a7d8ef45f2cca4c827592591184b7fc129e",
-      "bytes": 11893
+      "sha256": "d2db3368a1c39675dc0aea1cdc2b7a5baf8feade16f90b1d25e56f886b3bafb4",
+      "bytes": 12921
     },
     {
       "id": "hint-es-v1",
@@ -178,8 +178,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/hint-es-v1.json",
-      "sha256": "96ea6fea472a6e6858e0a18add38e3c91277ade7a08f5de21992ae4c03e3568a",
-      "bytes": 7988
+      "sha256": "fb756e6342039890dc1428c996483886c7a3dedf32ae2e49b01061f3513a6206",
+      "bytes": 8501
     },
     {
       "id": "sinb-es-v1",
@@ -189,8 +189,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/sinb-es-v1.json",
-      "sha256": "ac4de940121887fb7f0ea8adedbdcfe10d17af2fee7faddf0465d43e1c629698",
-      "bytes": 6847
+      "sha256": "77f9bd4b78b57e56efe0e4cf02853f505ad21cadcedf7005479e7735b9406ad2",
+      "bytes": 7446
     },
     {
       "id": "palpa-es-v1",
@@ -211,8 +211,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/matrix-es-v1.json",
-      "sha256": "ab63bcd335faa219a4d7805372a4b9bffefad1b777e579bddb60730ad2bceca5",
-      "bytes": 12232
+      "sha256": "52817c53276678083ed834df3eba62a9abc70a5054caf95df5b7adf9f23cb6fb",
+      "bytes": 15438
     },
     {
       "id": "sharvard-es-v1",
@@ -222,8 +222,8 @@
       "requirements": "audio_pack",
       "license": "CC-BY",
       "url": "packs/sharvard-es-v1.json",
-      "sha256": "19f748b74fd66aff7d548375d12617125f8a54b93c22cda59d69b5661ed1e7b9",
-      "bytes": 7148
+      "sha256": "11ef4ee0b789ac2d672ccd74194729aa8d9d765cbfe5e9d8046e8e7716c33696",
+      "bytes": 7629
     },
     {
       "id": "hint-es-clinico-v1",

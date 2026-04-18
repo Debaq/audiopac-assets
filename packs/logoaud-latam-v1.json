@@ -6,12 +6,27 @@
   "description_md": "# Logoaudiometría — Español LatAm\n\nPack neutro para Latinoamérica con dos componentes clásicos de la **logoaudiometría clínica**:\n\n- **SRT (Speech Reception Threshold / Umbral de Recepción del Habla)**: nivel mínimo en dB HL al que el paciente repite correctamente el **50% de los bisílabos espondaicos** presentados. Estimación funcional del umbral auditivo para el habla, independiente de la audiometría tonal pura.\n- **Discriminación de la palabra (Word Discrimination / Speech Discrimination Score, SDS)**: porcentaje de monosílabos fonéticamente balanceados repetidos correctamente a **nivel de cómoda audición** (típicamente SRT + 30–40 dB).\n\n**Listas incluidas** (vocabulario neutro LatAm, evitando regionalismos rioplatenses/mexicanos/caribeños):\n\n- **SRT_LATAM_BISIL_A**: 20 bisílabos frecuentes y familiares (casa, mesa, perro…) — criterio de selección: alta frecuencia léxica, distribución equilibrada de consonantes, ausencia de palabras tabú o regionalismos.\n- **DISC_LATAM_MONO_A**: 25 monosílabos (sol, pan, mar…) — balance fonémico aproximado de las 24 consonantes y 5 vocales del español.\n\n**Origen metodológico**: adaptado de la tradición Tato (1949, Buenos Aires) con ajuste léxico neutro LatAm. Para población española peninsular usar `sharvard-es-v1` o listas PALPA-E.\n\n**Requiere grabación**: el usuario graba su propia voz (o la de un locutor nativo) para cada token en `/estimulos` antes de ejecutar los tests. El motor normaliza a −20 dBFS RMS para evitar variabilidad de nivel inter-palabra.",
   "requirements": "recording",
   "license": "CC-BY-SA",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "Tato JM (1949). Logoaudiometría. Libros de la Facultad, Buenos Aires.", "url": null },
-    { "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89", "url": null },
-    { "citation": "Carhart R, Jerger JF (1959). Preferred method for clinical determination of pure-tone thresholds. J Speech Hear Disord 24:330-345", "url": null },
-    { "citation": "Hughson W, Westlake HD (1944). Manual for program outline of rehabilitation of aural casualties. Trans Am Acad Ophthalmol Otolaryngol Suppl", "url": null }
+    {
+      "citation": "Tato JM (1949). Logoaudiometría. Libros de la Facultad, Buenos Aires.",
+      "url": null
+    },
+    {
+      "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89",
+      "url": null
+    },
+    {
+      "citation": "Carhart R, Jerger JF (1959). Preferred method for clinical determination of pure-tone thresholds. J Speech Hear Disord 24:330-345",
+      "url": null
+    },
+    {
+      "citation": "Hughson W, Westlake HD (1944). Manual for program outline of rehabilitation of aural casualties. Trans Am Acad Ophthalmol Otolaryngol Suppl",
+      "url": null
+    }
   ],
   "tests": [
     {
@@ -19,7 +34,28 @@
       "name": "SRT bisílabos LatAm",
       "test_type": "CUSTOM",
       "description": "Umbral de recepción del habla (SRT) con bisílabos balanceados. Método descendente-ascendente con bracketing. Requiere grabar la lista SRT_LATAM_BISIL_A en /estimulos.",
-      "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":50,"srt":{"stimulus_list_code":"SRT_LATAM_BISIL_A","start_level_db":50,"words_per_level":4,"step_down_db":10,"step_up_db":5,"min_level_db":0,"max_level_db":90,"threshold_pass_ratio":0.5,"max_total_trials":40}},
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 50,
+        "srt": {
+          "stimulus_list_code": "SRT_LATAM_BISIL_A",
+          "start_level_db": 50,
+          "words_per_level": 4,
+          "step_down_db": 10,
+          "step_up_db": 5,
+          "min_level_db": 0,
+          "max_level_db": 90,
+          "threshold_pass_ratio": 0.5,
+          "max_total_trials": 40
+        }
+      },
       "is_standard": 1,
       "family": "logoaudiometry",
       "purpose_md": "Determinar el **umbral de recepción del habla (SRT)** — el nivel mínimo en dB HL al que el paciente identifica correctamente el 50% de los bisílabos espondaicos. El SRT:\n\n- **Valida la audiometría tonal pura**: debe coincidir ±10 dB con el promedio tonal (PTA) de 500/1000/2000 Hz.\n- **Detecta pseudohipoacusia / simulación**: discrepancia SRT vs PTA >15 dB es sospechosa.\n- **Establece el nivel de presentación** para pruebas supraumbrales (SDS, PAC verbales) = SRT + 30–40 dB.\n- **Cuantifica el impacto funcional** de la pérdida en la comunicación.",
@@ -30,10 +66,22 @@
       "estimated_duration_min": 6,
       "min_age_years": 5,
       "references": [
-        { "citation": "Tato JM. Logoaudiometría", "year": 1949 },
-        { "citation": "Carhart R, Jerger JF. Preferred method for clinical determination of pure-tone thresholds", "year": 1959 },
-        { "citation": "ASHA. Guidelines for determining threshold level for speech", "year": 1988 },
-        { "citation": "Wilson RH, McArdle R. Speech signals used to evaluate functional status of the auditory system", "year": 2005 }
+        {
+          "citation": "Tato JM. Logoaudiometría",
+          "year": 1949
+        },
+        {
+          "citation": "Carhart R, Jerger JF. Preferred method for clinical determination of pure-tone thresholds",
+          "year": 1959
+        },
+        {
+          "citation": "ASHA. Guidelines for determining threshold level for speech",
+          "year": 1988
+        },
+        {
+          "citation": "Wilson RH, McArdle R. Speech signals used to evaluate functional status of the auditory system",
+          "year": 2005
+        }
       ]
     }
   ],
@@ -46,26 +94,106 @@
       "country_code": "LATAM",
       "description": "Lista de 20 bisílabos balanceados (estilo Tato) — SRT umbral de recepción del habla",
       "items": [
-        { "pos": 1,  "token": "casa",   "keywords": null },
-        { "pos": 2,  "token": "mesa",   "keywords": null },
-        { "pos": 3,  "token": "perro",  "keywords": null },
-        { "pos": 4,  "token": "libro",  "keywords": null },
-        { "pos": 5,  "token": "árbol",  "keywords": null },
-        { "pos": 6,  "token": "pelo",   "keywords": null },
-        { "pos": 7,  "token": "mano",   "keywords": null },
-        { "pos": 8,  "token": "niño",   "keywords": null },
-        { "pos": 9,  "token": "agua",   "keywords": null },
-        { "pos": 10, "token": "leche",  "keywords": null },
-        { "pos": 11, "token": "noche",  "keywords": null },
-        { "pos": 12, "token": "madre",  "keywords": null },
-        { "pos": 13, "token": "padre",  "keywords": null },
-        { "pos": 14, "token": "silla",  "keywords": null },
-        { "pos": 15, "token": "pluma",  "keywords": null },
-        { "pos": 16, "token": "papel",  "keywords": null },
-        { "pos": 17, "token": "puerta", "keywords": null },
-        { "pos": 18, "token": "barco",  "keywords": null },
-        { "pos": 19, "token": "gato",   "keywords": null },
-        { "pos": 20, "token": "llave",  "keywords": null }
+        {
+          "pos": 1,
+          "token": "casa",
+          "keywords": null
+        },
+        {
+          "pos": 2,
+          "token": "mesa",
+          "keywords": null
+        },
+        {
+          "pos": 3,
+          "token": "perro",
+          "keywords": null
+        },
+        {
+          "pos": 4,
+          "token": "libro",
+          "keywords": null
+        },
+        {
+          "pos": 5,
+          "token": "árbol",
+          "keywords": null
+        },
+        {
+          "pos": 6,
+          "token": "pelo",
+          "keywords": null
+        },
+        {
+          "pos": 7,
+          "token": "mano",
+          "keywords": null
+        },
+        {
+          "pos": 8,
+          "token": "niño",
+          "keywords": null
+        },
+        {
+          "pos": 9,
+          "token": "agua",
+          "keywords": null
+        },
+        {
+          "pos": 10,
+          "token": "leche",
+          "keywords": null
+        },
+        {
+          "pos": 11,
+          "token": "noche",
+          "keywords": null
+        },
+        {
+          "pos": 12,
+          "token": "madre",
+          "keywords": null
+        },
+        {
+          "pos": 13,
+          "token": "padre",
+          "keywords": null
+        },
+        {
+          "pos": 14,
+          "token": "silla",
+          "keywords": null
+        },
+        {
+          "pos": 15,
+          "token": "pluma",
+          "keywords": null
+        },
+        {
+          "pos": 16,
+          "token": "papel",
+          "keywords": null
+        },
+        {
+          "pos": 17,
+          "token": "puerta",
+          "keywords": null
+        },
+        {
+          "pos": 18,
+          "token": "barco",
+          "keywords": null
+        },
+        {
+          "pos": 19,
+          "token": "gato",
+          "keywords": null
+        },
+        {
+          "pos": 20,
+          "token": "llave",
+          "keywords": null
+        }
       ]
     },
     {
@@ -76,38 +204,144 @@
       "country_code": "LATAM",
       "description": "25 monosílabos fonéticamente balanceados para test de discriminación",
       "items": [
-        { "pos": 1,  "token": "sol",  "keywords": null },
-        { "pos": 2,  "token": "pan",  "keywords": null },
-        { "pos": 3,  "token": "mar",  "keywords": null },
-        { "pos": 4,  "token": "luz",  "keywords": null },
-        { "pos": 5,  "token": "fin",  "keywords": null },
-        { "pos": 6,  "token": "voz",  "keywords": null },
-        { "pos": 7,  "token": "pie",  "keywords": null },
-        { "pos": 8,  "token": "tres", "keywords": null },
-        { "pos": 9,  "token": "dos",  "keywords": null },
-        { "pos": 10, "token": "sal",  "keywords": null },
-        { "pos": 11, "token": "paz",  "keywords": null },
-        { "pos": 12, "token": "mal",  "keywords": null },
-        { "pos": 13, "token": "miel", "keywords": null },
-        { "pos": 14, "token": "cruz", "keywords": null },
-        { "pos": 15, "token": "rey",  "keywords": null },
-        { "pos": 16, "token": "mes",  "keywords": null },
-        { "pos": 17, "token": "pez",  "keywords": null },
-        { "pos": 18, "token": "tren", "keywords": null },
-        { "pos": 19, "token": "flor", "keywords": null },
-        { "pos": 20, "token": "gris", "keywords": null },
-        { "pos": 21, "token": "mil",  "keywords": null },
-        { "pos": 22, "token": "sed",  "keywords": null },
-        { "pos": 23, "token": "sur",  "keywords": null },
-        { "pos": 24, "token": "red",  "keywords": null },
-        { "pos": 25, "token": "tos",  "keywords": null }
+        {
+          "pos": 1,
+          "token": "sol",
+          "keywords": null
+        },
+        {
+          "pos": 2,
+          "token": "pan",
+          "keywords": null
+        },
+        {
+          "pos": 3,
+          "token": "mar",
+          "keywords": null
+        },
+        {
+          "pos": 4,
+          "token": "luz",
+          "keywords": null
+        },
+        {
+          "pos": 5,
+          "token": "fin",
+          "keywords": null
+        },
+        {
+          "pos": 6,
+          "token": "voz",
+          "keywords": null
+        },
+        {
+          "pos": 7,
+          "token": "pie",
+          "keywords": null
+        },
+        {
+          "pos": 8,
+          "token": "tres",
+          "keywords": null
+        },
+        {
+          "pos": 9,
+          "token": "dos",
+          "keywords": null
+        },
+        {
+          "pos": 10,
+          "token": "sal",
+          "keywords": null
+        },
+        {
+          "pos": 11,
+          "token": "paz",
+          "keywords": null
+        },
+        {
+          "pos": 12,
+          "token": "mal",
+          "keywords": null
+        },
+        {
+          "pos": 13,
+          "token": "miel",
+          "keywords": null
+        },
+        {
+          "pos": 14,
+          "token": "cruz",
+          "keywords": null
+        },
+        {
+          "pos": 15,
+          "token": "rey",
+          "keywords": null
+        },
+        {
+          "pos": 16,
+          "token": "mes",
+          "keywords": null
+        },
+        {
+          "pos": 17,
+          "token": "pez",
+          "keywords": null
+        },
+        {
+          "pos": 18,
+          "token": "tren",
+          "keywords": null
+        },
+        {
+          "pos": 19,
+          "token": "flor",
+          "keywords": null
+        },
+        {
+          "pos": 20,
+          "token": "gris",
+          "keywords": null
+        },
+        {
+          "pos": 21,
+          "token": "mil",
+          "keywords": null
+        },
+        {
+          "pos": 22,
+          "token": "sed",
+          "keywords": null
+        },
+        {
+          "pos": 23,
+          "token": "sur",
+          "keywords": null
+        },
+        {
+          "pos": 24,
+          "token": "red",
+          "keywords": null
+        },
+        {
+          "pos": 25,
+          "token": "tos",
+          "keywords": null
+        }
       ]
     }
   ],
   "interpretation": {
     "metric": "srt_db",
     "norms_by_age": [
-      { "age_min": 11, "age_max": 60, "normal_min": 20, "mild_min": 40, "severe_max": 60 }
+      {
+        "age_min": 11,
+        "age_max": 60,
+        "normal_min": 20,
+        "mild_min": 40,
+        "severe_max": 60
+      }
     ],
     "description_md": "SRT normal ≤20 dB HL. SRT debe coincidir ±10 dB con el promedio tonal (PTA) de las frecuencias conversacionales; mayor discrepancia sugiere componente retrococlear o simulación."
   },
@@ -116,5 +350,8 @@
     "target_population": "adults",
     "requires_recording": true,
     "estimated_duration_min": 8
+  },
+  "families": {
+    "logoaudiometry": "Logoaudiometría"
   }
 }

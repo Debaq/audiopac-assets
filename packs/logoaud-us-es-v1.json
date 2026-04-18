@@ -6,12 +6,27 @@
   "description_md": "# Logoaudiometría — Español EEUU\n\nAdaptación de logoaudiometría SRT para **población hispanohablante en Estados Unidos**. El español US tiene particularidades léxicas documentadas (Lipski 2008; Otheguy & Zentella 2012): mayor frecuencia de **carro** (vs coche/auto), **dinero** (vs plata/guita), **mamá/papá** como formas preferidas vs madre/padre. Las listas de español peninsular o rioplatense pueden introducir ítems de baja familiaridad — esta versión selecciona vocabulario de **alta frecuencia en corpus US-ES** (Corpus del Español, Davies 2002; CREA US).\n\n**Lista SRT_US_ES_BISIL_A**: 20 bisílabos/trisílabos familiares al oyente hispano estadounidense, balanceados fonémicamente.\n\n**Referencia metodológica**: Wilson & McArdle (2005) para speech audiometry estándar; McCullough et al. (1994) para adaptaciones multimedia del español US.\n\n**Requiere grabación**: el usuario graba los tokens en `/estimulos`. Recomendación: usar locutor con acento **general latinoamericano** o **mexicano neutro** (el más prevalente en EEUU, ~60% de la población hispana según Pew Research).",
   "requirements": "recording",
   "license": "CC-BY-SA",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89", "url": null },
-    { "citation": "McCullough JA, Wilson RH, Birck JD, Anderson LG (1994). A multimedia Spanish word recognition test. Am J Audiol 3:19-22", "url": null },
-    { "citation": "Lipski JM (2008). Varieties of Spanish in the United States. Georgetown University Press.", "url": null },
-    { "citation": "Wilson RH, McArdle R (2005). Speech signals used to evaluate functional status of the auditory system. J Rehabil Res Dev 42(4 Suppl 2):79-94", "url": null }
+    {
+      "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89",
+      "url": null
+    },
+    {
+      "citation": "McCullough JA, Wilson RH, Birck JD, Anderson LG (1994). A multimedia Spanish word recognition test. Am J Audiol 3:19-22",
+      "url": null
+    },
+    {
+      "citation": "Lipski JM (2008). Varieties of Spanish in the United States. Georgetown University Press.",
+      "url": null
+    },
+    {
+      "citation": "Wilson RH, McArdle R (2005). Speech signals used to evaluate functional status of the auditory system. J Rehabil Res Dev 42(4 Suppl 2):79-94",
+      "url": null
+    }
   ],
   "tests": [
     {
@@ -19,7 +34,28 @@
       "name": "SRT bisílabos US-ES",
       "test_type": "CUSTOM",
       "description": "SRT variante US-ES. Requiere grabar la lista SRT_US_ES_BISIL_A en /estimulos.",
-      "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":50,"srt":{"stimulus_list_code":"SRT_US_ES_BISIL_A","start_level_db":50,"words_per_level":4,"step_down_db":10,"step_up_db":5,"min_level_db":0,"max_level_db":90,"threshold_pass_ratio":0.5,"max_total_trials":40}},
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 50,
+        "srt": {
+          "stimulus_list_code": "SRT_US_ES_BISIL_A",
+          "start_level_db": 50,
+          "words_per_level": 4,
+          "step_down_db": 10,
+          "step_up_db": 5,
+          "min_level_db": 0,
+          "max_level_db": 90,
+          "threshold_pass_ratio": 0.5,
+          "max_total_trials": 40
+        }
+      },
       "is_standard": 1,
       "family": "logoaudiometry",
       "purpose_md": "Determinar el **umbral de recepción del habla (SRT)** en pacientes hispanohablantes de EEUU usando un léxico adaptado a la variante US-ES. El SRT valida la audiometría tonal, detecta pseudohipoacusia y establece el nivel de presentación para pruebas supraumbrales. El uso de **vocabulario familiar al paciente** es crítico: una palabra de baja frecuencia puede elevar artificialmente el umbral por desconocimiento léxico en lugar de por pérdida auditiva.",
@@ -30,10 +66,22 @@
       "estimated_duration_min": 6,
       "min_age_years": 5,
       "references": [
-        { "citation": "Carhart R, Jerger JF. Preferred method for clinical determination of pure-tone thresholds", "year": 1959 },
-        { "citation": "McCullough JA et al. A multimedia Spanish word recognition test", "year": 1994 },
-        { "citation": "Wilson RH, McArdle R. Speech signals used to evaluate functional status of the auditory system", "year": 2005 },
-        { "citation": "Lipski JM. Varieties of Spanish in the United States", "year": 2008 }
+        {
+          "citation": "Carhart R, Jerger JF. Preferred method for clinical determination of pure-tone thresholds",
+          "year": 1959
+        },
+        {
+          "citation": "McCullough JA et al. A multimedia Spanish word recognition test",
+          "year": 1994
+        },
+        {
+          "citation": "Wilson RH, McArdle R. Speech signals used to evaluate functional status of the auditory system",
+          "year": 2005
+        },
+        {
+          "citation": "Lipski JM. Varieties of Spanish in the United States",
+          "year": 2008
+        }
       ]
     }
   ],
@@ -46,33 +94,119 @@
       "country_code": "US",
       "description": "Lista bisílabos español EEUU (hispano) — variantes léxicas estadounidenses",
       "items": [
-        { "pos": 1,  "token": "carro",   "keywords": null },
-        { "pos": 2,  "token": "casa",    "keywords": null },
-        { "pos": 3,  "token": "mesa",    "keywords": null },
-        { "pos": 4,  "token": "libro",   "keywords": null },
-        { "pos": 5,  "token": "perro",   "keywords": null },
-        { "pos": 6,  "token": "plata",   "keywords": null },
-        { "pos": 7,  "token": "niño",    "keywords": null },
-        { "pos": 8,  "token": "agua",    "keywords": null },
-        { "pos": 9,  "token": "papá",    "keywords": null },
-        { "pos": 10, "token": "mamá",    "keywords": null },
-        { "pos": 11, "token": "noche",   "keywords": null },
-        { "pos": 12, "token": "leche",   "keywords": null },
-        { "pos": 13, "token": "silla",   "keywords": null },
-        { "pos": 14, "token": "puerta",  "keywords": null },
-        { "pos": 15, "token": "cama",    "keywords": null },
-        { "pos": 16, "token": "zapato",  "keywords": null },
-        { "pos": 17, "token": "pluma",   "keywords": null },
-        { "pos": 18, "token": "dinero",  "keywords": null },
-        { "pos": 19, "token": "escuela", "keywords": null },
-        { "pos": 20, "token": "familia", "keywords": null }
+        {
+          "pos": 1,
+          "token": "carro",
+          "keywords": null
+        },
+        {
+          "pos": 2,
+          "token": "casa",
+          "keywords": null
+        },
+        {
+          "pos": 3,
+          "token": "mesa",
+          "keywords": null
+        },
+        {
+          "pos": 4,
+          "token": "libro",
+          "keywords": null
+        },
+        {
+          "pos": 5,
+          "token": "perro",
+          "keywords": null
+        },
+        {
+          "pos": 6,
+          "token": "plata",
+          "keywords": null
+        },
+        {
+          "pos": 7,
+          "token": "niño",
+          "keywords": null
+        },
+        {
+          "pos": 8,
+          "token": "agua",
+          "keywords": null
+        },
+        {
+          "pos": 9,
+          "token": "papá",
+          "keywords": null
+        },
+        {
+          "pos": 10,
+          "token": "mamá",
+          "keywords": null
+        },
+        {
+          "pos": 11,
+          "token": "noche",
+          "keywords": null
+        },
+        {
+          "pos": 12,
+          "token": "leche",
+          "keywords": null
+        },
+        {
+          "pos": 13,
+          "token": "silla",
+          "keywords": null
+        },
+        {
+          "pos": 14,
+          "token": "puerta",
+          "keywords": null
+        },
+        {
+          "pos": 15,
+          "token": "cama",
+          "keywords": null
+        },
+        {
+          "pos": 16,
+          "token": "zapato",
+          "keywords": null
+        },
+        {
+          "pos": 17,
+          "token": "pluma",
+          "keywords": null
+        },
+        {
+          "pos": 18,
+          "token": "dinero",
+          "keywords": null
+        },
+        {
+          "pos": 19,
+          "token": "escuela",
+          "keywords": null
+        },
+        {
+          "pos": 20,
+          "token": "familia",
+          "keywords": null
+        }
       ]
     }
   ],
   "interpretation": {
     "metric": "srt_db",
     "norms_by_age": [
-      { "age_min": 11, "age_max": 60, "normal_min": 20, "mild_min": 40, "severe_max": 60 }
+      {
+        "age_min": 11,
+        "age_max": 60,
+        "normal_min": 20,
+        "mild_min": 40,
+        "severe_max": 60
+      }
     ],
     "description_md": "SRT normal ≤20 dB HL. Debe coincidir ±10 dB con el PTA conversacional."
   },
@@ -81,5 +215,8 @@
     "target_population": "adults",
     "requires_recording": true,
     "estimated_duration_min": 6
+  },
+  "families": {
+    "logoaudiometry": "Logoaudiometría"
   }
 }

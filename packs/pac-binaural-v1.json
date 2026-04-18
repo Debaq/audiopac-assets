@@ -6,12 +6,27 @@
   "description_md": "# Integración binaural no verbal\n\nBatería de tareas binaurales **sin material lingüístico** que aíslan los mecanismos de **integración, separación y lateralización** auditiva mediados por el tronco cerebral (complejo olivar superior) y la corteza auditiva vía cuerpo calloso. Al no usar habla, eliminan la confounding de competencia lingüística y atención lexical, y permiten evaluar a pacientes con compromiso afásico o niños pre-lectores.\n\n- **ILD_LAT**: lateralización por diferencia interaural de intensidad — evalúa el procesamiento de ILD en el complejo olivar superior lateral (LSO).\n- **DICHOTIC_NV**: escucha dicótica con tonos distintos L/R simultáneos — evalúa separación binaural, ventaja oído derecho (REA) y transferencia callosa.\n- **FUSION_BIN**: fusión binaural tonal — integra información simultánea de ambos oídos en un percepto único (test clásico de Matzker 1959).\n\n**Normativos aproximados** (adulto 18–60 años, audición simétrica ±10 dB HL):\n\n- Lateralización correcta ≥90% con ILD de 10 dB.\n- REA en dicótico no verbal: 3–10% (menor que con habla por menor lateralización hemisférica).\n- Fusión: >90% identificación binaural correcta.\n\nUtilidad clínica: lesiones de tronco bajo (neuritis vestibular, schwannomas), compromiso del cuerpo calloso (esclerosis múltiple, split-brain quirúrgico, agenesia callosa), trastorno del espectro autista (alteraciones de integración multisensorial, Williams et al. 2020).",
   "requirements": "ninguno",
   "license": "CC-BY-SA",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "Kimura D (1961). Cerebral dominance and the perception of verbal stimuli. Can J Psychol 15:166-171", "url": null },
-    { "citation": "Matzker J (1959). Two new methods for the assessment of central auditory functions in cases of brain disease. Ann Otol Rhinol Laryngol 68:1185-1197", "url": null },
-    { "citation": "Musiek FE (1983). Assessment of central auditory dysfunction: the dichotic digit test revisited. Ear Hear 4:79-83", "url": null },
-    { "citation": "Blauert J (1997). Spatial Hearing: The Psychophysics of Human Sound Localization. MIT Press.", "url": null }
+    {
+      "citation": "Kimura D (1961). Cerebral dominance and the perception of verbal stimuli. Can J Psychol 15:166-171",
+      "url": null
+    },
+    {
+      "citation": "Matzker J (1959). Two new methods for the assessment of central auditory functions in cases of brain disease. Ann Otol Rhinol Laryngol 68:1185-1197",
+      "url": null
+    },
+    {
+      "citation": "Musiek FE (1983). Assessment of central auditory dysfunction: the dichotic digit test revisited. Ear Hear 4:79-83",
+      "url": null
+    },
+    {
+      "citation": "Blauert J (1997). Spatial Hearing: The Psychophysics of Human Sound Localization. MIT Press.",
+      "url": null
+    }
   ],
   "tests": [
     {
@@ -19,7 +34,72 @@
       "name": "Lateralización por ILD",
       "test_type": "CUSTOM",
       "description": "Lateralización por diferencia interaural de intensidad. C=centrado (1.0/1.0), L=lateralizado izq (1.0/0.3), R=lateralizado der (0.3/1.0). Paciente indica si el tono se escucha al centro, izquierda o derecha.",
-      "config_json": {"frequency":1000,"tones":{"C":{"label":"Centro","frequency":1000,"duration_ms":500,"gain_l":1.0,"gain_r":1.0},"L":{"label":"Izq","frequency":1000,"duration_ms":500,"gain_l":1.0,"gain_r":0.3},"R":{"label":"Der","frequency":1000,"duration_ms":500,"gain_l":0.3,"gain_r":1.0}},"isi_ms":2000,"iri_ms":3000,"envelope_ms":20,"pattern_length":1,"practice_sequences":["C","L","R","C","L","R"],"test_sequences":["C","L","R","L","C","R","R","L","C","L","R","C","C","R","L","R","C","L","L","C","R","C","L","R"],"channel":"binaural","level_db":60},
+      "config_json": {
+        "frequency": 1000,
+        "tones": {
+          "C": {
+            "label": "Centro",
+            "frequency": 1000,
+            "duration_ms": 500,
+            "gain_l": 1.0,
+            "gain_r": 1.0
+          },
+          "L": {
+            "label": "Izq",
+            "frequency": 1000,
+            "duration_ms": 500,
+            "gain_l": 1.0,
+            "gain_r": 0.3
+          },
+          "R": {
+            "label": "Der",
+            "frequency": 1000,
+            "duration_ms": 500,
+            "gain_l": 0.3,
+            "gain_r": 1.0
+          }
+        },
+        "isi_ms": 2000,
+        "iri_ms": 3000,
+        "envelope_ms": 20,
+        "pattern_length": 1,
+        "practice_sequences": [
+          "C",
+          "L",
+          "R",
+          "C",
+          "L",
+          "R"
+        ],
+        "test_sequences": [
+          "C",
+          "L",
+          "R",
+          "L",
+          "C",
+          "R",
+          "R",
+          "L",
+          "C",
+          "L",
+          "R",
+          "C",
+          "C",
+          "R",
+          "L",
+          "R",
+          "C",
+          "L",
+          "L",
+          "C",
+          "R",
+          "C",
+          "L",
+          "R"
+        ],
+        "channel": "binaural",
+        "level_db": 60
+      },
       "is_standard": 1,
       "family": "pac.binaural",
       "purpose_md": "Evaluar la **lateralización intracraneal** de tonos puros mediante **diferencia interaural de intensidad (ILD/IID)**. La ILD es uno de los dos mecanismos clásicos de localización horizontal (junto con ITD — diferencia interaural de tiempo), procesado en la **oliva superior lateral (LSO)** del tronco auditivo. A 1 kHz los dos mecanismos coexisten (\"duplex theory\" de Rayleigh); por encima de 1.5 kHz domina ILD.",
@@ -30,8 +110,15 @@
       "estimated_duration_min": 3,
       "min_age_years": 8,
       "references": [
-        { "citation": "Mills AW. Lateralization of high-frequency tones", "year": 1960, "doi": "10.1121/1.1907858" },
-        { "citation": "Blauert J. Spatial Hearing: The Psychophysics of Human Sound Localization", "year": 1997 }
+        {
+          "citation": "Mills AW. Lateralization of high-frequency tones",
+          "year": 1960,
+          "doi": "10.1121/1.1907858"
+        },
+        {
+          "citation": "Blauert J. Spatial Hearing: The Psychophysics of Human Sound Localization",
+          "year": 1997
+        }
       ]
     },
     {
@@ -39,7 +126,49 @@
       "name": "Dichotic no verbal (tonos L≠R)",
       "test_type": "CUSTOM",
       "description": "Escucha dicótica no verbal - Secuencias distintas L y R simultáneas. Paciente reporta lo oído en cada oído. Formato patrón: \"IZQ|DER\" (ej. \"LHL|HLH\").",
-      "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":250,"isi_ms":350,"iri_ms":7000,"envelope_ms":10,"pattern_length":3,"practice_sequences":["LHL|HLH","HLH|LHL","LLH|HHL","HHL|LLH"],"test_sequences":["LHL|HLH","HLH|LHL","LLH|HHL","HHL|LLH","LHH|HLL","HLL|LHH","LHL|HHL","HLH|LLH","LLH|HLH","HHL|LHL","LHL|LHH","HLH|HLL","LLH|LHL","HHL|HLH","LHH|HHL","HLL|LLH"],"channel":"binaural","level_db":60},
+      "config_json": {
+        "tones": {
+          "L": {
+            "label": "Grave",
+            "frequency": 880
+          },
+          "H": {
+            "label": "Agudo",
+            "frequency": 1430
+          }
+        },
+        "duration_ms": 250,
+        "isi_ms": 350,
+        "iri_ms": 7000,
+        "envelope_ms": 10,
+        "pattern_length": 3,
+        "practice_sequences": [
+          "LHL|HLH",
+          "HLH|LHL",
+          "LLH|HHL",
+          "HHL|LLH"
+        ],
+        "test_sequences": [
+          "LHL|HLH",
+          "HLH|LHL",
+          "LLH|HHL",
+          "HHL|LLH",
+          "LHH|HLL",
+          "HLL|LHH",
+          "LHL|HHL",
+          "HLH|LLH",
+          "LLH|HLH",
+          "HHL|LHL",
+          "LHL|LHH",
+          "HLH|HLL",
+          "LLH|LHL",
+          "HHL|HLH",
+          "LHH|HHL",
+          "HLL|LLH"
+        ],
+        "channel": "binaural",
+        "level_db": 60
+      },
       "is_standard": 1,
       "family": "pac.binaural",
       "purpose_md": "Evaluar **escucha dicótica con material no verbal**. Presenta dos secuencias tonales **distintas y simultáneas** en cada oído, obligando al sistema a separar e integrar flujos auditivos. Análogo tonal al Dichotic Digits (Musiek 1983) y al SSW (Katz 1962), pero sin demanda lingüística — útil cuando el habla está contraindicada (afasia, pre-lectores).",
@@ -50,8 +179,14 @@
       "estimated_duration_min": 6,
       "min_age_years": 8,
       "references": [
-        { "citation": "Kimura D. Cerebral dominance and the perception of verbal stimuli", "year": 1961 },
-        { "citation": "Musiek FE. Assessment of central auditory dysfunction: the dichotic digit test revisited", "year": 1983 }
+        {
+          "citation": "Kimura D. Cerebral dominance and the perception of verbal stimuli",
+          "year": 1961
+        },
+        {
+          "citation": "Musiek FE. Assessment of central auditory dysfunction: the dichotic digit test revisited",
+          "year": 1983
+        }
       ]
     },
     {
@@ -59,7 +194,40 @@
       "name": "Fusión binaural tonal",
       "test_type": "CUSTOM",
       "description": "Fusión binaural - Tono partido: mitad temporal al oído L, otra mitad al R. Se presenta como patrón alternado. \"A|B\" con ambos el mismo token fusiona perceptualmente.",
-      "config_json": {"frequency":1000,"tones":{"A":{"label":"Tono","frequency":1000,"duration_ms":200}},"isi_ms":100,"iri_ms":3000,"envelope_ms":10,"pattern_length":2,"practice_sequences":["AA|AA","A|A"],"test_sequences":["A|A","AA|AA","A|A","AA|AA","A|A","AA|AA","A|A","AA|AA","A|A","AA|AA","A|A","AA|AA"],"channel":"binaural","level_db":60},
+      "config_json": {
+        "frequency": 1000,
+        "tones": {
+          "A": {
+            "label": "Tono",
+            "frequency": 1000,
+            "duration_ms": 200
+          }
+        },
+        "isi_ms": 100,
+        "iri_ms": 3000,
+        "envelope_ms": 10,
+        "pattern_length": 2,
+        "practice_sequences": [
+          "AA|AA",
+          "A|A"
+        ],
+        "test_sequences": [
+          "A|A",
+          "AA|AA",
+          "A|A",
+          "AA|AA",
+          "A|A",
+          "AA|AA",
+          "A|A",
+          "AA|AA",
+          "A|A",
+          "AA|AA",
+          "A|A",
+          "AA|AA"
+        ],
+        "channel": "binaural",
+        "level_db": 60
+      },
       "is_standard": 1,
       "family": "pac.binaural",
       "purpose_md": "Evaluar **fusión binaural** — capacidad del sistema auditivo para integrar en un único percepto información simultánea que llega a ambos oídos. Test clásico derivado del paradigma original de **Matzker (1959)**, donde información complementaria (ej. fragmentos filtrados del mismo habla) se presentan a cada oído y el paciente debe integrarlas. Aquí se usa versión tonal no verbal.",
@@ -70,8 +238,14 @@
       "estimated_duration_min": 3,
       "min_age_years": 8,
       "references": [
-        { "citation": "Matzker J. Two new methods for the assessment of central auditory functions in cases of brain disease", "year": 1959 },
-        { "citation": "Noffsinger D et al. Auditory and vestibular aberrations in multiple sclerosis", "year": 1972 }
+        {
+          "citation": "Matzker J. Two new methods for the assessment of central auditory functions in cases of brain disease",
+          "year": 1959
+        },
+        {
+          "citation": "Noffsinger D et al. Auditory and vestibular aberrations in multiple sclerosis",
+          "year": 1972
+        }
       ]
     }
   ],
@@ -79,7 +253,13 @@
   "interpretation": {
     "metric": "asymmetry_pct",
     "norms_by_age": [
-      { "age_min": 11, "age_max": 60, "normal_min": 85, "mild_min": 70, "severe_max": 69 }
+      {
+        "age_min": 11,
+        "age_max": 60,
+        "normal_min": 85,
+        "mild_min": 70,
+        "severe_max": 69
+      }
     ],
     "description_md": "Lateralización correcta >85% en adultos normales. Asimetrías grandes (REA >25% en dicótico, o errores sistemáticos de lado en ILD) sugieren alteración del procesamiento binaural (tronco cerebral bajo o cuerpo calloso)."
   },
@@ -87,5 +267,8 @@
     "recommended": false,
     "target_population": "adults",
     "estimated_duration_min": 10
+  },
+  "families": {
+    "pac.binaural": "Integración binaural"
   }
 }

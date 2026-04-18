@@ -6,11 +6,23 @@
   "description_md": "# SinB-ES (Speech in Babble / Noise)\n\nUmbral de recepción del habla en ruido tipo **Speech-Shaped Noise (SSN)** — ruido rosa filtrado pasabajos a 1 kHz que aproxima el espectro a largo plazo del habla castellana. Más enmascarante perceptualmente que rosa puro porque concentra energía en la banda crítica de las vocales.\n\nVariante de HINT que evalúa **figura-fondo competitivo informacional**: el ruido SSN \"suena\" como balbuceo de fondo, exigiendo separación habla/habla en lugar de habla/ruido neutro. Particularmente sensible en presbiacusia central, TPAC adulto y disfunción cocleocentral leve.\n\nLa lista SINB_ES_CUSTOM_A se instala vacía — el usuario graba sus propias frases y marca palabras clave en /estimulos. Idealmente 12+ frases con 3–5 keywords cada una.",
   "requirements": "recording",
   "license": "CC-BY-SA",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "Killion MC, Niquette PA, Gudmundsen GI, Revit LJ, Banerjee S (2004). Development of a quick speech-in-noise test for measuring signal-to-noise ratio loss. J Acoust Soc Am 116:2395-2405", "url": null },
-    { "citation": "Hochmuth S, Brand T, Zokoll MA et al (2012). A Spanish matrix sentence test for assessing speech reception thresholds in noise. Int J Audiol 51:536-544", "url": null },
-    { "citation": "Byrne D et al (1994). An international comparison of long-term average speech spectra. J Acoust Soc Am 96:2108-2120", "url": null }
+    {
+      "citation": "Killion MC, Niquette PA, Gudmundsen GI, Revit LJ, Banerjee S (2004). Development of a quick speech-in-noise test for measuring signal-to-noise ratio loss. J Acoust Soc Am 116:2395-2405",
+      "url": null
+    },
+    {
+      "citation": "Hochmuth S, Brand T, Zokoll MA et al (2012). A Spanish matrix sentence test for assessing speech reception thresholds in noise. Int J Audiol 51:536-544",
+      "url": null
+    },
+    {
+      "citation": "Byrne D et al (1994). An international comparison of long-term average speech spectra. J Acoust Soc Am 96:2108-2120",
+      "url": null
+    }
   ],
   "tests": [
     {
@@ -18,7 +30,30 @@
       "name": "SinB-ES (SRT adaptativo en SSN)",
       "test_type": "CUSTOM",
       "description": "SRT-SNR en Speech-Shaped Noise. Reusa runner HINT con noise_type='ssn'. Grabá frases con keywords en /estimulos.",
-      "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":65,"hint":{"stimulus_list_code":"SINB_ES_CUSTOM_A","start_snr_db":5,"noise_level_db":60,"noise_type":"ssn","sentences_per_level":4,"threshold_pass_ratio":0.5,"step_down_db":4,"step_up_db":2,"min_snr_db":-10,"max_snr_db":20,"max_total_trials":40}},
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SINB_ES_CUSTOM_A",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "ssn",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 40
+        }
+      },
       "is_standard": 1,
       "family": "hint",
       "purpose_md": "Cuantificar el **SRT-SNR en Speech-Shaped Noise (SSN)** — una aproximación al escenario acústico más ecológicamente válido de la queja auditiva cotidiana: **hablar en una cafetería, reunión o fiesta**. El SSN rivaliza **espectralmente** con la voz objetivo, forzando mecanismos de **figura-fondo auditivo** que no se activan con ruido blanco o rosa puros. Por eso el SinB es **más sensible al componente central** de la dificultad en ruido que el HINT clásico.",
@@ -29,9 +64,20 @@
       "estimated_duration_min": 12,
       "min_age_years": 11,
       "references": [
-        { "citation": "Killion MC, Niquette PA, Gudmundsen GI et al. Development of a quick speech-in-noise test for measuring signal-to-noise ratio loss", "year": 2004, "doi": "10.1121/1.1784440" },
-        { "citation": "Byrne D et al. An international comparison of long-term average speech spectra", "year": 1994, "doi": "10.1121/1.410152" },
-        { "citation": "Hochmuth S et al. A Spanish matrix sentence test for assessing speech reception thresholds in noise", "year": 2012 }
+        {
+          "citation": "Killion MC, Niquette PA, Gudmundsen GI et al. Development of a quick speech-in-noise test for measuring signal-to-noise ratio loss",
+          "year": 2004,
+          "doi": "10.1121/1.1784440"
+        },
+        {
+          "citation": "Byrne D et al. An international comparison of long-term average speech spectra",
+          "year": 1994,
+          "doi": "10.1121/1.410152"
+        },
+        {
+          "citation": "Hochmuth S et al. A Spanish matrix sentence test for assessing speech reception thresholds in noise",
+          "year": 2012
+        }
       ]
     }
   ],
@@ -49,9 +95,27 @@
   "interpretation": {
     "metric": "srt_db",
     "norms_by_age": [
-      { "age_min": 11, "age_max": 40, "normal_min": -8, "mild_min": -3, "severe_max": 3 },
-      { "age_min": 41, "age_max": 65, "normal_min": -5, "mild_min": 0, "severe_max": 5 },
-      { "age_min": 66, "age_max": 90, "normal_min": -2, "mild_min": 3, "severe_max": 8 }
+      {
+        "age_min": 11,
+        "age_max": 40,
+        "normal_min": -8,
+        "mild_min": -3,
+        "severe_max": 3
+      },
+      {
+        "age_min": 41,
+        "age_max": 65,
+        "normal_min": -5,
+        "mild_min": 0,
+        "severe_max": 5
+      },
+      {
+        "age_min": 66,
+        "age_max": 90,
+        "normal_min": -2,
+        "mild_min": 3,
+        "severe_max": 8
+      }
     ],
     "description_md": "**SRT-SNR en SSN — adultos jóvenes normoyentes:** ~-6 a -8 dB. SSN es ~2 dB más enmascarante que rosa puro a igual nivel.\n\nUmbrales positivos elevados (>0 dB en jóvenes, >5 dB en mayores) indican dificultad clínica para extraer habla en fondo competitivo: típico de presbiacusia central, TPAC, lesiones cocleocentrales leves o componente cognitivo (atención dividida).\n\nDiferencia con HINT en rosa: SinB ofrece mejor sensibilidad al componente central porque el SSN rivaliza espectralmente con la voz."
   },
@@ -60,5 +124,8 @@
     "target_population": "adults",
     "requires_recording": true,
     "estimated_duration_min": 12
+  },
+  "families": {
+    "hint": "Frases en ruido"
   }
 }

@@ -6,10 +6,19 @@
   "description_md": "# Duration Pattern Sequence (DPS) - Musiek\n\nVersión clásica del Duration Pattern Sequence Test (Musiek, 1980). Tono fijo 1000 Hz con dos duraciones contrastantes: largo (500 ms) y corto (250 ms). Secuencias de 3 tonos. Sensible a lesiones temporales y trastornos del procesamiento auditivo central.\n\n**Mide:** procesamiento temporal de duración y reconocimiento de patrones.\n\n**Población:** adultos y niños desde 7 años.\n\n**Interpretación gruesa:** rendimiento normal adultos ≥85%; <70% sugiere compromiso temporal central. DPS suele ser más sensible que PPS a lesiones del cuerpo calloso.",
   "requirements": "ninguno",
   "license": "CC-BY-SA",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "Musiek FE, Baran JA, Pinheiro ML (1990). Duration pattern recognition in normal subjects and patients with cerebral and cochlear lesions. Audiology 29:304-313", "url": null },
-    { "citation": "Musiek FE (2002). The frequency pattern test: a guide. Hear J 55(6):58", "url": null }
+    {
+      "citation": "Musiek FE, Baran JA, Pinheiro ML (1990). Duration pattern recognition in normal subjects and patients with cerebral and cochlear lesions. Audiology 29:304-313",
+      "url": null
+    },
+    {
+      "citation": "Musiek FE (2002). The frequency pattern test: a guide. Hear J 55(6):58",
+      "url": null
+    }
   ],
   "tests": [
     {
@@ -17,7 +26,99 @@
       "name": "DPS Estándar (Musiek)",
       "test_type": "DPS",
       "description": "Test de Patrón de Duración - Versión estándar 1000Hz, tonos largos (500ms) y cortos (250ms)",
-      "config_json": {"frequency":1000,"tones":{"L":{"label":"Largo","duration_ms":500},"C":{"label":"Corto","duration_ms":250}},"isi_ms":300,"iri_ms":6000,"envelope_ms":10,"pattern_length":3,"practice_sequences":["LCC","CLC","CCL","LLC","CCL","LCL","CLC","LLC","LCC","CCL"],"test_sequences":["CCL","CLL","LCL","LCC","LCC","LLC","LLC","CLC","CCL","LCC","CLL","LCL","CCL","CCL","CLC","LCL","LCC","LLC","CLC","LLC","CLC","LLC","CCL","CLC","CCL","CLC","CLC","LCL","LCC","CCL","LLC","LLC","CCL","LCL","LCC","CLC","CLC","CLL","CCL","LCC","LLC","CLL","CLL","LCL","CLC","LCC","LLC","CLL","CLL","LCL","CCL","CLL","LLC","LCL","LCL","CLL","CLL","LCC","LCC","LCL"],"channel":"binaural","level_db":60},
+      "config_json": {
+        "frequency": 1000,
+        "tones": {
+          "L": {
+            "label": "Largo",
+            "duration_ms": 500
+          },
+          "C": {
+            "label": "Corto",
+            "duration_ms": 250
+          }
+        },
+        "isi_ms": 300,
+        "iri_ms": 6000,
+        "envelope_ms": 10,
+        "pattern_length": 3,
+        "practice_sequences": [
+          "LCC",
+          "CLC",
+          "CCL",
+          "LLC",
+          "CCL",
+          "LCL",
+          "CLC",
+          "LLC",
+          "LCC",
+          "CCL"
+        ],
+        "test_sequences": [
+          "CCL",
+          "CLL",
+          "LCL",
+          "LCC",
+          "LCC",
+          "LLC",
+          "LLC",
+          "CLC",
+          "CCL",
+          "LCC",
+          "CLL",
+          "LCL",
+          "CCL",
+          "CCL",
+          "CLC",
+          "LCL",
+          "LCC",
+          "LLC",
+          "CLC",
+          "LLC",
+          "CLC",
+          "LLC",
+          "CCL",
+          "CLC",
+          "CCL",
+          "CLC",
+          "CLC",
+          "LCL",
+          "LCC",
+          "CCL",
+          "LLC",
+          "LLC",
+          "CCL",
+          "LCL",
+          "LCC",
+          "CLC",
+          "CLC",
+          "CLL",
+          "CCL",
+          "LCC",
+          "LLC",
+          "CLL",
+          "CLL",
+          "LCL",
+          "CLC",
+          "LCC",
+          "LLC",
+          "CLL",
+          "CLL",
+          "LCL",
+          "CCL",
+          "CLL",
+          "LLC",
+          "LCL",
+          "LCL",
+          "CLL",
+          "CLL",
+          "LCC",
+          "LCC",
+          "LCL"
+        ],
+        "channel": "binaural",
+        "level_db": 60
+      },
       "is_standard": 1,
       "family": "pac.patterns",
       "purpose_md": "**Versión estándar histórica** del Duration Pattern Sequence Test (Musiek, Baran & Pinheiro 1990). A diferencia del PPS que evalúa reconocimiento espectral-secuencial, el DPS **aísla el procesamiento temporal puro** al mantener una única frecuencia (1000 Hz) y variar solo la duración (largo 500 ms / corto 250 ms). Esto lo hace **particularmente sensible a lesiones del hemisferio derecho y cuerpo calloso** (Musiek 2002).",
@@ -28,17 +129,38 @@
       "estimated_duration_min": 10,
       "min_age_years": 8,
       "references": [
-        { "citation": "Musiek FE, Baran JA, Pinheiro ML. Duration pattern recognition in normal subjects and patients with cerebral and cochlear lesions", "year": 1990 },
-        { "citation": "Musiek FE. The frequency pattern test: a guide", "year": 2002 },
-        { "citation": "Bellis TJ. Assessment and management of central auditory processing disorders", "year": 2003 }
+        {
+          "citation": "Musiek FE, Baran JA, Pinheiro ML. Duration pattern recognition in normal subjects and patients with cerebral and cochlear lesions",
+          "year": 1990
+        },
+        {
+          "citation": "Musiek FE. The frequency pattern test: a guide",
+          "year": 2002
+        },
+        {
+          "citation": "Bellis TJ. Assessment and management of central auditory processing disorders",
+          "year": 2003
+        }
       ]
     }
   ],
   "interpretation": {
     "metric": "accuracy_pct",
     "norms_by_age": [
-      { "age_min": 7, "age_max": 10, "normal_min": 70, "mild_min": 50, "severe_max": 49 },
-      { "age_min": 11, "age_max": 60, "normal_min": 85, "mild_min": 70, "severe_max": 69 }
+      {
+        "age_min": 7,
+        "age_max": 10,
+        "normal_min": 70,
+        "mild_min": 50,
+        "severe_max": 49
+      },
+      {
+        "age_min": 11,
+        "age_max": 60,
+        "normal_min": 85,
+        "mild_min": 70,
+        "severe_max": 69
+      }
     ],
     "description_md": "Rendimiento <70% en adultos sugiere compromiso de procesamiento temporal central. Más sensible que PPS para lesiones del cuerpo calloso."
   },
@@ -46,5 +168,8 @@
     "recommended": true,
     "target_population": "adults_children",
     "estimated_duration_min": 7
+  },
+  "families": {
+    "pac.patterns": "Patrones tonales"
   }
 }

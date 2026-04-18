@@ -6,13 +6,31 @@
   "description_md": "# Masking Level Difference (MLD)\n\nPrueba binaural psicoacústica clásica que cuantifica la **ventaja binaural de desenmascaramiento** mediada por las **neuronas sensibles a ITD** del complejo olivar superior medial (MSO). Al invertir la fase del tono (o del ruido) entre oídos se generan **pistas binaurales** que el tronco auditivo usa para segregar señal del enmascarador — fenómeno conocido como **binaural unmasking** (Hirsh 1948; Licklider 1948).\n\n**Paradigma**:\n- **SoNo** (señal homófasica, ruido homófasico): sin pistas binaurales → enmascaramiento monaural puro.\n- **SπNo** (señal con fase invertida 180° entre oídos, ruido homófasico): pistas binaurales disponibles → el tronco extrae la señal incluso con ~10–15 dB **menos** nivel.\n\nLa diferencia entre los umbrales de ambas condiciones es el **MLD** (en dB), típicamente:\n- **500 Hz**: MLD normal **10–15 dB** (máximo de la función, Durlach 1963).\n- 1000 Hz: MLD ~6–8 dB.\n- >2000 Hz: MLD <3 dB (la coincidencia neural de ITD se degrada por el periodo corto del tono).\n\n**Utilidad clínica**: MLD reducido (<7 dB a 500 Hz) es un **marcador sensible de compromiso del tronco auditivo bajo** — esclerosis múltiple con placas ponto-bulbares (Noffsinger et al. 1972), schwannoma vestibular, neuritis del VIII, ACV de tronco. Excelente especificidad; no se altera por lesiones corticales.\n\nRequiere **auricular estéreo calibrado con polaridad verificada**. Inversión L/R = resultado inválido.",
   "requirements": "ninguno",
   "license": "CC-BY-SA",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "Hirsh IJ (1948). The influence of interaural phase on interaural summation and inhibition. J Acoust Soc Am 20:536-544", "url": null },
-    { "citation": "Licklider JCR (1948). The influence of interaural phase relations upon the masking of speech by white noise. J Acoust Soc Am 20:150-159", "url": null },
-    { "citation": "Durlach NI (1963). Equalization and cancellation theory of binaural masking-level differences. J Acoust Soc Am 35:1206-1218", "url": null },
-    { "citation": "Wilson RH, Moncrieff DW, Townsend EA, Pillion AL (2003). Development of a 500-Hz masking-level difference protocol for clinic use. J Am Acad Audiol 14:1-8", "url": null },
-    { "citation": "Noffsinger D et al. (1972). Auditory and vestibular aberrations in multiple sclerosis. Acta Otolaryngol Suppl 303:1-63", "url": null }
+    {
+      "citation": "Hirsh IJ (1948). The influence of interaural phase on interaural summation and inhibition. J Acoust Soc Am 20:536-544",
+      "url": null
+    },
+    {
+      "citation": "Licklider JCR (1948). The influence of interaural phase relations upon the masking of speech by white noise. J Acoust Soc Am 20:150-159",
+      "url": null
+    },
+    {
+      "citation": "Durlach NI (1963). Equalization and cancellation theory of binaural masking-level differences. J Acoust Soc Am 35:1206-1218",
+      "url": null
+    },
+    {
+      "citation": "Wilson RH, Moncrieff DW, Townsend EA, Pillion AL (2003). Development of a 500-Hz masking-level difference protocol for clinic use. J Am Acad Audiol 14:1-8",
+      "url": null
+    },
+    {
+      "citation": "Noffsinger D et al. (1972). Auditory and vestibular aberrations in multiple sclerosis. Acta Otolaryngol Suppl 303:1-63",
+      "url": null
+    }
   ],
   "tests": [
     {
@@ -20,7 +38,83 @@
       "name": "MLD - Masking Level Difference",
       "test_type": "CUSTOM",
       "description": "MLD clásico a 500 Hz. Tono enmascarado en ruido blanco. Dos condiciones: SoNo (homófasica) y SπNo (tono invertido 180° en oído derecho). MLD normal ≥10 dB. Tokens A=SoNo tono, B=SoNo catch, C=SπNo tono (10 dB menos), D=SπNo catch. Auricular estéreo obligatorio.",
-      "config_json": {"tones":{"A":{"label":"SoNo + tono","kind":"tone","frequency":500,"duration_ms":500,"level_db":60,"noise_mix":{"noise_type":"white","level_db":65}},"B":{"label":"SoNo catch","kind":"noise","noise_type":"white","duration_ms":500,"level_db":65},"C":{"label":"SπNo + tono","kind":"tone","frequency":500,"duration_ms":500,"level_db":50,"phase_invert_right":true,"noise_mix":{"noise_type":"white","level_db":65}},"D":{"label":"SπNo catch","kind":"noise","noise_type":"white","duration_ms":500,"level_db":65}},"isi_ms":1000,"iri_ms":3000,"envelope_ms":20,"pattern_length":1,"practice_sequences":["A","B","C","D","A","C"],"test_sequences":["A","C","B","A","C","D","A","C","A","C","B","A","C","D","A","C","B","A","C","D"],"channel":"binaural","level_db":60},
+      "config_json": {
+        "tones": {
+          "A": {
+            "label": "SoNo + tono",
+            "kind": "tone",
+            "frequency": 500,
+            "duration_ms": 500,
+            "level_db": 60,
+            "noise_mix": {
+              "noise_type": "white",
+              "level_db": 65
+            }
+          },
+          "B": {
+            "label": "SoNo catch",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 500,
+            "level_db": 65
+          },
+          "C": {
+            "label": "SπNo + tono",
+            "kind": "tone",
+            "frequency": 500,
+            "duration_ms": 500,
+            "level_db": 50,
+            "phase_invert_right": true,
+            "noise_mix": {
+              "noise_type": "white",
+              "level_db": 65
+            }
+          },
+          "D": {
+            "label": "SπNo catch",
+            "kind": "noise",
+            "noise_type": "white",
+            "duration_ms": 500,
+            "level_db": 65
+          }
+        },
+        "isi_ms": 1000,
+        "iri_ms": 3000,
+        "envelope_ms": 20,
+        "pattern_length": 1,
+        "practice_sequences": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "A",
+          "C"
+        ],
+        "test_sequences": [
+          "A",
+          "C",
+          "B",
+          "A",
+          "C",
+          "D",
+          "A",
+          "C",
+          "A",
+          "C",
+          "B",
+          "A",
+          "C",
+          "D",
+          "A",
+          "C",
+          "B",
+          "A",
+          "C",
+          "D"
+        ],
+        "channel": "binaural",
+        "level_db": 60
+      },
       "is_standard": 1,
       "family": "pac.mld",
       "purpose_md": "Evaluar la **ventaja binaural de desenmascaramiento** (MLD) como **marcador objetivo de función del tronco auditivo bajo** (complejo olivar superior medial, MSO). Es una de las pocas pruebas PAC con **alta especificidad anatómica** — un MLD reducido apunta específicamente al tronco bajo, no a corteza o vías intercalicas. Útil en sospecha de **esclerosis múltiple, schwannoma vestibular, ACV de tronco**.",
@@ -31,10 +125,23 @@
       "estimated_duration_min": 5,
       "min_age_years": 12,
       "references": [
-        { "citation": "Hirsh IJ. The influence of interaural phase on interaural summation and inhibition", "year": 1948, "doi": "10.1121/1.1906407" },
-        { "citation": "Durlach NI. Equalization and cancellation theory of binaural masking-level differences", "year": 1963 },
-        { "citation": "Wilson RH et al. Development of a 500-Hz masking-level difference protocol for clinic use", "year": 2003 },
-        { "citation": "Noffsinger D et al. Auditory and vestibular aberrations in multiple sclerosis", "year": 1972 }
+        {
+          "citation": "Hirsh IJ. The influence of interaural phase on interaural summation and inhibition",
+          "year": 1948,
+          "doi": "10.1121/1.1906407"
+        },
+        {
+          "citation": "Durlach NI. Equalization and cancellation theory of binaural masking-level differences",
+          "year": 1963
+        },
+        {
+          "citation": "Wilson RH et al. Development of a 500-Hz masking-level difference protocol for clinic use",
+          "year": 2003
+        },
+        {
+          "citation": "Noffsinger D et al. Auditory and vestibular aberrations in multiple sclerosis",
+          "year": 1972
+        }
       ]
     }
   ],
@@ -42,7 +149,13 @@
   "interpretation": {
     "metric": "accuracy_pct",
     "norms_by_age": [
-      { "age_min": 11, "age_max": 60, "normal_min": 85, "mild_min": 70, "severe_max": 69 }
+      {
+        "age_min": 11,
+        "age_max": 60,
+        "normal_min": 85,
+        "mild_min": 70,
+        "severe_max": 69
+      }
     ],
     "description_md": "En normales la detección del tono en condición **SπNo** (token C) debe ser ≥70% **aunque el tono esté 10 dB más bajo** que en SoNo (evidencia de MLD ≥10 dB). Detección de C significativamente inferior a A (con catches B/D rechazados) sugiere **MLD reducido** y alteración del procesamiento binaural en **tronco auditivo bajo** (complejo olivar superior medial). Marcador sensible en EM y schwannoma vestibular."
   },
@@ -50,5 +163,8 @@
     "recommended": false,
     "target_population": "adults",
     "estimated_duration_min": 5
+  },
+  "families": {
+    "pac.mld": "Enmascaramiento (MLD)"
   }
 }
