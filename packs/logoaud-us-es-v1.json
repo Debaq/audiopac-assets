@@ -1,15 +1,17 @@
 {
   "id": "logoaud-us-es-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Logoaudiometría US-ES (SRT bisílabos hispanos EEUU)",
   "category": "logoaudiometry",
-  "description_md": "# Logoaudiometría US-ES\n\nLista de 20 bisílabos con variantes léxicas propias del español estadounidense (población hispana en EEUU) para SRT. Plantilla SRT adaptativa con bracketing descendente-ascendente.\n\nEl usuario debe grabar su propia voz para cada token en /estimulos antes de ejecutar el test.",
+  "description_md": "# Logoaudiometría — Español EEUU\n\nAdaptación de logoaudiometría SRT para **población hispanohablante en Estados Unidos**. El español US tiene particularidades léxicas documentadas (Lipski 2008; Otheguy & Zentella 2012): mayor frecuencia de **carro** (vs coche/auto), **dinero** (vs plata/guita), **mamá/papá** como formas preferidas vs madre/padre. Las listas de español peninsular o rioplatense pueden introducir ítems de baja familiaridad — esta versión selecciona vocabulario de **alta frecuencia en corpus US-ES** (Corpus del Español, Davies 2002; CREA US).\n\n**Lista SRT_US_ES_BISIL_A**: 20 bisílabos/trisílabos familiares al oyente hispano estadounidense, balanceados fonémicamente.\n\n**Referencia metodológica**: Wilson & McArdle (2005) para speech audiometry estándar; McCullough et al. (1994) para adaptaciones multimedia del español US.\n\n**Requiere grabación**: el usuario graba los tokens en `/estimulos`. Recomendación: usar locutor con acento **general latinoamericano** o **mexicano neutro** (el más prevalente en EEUU, ~60% de la población hispana según Pew Research).",
   "requirements": "recording",
   "license": "CC-BY-SA",
   "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
   "references": [
     { "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89", "url": null },
-    { "citation": "McCullough JA, Wilson RH, Birck JD, Anderson LG (1994). A multimedia Spanish word recognition test. Am J Audiol 3:19-22", "url": null }
+    { "citation": "McCullough JA, Wilson RH, Birck JD, Anderson LG (1994). A multimedia Spanish word recognition test. Am J Audiol 3:19-22", "url": null },
+    { "citation": "Lipski JM (2008). Varieties of Spanish in the United States. Georgetown University Press.", "url": null },
+    { "citation": "Wilson RH, McArdle R (2005). Speech signals used to evaluate functional status of the auditory system. J Rehabil Res Dev 42(4 Suppl 2):79-94", "url": null }
   ],
   "tests": [
     {
@@ -18,7 +20,21 @@
       "test_type": "CUSTOM",
       "description": "SRT variante US-ES. Requiere grabar la lista SRT_US_ES_BISIL_A en /estimulos.",
       "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":50,"srt":{"stimulus_list_code":"SRT_US_ES_BISIL_A","start_level_db":50,"words_per_level":4,"step_down_db":10,"step_up_db":5,"min_level_db":0,"max_level_db":90,"threshold_pass_ratio":0.5,"max_total_trials":40}},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "logoaudiometry",
+      "purpose_md": "Determinar el **umbral de recepción del habla (SRT)** en pacientes hispanohablantes de EEUU usando un léxico adaptado a la variante US-ES. El SRT valida la audiometría tonal, detecta pseudohipoacusia y establece el nivel de presentación para pruebas supraumbrales. El uso de **vocabulario familiar al paciente** es crítico: una palabra de baja frecuencia puede elevar artificialmente el umbral por desconocimiento léxico en lugar de por pérdida auditiva.",
+      "how_it_works_md": "Paradigma **Hughson-Westlake modificado** (Carhart & Jerger 1959) con bracketing descendente-ascendente, idéntico a `SRT_LATAM_BISIL` pero sobre lista US-ES. 4 palabras por nivel, desciende 10 dB si acierta ≥50%, asciende 5 dB si falla. SRT = mínimo nivel con pass que tenga fail por debajo.",
+      "protocol_md": "1. **Confirmar variante de español del paciente**: si el paciente es rioplatense o peninsular, preferir otras listas (`logoaud-latam-v1` o lista peninsular).\n2. Verificar grabaciones de `SRT_US_ES_BISIL_A` en `/estimulos`.\n3. **Familiarización** a 40 dB HL con la lista completa.\n4. Instrucción: *«Le voy a decir palabras cada vez más bajito. Repítalas. Si no está seguro, **adivine**»*.\n5. Test monaural por oído con enmascaramiento si hay asimetría >30 dB.\n6. **Validación vs PTA**: SRT debe coincidir ±10 dB con (500+1000+2000)/3.",
+      "target_population_md": "- **Pacientes hispanohablantes residentes en EEUU** (México, Puerto Rico, Cuba, Centroamérica, Colombia/Venezuela según distribución local).\n- Evaluación audiológica rutinaria.\n- Pre-implante coclear, pre-audífono.\n- Detección de pseudohipoacusia en contexto médico-legal.",
+      "contraindications_md": "- Pacientes hispanohablantes de **España** o **Argentina/Uruguay** (preferir listas regionales).\n- **Afasia expresiva** severa.\n- Niños <5 años.\n- Hipoacusia profunda bilateral.",
+      "estimated_duration_min": 6,
+      "min_age_years": 5,
+      "references": [
+        { "citation": "Carhart R, Jerger JF. Preferred method for clinical determination of pure-tone thresholds", "year": 1959 },
+        { "citation": "McCullough JA et al. A multimedia Spanish word recognition test", "year": 1994 },
+        { "citation": "Wilson RH, McArdle R. Speech signals used to evaluate functional status of the auditory system", "year": 2005 },
+        { "citation": "Lipski JM. Varieties of Spanish in the United States", "year": 2008 }
+      ]
     }
   ],
   "lists": [

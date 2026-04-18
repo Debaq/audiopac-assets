@@ -1,16 +1,18 @@
 {
   "id": "pac-limens-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Limens diferenciales (DLF / DLD / DLI)",
   "category": "pac.limens",
-  "description_md": "# Diferencias limen\n\nPruebas psicoacústicas de discriminación fina: frecuencia (DLF), duración (DLD) e intensidad (DLI). Cada test presenta pares de tonos y el paciente responde igual/distinto. Pensadas para evaluar resolución espectral, temporal y de amplitud del sistema auditivo.\n\nUmbrales normales aproximados: DLF ~3-5 Hz a 1 kHz, DLD ~20-30 ms sobre 200 ms, DLI ~0.5-1 dB a 60 dB SL.",
+  "description_md": "# Diferencias limen (psicoacústica fina)\n\nBatería de **umbrales diferenciales** (just-noticeable-difference, JND) para las tres dimensiones básicas del sonido: frecuencia (DLF), duración (DLD) e intensidad (DLI). Paradigma **same/different** con pares de tonos AA / AB / BA / BB. Evalúan la resolución del sistema auditivo periférico + central antes de que la información llegue al procesamiento lingüístico.\n\n**Umbrales normativos aproximados** (adulto joven, audición normal):\n\n- **DLF @ 1 kHz:** ~2–5 Hz (Weber fraction 0.2–0.5%, Moore 1973; Sek & Moore 1995).\n- **DLD** sobre referencia 200 ms: ~20–30 ms (Weber fraction 10–15%, Abel 1972).\n- **DLI @ 60 dB SL, 1 kHz:** ~0.5–1 dB (Jesteadt et al. 1977; \"near-miss\" a la ley de Weber).\n\nPoblación objetivo: adultos (11+) y adolescentes. Útil como complemento a FPT/DPT en evaluación TPAC, sospecha de dislexia (DLF/DLD), reclutamiento coclear (DLI anormalmente pequeño).",
   "requirements": "ninguno",
   "license": "CC-BY-SA",
   "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
   "references": [
     { "citation": "Moore BCJ (1973). Frequency difference limens for short-duration tones. J Acoust Soc Am 54:610-619", "url": null },
+    { "citation": "Sek A, Moore BCJ (1995). Frequency discrimination as a function of frequency, measured in several ways. J Acoust Soc Am 97:2479-2486", "url": null },
     { "citation": "Abel SM (1972). Duration discrimination of noise and tone bursts. J Acoust Soc Am 51:1219-1223", "url": null },
-    { "citation": "Jesteadt W, Wier CC, Green DM (1977). Intensity discrimination as a function of frequency and sensation level. J Acoust Soc Am 61:169-177", "url": null }
+    { "citation": "Jesteadt W, Wier CC, Green DM (1977). Intensity discrimination as a function of frequency and sensation level. J Acoust Soc Am 61:169-177", "url": null },
+    { "citation": "Tallal P (1980). Auditory temporal perception, phonics, and reading disabilities in children. Brain Lang 9:182-198", "url": null }
   ],
   "tests": [
     {
@@ -19,7 +21,19 @@
       "test_type": "CUSTOM",
       "description": "Discriminación frecuencial - Pares de tonos: ¿iguales o diferentes? Δf=20Hz sobre 1000Hz. Paciente responde \"igual\" o \"distinto\", examinador marca.",
       "config_json": {"tones":{"A":{"label":"1000Hz","frequency":1000},"B":{"label":"1020Hz","frequency":1020}},"duration_ms":300,"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.limens",
+      "purpose_md": "Tamizaje de **discriminación frecuencial gruesa**. Detecta compromisos marcados de la resolución espectral antes de pasar a la versión fina. Δf=20 Hz (2% sobre 1 kHz) es ~5–10× el umbral normal — cualquier paciente con audición simétrica debería superarlo con holgura.",
+      "how_it_works_md": "Paradigma **same/different** con pares de tonos de 300 ms, ISI 500 ms. Cuatro combinaciones: AA (1000/1000), AB (1000/1020), BA (1020/1000), BB (1020/1020). El paciente responde «igual» o «distinto» por par. El contraste 20 Hz (0.347 semitonos) está por encima del umbral normal (~2–5 Hz) pero requiere atención — falla global sugiere problema atencional o de comprensión de la tarea, no resolución real.",
+      "protocol_md": "1. Audífonos supraaurales, cabina o ambiente silencioso, 60 dB SPL.\n2. Instrucción: *«Va a escuchar dos tonos seguidos. Dígame si le parecen **iguales** o **distintos**. No importa si no está seguro — adivine si hace falta»*.\n3. **Práctica con feedback**: 8 pares. Si el paciente falla >50%, reinstruir con ejemplos exagerados (500 Hz vs 1000 Hz).\n4. **Test sin feedback**: 30 pares binaurales. Registrar aciertos / falsas alarmas por separado.\n5. Si resultado ≥80%, proceder a DLF_FINE. Si <65%, revisar PTA antes de interpretar como déficit central.",
+      "target_population_md": "- **Screening pediátrico** desde 11 años.\n- Adultos con queja de discriminación musical o tonal.\n- Primer paso antes de DLF_FINE — descartar problemas groseros de resolución.",
+      "contraindications_md": "- Pérdida auditiva >40 dB HL a 1 kHz (evaluar PTA primero).\n- Tinnitus tonal cercano a 1 kHz (puede enmascarar).\n- Déficit atencional severo sin medicar.",
+      "estimated_duration_min": 4,
+      "min_age_years": 11,
+      "references": [
+        { "citation": "Moore BCJ. Frequency difference limens for short-duration tones", "year": 1973, "doi": "10.1121/1.1913640" },
+        { "citation": "Sek A, Moore BCJ. Frequency discrimination as a function of frequency, measured in several ways", "year": 1995, "doi": "10.1121/1.411968" }
+      ]
     },
     {
       "code": "DLF_FINE",
@@ -27,7 +41,20 @@
       "test_type": "CUSTOM",
       "description": "Discriminación frecuencial fina - Δf=5Hz, cercano a umbral normal (~3-5Hz). Pares igual/distinto.",
       "config_json": {"tones":{"A":{"label":"1000Hz","frequency":1000},"B":{"label":"1005Hz","frequency":1005}},"duration_ms":400,"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.limens",
+      "purpose_md": "Medir la **resolución frecuencial fina** cerca del umbral psicofísico normal. Δf=5 Hz (0.5% sobre 1 kHz ≈ 8.6 centésimas de semitono) está justo por encima del umbral típico de adultos entrenados (2–3 Hz) y permite detectar **compromisos sutiles** de la vía auditiva central o de la microestructura coclear (dead regions, DPOAE alteradas).",
+      "how_it_works_md": "Idéntico paradigma same/different que DLF_SCREEN pero con Δf=5 Hz y duración extendida a 400 ms (mayor integración espectral → menor umbral teórico). A esta distancia, sujetos normales aciertan ~70–85%; rendimiento <65% sugiere resolución espectral reducida. Correlaciona con **dislexia evolutiva** (Tallal 1980; Witton et al. 1998) y con **compromiso de dead regions cocleares**.",
+      "protocol_md": "1. Administrar solo si DLF_SCREEN ≥80%.\n2. Instrucción idéntica, enfatizar: *«Las diferencias ahora son muy pequeñas. No se frustre si duda — responda lo que le parece»*.\n3. 8 pares práctica con feedback + 30 test sin feedback.\n4. **Importante**: fatiga atencional afecta mucho. Si el examinador nota caída de rendimiento en segundo bloque, cortar a 20 items y repetir en otra sesión.\n5. Interpretación: ≥80% = excelente, 65–79% = dentro de rango normal-bajo, <65% = resolución reducida.",
+      "target_population_md": "- Adultos con sospecha de TPAC y FPT normal.\n- **Evaluación de dislexia** (correlación consistente con déficit fonológico en niños desde 9 años).\n- Amusia congénita (Peretz & Hyde 2003).\n- Screening de dead regions cocleares (complementa TEN test).\n- Músicos — se espera desempeño >90%.",
+      "contraindications_md": "- DLF_SCREEN <80% (piso no alcanzado).\n- Pérdida auditiva >25 dB HL @ 1 kHz.\n- Fatiga manifiesta — posponer.",
+      "estimated_duration_min": 6,
+      "min_age_years": 9,
+      "references": [
+        { "citation": "Moore BCJ, Peters RW. Pitch discrimination and phase sensitivity in young and elderly subjects", "year": 1992 },
+        { "citation": "Witton C et al. Sensitivity to dynamic auditory and visual stimuli predicts nonword reading ability in both dyslexic and normal readers", "year": 1998, "doi": "10.1016/S0960-9822(98)70314-9" },
+        { "citation": "Peretz I, Hyde KL. What is specific to music processing? Insights from congenital amusia", "year": 2003 }
+      ]
     },
     {
       "code": "DLD_SCREEN",
@@ -35,7 +62,19 @@
       "test_type": "CUSTOM",
       "description": "Discriminación de duración - Pares de tonos mismo Hz, distinta duración. Paciente responde \"igual\" o \"distinto\".",
       "config_json": {"frequency":1000,"tones":{"A":{"label":"200ms","duration_ms":200},"B":{"label":"250ms","duration_ms":250}},"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.limens",
+      "purpose_md": "Tamizaje de **discriminación de duración** con pares de tono 1 kHz de 200 vs 250 ms (Δ=50 ms, 25% sobre la referencia). Evalúa el procesamiento temporal sin introducir cambios espectrales — relevante para fonemas con contrastes durativos (vocales tensas/relajadas en inglés, geminadas en italiano/japonés) y para la organización temporal de la sílaba.",
+      "how_it_works_md": "Pares same/different con **misma frecuencia** (1000 Hz) y **distinta duración** (200 vs 250 ms). El Weber fraction normal para duración en el rango 100–500 ms es ~10–15% (Abel 1972) → el Δ de 25% está por encima del umbral y debería discriminarse con facilidad. Envolvente de 15 ms evita artefactos de click que darían pistas espectrales.",
+      "protocol_md": "1. Instrucción: *«Ahora los tonos suenan **igual de agudos** pero pueden durar distinto. Dígame si le parecen iguales o distintos en duración»*.\n2. 8 pares práctica con feedback + 30 test.\n3. Atender a confusiones **intensidad/duración**: tonos más largos tienden a percibirse más fuertes (efecto de integración temporal). Si el paciente reporta diferencias de volumen, reinstruir.\n4. Pasar a DLD_FINE solo si ≥80%.",
+      "target_population_md": "- Adolescentes/adultos con sospecha de TPAC.\n- Evaluación de **dislexia con hipótesis temporal** (Tallal 1980).\n- Hablantes nativos de lenguas con cuantidad fonémica.\n- Post-traumatismo craneoencefálico con queja temporal.",
+      "contraindications_md": "- Hipoacusia >40 dB HL a 1 kHz.\n- Déficit atencional severo.\n- No usar en <11 años sin entrenamiento previo (concepto \"duración\" abstracto).",
+      "estimated_duration_min": 4,
+      "min_age_years": 11,
+      "references": [
+        { "citation": "Abel SM. Duration discrimination of noise and tone bursts", "year": 1972, "doi": "10.1121/1.1912965" },
+        { "citation": "Creelman CD. Human discrimination of auditory duration", "year": 1962, "doi": "10.1121/1.1918344" }
+      ]
     },
     {
       "code": "DLD_FINE",
@@ -43,7 +82,18 @@
       "test_type": "CUSTOM",
       "description": "Discriminación de duración fina - Δd=15ms, cercano a umbral normal.",
       "config_json": {"frequency":1000,"tones":{"A":{"label":"200ms","duration_ms":200},"B":{"label":"215ms","duration_ms":215}},"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.limens",
+      "purpose_md": "**Umbral fino de duración** — Δ=15 ms (7.5% sobre 200 ms), cerca del Weber fraction normal. Detecta compromisos sutiles de procesamiento temporal relacionados con integración cortical, asociados a dislexia, TPAC y envejecimiento auditivo central.",
+      "how_it_works_md": "Pares 200 vs 215 ms @ 1 kHz. El contraste está justo por encima del umbral normal adulto (~10% = 20 ms) pero debajo del screening; sensibles y jóvenes aciertan ~75–85%. Declinación con la edad: adultos >60 años típicamente requieren Δ ≥25 ms. Rendimiento significativamente bajo en esta condición con DLD_SCREEN normal sugiere resolución temporal reducida a nivel cortical.",
+      "protocol_md": "1. Administrar solo si DLD_SCREEN ≥80%.\n2. Instrucción idéntica, enfatizando: *«Las diferencias son muy pequeñas ahora. Confíe en su primera impresión»*.\n3. 8 práctica + 30 test.\n4. Registrar tiempo de respuesta si posible — latencias prolongadas sugieren incertidumbre más que déficit.",
+      "target_population_md": "- Adultos con DLD_SCREEN normal y sospecha clínica.\n- Evaluación de **envejecimiento auditivo central** (presbiacusia central).\n- Dislexia con disociación fonológica-temporal.\n- Músicos/percusionistas (esperable >90%).",
+      "contraindications_md": "- DLD_SCREEN <80%.\n- Fatiga o medicación sedante.",
+      "estimated_duration_min": 6,
+      "min_age_years": 11,
+      "references": [
+        { "citation": "Fitzgibbons PJ, Gordon-Salant S. Age effects on duration discrimination with simple and complex stimuli", "year": 1995 }
+      ]
     },
     {
       "code": "DLI_SCREEN",
@@ -51,7 +101,19 @@
       "test_type": "CUSTOM",
       "description": "Diferencia Limen de Intensidad - Pares de tonos mismo Hz/dur, distinta intensidad. A=60 dB, B=63 dB. Paciente responde ¿igual o distinto?",
       "config_json": {"frequency":1000,"tones":{"A":{"label":"60 dB","frequency":1000,"duration_ms":400,"level_db":60},"B":{"label":"63 dB","frequency":1000,"duration_ms":400,"level_db":63}},"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.limens",
+      "purpose_md": "Tamizaje de **discriminación de intensidad** con Δ=3 dB a 60 dB SPL. El umbral normal (Weber para intensidad) a esa referencia es ~0.5–1 dB — 3 dB es ~3–6× por encima y debería percibirse sin dificultad. Rendimiento bajo sugiere o bien problema atencional/comprensión de tarea, o pérdida auditiva significativa que aplana la curva de crecimiento.",
+      "how_it_works_md": "Pares same/different con misma frecuencia (1 kHz) y duración (400 ms) pero intensidades distintas (60 vs 63 dB SPL). La envolvente de 15 ms minimiza pistas transitorias. Requiere calibración SPL precisa — sin ésta, los dB nominales pueden desviarse varios dB del valor real.",
+      "protocol_md": "1. **Calibración obligatoria**: verificar curva activa en `/calibracion` antes de administrar.\n2. Instrucción: *«Ahora los tonos suenan igual de agudos y duran lo mismo. Pueden sonar **más fuerte o más suave**. Dígame si le parecen iguales o distintos en volumen»*.\n3. 8 práctica con feedback + 30 test.\n4. Bandera clínica: si DLI es **anormalmente pequeño** (paciente acierta a Δ≤1 dB), sospechar **reclutamiento coclear** (hipoacusia neurosensorial). Si DLI está ensanchado, sospechar compromiso retrococlear o central.",
+      "target_population_md": "- Adultos con sospecha de TPAC.\n- **Diagnóstico diferencial coclear vs retrococlear** (complementa SISI, ABLB).\n- Seguimiento post-adaptación auditiva.",
+      "contraindications_md": "- Hipoacusia >40 dB HL @ 1 kHz.\n- Calibración vencida o ausente.\n- Hiperacusia / misofonía severa.",
+      "estimated_duration_min": 4,
+      "min_age_years": 11,
+      "references": [
+        { "citation": "Jesteadt W, Wier CC, Green DM. Intensity discrimination as a function of frequency and sensation level", "year": 1977, "doi": "10.1121/1.381278" },
+        { "citation": "Riesz RR. Differential intensity sensitivity of the ear for pure tones", "year": 1928 }
+      ]
     },
     {
       "code": "DLI_FINE",
@@ -59,7 +121,19 @@
       "test_type": "CUSTOM",
       "description": "DLI fino - Δ=1 dB, cercano al umbral de Weber normal (~0.5-1 dB a 60 dB SL).",
       "config_json": {"frequency":1000,"tones":{"A":{"label":"60 dB","frequency":1000,"duration_ms":400,"level_db":60},"B":{"label":"61 dB","frequency":1000,"duration_ms":400,"level_db":61}},"isi_ms":500,"iri_ms":4000,"envelope_ms":15,"pattern_length":2,"practice_sequences":["AA","AB","BA","BB","AB","AA","BA","BB"],"test_sequences":["AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA","BA","BB","AA","AB","BA","BB","AB","AA"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.limens",
+      "purpose_md": "**Umbral fino de intensidad** con Δ=1 dB @ 60 dB SPL — está en el límite del umbral normal (Weber ~0.5–1 dB). Permite estimar la **resolución de amplitud** del sistema auditivo. En oídos con reclutamiento coclear el umbral puede ser **paradójicamente pequeño** (DLI excelente pero rango dinámico comprimido).",
+      "how_it_works_md": "Pares 60 vs 61 dB SPL, 1 kHz, 400 ms. A esta distancia sujetos normales aciertan 60–75% (cerca del azar para pares 50%). El azar teórico en 2AFC same/different es 50% con criterio imparcial, por lo que rendimiento ~60–70% aún es informativo. Un paciente con reclutamiento puede superar 80%.",
+      "protocol_md": "1. Administrar solo si DLI_SCREEN ≥80%.\n2. Calibración vigente obligatoria.\n3. Instrucción igual, enfatizando: *«Las diferencias ahora son muy pequeñas, en el límite de lo audible. No se frustre si parece todo igual — responda su mejor adivinanza»*.\n4. 8 práctica + 30 test.\n5. Interpretar en contexto: rendimiento **muy alto** con pérdida coclear documentada = **signo positivo de reclutamiento**.",
+      "target_population_md": "- Diagnóstico diferencial coclear vs retrococlear.\n- Evaluación pre-adaptación audífonos (compresión dinámica).\n- Investigación de hiperacusia con resolución fina preservada.",
+      "contraindications_md": "- DLI_SCREEN <80%.\n- Sin calibración SPL vigente.",
+      "estimated_duration_min": 6,
+      "min_age_years": 13,
+      "references": [
+        { "citation": "Jesteadt W, Wier CC, Green DM. Intensity discrimination as a function of frequency and sensation level", "year": 1977, "doi": "10.1121/1.381278" },
+        { "citation": "Florentine M, Buus S, Mason CR. Level discrimination as a function of level for tones from 0.25 to 16 kHz", "year": 1987 }
+      ]
     }
   ],
   "lists": [],
@@ -68,7 +142,7 @@
     "norms_by_age": [
       { "age_min": 11, "age_max": 60, "normal_min": 80, "mild_min": 65, "severe_max": 64 }
     ],
-    "description_md": "En versión screening (paso grande) normales >80%; en versión fina (cerca de umbral) >65% es aceptable. Rendimiento muy bajo en fino con normal en screening sugiere resolución psicoacústica reducida."
+    "description_md": "En versión screening (paso grande) normales >80%; en versión fina (cerca de umbral) >65% es aceptable. Rendimiento muy bajo en fino con normal en screening sugiere resolución psicoacústica reducida. En DLI_FINE rendimiento **anormalmente alto** (>85%) con pérdida coclear documentada sugiere reclutamiento."
   },
   "metadata": {
     "recommended": false,

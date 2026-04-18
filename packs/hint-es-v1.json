@@ -1,14 +1,17 @@
 {
   "id": "hint-es-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "HINT-ES Custom (SRT adaptativo en ruido)",
   "category": "hint",
-  "description_md": "# HINT-ES (plantilla vacía)\n\nUmbral de recepción del habla en ruido (SRT-SNR) con frases balanceadas. Adapta el SNR por bracketing. Ruido rosa fijo; voz = ruido + SNR. Scoring por palabras clave.\n\nLa lista HINT_ES_CUSTOM_A se instala vacía — el usuario graba sus propias frases y marca las palabras clave en /estimulos. Idealmente 10+ frases con 3-5 keywords cada una.",
+  "description_md": "# HINT — Hearing in Noise Test (adaptación ES genérica)\n\nPrueba clínica de **reconocimiento de frases en ruido** con **umbral adaptativo (SRT-SNR)**. Adapta al español la metodología original de **Nilsson, Soli & Sullivan (1994)**: frases de sintaxis simple y vocabulario común, reproducidas con ruido de fondo cuyo nivel permanece constante mientras se **ajusta el nivel de la voz** para encontrar la relación señal/ruido (SNR) a la cual el paciente repite correctamente el **50% de las palabras clave**.\n\n**Por qué importa clínicamente**: la queja más frecuente en adultos con pérdida auditiva leve-moderada o con presbiacusia cognitiva es **\"oigo pero no entiendo en lugares ruidosos\"**. La audiometría tonal en cabina **no predice** este problema (Killion 1997; Humes 2007). El HINT es uno de los instrumentos más validados internacionalmente para cuantificarlo, con normativos publicados en más de 20 idiomas.\n\n**Esta versión ES es una plantilla vacía**: el usuario graba sus propias frases y marca palabras clave (3–5 por frase). Para uso clínico de investigación se recomienda usar corpus validados — `sharvard-es-v1` (Sharvard ES, peninsular), `hint-es-clinico-v1` (70 listas Sharvard preconfiguradas) o Matrix-ES (`matrix-es-v1`).\n\n**Parámetros del paradigma**:\n\n- Ruido **rosa continuo** a 60 dB SPL (constante).\n- Voz ajustable, SNR inicial +5 dB.\n- Step-down: **4 dB** tras pasar una frase ≥50% keywords; step-up **2 dB** tras fallar.\n- Bracketing hasta convergencia; max 40 trials.\n- Ruido **rosa** (LTASS aproximada a baja frecuencia); para evaluar con ruido de habla (SSN, mejor simulación de cafetería/cóctel) usar `sinb-es-v1`.\n\n**Normativos** (adultos jóvenes con audición normal, ruido rosa): SRT-SNR **−3 a −8 dB**. Valores positivos (>0 dB) indican necesidad de señal por encima del ruido para entender — hallazgo compatible con **hipoacusia sensorioneural, presbiacusia central o TPAC**.",
   "requirements": "recording",
   "license": "CC-BY-SA",
   "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
   "references": [
-    { "citation": "Nilsson M, Soli SD, Sullivan JA (1994). Development of the Hearing in Noise Test for the measurement of speech reception thresholds in quiet and in noise. J Acoust Soc Am 95:1085-1099", "url": null }
+    { "citation": "Nilsson M, Soli SD, Sullivan JA (1994). Development of the Hearing in Noise Test for the measurement of speech reception thresholds in quiet and in noise. J Acoust Soc Am 95:1085-1099", "url": null },
+    { "citation": "Killion MC (1997). Hearing aids: past, present, future. Ear Hear 18:1-2", "url": null },
+    { "citation": "Humes LE (2007). The contributions of audibility and cognitive factors to the benefit provided by amplified speech to older adults. J Am Acad Audiol 18:590-603", "url": null },
+    { "citation": "Huarte A (2008). The Castilian Spanish Hearing in Noise Test. Int J Audiol 47:369-370", "url": null }
   ],
   "tests": [
     {
@@ -17,7 +20,20 @@
       "test_type": "CUSTOM",
       "description": "Umbral de recepción del habla en ruido (SRT-SNR) con frases balanceadas. Adapta el SNR por bracketing. Ruido rosa fijo; voz = ruido + SNR. Requiere grabar lista HINT_ES_CUSTOM_A con palabras clave marcadas en /estimulos.",
       "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":65,"hint":{"stimulus_list_code":"HINT_ES_CUSTOM_A","start_snr_db":5,"noise_level_db":60,"noise_type":"pink","sentences_per_level":4,"threshold_pass_ratio":0.5,"step_down_db":4,"step_up_db":2,"min_snr_db":-10,"max_snr_db":20,"max_total_trials":40}},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "hint",
+      "purpose_md": "Determinar el **SRT-SNR** — la relación señal/ruido mínima a la cual el paciente entiende el 50% de las palabras clave en frases de uso cotidiano. Es la **métrica funcional** más cercana a la queja real del paciente (\"no entiendo en lugares ruidosos\"). Complementa la audiometría tonal: un paciente puede tener PTA normal y HINT alterado (TPAC, presbiacusia central).",
+      "how_it_works_md": "Paradigma adaptativo clásico **Hughson-Westlake modificado** aplicado a SNR en lugar de nivel:\n\n1. Ruido rosa continuo a 60 dB SPL.\n2. Frase inicial presentada a **SNR +5 dB** (voz a 65 dB SPL).\n3. El paciente repite; el evaluador marca las palabras clave correctas.\n4. Si acierta **≥50% de keywords** → baja voz 4 dB (SNR más difícil).\n5. Si falla **<50%** → sube voz 2 dB (SNR más fácil).\n6. Continúa hasta convergencia (bracketing) o max 40 trials.\n7. **SRT-SNR = promedio de los SNR de los últimos 4–6 trials al converger**.\n\n**Scoring por palabras clave** (no por frase completa): aumenta la sensibilidad psicométrica frente a scoring binario. Típicamente 3–5 keywords/frase.",
+      "protocol_md": "1. **Pre-requisito de grabación**: el usuario debe haber grabado ≥10 frases (idealmente 20+) en `HINT_ES_CUSTOM_A` y marcado las palabras clave clickeando las palabras en `/estimulos`. Cada frase necesita 3–5 keywords.\n2. **Calibración SPL** vigente (el nivel absoluto del ruido importa).\n3. **Calibración del ruido rosa** idealmente por separado (ver `/calibracion` sección 4 — `noise_calibration_points`).\n4. Auriculares supraaurales, ambiente silencioso, binaural.\n5. Instrucción: *«Va a escuchar un ruido de fondo constante. Sobre ese ruido, escuchará **frases**. Repita todo lo que entienda, aunque sea parcial. Si una palabra no la entendió, no pase a otra — salte ese hueco»*.\n6. 2–3 frases de práctica a SNR +10 dB.\n7. Test adaptativo: 15–25 frases según convergencia.\n8. Reportar **SRT-SNR en dB**.\n9. **Repetir** si convergencia pobre (desvío >3 dB en últimos 4 trials) o si paciente se cansó.",
+      "target_population_md": "- **Adultos** con queja de dificultad en ruido (el escenario clínico más frecuente).\n- Evaluación pre-audífono (el HINT pre-ajuste vs post-ajuste cuantifica beneficio).\n- Evaluación pre-implante coclear bilateral.\n- Screening de presbiacusia central en adultos mayores.\n- TPAC adulto.\n- Seguimiento terapéutico post-entrenamiento auditivo.",
+      "contraindications_md": "- **Lista vacía** o sin keywords marcadas (no se puede ejecutar).\n- Pérdida auditiva profunda bilateral (>70 dB HL PTA).\n- Afasia receptiva severa.\n- Niños <10 años (requiere vocabulario y memoria de trabajo verbal sólidos).\n- Sin calibración SPL.",
+      "estimated_duration_min": 10,
+      "min_age_years": 10,
+      "references": [
+        { "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test", "year": 1994, "doi": "10.1121/1.408469" },
+        { "citation": "Killion MC, Niquette PA. What can the pure-tone audiogram tell us about a patient's SNR loss?", "year": 2000 },
+        { "citation": "Huarte A. The Castilian Spanish Hearing in Noise Test", "year": 2008 }
+      ]
     }
   ],
   "lists": [

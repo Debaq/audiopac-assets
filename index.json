@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-04-18T12:00:00Z",
+  "updated_at": "2026-04-18T20:00:00Z",
   "catalogs": [
     {
       "id": "sharvard-es",
@@ -62,179 +62,179 @@
     },
     {
       "id": "pps-pinheiro-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "PPS Estándar (Pinheiro)",
       "category": "pac.patterns",
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pps-pinheiro-v1.json",
-      "sha256": "aa391772c2fe424efc47ea7a8393a411398e4038993ed9d7eae936c9d24ad3c0",
-      "bytes": 2643
+      "sha256": "5112074c3aca6f661e97db3a393685c7aba05c0bc7ccf713d5a1ba4d131c843f",
+      "bytes": 5630
     },
     {
       "id": "dps-musiek-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "DPS Estándar (Musiek)",
       "category": "pac.patterns",
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/dps-musiek-v1.json",
-      "sha256": "060a01acb8242fbea39bc9ec4cf30a5083667d3e5c51d06f32898f424f6372b0",
-      "bytes": 2712
+      "sha256": "69e94e8c6c9a727ea5c5029804f4c4189fd02fc6de0dbc28e9820535dc7b9ef7",
+      "bytes": 5792
     },
     {
       "id": "pac-limens-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "Limens diferenciales (DLF / DLD / DLI)",
       "category": "pac.limens",
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-limens-v1.json",
-      "sha256": "f99fea328d0a2419d02b6a70f14747c08ea97848c2505931ce1cfb30f1c83f58",
-      "bytes": 6205
+      "sha256": "0ad28e31e15289d36b4bc2da8e92aaccfafcc10a6f61fef6e95a999f0af113c7",
+      "bytes": 19276
     },
     {
       "id": "pac-temporal-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "Procesamiento Temporal (Gap / TOJ / FGC)",
       "category": "pac.temporal",
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-temporal-v1.json",
-      "sha256": "4704d411fa7aee5028d2143e100a88baded218c4d481ac32c90ced605a76aa09",
-      "bytes": 5845
+      "sha256": "a6552b35bc884d74ecc699e5ef3dacaf3f96e4b690baf31feca1f97e756b7a6b",
+      "bytes": 17218
     },
     {
       "id": "pac-binaural-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "Integración Binaural (ILD / Dicótico NV / Fusión)",
       "category": "pac.binaural",
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-binaural-v1.json",
-      "sha256": "a04d2670d423089480e5f7505e862752e5ee6c5163def2b5b2d4fec909cf8546",
-      "bytes": 3974
+      "sha256": "1232b64ee254bdb8190452d14a72aaddc834f0ca71f32ccdb3c7cc1a73b7b0e9",
+      "bytes": 12964
     },
     {
       "id": "pac-noise-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "Pruebas con ruido (GIN / RGD / NBN)",
       "category": "pac.noise",
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-noise-v1.json",
-      "sha256": "e149e14a98c813f950f152a7700a142f7a64f91cb7ea4d7e0a930ef4cda1e5c4",
-      "bytes": 5512
+      "sha256": "45c28e9a471483064f9d1e5e8b59b061b4462e9b030e8c739ac38738d399fa4e",
+      "bytes": 14852
     },
     {
       "id": "pac-mld-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "MLD - Masking Level Difference",
       "category": "pac.mld",
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-mld-v1.json",
-      "sha256": "146817fc03efb78fb3bfa5d4d963e75a0aa440441a52cceb9be52273fac32daf",
-      "bytes": 2941
+      "sha256": "6038041246238737cc98ab9074e44c3e7ecac107623bc4ffe6e642a5abd175a1",
+      "bytes": 8964
     },
     {
       "id": "logoaud-latam-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "Logoaudiometría LatAm (SRT + Discriminación)",
       "category": "logoaudiometry",
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/logoaud-latam-v1.json",
-      "sha256": "2042fb83c4daa2b2ac65e709bb948bf73b621aa120a8ae82bcc59275b7204193",
-      "bytes": 5479
+      "sha256": "c88c05dab37bfd1371edd7bfab162b2ce8c8bb407131374a7d3ec52c2209716f",
+      "bytes": 10830
     },
     {
       "id": "logoaud-us-es-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "Logoaudiometría US-ES (SRT bisílabos hispanos EEUU)",
       "category": "logoaudiometry",
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/logoaud-us-es-v1.json",
-      "sha256": "f1d132e01b1da3f303aaf25a0b4e1b29bb705e45bdd01506047d104c04874492",
-      "bytes": 3497
+      "sha256": "6cdc1d8cb4f4000ba7a1d57109b5a2a2fb65d8fc7962aaf4b14d71a93ce421fd",
+      "bytes": 7118
     },
     {
       "id": "dichotic-digits-es-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "Dichotic Digits ES",
       "category": "dichotic",
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/dichotic-digits-es-v1.json",
-      "sha256": "a8704b2618a9d835260e517fcc972f095b65240cc5201b47bb6ea5575f404a5c",
-      "bytes": 4038
+      "sha256": "a7e9d47cd614aabd950327ac4e4a0a7d8ef45f2cca4c827592591184b7fc129e",
+      "bytes": 11893
     },
     {
       "id": "hint-es-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "HINT-ES Custom (SRT adaptativo en ruido)",
       "category": "hint",
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/hint-es-v1.json",
-      "sha256": "7876ae63aab3963eab026ffaa7054634542819cd0b6d2eddd4fc71b527f1d255",
-      "bytes": 2707
+      "sha256": "96ea6fea472a6e6858e0a18add38e3c91277ade7a08f5de21992ae4c03e3568a",
+      "bytes": 7988
     },
     {
       "id": "sinb-es-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "SinB-ES (Speech in Babble - SRT en SSN)",
       "category": "hint",
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/sinb-es-v1.json",
-      "sha256": "f03ab1ea45b39d9157526dfb2e73e95dbc087b15bf8c93c0524f7ab8476edbb8",
-      "bytes": 3757
+      "sha256": "ac4de940121887fb7f0ea8adedbdcfe10d17af2fee7faddf0465d43e1c629698",
+      "bytes": 6847
     },
     {
       "id": "palpa-es-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "PALPA-E (Discriminacion auditiva fonologica)",
       "category": "logoaudiometry",
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/palpa-es-v1.json",
-      "sha256": "dfa2c003730e66688a8411ae986fc8484898d1b4fae84108e6ce960d59455ba1",
-      "bytes": 4878
+      "sha256": "5246942598f56c4771938e37df328d9cdbb8ee87e1d9a432617299c74d960aad",
+      "bytes": 6982
     },
     {
       "id": "matrix-es-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "Matrix-ES (Hochmuth) - SRT adaptativo 5-AFC",
       "category": "hint",
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/matrix-es-v1.json",
-      "sha256": "9577d5323767eee3edb44da9dbd463ec0e01cd576f253ba5244a9b6573a20e10",
-      "bytes": 8415
+      "sha256": "ab63bcd335faa219a4d7805372a4b9bffefad1b777e579bddb60730ad2bceca5",
+      "bytes": 12232
     },
     {
       "id": "sharvard-es-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "Sharvard ES (peninsular) - HINT L01",
       "category": "hint",
       "requirements": "audio_pack",
       "license": "CC-BY",
       "url": "packs/sharvard-es-v1.json",
-      "sha256": "7f90353be53dede163d4a6a9f3ac414f40af47c787a8d566d5a71fc4a7089b6f",
-      "bytes": 2634
+      "sha256": "19f748b74fd66aff7d548375d12617125f8a54b93c22cda59d69b5661ed1e7b9",
+      "bytes": 7148
     },
     {
       "id": "hint-es-clinico-v1",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "name": "HINT-ES Clínico (Sharvard L01-L70)",
       "category": "hint",
       "requirements": "audio_pack",
       "license": "CC-BY",
       "url": "packs/hint-es-clinico-v1.json",
-      "sha256": "c6c47573833a273b04e0d3c29ae6d72d88a4c1a87979181f90db24f96861186c",
-      "bytes": 71473
+      "sha256": "60771c30d3b11389b89ef6c511abf79985b1994effa64ce910e119024e69f60c",
+      "bytes": 73358
     }
   ]
 }

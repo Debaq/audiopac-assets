@@ -1,6 +1,6 @@
 {
   "id": "matrix-es-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Matrix-ES (Hochmuth) - SRT adaptativo 5-AFC",
   "category": "hint",
   "description_md": "# Matrix-ES (Hochmuth 2012)\n\nTest de frases matriz español adaptativo en ruido tipo HINT, pero con respuesta cerrada **5-AFC por columna** (elige 1 palabra entre 10 por cada posición). 5 columnas × 10 palabras = 100 000 frases posibles, todas sintácticamente válidas.\n\nEstructura: **Nombre – Verbo – Número – Objeto – Adjetivo** (ej.: \"Juan compra dos coches rojos\"). La respuesta cerrada reduce efecto lingüístico/contextual y permite test-retest estable.\n\n## Requerimientos\n\nRequiere grabar **50 palabras** (10 por columna) en la lista `MATRIX_ES_A` desde `/estimulos`. Cada estímulo trae `metadata.column` (0-4) que indica a qué columna pertenece. El runner concatena 1 palabra aleatoria de cada columna por trial con 80 ms de gap.\n\n**Atención**: los audios Hochmuth originales (HörTech) son propiedad privada. Este pack publica solo la **estructura** de matriz; la grabación corre por cuenta del usuario con su propio hablante nativo.\n\n## Procedimiento\n\n- Voz + ruido rosa simultáneos, SNR adaptativo por bracketing (step_down 4 dB tras pasar, step_up 2 dB tras fallar)\n- Paso si ≥3/5 palabras correctas por trial (60%)\n- 4 frases por nivel de SNR antes de decidir paso\n- Bracketing clásico: SRT = SNR más bajo con pasada que tiene un fallo por debajo\n\n## Interpretación\n\nSRT-SNR normal en adultos jóvenes en ruido rosa continuo: **~-6 a -9 dB** (valores Hochmuth 2012). Umbrales positivos o cercanos a 0 dB sugieren pérdida coclear o déficit de procesamiento. La respuesta cerrada lo hace más sensible a micro-déficits periférico-cognitivos que HINT de frases abiertas.",
@@ -37,7 +37,19 @@
           "max_total_trials": 30
         }
       },
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "hint",
+      "purpose_md": "Cuantificar el **SRT-SNR** con un paradigma **matriz cerrada 5-AFC** (5 alternativas forzadas por columna) según Hochmuth et al. (2012). El Matrix test resuelve dos limitaciones del HINT clásico:\n\n1. **Variabilidad por contenido léxico**: en HINT, frases de distinta redundancia sintáctica afectan el umbral (el contexto ayuda). En Matrix, las frases tienen sintaxis y semántica **constantes** (Nombre-Verbo-Número-Objeto-Adjetivo) → elimina redundancia.\n2. **Scoring subjetivo**: en HINT, el examinador decide qué keyword está correcta. En Matrix, el paciente elige 1 entre 10 palabras por columna → scoring **objetivo y automático**.\n\nEsto da a Matrix un **test-retest excepcional (±1 dB)**, lo que lo convierte en el instrumento preferido para **evaluación pre/post audífono y pre/post implante** donde se necesita detectar mejoras pequeñas.",
+      "how_it_works_md": "Estructura sintáctica fija: **[Nombre] [Verbo] [Número] [Objeto] [Adjetivo]**.\n\nEj.: \"Juan compra dos coches rojos\" · \"Ana vende cinco anillos nuevos\" · \"Diego trae ocho libros viejos\".\n\n- **10 palabras por columna × 5 columnas = 10^5 = 100,000 frases posibles**, todas sintácticamente válidas.\n- Cada trial: selección aleatoria de 1 palabra por columna, concatenación con 80 ms de gap inter-palabra, presentación con ruido rosa simultáneo.\n- **Respuesta**: paciente elige 1 de 10 palabras por columna en un grid 5×10 clickeable.\n- **Scoring**: pasa el trial si acierta ≥3/5 palabras (60%).\n- **SNR adaptativo**: step-down 4 dB tras pasar 4 frases con ≥60%, step-up 2 dB tras fallar.\n- **SRT-SNR = SNR mínimo con pass que tenga fail por debajo** (bracketing clásico).\n\nMétodo equivalente al usado en **OlSa (alemán), LiSN-S (inglés), French Matrix, Italian Matrix** — red internacional Kollmeier et al. 2015.",
+      "protocol_md": "1. **Grabación previa**: 50 palabras en `MATRIX_ES_A` con `metadata.column` 0–4 correctamente asignado. Usar **mismo hablante** para todas (evita asimetrías acústicas entre columnas). Mantener duración uniforme (~500–700 ms por palabra).\n2. Calibración SPL vigente.\n3. Binaural, auriculares supraaurales, 65 dB SPL.\n4. Instrucción: *«Va a escuchar una frase con **cinco palabras**: nombre, verbo, número, objeto, adjetivo. Después se mostrará un tablero con opciones — **toque la palabra que escuchó en cada columna**. Si no está seguro, adivine»*.\n5. 2 frases de práctica a SNR +5 dB (bloque familiarización).\n6. 20 trials test adaptativos.\n7. Reportar SRT-SNR ± desvío.\n8. Para test-retest: repetir al día siguiente — la estabilidad esperada es **±1 dB** (Hochmuth 2012).",
+      "target_population_md": "- **Adultos** evaluados pre/post audífono (métrica estándar en adaptación).\n- Pre/post implante coclear (sensibilidad pequeñas mejoras).\n- **Estudios clínicos multicéntricos** (reproducibilidad internacional).\n- Seguimiento longitudinal de presbiacusia.\n- Ajuste fino de procesamiento de audífonos direccionales.",
+      "contraindications_md": "- **Lista vacía** o palabras mal etiquetadas por columna.\n- Déficit visual que impida leer el grid 5×10.\n- Pacientes analfabetos funcionales (requiere leer opciones).\n- Niños <14 años (léxico abstracto, span de 5 palabras exigente).",
+      "estimated_duration_min": 15,
+      "min_age_years": 14,
+      "references": [
+        { "citation": "Hochmuth S et al. A Spanish matrix sentence test for assessing speech reception thresholds in noise", "year": 2012, "doi": "10.3109/14992027.2012.670731" },
+        { "citation": "Kollmeier B et al. The multilingual matrix test: Principles, applications, and comparison across languages", "year": 2015, "doi": "10.3109/14992027.2015.1020971" }
+      ]
     }
   ],
   "lists": [

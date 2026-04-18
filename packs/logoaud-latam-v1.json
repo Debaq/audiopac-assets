@@ -1,15 +1,17 @@
 {
   "id": "logoaud-latam-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Logoaudiometría LatAm (SRT + Discriminación)",
   "category": "logoaudiometry",
-  "description_md": "# Logoaudiometría LatAm\n\nPack neutro para Latinoamérica: lista de 20 bisílabos balanceados estilo Tato para SRT (umbral de recepción del habla) y 25 monosílabos fonéticamente balanceados para test de discriminación. Incluye plantilla SRT adaptativa con bracketing descendente-ascendente.\n\nEl usuario debe grabar su propia voz para cada token en /estimulos antes de ejecutar los tests.",
+  "description_md": "# Logoaudiometría — Español LatAm\n\nPack neutro para Latinoamérica con dos componentes clásicos de la **logoaudiometría clínica**:\n\n- **SRT (Speech Reception Threshold / Umbral de Recepción del Habla)**: nivel mínimo en dB HL al que el paciente repite correctamente el **50% de los bisílabos espondaicos** presentados. Estimación funcional del umbral auditivo para el habla, independiente de la audiometría tonal pura.\n- **Discriminación de la palabra (Word Discrimination / Speech Discrimination Score, SDS)**: porcentaje de monosílabos fonéticamente balanceados repetidos correctamente a **nivel de cómoda audición** (típicamente SRT + 30–40 dB).\n\n**Listas incluidas** (vocabulario neutro LatAm, evitando regionalismos rioplatenses/mexicanos/caribeños):\n\n- **SRT_LATAM_BISIL_A**: 20 bisílabos frecuentes y familiares (casa, mesa, perro…) — criterio de selección: alta frecuencia léxica, distribución equilibrada de consonantes, ausencia de palabras tabú o regionalismos.\n- **DISC_LATAM_MONO_A**: 25 monosílabos (sol, pan, mar…) — balance fonémico aproximado de las 24 consonantes y 5 vocales del español.\n\n**Origen metodológico**: adaptado de la tradición Tato (1949, Buenos Aires) con ajuste léxico neutro LatAm. Para población española peninsular usar `sharvard-es-v1` o listas PALPA-E.\n\n**Requiere grabación**: el usuario graba su propia voz (o la de un locutor nativo) para cada token en `/estimulos` antes de ejecutar los tests. El motor normaliza a −20 dBFS RMS para evitar variabilidad de nivel inter-palabra.",
   "requirements": "recording",
   "license": "CC-BY-SA",
   "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
   "references": [
     { "citation": "Tato JM (1949). Logoaudiometría. Libros de la Facultad, Buenos Aires.", "url": null },
-    { "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89", "url": null }
+    { "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89", "url": null },
+    { "citation": "Carhart R, Jerger JF (1959). Preferred method for clinical determination of pure-tone thresholds. J Speech Hear Disord 24:330-345", "url": null },
+    { "citation": "Hughson W, Westlake HD (1944). Manual for program outline of rehabilitation of aural casualties. Trans Am Acad Ophthalmol Otolaryngol Suppl", "url": null }
   ],
   "tests": [
     {
@@ -18,7 +20,21 @@
       "test_type": "CUSTOM",
       "description": "Umbral de recepción del habla (SRT) con bisílabos balanceados. Método descendente-ascendente con bracketing. Requiere grabar la lista SRT_LATAM_BISIL_A en /estimulos.",
       "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":50,"srt":{"stimulus_list_code":"SRT_LATAM_BISIL_A","start_level_db":50,"words_per_level":4,"step_down_db":10,"step_up_db":5,"min_level_db":0,"max_level_db":90,"threshold_pass_ratio":0.5,"max_total_trials":40}},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "logoaudiometry",
+      "purpose_md": "Determinar el **umbral de recepción del habla (SRT)** — el nivel mínimo en dB HL al que el paciente identifica correctamente el 50% de los bisílabos espondaicos. El SRT:\n\n- **Valida la audiometría tonal pura**: debe coincidir ±10 dB con el promedio tonal (PTA) de 500/1000/2000 Hz.\n- **Detecta pseudohipoacusia / simulación**: discrepancia SRT vs PTA >15 dB es sospechosa.\n- **Establece el nivel de presentación** para pruebas supraumbrales (SDS, PAC verbales) = SRT + 30–40 dB.\n- **Cuantifica el impacto funcional** de la pérdida en la comunicación.",
+      "how_it_works_md": "Paradigma **adaptativo Hughson-Westlake modificado** (Carhart & Jerger 1959) con **bracketing descendente-ascendente**:\n\n1. Nivel inicial: 50 dB HL (por encima del umbral tonal esperado).\n2. Presenta **4 palabras por nivel** de la lista grabada.\n3. Si el paciente acierta ≥50% (criterio `threshold_pass_ratio: 0.5`) → **desciende 10 dB**.\n4. Si falla <50% → **asciende 5 dB**.\n5. Continúa hasta que haya **bracketing** (un nivel con pass + un nivel 5 dB abajo con fail) o se alcance `max_total_trials=40` / floor 0 dB / ceiling 90 dB.\n6. **SRT = nivel mínimo con pass** que tenga un fail por debajo.\n\nBisílabos espondaicos (pares con acento equilibrado en ambas sílabas) son óptimos porque su redundancia fonética permite identificación al 50% en umbral. Monosílabos serían demasiado abstractos; palabras largas saturarían el reconocimiento por contexto.",
+      "protocol_md": "1. **Prerequisito**: audiometría tonal completada (para validación post-hoc).\n2. **Grabación previa**: verificar que los 20 tokens de `SRT_LATAM_BISIL_A` estén grabados en `/estimulos`. Usar voz de locutor nativo si posible; voz del examinador es aceptable para screening.\n3. Auriculares supraaurales, calibración SPL vigente.\n4. **Familiarización**: presentar la lista completa a 40 dB HL antes del test para que el paciente conozca el vocabulario. *«Le voy a decir palabras que pueden ser estas: casa, mesa, perro…»*. Reduce variabilidad por desconocimiento léxico.\n5. Instrucción: *«Voy a decir palabras cada vez más bajito. Repita lo que escuche. Si no entiende, **adivine**»*.\n6. Ejecutar test monaural por oído (marcar oído en runner). Si hay asimetría >30 dB entre oídos, usar **enmascaramiento contralateral** con ruido de banda angosta.\n7. Registrar SRT por oído.\n8. **Validación**: comparar con PTA (500+1000+2000)/3. Diferencia >15 dB → revisar técnica o sospechar no-organicidad.",
+      "target_population_md": "- **Adultos y niños 5+ años** (con vocabulario suficiente para reconocer bisílabos familiares).\n- **Parte estándar de toda evaluación audiológica**.\n- Evaluación pre-implante coclear, pre-audífono.\n- Detección de **pseudohipoacusia** (litigios laborales, simulación infantil).\n- Seguimiento de rehabilitación auditiva.",
+      "contraindications_md": "- Pacientes **no hispanohablantes** nativos (usar listas en idioma nativo).\n- **Afasia expresiva** severa (no puede repetir — usar respuesta por señalamiento si posible).\n- Niños <4 años o con vocabulario limitado.\n- Hipoacusia profunda bilateral sin residuos útiles (>90 dB HL).\n- Sin grabación de la lista.",
+      "estimated_duration_min": 6,
+      "min_age_years": 5,
+      "references": [
+        { "citation": "Tato JM. Logoaudiometría", "year": 1949 },
+        { "citation": "Carhart R, Jerger JF. Preferred method for clinical determination of pure-tone thresholds", "year": 1959 },
+        { "citation": "ASHA. Guidelines for determining threshold level for speech", "year": 1988 },
+        { "citation": "Wilson RH, McArdle R. Speech signals used to evaluate functional status of the auditory system", "year": 2005 }
+      ]
     }
   ],
   "lists": [

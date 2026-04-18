@@ -1,6 +1,6 @@
 {
   "id": "dps-musiek-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "DPS Estándar (Musiek)",
   "category": "pac.patterns",
   "description_md": "# Duration Pattern Sequence (DPS) - Musiek\n\nVersión clásica del Duration Pattern Sequence Test (Musiek, 1980). Tono fijo 1000 Hz con dos duraciones contrastantes: largo (500 ms) y corto (250 ms). Secuencias de 3 tonos. Sensible a lesiones temporales y trastornos del procesamiento auditivo central.\n\n**Mide:** procesamiento temporal de duración y reconocimiento de patrones.\n\n**Población:** adultos y niños desde 7 años.\n\n**Interpretación gruesa:** rendimiento normal adultos ≥85%; <70% sugiere compromiso temporal central. DPS suele ser más sensible que PPS a lesiones del cuerpo calloso.",
@@ -18,7 +18,20 @@
       "test_type": "DPS",
       "description": "Test de Patrón de Duración - Versión estándar 1000Hz, tonos largos (500ms) y cortos (250ms)",
       "config_json": {"frequency":1000,"tones":{"L":{"label":"Largo","duration_ms":500},"C":{"label":"Corto","duration_ms":250}},"isi_ms":300,"iri_ms":6000,"envelope_ms":10,"pattern_length":3,"practice_sequences":["LCC","CLC","CCL","LLC","CCL","LCL","CLC","LLC","LCC","CCL"],"test_sequences":["CCL","CLL","LCL","LCC","LCC","LLC","LLC","CLC","CCL","LCC","CLL","LCL","CCL","CCL","CLC","LCL","LCC","LLC","CLC","LLC","CLC","LLC","CCL","CLC","CCL","CLC","CLC","LCL","LCC","CCL","LLC","LLC","CCL","LCL","LCC","CLC","CLC","CLL","CCL","LCC","LLC","CLL","CLL","LCL","CLC","LCC","LLC","CLL","CLL","LCL","CCL","CLL","LLC","LCL","LCL","CLL","CLL","LCC","LCC","LCL"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.patterns",
+      "purpose_md": "**Versión estándar histórica** del Duration Pattern Sequence Test (Musiek, Baran & Pinheiro 1990). A diferencia del PPS que evalúa reconocimiento espectral-secuencial, el DPS **aísla el procesamiento temporal puro** al mantener una única frecuencia (1000 Hz) y variar solo la duración (largo 500 ms / corto 250 ms). Esto lo hace **particularmente sensible a lesiones del hemisferio derecho y cuerpo calloso** (Musiek 2002).",
+      "how_it_works_md": "Secuencias de **3 tonos** a 1000 Hz con duraciones contrastantes: largo (L, 500 ms) y corto (C, 250 ms), ISI 300 ms. Relación 2:1 — fácilmente discriminable aislada, exigente cuando se combina con reconocimiento secuencial.\n\n10 secuencias de práctica + 60 test. Paciente describe el patrón: \"largo-corto-corto\" o tarareando/manteniendo la duración con la voz. El contraste mantiene pitch constante → sin pistas espectrales; fuerza al procesamiento temporal cortical.\n\n**Disociación diagnóstica clásica**: paciente con **FPT normal + DPS alterado** → lesión hemisférica derecha (el hemisferio derecho procesa preferentemente la prosodia y duración; el izquierdo, patrones tonales). La disociación inversa (FPT↓ + DPS OK) es rara y sugiere lesión temporal izquierda con preservación hemisférica derecha.",
+      "protocol_md": "1. Auriculares supraaurales, 60 dB SPL binaural.\n2. Descartar pérdida auditiva >40 dB HL @ 1 kHz.\n3. Instrucción: *«Va a escuchar **3 tonos**, todos con la **misma altura** pero unos más **largos** y otros más **cortos**. Dígame el orden — por ejemplo: largo-corto-largo. También puede marcarlos con la mano o tararearlos»*.\n4. 10 práctica con feedback + 60 test.\n5. **Modalidad humming**: si dificultad verbal, pedir que **sostenga la voz** el tiempo que dura cada tono. Aísla hemisferio derecho.\n6. Administrar **junto con PPS** en batería. La combinación (FPT+DPS) tiene **sensibilidad ~82%** a lesiones del SNC auditivo en el estudio Musiek-Pinheiro 1990.",
+      "target_population_md": "- **Adultos con sospecha de TPAC** o compromiso cortical temporal, especialmente derecho.\n- **Niños desde 8 años** (concepto \"largo/corto\" requiere cierta maduración).\n- Post-ACV temporal derecho, compromiso prosódico.\n- Aprosodia adquirida (pérdida de entonación emocional en habla).\n- Pacientes con música/lenguaje tonal como queja.",
+      "contraindications_md": "- Pérdida auditiva >40 dB HL @ 1 kHz.\n- Niños <7–8 años (verbalización \"largo/corto\" abstracta).\n- Déficit severo de memoria de trabajo.",
+      "estimated_duration_min": 10,
+      "min_age_years": 8,
+      "references": [
+        { "citation": "Musiek FE, Baran JA, Pinheiro ML. Duration pattern recognition in normal subjects and patients with cerebral and cochlear lesions", "year": 1990 },
+        { "citation": "Musiek FE. The frequency pattern test: a guide", "year": 2002 },
+        { "citation": "Bellis TJ. Assessment and management of central auditory processing disorders", "year": 2003 }
+      ]
     }
   ],
   "interpretation": {

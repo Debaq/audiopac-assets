@@ -1,15 +1,17 @@
 {
   "id": "dichotic-digits-es-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Dichotic Digits ES",
   "category": "dichotic",
-  "description_md": "# Dichotic Digits (español)\n\nPrueba de dígitos dicóticos en español. Pares de 2 dígitos simultáneos, uno por oído. Dos modos: recuerdo libre (paciente reporta todo lo que recuerda) y dirigido (evaluador indica qué oído reportar primero). Se excluye el dígito 7 (\"siete\", bisílabo) para mantener todos los tokens mono/bisílabos cortos.\n\nEvalúa integración binaural y separación. Útil para PAC y lateralización hemisférica. Requiere grabar la lista DICHOTIC_DIGITS_ES en /estimulos.",
+  "description_md": "# Dichotic Digits Test (DDT) — adaptación ES\n\nPrueba clínica estándar de **escucha dicótica verbal** adaptada al español. Basada en el **Dichotic Digits Test de Musiek (1983)**, considerado uno de los tests PAC con **mejor especificidad** para lesiones corticales y del cuerpo calloso. Es **menos demandante** lingüísticamente que el SSW o Competing Words, lo que lo hace apropiado para pediátricos, afásicos leves y adultos mayores.\n\n**Principio**: presenta **dos dígitos simultáneos**, uno a cada oído. El paciente debe reportar ambos. El sistema auditivo obliga a segregación binaural y transferencia callosa (los dígitos del oído izquierdo deben cruzar el cuerpo calloso para procesarse en el hemisferio dominante del lenguaje — izquierdo en ~95% de los diestros, Kimura 1961).\n\n**Adaptación ES**:\n\n- Dígitos 1–9 **excluyendo \"siete\"** — único bisílabo que por duración asimétrica crearía desbalance perceptivo con el par dicótico.\n- Todos los dígitos restantes son **mono o bisílabos cortos** de duración similar (~300–500 ms), alineables temporalmente.\n- Presentación alineada al **inicio** del token (onset aligned) — estándar Musiek.\n\n**Dos modalidades**:\n\n- **Recuerdo libre (FREE)**: el paciente dice todos los dígitos que recuerda en cualquier orden. Mide **integración** + memoria.\n- **Recuerdo dirigido (DIRECTED)**: el examinador indica oído a reportar primero (alterna L/R). Mide **separación** atencional + control directivo. Más sensible a déficits de atención selectiva.\n\n**Normativos** (adultos 18–60 años, audición simétrica):\n\n- Aciertos ≥90% por oído.\n- **REA (Right Ear Advantage)**: 3–10% (menor en versión ES que en inglés por diferencias fonémicas).\n- REA >25% o **aciertos <75% en un oído** sugieren alteración.\n\nRequiere grabación de la lista `DICHOTIC_DIGITS_ES` en `/estimulos`.",
   "requirements": "recording",
   "license": "CC-BY-SA",
   "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
   "references": [
     { "citation": "Musiek FE (1983). Assessment of central auditory dysfunction: The dichotic digit test revisited. Ear Hear 4:79-83", "url": null },
-    { "citation": "Kimura D (1961). Cerebral dominance and the perception of verbal stimuli. Can J Psychol 15:166-171", "url": null }
+    { "citation": "Kimura D (1961). Cerebral dominance and the perception of verbal stimuli. Can J Psychol 15:166-171", "url": null },
+    { "citation": "Musiek FE, Gollegly KM, Kibbe KS, Verkest-Lenz SB (1991). Proposed screening test for central auditory disorders: follow-up on the dichotic digits test. Am J Otol 12:109-113", "url": null },
+    { "citation": "Strouse A, Wilson RH (1999). Recognition of one-, two-, and three-pair dichotic digits under free and directed recall. J Am Acad Audiol 10:557-571", "url": null }
   ],
   "tests": [
     {
@@ -18,7 +20,20 @@
       "test_type": "CUSTOM",
       "description": "Prueba de dígitos dicóticos en español. Pares de 2 dígitos simultáneos (uno por oído). Modo libre: el paciente reporta todos los dígitos que recuerde. Requiere grabar la lista DICHOTIC_DIGITS_ES en /estimulos.",
       "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":55,"dichotic_digits":{"stimulus_list_code":"DICHOTIC_DIGITS_ES","num_pairs":20,"digits_per_ear":2,"isi_ms":300,"level_db":55,"mode":"free"}},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "dichotic",
+      "purpose_md": "Evaluar **integración binaural verbal y lateralización hemisférica del lenguaje**. La modalidad **recuerdo libre** (free recall) es la **versión clásica Musiek (1983)** — el paciente reporta los 4 dígitos en cualquier orden, priorizando los que mejor procesó. Es la prueba PAC verbal con mejor **sensibilidad (72–80%) y especificidad (87–94%)** para lesiones corticales temporales y del cuerpo calloso.",
+      "how_it_works_md": "Cada trial presenta **2 dígitos simultáneos por oído** (4 dígitos totales) — onset alineado, duración uniformizada por normalización previa. Ej.: L oye \"uno-tres\", R oye \"seis-nueve\" al mismo tiempo. El paciente repite los 4 dígitos que recuerda.\n\n- **Scoring por oído**: porcentaje de dígitos correctos en cada oído (máx 40: 20 pares × 2 dígitos).\n- **REA = %R − %L**: ventaja oído derecho por proyección contralateral al hemisferio izquierdo del lenguaje.\n- **LEA** (ventaja oído izquierdo): anormal en diestros, sugiere lateralización atípica o compromiso temporal derecho.\n- **Suppressión de un oído** (>30% de diferencia): altamente sugerente de lesión en **cuerpo calloso** (región de la aurícula auditiva de la comisura anterior) o **área de Heschl** contralateral.",
+      "protocol_md": "1. **Verificar polaridad L/R** de los auriculares.\n2. **Audiometría tonal previa**: asimetría >10 dB HL entre oídos a 500/1000/2000 Hz invalida la REA.\n3. Grabación de `DICHOTIC_DIGITS_ES` verificada (8 dígitos normalizados).\n4. 55 dB HL binaural (supraumbral cómodo).\n5. Instrucción: *«Va a escuchar **dos números en cada oído al mismo tiempo** — cuatro en total. Repita **todos los que recuerde**, en el orden que quiera»*.\n6. **Práctica**: 3 pares con feedback, monauralmente primero y luego dicóticos.\n7. **Test**: 20 pares.\n8. Registrar aciertos **por oído y por posición** (posición 1 vs 2 dentro del par — la primera se procesa mejor).\n9. Calcular **%R, %L, REA**.",
+      "target_population_md": "- **Adultos** con sospecha de TPAC, compromiso cortical temporal, cuerpo calloso (EM, ACV, TEC).\n- **Niños desde 7 años** (los normativos cambian con la edad — REA mayor en niños pequeños, converge hacia el adulto a los 12 años por maduración callosa).\n- Evaluación post-quirúrgica (ángulo pontocerebeloso, callosotomía).\n- Screening en adultos mayores con queja auditiva compleja.\n- Investigación de lateralización cerebral.",
+      "contraindications_md": "- **Asimetría audiométrica >10 dB HL** (crea REA artificial).\n- Pérdida auditiva >40 dB HL.\n- Déficit severo de memoria de trabajo (confunde con TPAC).\n- **Niños <7 años**: span dígito insuficiente para 4 dígitos simultáneos.",
+      "estimated_duration_min": 5,
+      "min_age_years": 7,
+      "references": [
+        { "citation": "Musiek FE. Assessment of central auditory dysfunction: The dichotic digit test revisited", "year": 1983 },
+        { "citation": "Musiek FE et al. Proposed screening test for central auditory disorders: follow-up on the dichotic digits test", "year": 1991 },
+        { "citation": "Kimura D. Cerebral dominance and the perception of verbal stimuli", "year": 1961 }
+      ]
     },
     {
       "code": "DD_ES_DIRECTED",
@@ -26,7 +41,19 @@
       "test_type": "CUSTOM",
       "description": "Prueba de dígitos dicóticos en español. Pares de 2 dígitos simultáneos (uno por oído). Modo dirigido: el evaluador indica qué oído reportar primero (alterna L/R). Requiere grabar la lista DICHOTIC_DIGITS_ES en /estimulos.",
       "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":55,"dichotic_digits":{"stimulus_list_code":"DICHOTIC_DIGITS_ES","num_pairs":20,"digits_per_ear":2,"isi_ms":300,"level_db":55,"mode":"directed"}},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "dichotic",
+      "purpose_md": "Evaluar **separación binaural con atención selectiva dirigida**. A diferencia de recuerdo libre, aquí el examinador fuerza al paciente a **reportar primero un oído específico** (alterna L/R), activando mecanismos **atencionales top-down** del giro frontal inferior y cíngulo. Más sensible a déficits de **atención dividida/selectiva** (TDAH, post-TEC frontal, envejecimiento cognitivo).",
+      "how_it_works_md": "Idéntico paradigma que DD_ES_FREE pero con instrucción previa al par: *«Diga primero los números del oído **izquierdo**»* (o derecho, alterno). Según Strouse & Wilson (1999), la condición dirigida revela déficits de separación no evidentes en recuerdo libre — en particular, una **ventaja oído izquierdo forzada** (cuando el paciente debe atender a L y lo logra) que puede enmascarar una REA cortical subyacente.\n\n- **Bloque L-first**: 10 pares, reportar L primero.\n- **Bloque R-first**: 10 pares, reportar R primero.\n- Scoring separado por bloque y por oído.",
+      "protocol_md": "1. Administrar **después** de DD_ES_FREE (para establecer baseline).\n2. Instrucción L-first: *«Ahora atienda primero al oído **izquierdo**. Diga los números del oído izquierdo, después los del derecho»*.\n3. Instrucción R-first: *«Ahora atienda primero al oído **derecho**»*.\n4. Alternar bloques L/R (no mezclar pares dentro del bloque para no saturar control atencional).\n5. **Interpretación**:\n   - Rendimiento simétrico ≥85% en ambos bloques → normal.\n   - **Caída marcada al dirigir al oído izquierdo** (paciente no logra separar y reporta R primero por default) → sugiere déficit de control atencional o compromiso callosal.\n   - **Ganancia paradójica en DIRECTED vs FREE** en el oído izquierdo (mejora cuando se fuerza la atención) → sugiere componente atencional más que estructural.",
+      "target_population_md": "- Adultos con DD_ES_FREE normal y sospecha clínica persistente.\n- **TDAH adulto**: la condición dirigida es más sensible que la libre.\n- Post-TEC frontal.\n- Evaluación de atención auditiva en envejecimiento.\n- Investigación de lateralización cerebral en diestros vs zurdos.",
+      "contraindications_md": "- **DD_ES_FREE <70% bilateral**: no tiene sentido subir la demanda.\n- Asimetría audiométrica >10 dB.\n- Niños <9 años (control atencional top-down insuficientemente maduro).",
+      "estimated_duration_min": 6,
+      "min_age_years": 9,
+      "references": [
+        { "citation": "Strouse A, Wilson RH. Recognition of one-, two-, and three-pair dichotic digits under free and directed recall", "year": 1999 },
+        { "citation": "Jerger J, Martin J. Dichotic listening tests in the assessment of auditory processing disorders", "year": 2004 }
+      ]
     }
   ],
   "lists": [

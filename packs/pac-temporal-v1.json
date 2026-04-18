@@ -1,15 +1,18 @@
 {
   "id": "pac-temporal-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Procesamiento Temporal (Gap / TOJ / FGC)",
   "category": "pac.temporal",
-  "description_md": "# Procesamiento temporal\n\nBatería de pruebas de resolución temporal y orden temporal: detección de gap entre tonos (GAP 20/10/5 ms), Temporal Order Judgement binaural (L/R con ISI 100 y 40 ms) y gap de frecuencia (FGC — cambios breves de pitch en un tono sostenido).\n\nUmbrales adultos normales: gap ~2-5 ms, TOJ ~20-30 ms. Alteración de estas tareas apunta a déficits de integración temporal centrales.",
+  "description_md": "# Procesamiento temporal\n\nBatería de pruebas de **resolución temporal** (capacidad del sistema auditivo para resolver eventos sonoros muy breves en el tiempo) y **juicio de orden temporal** (secuenciación de dos eventos entre oídos). Incluye:\n\n- **GAP 20/10/5 ms**: detección de silencio breve embebido entre dos tonos (analogía simplificada al GIN clínico, sin ruido).\n- **TOJ 100/40 ms**: Temporal Order Judgement binaural — orden L/R de dos estímulos cortos.\n- **FGC**: Frequency-Gap Change — cambio breve de pitch dentro de un tono sostenido (proxy de glide detection).\n\n**Umbrales normativos aproximados** (adultos 18–60 años, audición normal):\n\n- **Gap detection** entre tonos: ~2–5 ms (Plomp 1964; Moore 1989). Versión clínica con ruido (GIN, Musiek 2005): 4–6 ms.\n- **TOJ entre oídos**: ~20–40 ms (Hirsh 1959; Pinheiro & Musiek 1985).\n- **FGC**: ≥90% de detección con cambios de 200 Hz sobre 1 kHz.\n\nAlteración sugiere déficit de integración temporal a nivel del tronco o corteza auditiva. Muy relevante en TPAC pediátrico (dislexia, TDAH con hipótesis temporal, Tallal 1980), envejecimiento central (Gordon-Salant & Fitzgibbons 1993) y post-traumatismo.",
   "requirements": "ninguno",
   "license": "CC-BY-SA",
   "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
   "references": [
     { "citation": "Plomp R (1964). Rate of decay of auditory sensation. J Acoust Soc Am 36:277-282", "url": null },
-    { "citation": "Pinheiro ML, Musiek FE (1985). Assessment of central auditory dysfunction: Foundations and clinical correlates. Williams & Wilkins.", "url": null }
+    { "citation": "Hirsh IJ (1959). Auditory perception of temporal order. J Acoust Soc Am 31:759-767", "url": null },
+    { "citation": "Pinheiro ML, Musiek FE (1985). Assessment of central auditory dysfunction: Foundations and clinical correlates. Williams & Wilkins.", "url": null },
+    { "citation": "Musiek FE et al. (2005). GIN (Gaps-In-Noise) test performance in subjects with confirmed central auditory nervous system involvement. Ear Hear 26:608-618", "url": null },
+    { "citation": "Tallal P (1980). Auditory temporal perception, phonics, and reading disabilities in children. Brain Lang 9:182-198", "url": null }
   ],
   "tests": [
     {
@@ -18,7 +21,18 @@
       "test_type": "CUSTOM",
       "description": "Detección de gap de 20 ms entre 2 tonos de 1000 Hz. Pregunta al paciente: ¿escuchó uno o dos tonos? Items \"A\" = catch (un solo tono), \"AA\" = par separado por 20 ms.",
       "config_json": {"frequency":1000,"tones":{"A":{"label":"Tono","frequency":1000,"duration_ms":300}},"duration_ms":300,"isi_ms":20,"iri_ms":4000,"envelope_ms":5,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.temporal",
+      "purpose_md": "**Tamizaje grueso de resolución temporal**. Un gap de 20 ms es ~5–10× el umbral adulto normal (~2–5 ms). Cualquier paciente con procesamiento temporal íntegro debería detectarlo sin ambigüedad. Falla en este nivel implica compromiso marcado — descartar primero pérdida auditiva en 1 kHz.",
+      "how_it_works_md": "Pares de ítems: **A** = un solo tono de 300 ms (catch — respuesta correcta «uno»), **AA** = dos tonos de 300 ms separados por silencio de 20 ms (respuesta correcta «dos»). Envolvente corta (5 ms) para no oscurecer el gap. El paciente responde «uno» o «dos». Mezcla 60% AA / 40% A para desbalancear hacia pares y evitar sesgo de respuesta.",
+      "protocol_md": "1. Audífonos supraaurales, ambiente silencioso, 60 dB SPL binaural.\n2. Instrucción: *«Va a escuchar tonos. A veces será **un** tono continuo, otras veces serán **dos** tonos muy juntitos con un silencio chiquito entre medio. Dígame si escucha uno o dos»*.\n3. **Práctica con feedback**: 4 pares (2 AA + 2 A). Si <3/4, reinstruir con ejemplos exagerados.\n4. Test: 20 ítems sin feedback.\n5. Registrar **aciertos AA** (hit rate) y **falsas alarmas A** (responder \"dos\" cuando era uno).\n6. ≥80% hits con <20% FA → pasar a GAP_10.",
+      "target_population_md": "- Niños desde 7 años (tarea simple, instrucción concreta).\n- Adultos con sospecha de TPAC.\n- Screening pre-evaluación temporal detallada.",
+      "contraindications_md": "- Pérdida auditiva >30 dB HL @ 1 kHz.\n- Tinnitus severo a 1 kHz.",
+      "estimated_duration_min": 3,
+      "min_age_years": 7,
+      "references": [
+        { "citation": "Plomp R. Rate of decay of auditory sensation", "year": 1964, "doi": "10.1121/1.1918985" }
+      ]
     },
     {
       "code": "GAP_10",
@@ -26,7 +40,18 @@
       "test_type": "CUSTOM",
       "description": "Detección de gap de 10 ms. Nivel intermedio, umbral adulto normal ~2-5 ms.",
       "config_json": {"frequency":1000,"tones":{"A":{"label":"Tono","frequency":1000,"duration_ms":300}},"duration_ms":300,"isi_ms":10,"iri_ms":4000,"envelope_ms":3,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.temporal",
+      "purpose_md": "Nivel **intermedio** de resolución temporal. Gap de 10 ms está ~2–5× sobre umbral adulto. Muchos niños 7–10 años y adultos mayores están en este rango, por lo que la prueba discrimina bien entre normal y limítrofe.",
+      "how_it_works_md": "Idéntico paradigma que GAP_20 pero con gap de 10 ms y envolvente reducida a 3 ms para no erosionar los bordes del silencio. Un envelope largo sobre un gap corto puede crear la ilusión de tono continuo por acumulación de energía residual.",
+      "protocol_md": "1. Administrar solo si GAP_20 ≥80%.\n2. Instrucción idéntica; alertar: *«Ahora el silencio entre los dos tonos es **más chico**. Preste atención»*.\n3. 4 práctica + 20 test.\n4. Interpretación: ≥80% hits y <20% FA = normal; 60–79% = limítrofe; <60% = déficit.",
+      "target_population_md": "- Adultos con sospecha de TPAC.\n- **Niños 8+ años** con dislexia o TDAH (hipótesis temporal, Tallal).\n- Evaluación de presbiacusia central.",
+      "contraindications_md": "- GAP_20 <80%.\n- Fatiga manifiesta.",
+      "estimated_duration_min": 3,
+      "min_age_years": 8,
+      "references": [
+        { "citation": "Moore BCJ et al. Detection of temporal gaps in sinusoids: effects of frequency and level", "year": 1993 }
+      ]
     },
     {
       "code": "GAP_5",
@@ -34,7 +59,18 @@
       "test_type": "CUSTOM",
       "description": "Detección de gap de 5 ms. Cerca del umbral normal. Envelope corto (2 ms) para no enmascarar el gap.",
       "config_json": {"frequency":1000,"tones":{"A":{"label":"Tono","frequency":1000,"duration_ms":300}},"duration_ms":300,"isi_ms":5,"iri_ms":4000,"envelope_ms":2,"pattern_length":2,"practice_sequences":["AA","A","AA","A"],"test_sequences":["AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA","A","AA","A","AA","AA","A","AA","AA"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.temporal",
+      "purpose_md": "**Umbral fino** de resolución temporal. 5 ms está en el borde del umbral adulto joven normal. Sensibles a compromisos sutiles: TPAC leve, presbiacusia central, secuelas leves de TEC.",
+      "how_it_works_md": "Gap 5 ms, envelope 2 ms (mínimo para evitar clicks). A esta escala, pequeñas asincronías en el driver de audio o jitter en Web Audio pueden afectar la fidelidad — mantener dispositivo estable y volumen OS fijo. Adultos jóvenes normales aciertan 75–90%; <60% sugiere déficit.",
+      "protocol_md": "1. Administrar solo si GAP_10 ≥80%.\n2. Verificar calibración reciente y dispositivo estable (sin Bluetooth — latencia variable distorsiona).\n3. Instrucción: *«El silencio es **muy muy chico**, casi imperceptible. Haga su mejor adivinanza»*.\n4. 4 práctica + 20 test.\n5. Si falsas alarmas ≥30%, sospechar sesgo de respuesta (paciente eligiendo \"dos\" por defecto) — reinstruir o descartar.",
+      "target_population_md": "- Adultos con GAP_10 normal y sospecha clínica persistente.\n- Músicos / percusionistas (esperable >90%).\n- Investigación PAC.",
+      "contraindications_md": "- GAP_10 <80%.\n- Dispositivo Bluetooth o driver con latencia variable.\n- Volumen OS no bloqueado.",
+      "estimated_duration_min": 3,
+      "min_age_years": 11,
+      "references": [
+        { "citation": "Musiek FE et al. GIN (Gaps-In-Noise) test performance", "year": 2005 }
+      ]
     },
     {
       "code": "TOJ_BIN",
@@ -42,7 +78,18 @@
       "test_type": "CUSTOM",
       "description": "Temporal Order Judgement - Tono L (1000 Hz a oído izquierdo) y tono R (1000 Hz a oído derecho) con ISI variable. Paciente responde ¿izquierda-derecha o derecha-izquierda? ISI 100 ms.",
       "config_json": {"tones":{"L":{"label":"Izq","frequency":1000,"duration_ms":150,"ear":"left"},"R":{"label":"Der","frequency":1000,"duration_ms":150,"ear":"right"}},"isi_ms":100,"iri_ms":4000,"envelope_ms":10,"pattern_length":2,"practice_sequences":["LR","RL","LR","RL"],"test_sequences":["LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.temporal",
+      "purpose_md": "Evaluar **juicio de orden temporal entre oídos** — habilidad cortical para secuenciar dos eventos breves presentados uno a cada oído. Depende de integración inter-hemisférica (cuerpo calloso) y de corteza auditiva primaria bilateral. Sensible a lesiones calloses (Poffenberger, split-brain).",
+      "how_it_works_md": "Tono 1 kHz / 150 ms a un oído, luego ISI 100 ms, luego tono 1 kHz / 150 ms al otro oído. El paciente identifica el orden: \"izquierda primero\" o \"derecha primero\". ISI 100 ms está cómodamente sobre el umbral normal (~20–40 ms, Hirsh 1959), por lo que errores sugieren problema de lateralización o dificultad en integración binaural más que umbral temporal puro.",
+      "protocol_md": "1. Audífonos bien identificados L/R (verificar con tono de test previo).\n2. Instrucción: *«Va a escuchar **dos tonitos cortos**, uno en cada oído. Dígame cuál sonó **primero**: el de la izquierda o el de la derecha»*.\n3. 4 práctica con feedback + 20 test.\n4. Si el paciente reporta no distinguir lateralización, descartar asimetría audiométrica (PTA) antes de interpretar como déficit central.\n5. Registrar errores de lado (inversiones L↔R) separadamente de fallos globales.",
+      "target_population_md": "- Adultos con sospecha de TPAC o compromiso inter-hemisférico.\n- Post-TEC, ACV con afectación callosa.\n- Evaluación pre/post terapia de entrenamiento binaural.",
+      "contraindications_md": "- Asimetría auditiva >10 dB HL entre oídos a 1 kHz.\n- Hipoacusia unilateral profunda.\n- Dificultad para identificar lado (niños <8 años pueden confundir \"izquierda/derecha\").",
+      "estimated_duration_min": 3,
+      "min_age_years": 8,
+      "references": [
+        { "citation": "Hirsh IJ. Auditory perception of temporal order", "year": 1959, "doi": "10.1121/1.1907782" }
+      ]
     },
     {
       "code": "TOJ_FAST",
@@ -50,7 +97,18 @@
       "test_type": "CUSTOM",
       "description": "TOJ con ISI 40 ms, más cerca del umbral adulto (~20-30 ms). Orden L/R.",
       "config_json": {"tones":{"L":{"label":"Izq","frequency":1000,"duration_ms":100,"ear":"left"},"R":{"label":"Der","frequency":1000,"duration_ms":100,"ear":"right"}},"isi_ms":40,"iri_ms":4000,"envelope_ms":5,"pattern_length":2,"practice_sequences":["LR","RL","LR","RL"],"test_sequences":["LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL","LR","RL"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.temporal",
+      "purpose_md": "**Umbral fino de orden temporal**. ISI 40 ms está cerca del umbral adulto normal (~20–30 ms). Detecta compromisos sutiles de integración binaural no evidenciados en TOJ_BIN.",
+      "how_it_works_md": "Duración de tono reducida a 100 ms e ISI 40 ms. Al acortarse ambos, la tarea se vuelve marcadamente más exigente — el paciente debe resolver la secuencia temporal mientras cada tono aún está integrándose perceptivamente. Adultos jóvenes ≥80%; adultos mayores 60–75%; <60% sugiere déficit.",
+      "protocol_md": "1. Administrar solo si TOJ_BIN ≥80%.\n2. Instrucción: *«Los tonitos están **más juntitos** ahora. Responda su primera impresión, no dude»*.\n3. 4 práctica + 20 test.\n4. Correlacionar con edad — bandas normativas declinan ~10% por década después de los 50.",
+      "target_population_md": "- Adultos con TOJ_BIN normal y sospecha clínica.\n- Investigación de envejecimiento auditivo central.\n- Seguimiento de rehabilitación post-TEC.",
+      "contraindications_md": "- TOJ_BIN <80%.\n- Asimetría auditiva marcada.",
+      "estimated_duration_min": 3,
+      "min_age_years": 11,
+      "references": [
+        { "citation": "Gordon-Salant S, Fitzgibbons PJ. Temporal factors and speech recognition performance in young and elderly listeners", "year": 1993 }
+      ]
     },
     {
       "code": "FGC_SCREEN",
@@ -58,7 +116,19 @@
       "test_type": "CUSTOM",
       "description": "Gap de frecuencia. Tono de ~300 ms; puede ser continuo (A) o tener un cambio breve de pitch en el medio (B = cambio de 200 Hz, C = cambio de 500 Hz). El paciente responde igual/diferente. Útil como índice de resolución espectral temporal.",
       "config_json": {"tones":{"F":{"label":"Base 1 kHz","frequency":1000,"duration_ms":120},"G":{"label":"Cambio +200 Hz","frequency":1200,"duration_ms":60},"H":{"label":"Cambio +500 Hz","frequency":1500,"duration_ms":60}},"isi_ms":0,"iri_ms":2500,"envelope_ms":2,"pattern_length":3,"practice_sequences":["FFF","FHF","FFF","FGF"],"test_sequences":["FFF","FGF","FHF","FFF","FGF","FHF","FFF","FGF","FFF","FHF","FGF","FFF","FHF","FGF","FFF","FHF","FGF","FFF","FHF","FGF"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.temporal",
+      "purpose_md": "Detectar **cambios espectrales breves** embebidos en un tono sostenido — proxy psicoacústico de la habilidad para percibir *glides* formánticos (transiciones consonante-vocal). Combina resolución temporal fina con discriminación espectral rápida. Correlaciona con percepción fonémica y es altamente sensible a dislexia y TPAC pediátrico.",
+      "how_it_works_md": "Tres subtipos de ítem:\n- **FFF**: tono 1 kHz constante durante 240 ms (catch, respuesta \"igual\").\n- **FGF**: 120 ms a 1 kHz → 60 ms a 1.2 kHz → 120 ms a 1 kHz (cambio sutil de 200 Hz, respuesta \"distinto\").\n- **FHF**: igual pero con cambio de 500 Hz (grueso, respuesta \"distinto\").\n\nISI=0 entre segmentos + envelope 2 ms crea un micro-splice sin gap perceptible — el cambio es **sólo espectral**, no un doble-pulso. El paciente responde «igual» o «distinto». La condición FHF es prácticamente siempre detectada por normales (>95%); FGF discrimina finamente.",
+      "protocol_md": "1. Instrucción: *«Va a escuchar un tono. A veces es **todo igual** (una sola nota), a veces tiene un **cambio de altura en el medio** — como un pequeño salto. Dígame si el tono es todo igual o si cambió»*.\n2. 4 práctica con feedback, alternando FFF y FHF (gruesos).\n3. 20 test con mezcla FFF/FGF/FHF.\n4. Analizar por separado: hits en FHF (debe ser ≥90%) y hits en FGF (discrimina fino).\n5. FHF bajo → problema grueso; FHF alto pero FGF bajo → resolución espectral reducida.",
+      "target_population_md": "- Niños desde 8 años con dislexia evolutiva (altamente sensible).\n- Adultos con TPAC y queja fonológica.\n- Evaluación pre/post terapia fonológica.",
+      "contraindications_md": "- Pérdida auditiva >30 dB HL en 1–1.5 kHz.\n- Déficit atencional severo.",
+      "estimated_duration_min": 4,
+      "min_age_years": 8,
+      "references": [
+        { "citation": "Tallal P. Auditory temporal perception, phonics, and reading disabilities in children", "year": 1980, "doi": "10.1016/0093-934X(80)90139-X" },
+        { "citation": "Witton C et al. Sensitivity to dynamic auditory and visual stimuli predicts nonword reading ability", "year": 1998, "doi": "10.1016/S0960-9822(98)70314-9" }
+      ]
     }
   ],
   "lists": [],
@@ -67,7 +137,7 @@
     "norms_by_age": [
       { "age_min": 11, "age_max": 60, "normal_min": 0, "mild_min": 0, "severe_max": 0 }
     ],
-    "description_md": "Gap mínimo detectado consistentemente en adultos normales: ~2-5 ms. TOJ binaural normal ~20-30 ms. Umbrales mayores (gap >10 ms o TOJ >60 ms) sugieren déficit de procesamiento temporal."
+    "description_md": "Gap mínimo detectado consistentemente en adultos normales: ~2-5 ms. TOJ binaural normal ~20-30 ms. Umbrales mayores (gap >10 ms o TOJ >60 ms) sugieren déficit de procesamiento temporal a nivel central."
   },
   "metadata": {
     "recommended": true,

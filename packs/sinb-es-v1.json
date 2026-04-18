@@ -1,6 +1,6 @@
 {
   "id": "sinb-es-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "SinB-ES (Speech in Babble — SRT adaptativo en SSN)",
   "category": "hint",
   "description_md": "# SinB-ES (Speech in Babble / Noise)\n\nUmbral de recepción del habla en ruido tipo **Speech-Shaped Noise (SSN)** — ruido rosa filtrado pasabajos a 1 kHz que aproxima el espectro a largo plazo del habla castellana. Más enmascarante perceptualmente que rosa puro porque concentra energía en la banda crítica de las vocales.\n\nVariante de HINT que evalúa **figura-fondo competitivo informacional**: el ruido SSN \"suena\" como balbuceo de fondo, exigiendo separación habla/habla en lugar de habla/ruido neutro. Particularmente sensible en presbiacusia central, TPAC adulto y disfunción cocleocentral leve.\n\nLa lista SINB_ES_CUSTOM_A se instala vacía — el usuario graba sus propias frases y marca palabras clave en /estimulos. Idealmente 12+ frases con 3–5 keywords cada una.",
@@ -19,7 +19,20 @@
       "test_type": "CUSTOM",
       "description": "SRT-SNR en Speech-Shaped Noise. Reusa runner HINT con noise_type='ssn'. Grabá frases con keywords en /estimulos.",
       "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":65,"hint":{"stimulus_list_code":"SINB_ES_CUSTOM_A","start_snr_db":5,"noise_level_db":60,"noise_type":"ssn","sentences_per_level":4,"threshold_pass_ratio":0.5,"step_down_db":4,"step_up_db":2,"min_snr_db":-10,"max_snr_db":20,"max_total_trials":40}},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "hint",
+      "purpose_md": "Cuantificar el **SRT-SNR en Speech-Shaped Noise (SSN)** — una aproximación al escenario acústico más ecológicamente válido de la queja auditiva cotidiana: **hablar en una cafetería, reunión o fiesta**. El SSN rivaliza **espectralmente** con la voz objetivo, forzando mecanismos de **figura-fondo auditivo** que no se activan con ruido blanco o rosa puros. Por eso el SinB es **más sensible al componente central** de la dificultad en ruido que el HINT clásico.",
+      "how_it_works_md": "Mismo paradigma adaptativo que HINT (bracketing de SNR, step-down 4 dB / step-up 2 dB, criterio ≥50% keywords), pero con **Speech-Shaped Noise** como enmascarador. En esta implementación:\n\n- **SSN** = ruido rosa pasado por **BiquadFilter lowpass a 1 kHz (Q=0.707)** — aproxima la forma del espectro a largo plazo del habla (LTASS, Byrne et al. 1994).\n- Nivel del ruido: 60 dB SPL constante.\n- SSN es ~**2 dB más enmascarante** que ruido rosa puro a nivel RMS igualado porque concentra energía en la banda crítica de vocales (250–1000 Hz).\n\nPara simulación más realista de cocktail party usar **babble multitalker** (no implementado aún — requiere mezcla de 6+ voces).",
+      "protocol_md": "1. **Grabación previa**: 12+ frases con 3–5 keywords cada una en `SINB_ES_CUSTOM_A`. Mismo criterio que HINT — frases simples, vocabulario cotidiano.\n2. Calibración SPL + calibración del ruido SSN por separado (ver `/calibracion` sección 4, tipo 'ssn').\n3. Auriculares supraaurales binaural.\n4. Instrucción: *«Va a escuchar frases sobre un **murmullo de fondo** (como si estuviera en un restaurante). Repita todo lo que entienda»*.\n5. 2 frases de práctica a SNR +10 dB.\n6. Test adaptativo, 15–25 frases.\n7. Reportar SRT-SNR en SSN.\n8. **Interpretación contextualizada por edad**: jóvenes normales ~−6 a −8 dB; adultos mayores >60 años aceptable −2 a +2 dB.",
+      "target_population_md": "- **Adultos con queja de dificultad en ambientes ruidosos** (cafetería, reuniones, TV con ruido de fondo).\n- Evaluación de **presbiacusia central** — más sensible que HINT.\n- Sospecha de **TPAC adulto**.\n- Evaluación pre/post audífono (demuestra beneficio en escenario ruidoso real).\n- Investigación en escucha dificultosa (listening effort, cognitive load).",
+      "contraindications_md": "- **Lista vacía** o sin keywords marcadas.\n- Hipoacusia >70 dB HL.\n- Sin calibración del ruido SSN.\n- Niños <11 años.",
+      "estimated_duration_min": 12,
+      "min_age_years": 11,
+      "references": [
+        { "citation": "Killion MC, Niquette PA, Gudmundsen GI et al. Development of a quick speech-in-noise test for measuring signal-to-noise ratio loss", "year": 2004, "doi": "10.1121/1.1784440" },
+        { "citation": "Byrne D et al. An international comparison of long-term average speech spectra", "year": 1994, "doi": "10.1121/1.410152" },
+        { "citation": "Hochmuth S et al. A Spanish matrix sentence test for assessing speech reception thresholds in noise", "year": 2012 }
+      ]
     }
   ],
   "lists": [

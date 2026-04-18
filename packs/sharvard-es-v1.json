@@ -1,9 +1,9 @@
 {
   "id": "sharvard-es-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Sharvard ES (peninsular) - HINT L01",
   "category": "hint",
-  "description_md": "# Sharvard ES — HINT\n\nPlantilla HINT (SRT-SNR adaptativo) apuntando a la lista Sharvard L01 (10 frases en español peninsular). Sharvard es la adaptación al español del corpus Harvard de frases fonéticamente balanceadas; se distribuyen 70 listas de 10 frases cada una con 5 palabras clave por frase.\n\nClona la plantilla para usar otras listas (L02-L70). Requiere instalar el catálogo Sharvard ES y descargar el pack de audio (voz femenina o masculina) desde releases.",
+  "description_md": "# Sharvard ES — HINT con corpus validado\n\nAdaptación al **español peninsular** del corpus **Harvard Sentences** (IEEE 1969) realizada por **Aubanel, García Lecumberri & Cooke (2014)** en la Universidad del País Vasco. Sharvard = \"Spanish Harvard\".\n\n**Características del corpus**:\n\n- **700 frases** organizadas en **70 listas de 10 frases** cada una.\n- **5 palabras clave por frase** (3500 keywords totales) — scoring psicométrico fino.\n- **Balance fonémico** validado: distribución de los 24 fonemas consonánticos y 5 vocálicos del español se acerca a la distribución de frecuencia de uso natural (correlación > 0.9 con Llisterri 1993).\n- **Grabaciones profesionales** en Zenodo (DOI 10.5281/zenodo.3547446): voces F (femenina) y M (masculina) con acento peninsular neutro.\n- **Licencia CC-BY** — uso libre académico y clínico.\n\n**Uso típico**: SRT-SNR adaptativo (HINT paradigm Nilsson 1994) con ruido rosa o SSN. Cada lista es equivalente fonémicamente → permite **test-retest** y **comparación pre/post intervención** sin aprendizaje artificial.\n\nEste pack incluye **solo la plantilla L01** como ejemplo. Para usar todas las 70 listas como tests independientes, instalar `hint-es-clinico-v1`. Para otro par voz/lista, clonar esta plantilla y cambiar `stimulus_list_code: SHARVARD_ES_L02..L70`.\n\n**Requiere**:\n\n1. Instalar catálogo de texto desde `/catalogos` (crea las 70 listas con frases + keywords).\n2. Descargar pack de audio (release `sharvard-audio-v1`, voz F o M) — los 700 WAV se procesan y guardan en `stimuli/`.\n\n**Advertencia dialectal**: Sharvard es peninsular (Castilla). Para población LatAm el vocabulario es comprensible pero el acento (distinción /s/ vs /θ/, /ll/ vs /y/) puede afectar la familiaridad. Para LatAm estricto, usar listas regionales.",
   "requirements": "audio_pack",
   "license": "CC-BY",
   "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
@@ -18,7 +18,20 @@
       "test_type": "CUSTOM",
       "description": "SRT-SNR adaptativo con Sharvard L01 (10 frases peninsular ES). Clona la plantilla para usar otra lista (L02-L70). Requiere instalar el catálogo Sharvard ES + pack de audio desde /catalogos.",
       "config_json": {"tones":{},"isi_ms":0,"iri_ms":0,"envelope_ms":0,"pattern_length":0,"practice_sequences":[],"test_sequences":[],"channel":"binaural","level_db":65,"hint":{"stimulus_list_code":"SHARVARD_ES_L01","start_snr_db":5,"noise_level_db":60,"noise_type":"pink","sentences_per_level":4,"threshold_pass_ratio":0.5,"step_down_db":4,"step_up_db":2,"min_snr_db":-10,"max_snr_db":20,"max_total_trials":30}},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "hint",
+      "purpose_md": "Cuantificar el **SRT-SNR** con un corpus **clínicamente validado y reproducible** de frases en español peninsular. Elimina la variabilidad que introduce la grabación casera del usuario — las frases Sharvard están producidas en estudio profesional con niveles RMS uniformizados. Permite **comparar resultados entre pacientes y entre centros** y usar los normativos publicados (Aubanel et al. 2014, Calcus et al. 2019).",
+      "how_it_works_md": "Paradigma HINT adaptativo idéntico a `hint-es-v1`, pero con material validado:\n\n- **Lista L01**: 10 frases Sharvard con 5 palabras clave marcadas cada una.\n- Ruido rosa 60 dB SPL continuo.\n- SNR inicial +5 dB, step-down 4 dB, step-up 2 dB, criterio ≥50% keywords.\n- Convergencia típica en 15–20 frases.\n\nPara SNR-limited tests (bracketing fino ±1 dB), usar múltiples listas consecutivas (L01→L02→L03) — cada lista es fonémicamente equivalente, lo que permite promediar sin sesgo de aprendizaje.",
+      "protocol_md": "1. **Instalación previa**:\n   - Desde `/catalogos`: instalar catálogo **Sharvard ES** (texto + keywords).\n   - Descargar pack de audio: voz F (femenina) o M (masculina) — tar.gz ~130 MB cada uno.\n   - Verificar que los 700 WAV queden procesados en `stimuli/` con RMS normalizado a −20 dBFS.\n2. **Calibración** SPL vigente. Preferir calibración del ruido rosa por separado.\n3. Auriculares supraaurales (Sharvard validado con Sennheiser HDA200 — equivalentes aceptables).\n4. Instrucción: *«Va a escuchar frases sobre un ruido de fondo. Repita cada frase completa. Si solo entendió algunas palabras, **dígamelas igual** — no se quede callado»*.\n5. 2 frases de práctica a SNR +10 dB de otra lista (p.ej. L02) para evitar aprender la L01 antes del test.\n6. Test: 10–30 frases adaptativas en L01.\n7. Reportar **SRT-SNR en dB** y **desvío típico** de los últimos 6 trials.\n8. Para test-retest, usar L02 o L03 en la sesión de control (no repetir L01 — genera sesgo de memoria).",
+      "target_population_md": "- **Adultos hispanohablantes** (ideal peninsular, aceptable LatAm con advertencia).\n- Evaluación pre/post audífono.\n- Pre/post implante coclear.\n- Investigación clínica con normativos publicados.\n- Comparación multicéntrica.",
+      "contraindications_md": "- **Catálogo Sharvard o pack audio no instalados**.\n- Hipoacusia profunda (>70 dB HL PTA).\n- Pacientes que solo hablan variantes muy distintas (portugués, gallego, catalán) — Sharvard es castellano.\n- Niños (corpus validado en adultos 18+).",
+      "estimated_duration_min": 5,
+      "min_age_years": 18,
+      "references": [
+        { "citation": "Aubanel V, García Lecumberri ML, Cooke M. The Sharvard Corpus: A phonemically-balanced Spanish sentence resource for audiology", "year": 2014, "doi": "10.3109/14992027.2014.907507" },
+        { "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test", "year": 1994 },
+        { "citation": "IEEE (1969). IEEE recommended practice for speech quality measurements. IEEE Trans Audio Electroacoust 17:225-246", "year": 1969 }
+      ]
     }
   ],
   "lists": [],
