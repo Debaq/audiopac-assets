@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-04-18T05:02:39Z",
+  "updated_at": "2026-04-18T12:00:00Z",
   "catalogs": [
     {
       "id": "sharvard-es",
@@ -51,14 +51,14 @@
   "packs": [
     {
       "id": "pac-patterns-v1",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "name": "Pruebas de Patrones Tonales (FPT / DPT / PPS / Memoria)",
       "category": "pac.patterns",
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-patterns-v1.json",
-      "sha256": "69aac57b15ddda7ab4b15fbdb5515056fbb3a2467fefae0f390ae52e214c5cfa",
-      "bytes": 6965
+      "sha256": "eaee0e96461d9a4b56e6720c3b9cd3eed5a258a8c63d3f44f308411e2cfe9734",
+      "bytes": 16558
     },
     {
       "id": "pps-pinheiro-v1",

@@ -1,6 +1,6 @@
 {
   "id": "pac-patterns-v1",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "name": "Pruebas de Patrones Tonales (FPT / DPT / PPS / Memoria)",
   "category": "pac.patterns",
   "description_md": "# Patrones Tonales\n\nBatería de pruebas de procesamiento auditivo central (PAC) que evalúa la capacidad de reconocer patrones temporales y de frecuencia, así como la memoria auditiva secuencial. Incluye el Frequency Pattern Test (FPT/PPS) de Pinheiro, Duration Pattern Test (DPT/DPS) de Musiek, versiones extendidas de 5 tonos y tareas de memoria secuencial de 5 a 7 tonos.\n\nPoblación objetivo: niños desde 7 años y adultos. Rendimiento <70% en adultos sugiere compromiso temporal / de reconocimiento de patrones.",
@@ -19,7 +19,20 @@
       "test_type": "PPS",
       "description": "Frequency Pattern Test - Variante Pinheiro con tonos grave 880Hz y agudo 1122Hz, 150ms",
       "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1122}},"duration_ms":150,"isi_ms":200,"iri_ms":5000,"envelope_ms":10,"pattern_length":3,"practice_sequences":["LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL"],"test_sequences":["LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL","LHH","HLL","LHL","HLH","LLH","HHL","LHH","HLL"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.patterns",
+      "purpose_md": "Evaluar el **reconocimiento de patrones de frecuencia** — habilidad cortical temporal para discriminar y ordenar secuencialmente tonos de distinta altura. Es una de las pruebas más sensibles a lesiones del cuerpo calloso, corteza auditiva y vías corticales inter-hemisféricas.",
+      "how_it_works_md": "Se presentan secuencias de 3 tonos que combinan un tono grave (880 Hz) y un tono agudo (1122 Hz), duración 150 ms cada uno, ISI 200 ms. El paciente describe el patrón usando las palabras \"grave\" y \"agudo\" (modo verbal) o silba/canta la secuencia (modo humming) — este último aísla el hemisferio derecho. El contraste de 242 Hz (~4 semitonos) es subliminal para detección pura pero suficiente para el reconocimiento patrón, forzando al procesamiento temporal.",
+      "protocol_md": "1. Ubicar al paciente en cabina o ambiente silencioso con auriculares supraaurales.\n2. Explicar: *«Va a escuchar 3 tonos seguidos, unos graves y otros agudos. Dígame en qué orden los escucha — por ejemplo: grave-agudo-grave»*.\n3. Administrar 10 secuencias de práctica con feedback. Si <50% correcto en práctica, reinstruir.\n4. Aplicar 30 secuencias test binaurales sin feedback.\n5. Repetir por oído individual si se sospecha asimetría.\n6. Anotar aciertos por oído (R, L) para calcular **ear effect**.",
+      "target_population_md": "- **Adultos** con sospecha de TPAC (trastorno del procesamiento auditivo central).\n- **Niños desde 7 años** con dificultades escolares, dislexia, TDAH o disfonía de procesamiento.\n- Post-trauma cráneo-encefálico, ACV con compromiso cortical temporal.\n- Evaluación pre/post terapia auditiva central.",
+      "contraindications_md": "- Pérdida auditiva conductiva o neurosensorial >40 dB HL en frecuencias 500–2000 Hz (usar primero PTA).\n- Niños <7 años: comprensión insuficiente de la tarea.\n- Afasia receptiva marcada (compromete la respuesta verbal — usar modo humming).",
+      "estimated_duration_min": 8,
+      "min_age_years": 7,
+      "references": [
+        { "citation": "Pinheiro ML, Ptacek PH. Reversals in the perception of noise and tone patterns", "year": 1971, "doi": "10.1121/1.1912589" },
+        { "citation": "Musiek FE. Frequency (pitch) and duration pattern tests", "year": 1994 },
+        { "citation": "Bellis TJ. Assessment and management of central auditory processing disorders (2nd ed). Delmar", "year": 2003 }
+      ]
     },
     {
       "code": "PPS_LONG",
@@ -27,7 +40,18 @@
       "test_type": "PPS",
       "description": "Patrón de frecuencia de 5 tonos para detección de déficits leves en adultos",
       "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":200,"isi_ms":300,"iri_ms":7000,"envelope_ms":10,"pattern_length":5,"practice_sequences":["LHLHL","HLHLH","LLHHL","HHLLH","LHHLL"],"test_sequences":["LHLHL","HLHLH","LLHHL","HHLLH","LHHLL","HLLHH","LHLLH","HLHLL","LLHLH","HHLHL","LHLHH","HLHLL","LLHHH","HHLLL","LHHLH","HLLHL","LHLHL","HLHLH","LLHHL","HHLLH"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.patterns",
+      "purpose_md": "Variante **extendida a 5 tonos** del FPT, diseñada para detectar **déficits leves** que pueden pasar desapercibidos con el paradigma clásico de 3 tonos. Aumenta la carga de memoria de trabajo y estresa el procesamiento secuencial.",
+      "how_it_works_md": "Mismo paradigma que FPT pero con secuencias de **5 tonos** y **mayor contraste** (880 / 1430 Hz ≈ octava). Duración 200 ms, ISI 300 ms. El paciente repite la secuencia completa. La combinación memoria + reconocimiento patrón incrementa sensibilidad a lesiones sutiles.",
+      "protocol_md": "1. Administrar solo si el paciente ya completó FPT básico (establecer piso cognitivo).\n2. Instrucción: *«Ahora serán 5 tonos seguidos. Escuche la secuencia completa y repítamela: grave o agudo, en orden»*.\n3. 5 secuencias de práctica + 20 test binaurales.\n4. Considerar respuesta parcial correcta solo si la secuencia completa coincide.",
+      "target_population_md": "- Adultos con FPT dentro de norma pero **sospecha clínica persistente** de TPAC.\n- Seguimiento de rehabilitación auditiva central.\n- Evaluación de músicos o profesionales con queja de discriminación fina.",
+      "contraindications_md": "- Déficit de memoria de trabajo primario (Alzheimer, demencia) — el resultado confunde memoria con procesamiento auditivo.\n- No administrar en niños <10 años (carga de memoria excesiva).",
+      "estimated_duration_min": 6,
+      "min_age_years": 10,
+      "references": [
+        { "citation": "Musiek FE, Chermak GD. Handbook of Central Auditory Processing Disorder, Vol 1 (2nd ed). Plural Publishing", "year": 2014 }
+      ]
     },
     {
       "code": "DPT_LONG",
@@ -35,7 +59,18 @@
       "test_type": "DPS",
       "description": "Patrón de duración de 5 tonos para detección de déficits leves en adultos",
       "config_json": {"frequency":1000,"tones":{"L":{"label":"Largo","duration_ms":500},"C":{"label":"Corto","duration_ms":250}},"isi_ms":300,"iri_ms":7000,"envelope_ms":10,"pattern_length":5,"practice_sequences":["LCLCL","CLCLC","LLCCL","CCLLC","LCCLL"],"test_sequences":["LCLCL","CLCLC","LLCCL","CCLLC","LCCLL","CLLCC","LCLLC","CLCLL","LLCLC","CCLCL","LCLCC","CLCLL","LLCCC","CCLLL","LCCLC","CLLCL","LCLCL","CLCLC","LLCCL","CCLLC"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.patterns",
+      "purpose_md": "Evaluar el **reconocimiento de patrones de duración** — procesamiento temporal puro sin cambio espectral. Sensible a lesiones del **hemisferio derecho** y cuerpo calloso; complementa al FPT/PPS.",
+      "how_it_works_md": "Secuencias de 5 tonos de **misma frecuencia** (1000 Hz) pero con dos duraciones distinguibles: largo (500 ms) y corto (250 ms), ISI 300 ms. Al eliminar el contraste espectral se aísla el procesamiento temporal. El paciente describe el patrón como \"largo-corto-corto…\" o silba/dura el sonido correspondiente.",
+      "protocol_md": "1. Instrucción: *«Va a escuchar 5 tonos, todos con la misma altura pero unos más largos que otros. Dígame el patrón — por ejemplo: largo-corto-largo-corto-largo»*.\n2. 5 secuencias de práctica con feedback, luego 20 test sin feedback.\n3. Si el paciente falla la etiqueta verbal, usar humming (mantiene duración sin etiquetar).\n4. Comparar con FPT — disociación **FPT alto + DPT bajo** sugiere compromiso hemisferio derecho específico.",
+      "target_population_md": "- Mismo perfil que FPT; usar en batería conjunta.\n- Particularmente indicado cuando se sospecha lesión hemisférica derecha (inatención auditiva, aprosodia).\n- Pacientes con música/lenguaje tonal como queja principal.",
+      "contraindications_md": "- Pérdida auditiva marcada (la detección del tono 1 kHz debe ser clara).\n- Niños <8 años: concepto \"largo/corto\" difícil de verbalizar — requiere entrenamiento previo.",
+      "estimated_duration_min": 7,
+      "min_age_years": 8,
+      "references": [
+        { "citation": "Musiek FE, Baran JA, Pinheiro ML. Duration pattern recognition in normal subjects and patients with cerebral and cochlear lesions", "year": 1990 }
+      ]
     },
     {
       "code": "MEM_SEQ_5",
@@ -43,7 +78,18 @@
       "test_type": "CUSTOM",
       "description": "Memoria auditiva secuencial - Patrones de 5 tonos. Paciente repite la secuencia. Evalúa retención a corto plazo.",
       "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":250,"isi_ms":400,"iri_ms":6000,"envelope_ms":10,"pattern_length":5,"practice_sequences":["LHLHL","HLHLH","LLHHL"],"test_sequences":["LHLHL","HLHLH","LLHHL","HHLLH","LHHLL","HLLHH","LHLLH","HLHLL","LLHLH","HHLHL","LHLHH","HLHLL","LLHHH","HHLLL","LHHLH","HLLHL"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.memory",
+      "purpose_md": "Evaluar la **memoria auditiva secuencial de corto plazo** (span) con material tonal no-verbal. Predice la capacidad del paciente para retener órdenes verbales, números telefónicos y secuencias de instrucciones.",
+      "how_it_works_md": "Secuencias de **5 tonos** (grave 880 Hz / agudo 1430 Hz), 250 ms cada uno, ISI 400 ms. El paciente debe reproducir la secuencia completa — verbal (\"grave-agudo…\") o tarareada. A diferencia del FPT, el foco es la **retención** más que el reconocimiento patrón.",
+      "protocol_md": "1. Empezar con `MEM_SEQ_5`. Si ≥80% correcto, subir a 6; si ≥80% a 6, subir a 7.\n2. Instrucción: *«Escuche los tonos con atención. Cuando termine la secuencia, repítamela en el mismo orden»*.\n3. 3 secuencias de práctica + 16 test.\n4. Registrar el span máximo donde el paciente alcanzó ≥80%.",
+      "target_population_md": "- Niños 7–12 años con queja de \"se olvida lo que le dicen\".\n- Adultos con TPAC y queja específica de retención.\n- Pre/post entrenamiento auditivo cognitivo.",
+      "contraindications_md": "- Déficit cognitivo global (evaluación neuropsicológica primero).\n- No usar como prueba única — complementa FPT/DPT.",
+      "estimated_duration_min": 5,
+      "min_age_years": 7,
+      "references": [
+        { "citation": "Bellis TJ. Assessment and management of central auditory processing disorders (2nd ed)", "year": 2003 }
+      ]
     },
     {
       "code": "MEM_SEQ_6",
@@ -51,7 +97,18 @@
       "test_type": "CUSTOM",
       "description": "Memoria auditiva secuencial - Patrones de 6 tonos, carga superior.",
       "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":250,"isi_ms":400,"iri_ms":7000,"envelope_ms":10,"pattern_length":6,"practice_sequences":["LHLHLH","HLHLHL","LLHHLL"],"test_sequences":["LHLHLH","HLHLHL","LLHHLL","HHLLHH","LHHLLH","HLLHHL","LHLLHH","HLHLLH","LLHLHL","HHLHLH","LHLHHL","HLHLLL","LLHHHL","HHLLLH","LHHLHL","HLLHLH"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.memory",
+      "purpose_md": "Extensión a **6 tonos** del span auditivo secuencial. Nivel **intermedio** — supera el span típico pediátrico y desafía al adulto sin compromiso.",
+      "how_it_works_md": "Idéntico protocolo que MEM_SEQ_5 pero con secuencias de 6 tonos, IRI (inter-response interval) extendido a 7 s para permitir reproducción completa.",
+      "protocol_md": "Administrar solo si el paciente alcanzó ≥80% en MEM_SEQ_5. 3 prácticas + 16 test. Registrar span máximo.",
+      "target_population_md": "- Adultos normales: esperable ≥80% correcto.\n- Adolescentes 13+ años.\n- Tamizaje de deterioro cognitivo auditivo leve.",
+      "contraindications_md": "- Si MEM_SEQ_5 <70%, no administrar (piso cognitivo no alcanzado).",
+      "estimated_duration_min": 6,
+      "min_age_years": 10,
+      "references": [
+        { "citation": "Chermak GD, Musiek FE. Handbook of Central Auditory Processing Disorder, Vol 2 (2nd ed). Plural Publishing", "year": 2014 }
+      ]
     },
     {
       "code": "MEM_SEQ_7",
@@ -59,7 +116,18 @@
       "test_type": "CUSTOM",
       "description": "Memoria auditiva secuencial - Patrones de 7 tonos, límite del span auditivo típico.",
       "config_json": {"tones":{"L":{"label":"Grave","frequency":880},"H":{"label":"Agudo","frequency":1430}},"duration_ms":250,"isi_ms":400,"iri_ms":8000,"envelope_ms":10,"pattern_length":7,"practice_sequences":["LHLHLHL","HLHLHLH","LLHHLLH"],"test_sequences":["LHLHLHL","HLHLHLH","LLHHLLH","HHLLHHL","LHHLLHH","HLLHHLL","LHLLHHL","HLHLLHH","LLHLHLH","HHLHLHL","LHLHHLH","HLHLLLH","LLHHHLL","HHLLLHH","LHHLHLL","HLLHLHH"],"channel":"binaural","level_db":60},
-      "is_standard": 1
+      "is_standard": 1,
+      "family": "pac.memory",
+      "purpose_md": "**Techo del span auditivo** típico adulto (7±2 ítems, Miller 1956). Detecta rendimiento superior o compromiso específico de memoria de trabajo auditiva.",
+      "how_it_works_md": "7 tonos por secuencia, IRI 8 s. La mayoría de adultos sin compromiso alcanzan 60–80% en esta longitud; <50% es sugerente de déficit de memoria de trabajo.",
+      "protocol_md": "Administrar solo tras MEM_SEQ_6 ≥80%. Instruir al paciente que **es normal no recordar todo** — reducir ansiedad. 3 práctica + 16 test.",
+      "target_population_md": "- Adultos jóvenes sin compromiso (18–55 años) para establecer baseline.\n- Músicos o intérpretes (span esperado ≥80%).\n- Sospecha de deterioro cognitivo leve en mayores de 60.",
+      "contraindications_md": "- MEM_SEQ_6 <70%.\n- Fatiga — no administrar al final de una batería larga.",
+      "estimated_duration_min": 7,
+      "min_age_years": 13,
+      "references": [
+        { "citation": "Miller GA. The magical number seven, plus or minus two: some limits on our capacity for processing information. Psychol Rev 63:81–97", "year": 1956 }
+      ]
     }
   ],
   "lists": [],
