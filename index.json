@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-04-18T00:00:02Z",
+  "updated_at": "2026-04-18T05:02:39Z",
   "catalogs": [
     {
       "id": "sharvard-es",
@@ -204,6 +204,17 @@
       "bytes": 4878
     },
     {
+      "id": "matrix-es-v1",
+      "version": "1.0.0",
+      "name": "Matrix-ES (Hochmuth) - SRT adaptativo 5-AFC",
+      "category": "hint",
+      "requirements": "recording",
+      "license": "CC-BY-SA",
+      "url": "packs/matrix-es-v1.json",
+      "sha256": "9577d5323767eee3edb44da9dbd463ec0e01cd576f253ba5244a9b6573a20e10",
+      "bytes": 8415
+    },
+    {
       "id": "sharvard-es-v1",
       "version": "1.0.0",
       "name": "Sharvard ES (peninsular) - HINT L01",
@@ -213,6 +224,17 @@
       "url": "packs/sharvard-es-v1.json",
       "sha256": "7f90353be53dede163d4a6a9f3ac414f40af47c787a8d566d5a71fc4a7089b6f",
       "bytes": 2634
+    },
+    {
+      "id": "hint-es-clinico-v1",
+      "version": "1.0.0",
+      "name": "HINT-ES Clínico (Sharvard L01-L70)",
+      "category": "hint",
+      "requirements": "audio_pack",
+      "license": "CC-BY",
+      "url": "packs/hint-es-clinico-v1.json",
+      "sha256": "c6c47573833a273b04e0d3c29ae6d72d88a4c1a87979181f90db24f96861186c",
+      "bytes": 71473
     }
   ]
 }

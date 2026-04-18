@@ -1,0 +1,2236 @@
+{
+  "id": "hint-es-clinico-v1",
+  "version": "1.0.0",
+  "name": "HINT-ES Clínico (Sharvard L01-L70)",
+  "category": "hint",
+  "description_md": "# HINT-ES Clínico (Sharvard 70 listas)\n\nBateria completa de HINT adaptativo en ruido con el corpus **Sharvard ES peninsular** (Aubanel et al. 2014): 70 listas × 10 frases fonémicamente balanceadas, 5 palabras clave por frase. Un test por lista (L01-L70) para evaluación longitudinal, test-retest en sesiones distintas y evitar efecto aprendizaje.\n\n## Diferencia con `sharvard-es-v1`\n\n- `sharvard-es-v1`: solo lista L01 como template a clonar (simple).\n- `hint-es-clinico-v1`: **70 tests predefinidos**, elegís en `/tests` la lista directamente sin clonar.\n\n## Requerimientos\n\n1. Instalar catálogo **Sharvard ES** desde `/catalogos` (texto 70 listas)\n2. Descargar pack audio (voz F o M, ~130 MB) del mismo catálogo\n3. Instalar este pack\n\n## Procedimiento\n\n- Voz + ruido rosa, SRT adaptativo por bracketing\n- 4 frases por nivel de SNR, pass si ≥50% keywords correctas\n- Step_down 4 dB tras pasar, step_up 2 dB tras fallar\n- Máx 30 trials por test\n\n## Interpretación\n\nSRT-SNR típico en adultos jóvenes normoyentes: **-5 a -8 dB**. Umbrales >0 dB indican dificultad clínica para extraer habla en ruido (hipoacusia coclear, presbiacusia, déficit central). Alternar listas en re-tests para neutralizar efecto aprendizaje.",
+  "requirements": "audio_pack",
+  "license": "CC-BY",
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
+  "references": [
+    {
+      "citation": "Aubanel V, García Lecumberri ML, Cooke M (2014). The Sharvard Corpus: A phonemically-balanced Spanish sentence resource for audiology. Int J Audiol 53(9):633-641",
+      "url": "https://zenodo.org/records/3547446"
+    },
+    {
+      "citation": "Nilsson M, Soli SD, Sullivan JA (1994). Development of the Hearing in Noise Test for the measurement of speech reception thresholds in quiet and in noise. J Acoust Soc Am 95:1085-1099",
+      "url": null
+    },
+    {
+      "citation": "Soli SD, Wong LL (2008). Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
+      "url": null
+    }
+  ],
+  "tests": [
+    {
+      "code": "HINT_SHARVARD_L01",
+      "name": "HINT-ES Sharvard Lista 01",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L01 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L01",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L02",
+      "name": "HINT-ES Sharvard Lista 02",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L02 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L02",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L03",
+      "name": "HINT-ES Sharvard Lista 03",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L03 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L03",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L04",
+      "name": "HINT-ES Sharvard Lista 04",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L04 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L04",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L05",
+      "name": "HINT-ES Sharvard Lista 05",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L05 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L05",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L06",
+      "name": "HINT-ES Sharvard Lista 06",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L06 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L06",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L07",
+      "name": "HINT-ES Sharvard Lista 07",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L07 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L07",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L08",
+      "name": "HINT-ES Sharvard Lista 08",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L08 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L08",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L09",
+      "name": "HINT-ES Sharvard Lista 09",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L09 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L09",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L10",
+      "name": "HINT-ES Sharvard Lista 10",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L10 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L10",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L11",
+      "name": "HINT-ES Sharvard Lista 11",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L11 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L11",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L12",
+      "name": "HINT-ES Sharvard Lista 12",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L12 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L12",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L13",
+      "name": "HINT-ES Sharvard Lista 13",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L13 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L13",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L14",
+      "name": "HINT-ES Sharvard Lista 14",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L14 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L14",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L15",
+      "name": "HINT-ES Sharvard Lista 15",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L15 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L15",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L16",
+      "name": "HINT-ES Sharvard Lista 16",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L16 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L16",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L17",
+      "name": "HINT-ES Sharvard Lista 17",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L17 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L17",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L18",
+      "name": "HINT-ES Sharvard Lista 18",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L18 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L18",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L19",
+      "name": "HINT-ES Sharvard Lista 19",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L19 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L19",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L20",
+      "name": "HINT-ES Sharvard Lista 20",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L20 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L20",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L21",
+      "name": "HINT-ES Sharvard Lista 21",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L21 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L21",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L22",
+      "name": "HINT-ES Sharvard Lista 22",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L22 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L22",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L23",
+      "name": "HINT-ES Sharvard Lista 23",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L23 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L23",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L24",
+      "name": "HINT-ES Sharvard Lista 24",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L24 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L24",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L25",
+      "name": "HINT-ES Sharvard Lista 25",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L25 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L25",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L26",
+      "name": "HINT-ES Sharvard Lista 26",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L26 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L26",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L27",
+      "name": "HINT-ES Sharvard Lista 27",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L27 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L27",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L28",
+      "name": "HINT-ES Sharvard Lista 28",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L28 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L28",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L29",
+      "name": "HINT-ES Sharvard Lista 29",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L29 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L29",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L30",
+      "name": "HINT-ES Sharvard Lista 30",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L30 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L30",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L31",
+      "name": "HINT-ES Sharvard Lista 31",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L31 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L31",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L32",
+      "name": "HINT-ES Sharvard Lista 32",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L32 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L32",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L33",
+      "name": "HINT-ES Sharvard Lista 33",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L33 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L33",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L34",
+      "name": "HINT-ES Sharvard Lista 34",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L34 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L34",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L35",
+      "name": "HINT-ES Sharvard Lista 35",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L35 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L35",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L36",
+      "name": "HINT-ES Sharvard Lista 36",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L36 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L36",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L37",
+      "name": "HINT-ES Sharvard Lista 37",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L37 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L37",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L38",
+      "name": "HINT-ES Sharvard Lista 38",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L38 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L38",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L39",
+      "name": "HINT-ES Sharvard Lista 39",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L39 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L39",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L40",
+      "name": "HINT-ES Sharvard Lista 40",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L40 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L40",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L41",
+      "name": "HINT-ES Sharvard Lista 41",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L41 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L41",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L42",
+      "name": "HINT-ES Sharvard Lista 42",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L42 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L42",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L43",
+      "name": "HINT-ES Sharvard Lista 43",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L43 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L43",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L44",
+      "name": "HINT-ES Sharvard Lista 44",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L44 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L44",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L45",
+      "name": "HINT-ES Sharvard Lista 45",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L45 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L45",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L46",
+      "name": "HINT-ES Sharvard Lista 46",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L46 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L46",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L47",
+      "name": "HINT-ES Sharvard Lista 47",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L47 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L47",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L48",
+      "name": "HINT-ES Sharvard Lista 48",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L48 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L48",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L49",
+      "name": "HINT-ES Sharvard Lista 49",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L49 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L49",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L50",
+      "name": "HINT-ES Sharvard Lista 50",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L50 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L50",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L51",
+      "name": "HINT-ES Sharvard Lista 51",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L51 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L51",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L52",
+      "name": "HINT-ES Sharvard Lista 52",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L52 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L52",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L53",
+      "name": "HINT-ES Sharvard Lista 53",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L53 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L53",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L54",
+      "name": "HINT-ES Sharvard Lista 54",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L54 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L54",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L55",
+      "name": "HINT-ES Sharvard Lista 55",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L55 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L55",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L56",
+      "name": "HINT-ES Sharvard Lista 56",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L56 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L56",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L57",
+      "name": "HINT-ES Sharvard Lista 57",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L57 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L57",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L58",
+      "name": "HINT-ES Sharvard Lista 58",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L58 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L58",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L59",
+      "name": "HINT-ES Sharvard Lista 59",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L59 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L59",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L60",
+      "name": "HINT-ES Sharvard Lista 60",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L60 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L60",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L61",
+      "name": "HINT-ES Sharvard Lista 61",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L61 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L61",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L62",
+      "name": "HINT-ES Sharvard Lista 62",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L62 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L62",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L63",
+      "name": "HINT-ES Sharvard Lista 63",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L63 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L63",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L64",
+      "name": "HINT-ES Sharvard Lista 64",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L64 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L64",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L65",
+      "name": "HINT-ES Sharvard Lista 65",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L65 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L65",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L66",
+      "name": "HINT-ES Sharvard Lista 66",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L66 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L66",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L67",
+      "name": "HINT-ES Sharvard Lista 67",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L67 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L67",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L68",
+      "name": "HINT-ES Sharvard Lista 68",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L68 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L68",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L69",
+      "name": "HINT-ES Sharvard Lista 69",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L69 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L69",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    },
+    {
+      "code": "HINT_SHARVARD_L70",
+      "name": "HINT-ES Sharvard Lista 70",
+      "test_type": "CUSTOM",
+      "description": "SRT-SNR adaptativo con Sharvard L70 (10 frases peninsular ES). Requiere catálogo Sharvard ES + pack audio instalados desde /catalogos.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 0,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 65,
+        "hint": {
+          "stimulus_list_code": "SHARVARD_ES_L70",
+          "start_snr_db": 5,
+          "noise_level_db": 60,
+          "noise_type": "pink",
+          "sentences_per_level": 4,
+          "threshold_pass_ratio": 0.5,
+          "step_down_db": 4,
+          "step_up_db": 2,
+          "min_snr_db": -10,
+          "max_snr_db": 20,
+          "max_total_trials": 30
+        }
+      },
+      "is_standard": 1
+    }
+  ],
+  "lists": [],
+  "lists_ref": "catalogs/sharvard-es-v1.json",
+  "interpretation": {
+    "metric": "srt_db",
+    "norms_by_age": [
+      {
+        "age_min": 18,
+        "age_max": 40,
+        "normal_min": -8,
+        "mild_min": -3,
+        "severe_max": 3
+      },
+      {
+        "age_min": 41,
+        "age_max": 65,
+        "normal_min": -5,
+        "mild_min": 0,
+        "severe_max": 5
+      },
+      {
+        "age_min": 66,
+        "age_max": 90,
+        "normal_min": -2,
+        "mild_min": 3,
+        "severe_max": 8
+      }
+    ],
+    "description_md": "**SRT-SNR con Sharvard ES + ruido rosa binaural — adultos normoyentes:**\n\n- 18-40 a: -5 a -8 dB\n- 41-65 a: -3 a -5 dB (efecto envejecimiento periférico)\n- >65 a: 0 a +3 dB (componente cognitivo)\n\nUmbrales >0 dB en jóvenes o >5 dB en mayores indican dificultad clínica para extraer habla en ruido: hipoacusia coclear, presbiacusia mixta, TPAC, déficit atencional. Útil para monitorizar beneficio de adaptación audioprotésica (mejora ≥3 dB clínicamente significativa)."
+  },
+  "report_template_md": "## HINT-ES — {{test_name}}\n\nPaciente **{{patient_name}}** ({{patient_age}} años). Oído evaluado: {{ear}}. Fecha: {{date}}.\n\n**SRT-SNR obtenido: {{metric_value}} dB** (banda {{norm_band}} → {{verdict}}).\n\nSe administraron {{total}} frases con adaptación por bracketing en ruido rosa binaural; {{correct}} trials cumplieron criterio de paso (≥50% palabras clave correctas).",
+  "metadata": {
+    "recommended": false,
+    "target_population": "adults",
+    "requires_audio_pack": true,
+    "audio_pack_release_tag": "sharvard-audio-v1",
+    "estimated_duration_min": 8
+  }
+}
