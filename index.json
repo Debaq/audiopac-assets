@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-04-18T20:00:00Z",
+  "updated_at": "2026-04-18T15:21:26Z",
   "catalogs": [
     {
       "id": "sharvard-es",
@@ -227,14 +227,14 @@
     },
     {
       "id": "hint-es-clinico-v1",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "name": "HINT-ES Clínico (Sharvard L01-L70)",
       "category": "hint",
       "requirements": "audio_pack",
       "license": "CC-BY",
       "url": "packs/hint-es-clinico-v1.json",
-      "sha256": "60771c30d3b11389b89ef6c511abf79985b1994effa64ce910e119024e69f60c",
-      "bytes": 73358
+      "sha256": "7e65c3e672a449ca0f52aaa9937334277b55ea8f27bd66d55285ef70db7627df",
+      "bytes": 336283
     }
   ]
 }
