@@ -6,12 +6,32 @@
   "description_md": "# PALPA-E / EPLA — Discriminación fonológica por pares mínimos\n\nAdaptación al español del **Psycholinguistic Assessment of Language Processing in Aphasia (PALPA)** original de **Kay, Lesser & Coltheart (1992)**, publicada en español como **EPLA (Evaluación del Procesamiento Lingüístico en la Afasia)** por **Valle & Cuetos (1995)**. Subprueba de **discriminación auditiva fonológica por pares mínimos**.\n\n## Fundamento teórico\n\nEl modelo psicolingüístico de Ellis & Young (1988) identifica un **nivel de análisis fonológico auditivo** específico, disociable tanto del procesamiento acústico periférico como del acceso léxico-semántico. PALPA subtest 1/2/3 evalúa precisamente este nivel intermedio, sensible a lesiones del **giro temporal superior izquierdo (área de Wernicke)** y a **sordera para palabras** (word deafness).\n\n## Material\n\n**40 palabras bisílabas** formando **20 pares mínimos** con contrastes consonánticos sistemáticos:\n\n- **Sonoridad**: pala/bala, cala/gala, foca/boca, tela/dela…\n- **Punto articulación**: mano/sano, mar/par, ven/ten, nudo/mudo…\n- **Modo articulación**: lata/rata, mesa/misa, foca/boca…\n- **Posición del contraste**: inicial (pala/bala), media (piso/peso), final (mar/par).\n\n## Uso clínico\n\nEvaluación estándar en:\n\n- **Afasia receptiva** (Wernicke, conducción) — screening de sordera para palabras.\n- **Procesamiento auditivo central** — contraste con audiometría tonal normal.\n- **Dislexia fonológica** — dificultad con pares mínimos correlaciona con problemas de decodificación escrita.\n- **Evaluación pre/post terapia fonoaudiológica**.\n\n## Paradigma de aplicación\n\n1. El evaluador reproduce el primer elemento del par (p.ej. *pala*), pausa, reproduce el segundo (*bala*).\n2. El paciente responde **\"igual\"** o **\"distinto\"**.\n3. Se incluyen ensayos **catch** (mismo token repetido) para detectar sesgo de respuesta.\n4. Scoring: aciertos / 20 pares.\n\n**El motor actual no implementa un runner adaptativo PALPA específico** — el evaluador usa el grabador de `/estimulos` para reproducir los tokens manualmente y registra respuestas en una hoja externa. Versión futura con runner dedicado está en roadmap.\n\n## Norma clínica\n\n**Adulto sano**: ≥90% (rendimiento techo, el test está diseñado para detectar afectación, no para discriminar habilidades finas).\n\n- 75–89%: dificultad fonológica leve.\n- <75%: compromiso significativo (afasia receptiva, sordera para palabras, TPAC severo).",
   "requirements": "recording",
   "license": "CC-BY-SA",
-  "author": { "name": "AudioPAC", "url": "https://github.com/Debaq/audiopac" },
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
   "references": [
-    { "citation": "Kay J, Lesser R, Coltheart M (1992). PALPA: Psycholinguistic Assessments of Language Processing in Aphasia. Lawrence Erlbaum.", "url": null },
-    { "citation": "Valle F, Cuetos F (1995). EPLA: Evaluación del Procesamiento Lingüístico en la Afasia. Lawrence Erlbaum.", "url": null },
-    { "citation": "Ellis AW, Young AW (1988). Human Cognitive Neuropsychology. Lawrence Erlbaum.", "url": null },
-    { "citation": "Franklin S (1989). Dissociations in auditory word comprehension: Evidence from nine fluent aphasic patients. Aphasiology 3:189-207", "url": null }
+    {
+      "citation": "Kay J, Lesser R, Coltheart M (1992). PALPA: Psycholinguistic Assessments of Language Processing in Aphasia. Lawrence Erlbaum.",
+      "url": "https://www.worldcat.org/isbn/9780863771668",
+      "year": 1992
+    },
+    {
+      "citation": "Valle F, Cuetos F (1995). EPLA: Evaluación del Procesamiento Lingüístico en la Afasia. Lawrence Erlbaum.",
+      "url": "https://www.worldcat.org/isbn/9780863773648",
+      "year": 1995
+    },
+    {
+      "citation": "Ellis AW, Young AW (1988). Human Cognitive Neuropsychology. Lawrence Erlbaum.",
+      "url": "https://www.worldcat.org/isbn/9780863770340",
+      "year": 1988
+    },
+    {
+      "citation": "Franklin S (1989). Dissociations in auditory word comprehension: Evidence from nine fluent aphasic patients. Aphasiology 3:189-207",
+      "url": null,
+      "year": 1989,
+      "doi": "10.1080/02687038908248991"
+    }
   ],
   "tests": [],
   "lists": [
@@ -23,53 +43,219 @@
       "country_code": "LATAM",
       "description": "40 palabras → 20 pares mínimos consonánticos (oclusivas sordas/sonoras, fricativas, nasales, laterales, vibrantes). Contraste en posición inicial, media o final. Grabá una palabra por token; armá pares al evaluar.",
       "items": [
-        { "pos": 1,  "token": "pala",  "keywords": null },
-        { "pos": 2,  "token": "bala",  "keywords": null },
-        { "pos": 3,  "token": "cala",  "keywords": null },
-        { "pos": 4,  "token": "gala",  "keywords": null },
-        { "pos": 5,  "token": "foca",  "keywords": null },
-        { "pos": 6,  "token": "boca",  "keywords": null },
-        { "pos": 7,  "token": "dama",  "keywords": null },
-        { "pos": 8,  "token": "cama",  "keywords": null },
-        { "pos": 9,  "token": "malo",  "keywords": null },
-        { "pos": 10, "token": "palo",  "keywords": null },
-        { "pos": 11, "token": "faro",  "keywords": null },
-        { "pos": 12, "token": "caro",  "keywords": null },
-        { "pos": 13, "token": "bota",  "keywords": null },
-        { "pos": 14, "token": "cota",  "keywords": null },
-        { "pos": 15, "token": "sopa",  "keywords": null },
-        { "pos": 16, "token": "copa",  "keywords": null },
-        { "pos": 17, "token": "mano",  "keywords": null },
-        { "pos": 18, "token": "sano",  "keywords": null },
-        { "pos": 19, "token": "vaso",  "keywords": null },
-        { "pos": 20, "token": "paso",  "keywords": null },
-        { "pos": 21, "token": "mar",   "keywords": null },
-        { "pos": 22, "token": "par",   "keywords": null },
-        { "pos": 23, "token": "ven",   "keywords": null },
-        { "pos": 24, "token": "ten",   "keywords": null },
-        { "pos": 25, "token": "nudo",  "keywords": null },
-        { "pos": 26, "token": "mudo",  "keywords": null },
-        { "pos": 27, "token": "lata",  "keywords": null },
-        { "pos": 28, "token": "rata",  "keywords": null },
-        { "pos": 29, "token": "mesa",  "keywords": null },
-        { "pos": 30, "token": "misa",  "keywords": null },
-        { "pos": 31, "token": "piso",  "keywords": null },
-        { "pos": 32, "token": "peso",  "keywords": null },
-        { "pos": 33, "token": "capa",  "keywords": null },
-        { "pos": 34, "token": "cepa",  "keywords": null },
-        { "pos": 35, "token": "saco",  "keywords": null },
-        { "pos": 36, "token": "seco",  "keywords": null },
-        { "pos": 37, "token": "tela",  "keywords": null },
-        { "pos": 38, "token": "tila",  "keywords": null },
-        { "pos": 39, "token": "rojo",  "keywords": null },
-        { "pos": 40, "token": "cojo",  "keywords": null }
+        {
+          "pos": 1,
+          "token": "pala",
+          "keywords": null
+        },
+        {
+          "pos": 2,
+          "token": "bala",
+          "keywords": null
+        },
+        {
+          "pos": 3,
+          "token": "cala",
+          "keywords": null
+        },
+        {
+          "pos": 4,
+          "token": "gala",
+          "keywords": null
+        },
+        {
+          "pos": 5,
+          "token": "foca",
+          "keywords": null
+        },
+        {
+          "pos": 6,
+          "token": "boca",
+          "keywords": null
+        },
+        {
+          "pos": 7,
+          "token": "dama",
+          "keywords": null
+        },
+        {
+          "pos": 8,
+          "token": "cama",
+          "keywords": null
+        },
+        {
+          "pos": 9,
+          "token": "malo",
+          "keywords": null
+        },
+        {
+          "pos": 10,
+          "token": "palo",
+          "keywords": null
+        },
+        {
+          "pos": 11,
+          "token": "faro",
+          "keywords": null
+        },
+        {
+          "pos": 12,
+          "token": "caro",
+          "keywords": null
+        },
+        {
+          "pos": 13,
+          "token": "bota",
+          "keywords": null
+        },
+        {
+          "pos": 14,
+          "token": "cota",
+          "keywords": null
+        },
+        {
+          "pos": 15,
+          "token": "sopa",
+          "keywords": null
+        },
+        {
+          "pos": 16,
+          "token": "copa",
+          "keywords": null
+        },
+        {
+          "pos": 17,
+          "token": "mano",
+          "keywords": null
+        },
+        {
+          "pos": 18,
+          "token": "sano",
+          "keywords": null
+        },
+        {
+          "pos": 19,
+          "token": "vaso",
+          "keywords": null
+        },
+        {
+          "pos": 20,
+          "token": "paso",
+          "keywords": null
+        },
+        {
+          "pos": 21,
+          "token": "mar",
+          "keywords": null
+        },
+        {
+          "pos": 22,
+          "token": "par",
+          "keywords": null
+        },
+        {
+          "pos": 23,
+          "token": "ven",
+          "keywords": null
+        },
+        {
+          "pos": 24,
+          "token": "ten",
+          "keywords": null
+        },
+        {
+          "pos": 25,
+          "token": "nudo",
+          "keywords": null
+        },
+        {
+          "pos": 26,
+          "token": "mudo",
+          "keywords": null
+        },
+        {
+          "pos": 27,
+          "token": "lata",
+          "keywords": null
+        },
+        {
+          "pos": 28,
+          "token": "rata",
+          "keywords": null
+        },
+        {
+          "pos": 29,
+          "token": "mesa",
+          "keywords": null
+        },
+        {
+          "pos": 30,
+          "token": "misa",
+          "keywords": null
+        },
+        {
+          "pos": 31,
+          "token": "piso",
+          "keywords": null
+        },
+        {
+          "pos": 32,
+          "token": "peso",
+          "keywords": null
+        },
+        {
+          "pos": 33,
+          "token": "capa",
+          "keywords": null
+        },
+        {
+          "pos": 34,
+          "token": "cepa",
+          "keywords": null
+        },
+        {
+          "pos": 35,
+          "token": "saco",
+          "keywords": null
+        },
+        {
+          "pos": 36,
+          "token": "seco",
+          "keywords": null
+        },
+        {
+          "pos": 37,
+          "token": "tela",
+          "keywords": null
+        },
+        {
+          "pos": 38,
+          "token": "tila",
+          "keywords": null
+        },
+        {
+          "pos": 39,
+          "token": "rojo",
+          "keywords": null
+        },
+        {
+          "pos": 40,
+          "token": "cojo",
+          "keywords": null
+        }
       ]
     }
   ],
   "interpretation": {
     "metric": "accuracy_pct",
     "norms_by_age": [
-      { "age_min": 11, "age_max": 90, "normal_min": 90, "mild_min": 75, "severe_max": 60 }
+      {
+        "age_min": 11,
+        "age_max": 90,
+        "normal_min": 90,
+        "mild_min": 75,
+        "severe_max": 60
+      }
     ],
     "description_md": "**Aciertos esperados en adulto sano: ≥90%** (rendimiento techo). 75–89% sugiere dificultad fonológica leve; <75% indica compromiso significativo de procesamiento auditivo central o receptivo. Los errores tienden a concentrarse en contrastes sordo/sonoro (pala/bala) y punto de articulación cercano (foca/boca)."
   },

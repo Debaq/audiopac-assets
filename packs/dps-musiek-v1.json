@@ -13,11 +13,14 @@
   "references": [
     {
       "citation": "Musiek FE, Baran JA, Pinheiro ML (1990). Duration pattern recognition in normal subjects and patients with cerebral and cochlear lesions. Audiology 29:304-313",
-      "url": null
+      "url": null,
+      "year": 1990,
+      "doi": "10.3109/00206099009072861"
     },
     {
       "citation": "Musiek FE (2002). The frequency pattern test: a guide. Hear J 55(6):58",
-      "url": null
+      "url": "https://journals.lww.com/thehearingjournal/Fulltext/2002/06000/The_frequency_pattern_test__A_guide.11.aspx",
+      "year": 2002
     }
   ],
   "tests": [
@@ -131,17 +134,22 @@
       "references": [
         {
           "citation": "Musiek FE, Baran JA, Pinheiro ML. Duration pattern recognition in normal subjects and patients with cerebral and cochlear lesions",
-          "year": 1990
+          "year": 1990,
+          "doi": "10.3109/00206099009072861"
         },
         {
           "citation": "Musiek FE. The frequency pattern test: a guide",
-          "year": 2002
+          "year": 2002,
+          "url": "https://journals.lww.com/thehearingjournal/Fulltext/2002/06000/The_frequency_pattern_test__A_guide.11.aspx"
         },
         {
           "citation": "Bellis TJ. Assessment and management of central auditory processing disorders",
-          "year": 2003
+          "year": 2003,
+          "url": "https://www.pluralpublishing.com/publications/assessment-and-management-of-central-auditory-processing-disorders-in-the-educational-setting-from-science-to-practice"
         }
-      ]
+      ],
+      "neural_basis_md": "El DPS (Duration Pattern Sequence, Musiek 1990) evalúa **reconocimiento de patrones temporales puros** sin contraste espectral.\n\n- **Hemisferio derecho (giro temporal superior derecho)**: percepción del patrón acústico y contorno temporal (Peretz & Zatorre 2005).\n- **Hemisferio izquierdo**: verbalización del patrón («largo-corto-largo»). Requiere **transferencia interhemisférica** por cuerpo calloso.\n- **Corteza premotora y área de Broca**: codificación secuencial y salida verbal.\n\nDéficit con audiometría normal es **altamente sensible a lesiones corticales difusas y del cuerpo calloso**. La prueba fracasa en dos perfiles: (a) verbalización alterada pero humming/silbido intacto → lesión callosal; (b) ambas modalidades fallan → compromiso temporal derecho.",
+      "scoring_md": "30 secuencias × 3 tonos cada una = 90 respuestas individuales; también se puntúa por secuencia completa.\n\n**Métricas:**\n- **% secuencias correctas** (cada secuencia debe describirse entera correcta).\n- **% tonos correctos individuales** (más granular).\n- Comparar **modalidad verbal vs. humming**: disociación sugiere compromiso callosal.\n\n**Normas Musiek**: adultos ≥75% secuencias correctas. Niños ≥9 años ≥60%. <50% es patológico."
     }
   ],
   "interpretation": {

@@ -13,23 +13,32 @@
   "references": [
     {
       "citation": "Plomp R (1964). Rate of decay of auditory sensation. J Acoust Soc Am 36:277-282",
-      "url": null
+      "url": null,
+      "year": 1964,
+      "doi": "10.1121/1.1918985"
     },
     {
       "citation": "Hirsh IJ (1959). Auditory perception of temporal order. J Acoust Soc Am 31:759-767",
-      "url": null
+      "url": null,
+      "year": 1959,
+      "doi": "10.1121/1.1907782"
     },
     {
       "citation": "Pinheiro ML, Musiek FE (1985). Assessment of central auditory dysfunction: Foundations and clinical correlates. Williams & Wilkins.",
-      "url": null
+      "url": "https://www.worldcat.org/title/assessment-of-central-auditory-dysfunction-foundations-and-clinical-correlates/oclc/11812310",
+      "year": 1985
     },
     {
       "citation": "Musiek FE et al. (2005). GIN (Gaps-In-Noise) test performance in subjects with confirmed central auditory nervous system involvement. Ear Hear 26:608-618",
-      "url": null
+      "url": null,
+      "year": 2005,
+      "doi": "10.1097/01.aud.0000188069.80699.41"
     },
     {
       "citation": "Tallal P (1980). Auditory temporal perception, phonics, and reading disabilities in children. Brain Lang 9:182-198",
-      "url": null
+      "url": null,
+      "year": 1980,
+      "doi": "10.1016/0093-934X(80)90139-X"
     }
   ],
   "tests": [
@@ -98,7 +107,9 @@
           "year": 1964,
           "doi": "10.1121/1.1918985"
         }
-      ]
+      ],
+      "neural_basis_md": "El **gap detection** mide la ventana temporal mínima discernible por el sistema auditivo:\n\n- **Neuronas chopper y onset del núcleo coclear**: codifican discontinuidades.\n- **Oliva superior + colículo inferior**: filtros temporales sintonizados a intervalos específicos.\n- **Corteza auditiva primaria**: conciencia perceptual del gap.\n\nGap 20 ms es 5–10× el umbral normal (~2–5 ms). Falla aquí sugiere compromiso marcado (TPAC severo, lesión del tronco, envejecimiento avanzado).",
+      "scoring_md": "% respuestas correctas en trials AA (dos tonos con gap) y A (uno — catch). Adultos normales ≥90%."
     },
     {
       "code": "GAP_10",
@@ -162,9 +173,12 @@
       "references": [
         {
           "citation": "Moore BCJ et al. Detection of temporal gaps in sinusoids: effects of frequency and level",
-          "year": 1993
+          "year": 1993,
+          "doi": "10.1121/1.406815"
         }
-      ]
+      ],
+      "neural_basis_md": "Misma base neural. Gap 10 ms está 2–5× sobre umbral adulto — discrimina bien entre normal y limítrofe (niños 7–10 años, adultos mayores).",
+      "scoring_md": "% aciertos AA. Adultos jóvenes ≥85%; adultos mayores 75–85%; <70% sugiere déficit."
     },
     {
       "code": "GAP_5",
@@ -228,9 +242,12 @@
       "references": [
         {
           "citation": "Musiek FE et al. GIN (Gaps-In-Noise) test performance",
-          "year": 2005
+          "year": 2005,
+          "doi": "10.1097/01.aud.0000188069.80699.41"
         }
-      ]
+      ],
+      "neural_basis_md": "Umbral fino (5 ms) cerca del límite psicofísico adulto. Exige función óptima del tronco auditivo y de la corteza primaria.",
+      "scoring_md": "% aciertos AA. Adultos jóvenes normales 75–85%; <60% déficit marcado."
     },
     {
       "code": "TOJ_BIN",
@@ -302,7 +319,9 @@
           "year": 1959,
           "doi": "10.1121/1.1907782"
         }
-      ]
+      ],
+      "neural_basis_md": "El **Temporal Order Judgment binaural** mide orden temporal cruzando oídos:\n\n- **Complejo olivar superior**: primera comparación interaural.\n- **Colículo inferior + corteza auditiva**: mapeo del orden.\n- **Corteza prefrontal**: reporte verbal del orden («primero derecho, después izquierdo»).\n\nSensible a lesiones del tronco, esclerosis múltiple, TPAC con componente binaural.",
+      "scoring_md": "% respuestas correctas del orden (L-R vs R-L). Adultos normales ≥90%. <75% sugiere déficit de integración temporal binaural."
     },
     {
       "code": "TOJ_FAST",
@@ -371,9 +390,12 @@
       "references": [
         {
           "citation": "Gordon-Salant S, Fitzgibbons PJ. Temporal factors and speech recognition performance in young and elderly listeners",
-          "year": 1993
+          "year": 1993,
+          "doi": "10.1044/jshr.3606.1276"
         }
-      ]
+      ],
+      "neural_basis_md": "Misma base neural que TOJ_BIN pero cerca del **umbral de orden temporal** (~20–30 ms). Exige integración temporal subcortical precisa.",
+      "scoring_md": "% aciertos de orden. Adultos jóvenes ≥80%; adultos mayores 60–75%; <60% déficit."
     },
     {
       "code": "FGC_SCREEN",
@@ -453,7 +475,9 @@
           "year": 1998,
           "doi": "10.1016/S0960-9822(98)70314-9"
         }
-      ]
+      ],
+      "neural_basis_md": "**Figure-Ground auditivo**: separar señal de fondo complejo. Requiere:\n\n- **Corteza auditiva + cíngulo anterior**: atención selectiva auditiva (modelo de **análisis de escena auditiva**, Bregman 1990).\n- **Redes fronto-parietales**: mantención de la figura perceptual contra ruido competing.\n- **Cuerpo calloso + plano temporal**: integración binaural que ayuda a segregar la figura.\n\nDéficit en figure-ground es causa común de queja «no entiendo en lugares ruidosos» con audiometría normal (TPAC).",
+      "scoring_md": "% de ítems target identificados correctamente sobre ruido competing. Normas dependen del pack específico — típicamente ≥80% adultos."
     }
   ],
   "lists": [],

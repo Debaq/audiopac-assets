@@ -13,23 +13,33 @@
   "references": [
     {
       "citation": "Moore BCJ (1973). Frequency difference limens for short-duration tones. J Acoust Soc Am 54:610-619",
-      "url": null
+      "url": null,
+      "year": 1973,
+      "doi": "10.1121/1.1913640"
     },
     {
       "citation": "Sek A, Moore BCJ (1995). Frequency discrimination as a function of frequency, measured in several ways. J Acoust Soc Am 97:2479-2486",
-      "url": null
+      "url": null,
+      "year": 1995,
+      "doi": "10.1121/1.411968"
     },
     {
       "citation": "Abel SM (1972). Duration discrimination of noise and tone bursts. J Acoust Soc Am 51:1219-1223",
-      "url": null
+      "url": null,
+      "year": 1972,
+      "doi": "10.1121/1.1912965"
     },
     {
       "citation": "Jesteadt W, Wier CC, Green DM (1977). Intensity discrimination as a function of frequency and sensation level. J Acoust Soc Am 61:169-177",
-      "url": null
+      "url": null,
+      "year": 1977,
+      "doi": "10.1121/1.381278"
     },
     {
       "citation": "Tallal P (1980). Auditory temporal perception, phonics, and reading disabilities in children. Brain Lang 9:182-198",
-      "url": null
+      "url": null,
+      "year": 1980,
+      "doi": "10.1016/0093-934X(80)90139-X"
     }
   ],
   "tests": [
@@ -119,7 +129,9 @@
           "year": 1995,
           "doi": "10.1121/1.411968"
         }
-      ]
+      ],
+      "neural_basis_md": "La discriminación frecuencial depende de:\n\n- **Sintonía coclear**: banda crítica determinada por la membrana basilar + células ciliadas externas (amplificador coclear activo).\n- **Fase-locking en el nervio auditivo**: codifica frecuencia temporal precisa hasta ~4 kHz.\n- **Colículo inferior**: mapa tonotópico refinado.\n- **Corteza auditiva primaria**: resolución espectral fina y agrupamiento perceptual.\n\nDéficit en 1 kHz con audiometría normal sugiere: pérdida de células ciliadas externas (cocleopatía oculta), sinaptopatía, o compromiso cortical temporal (dislexia evolutiva — Tallal 1980).",
+      "scoring_md": "Paradigma same/different 2AFC, 20–40 pares. % aciertos global.\n\n**Nivel screen (Δf=20 Hz @ 1 kHz, ~0.35 semitonos)**: contraste grueso, ~5–10× el umbral normal.\n\n**Normas**: ≥90% aciertos esperado en adultos. <75% sugiere pasar a versión fina (DLF_FINE) o sospechar problema atencional si rendimiento global cae en todas las pruebas."
     },
     {
       "code": "DLF_FINE",
@@ -199,7 +211,8 @@
       "references": [
         {
           "citation": "Moore BCJ, Peters RW. Pitch discrimination and phase sensitivity in young and elderly subjects",
-          "year": 1992
+          "year": 1992,
+          "doi": "10.1121/1.402925"
         },
         {
           "citation": "Witton C et al. Sensitivity to dynamic auditory and visual stimuli predicts nonword reading ability in both dyslexic and normal readers",
@@ -208,9 +221,12 @@
         },
         {
           "citation": "Peretz I, Hyde KL. What is specific to music processing? Insights from congenital amusia",
-          "year": 2003
+          "year": 2003,
+          "doi": "10.1016/S1364-6613(03)00150-5"
         }
-      ]
+      ],
+      "neural_basis_md": "Misma base neural que DLF_SCREEN, pero en rango de **umbral psicofísico** (Δf=5 Hz, 0.5% @ 1 kHz):\n\n- Exige **función óptima del amplificador coclear** (células ciliadas externas + feedback del fascículo olivococlear medial).\n- **Fase-locking de alta precisión** en el nervio auditivo.\n- **Resolución cortical fina** (mapas tonotópicos de alta densidad en giro de Heschl).\n\nCorrelaciona con **dislexia fonológica** (Tallal, Witton 1998), **presbiacusia central** y **dead regions cocleares**.",
+      "scoring_md": "Same/different 2AFC, 20–40 pares. % aciertos global.\n\n**Normas**: adultos entrenados alcanzan 70–85%. <65% sugiere resolución espectral reducida. El azar teórico del paradigma 2AFC same/different es 50% — rendimiento 60–70% aún aporta información."
     },
     {
       "code": "DLD_SCREEN",
@@ -298,7 +314,9 @@
           "year": 1962,
           "doi": "10.1121/1.1918344"
         }
-      ]
+      ],
+      "neural_basis_md": "La **discriminación de duración** es procesamiento temporal puro:\n\n- **Núcleo coclear + oliva superior**: codificación de onset/offset con alta resolución temporal (neuronas chopper, onset).\n- **Colículo inferior**: neuronas con filtros temporales selectivos a duraciones específicas.\n- **Corteza auditiva derecha**: integración de la envolvente temporal (Peretz 2005).\n\nClínicamente relevante para fonemas con contraste durativo (vocales tensas/laxas, consonantes geminadas) y para TPAC.",
+      "scoring_md": "Same/different 2AFC, Δ=50 ms sobre 200 ms (25%, muy sobre Weber normal ~10–15%).\n\n**Normas**: ≥90% adultos normales. <75% sugiere pasar a DLD_FINE."
     },
     {
       "code": "DLD_FINE",
@@ -378,9 +396,12 @@
       "references": [
         {
           "citation": "Fitzgibbons PJ, Gordon-Salant S. Age effects on duration discrimination with simple and complex stimuli",
-          "year": 1995
+          "year": 1995,
+          "doi": "10.1121/1.413803"
         }
-      ]
+      ],
+      "neural_basis_md": "Versión fina del procesamiento temporal puro (Δ=15 ms, 7.5%). Exige integridad de la vía temporal desde núcleo coclear hasta corteza:\n\n- Resolución temporal fina a nivel **cortical** (área temporal no primaria, hemisferio derecho).\n- Correlaciona con **dislexia**, **TPAC**, **envejecimiento auditivo central**.",
+      "scoring_md": "Same/different 2AFC. Adultos jóvenes 75–85%; >60 años típicamente requieren Δ ≥25 ms. Rendimiento significativamente bajo con DLD_SCREEN normal = **resolución temporal cortical reducida**."
     },
     {
       "code": "DLI_SCREEN",
@@ -469,9 +490,12 @@
         },
         {
           "citation": "Riesz RR. Differential intensity sensitivity of the ear for pure tones",
-          "year": 1928
+          "year": 1928,
+          "doi": "10.1103/PhysRev.31.867"
         }
-      ]
+      ],
+      "neural_basis_md": "La **discriminación de intensidad** depende de:\n\n- **Células ciliadas internas + nervio auditivo**: codificación de tasa de descarga proporcional a intensidad.\n- **Rango dinámico coclear**: en oídos con **reclutamiento** (pérdida coclear), el rango se comprime y los DL se vuelven paradójicamente pequeños (detectan cambios muy pequeños, pero el rango total útil es estrecho).\n- **Corteza auditiva**: integración de intensidad con contexto.\n\nRendimiento pobre en DLI_SCREEN (Δ=3 dB, bien sobre Weber normal ~0.5–1 dB) sugiere pérdida auditiva o problema atencional.",
+      "scoring_md": "Same/different 2AFC con Δ=3 dB @ 60 dB SPL. ≥90% en normoaudientes con calibración correcta."
     },
     {
       "code": "DLI_FINE",
@@ -560,9 +584,12 @@
         },
         {
           "citation": "Florentine M, Buus S, Mason CR. Level discrimination as a function of level for tones from 0.25 to 16 kHz",
-          "year": 1987
+          "year": 1987,
+          "doi": "10.1121/1.394505"
         }
-      ]
+      ],
+      "neural_basis_md": "Medida del **Weber fraction auditivo** cerca del límite (Δ=1 dB @ 60 dB SPL). En **reclutamiento coclear** (hipoacusia sensorial), el DLI_FINE puede ser paradójicamente **mejor que normal** (100% aciertos) aunque el rango dinámico útil esté comprimido — hallazgo característico del daño de células ciliadas externas con células internas relativamente preservadas.",
+      "scoring_md": "60–75% aciertos en normoaudientes (cerca del azar 50%). >80% en reclutamiento coclear. <60% con DLI_SCREEN pobre sugiere problema atencional/tarea."
     }
   ],
   "lists": [],

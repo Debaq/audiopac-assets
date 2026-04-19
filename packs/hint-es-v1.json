@@ -13,19 +13,26 @@
   "references": [
     {
       "citation": "Nilsson M, Soli SD, Sullivan JA (1994). Development of the Hearing in Noise Test for the measurement of speech reception thresholds in quiet and in noise. J Acoust Soc Am 95:1085-1099",
-      "url": null
+      "url": null,
+      "year": 1994,
+      "doi": "10.1121/1.408469"
     },
     {
       "citation": "Killion MC (1997). Hearing aids: past, present, future. Ear Hear 18:1-2",
-      "url": null
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9276096/",
+      "year": 1997
     },
     {
       "citation": "Humes LE (2007). The contributions of audibility and cognitive factors to the benefit provided by amplified speech to older adults. J Am Acad Audiol 18:590-603",
-      "url": null
+      "url": null,
+      "year": 2007,
+      "doi": "10.3766/jaaa.18.7.6"
     },
     {
       "citation": "Huarte A (2008). The Castilian Spanish Hearing in Noise Test. Int J Audiol 47:369-370",
-      "url": null
+      "url": null,
+      "year": 2008,
+      "doi": "10.1080/14992020801908269"
     }
   ],
   "tests": [
@@ -75,13 +82,17 @@
         },
         {
           "citation": "Killion MC, Niquette PA. What can the pure-tone audiogram tell us about a patient's SNR loss?",
-          "year": 2000
+          "year": 2000,
+          "url": "https://journals.lww.com/thehearingjournal/citation/2000/03000/what_can_the_pure_tone_audiogram_tell_us_about_a.6.aspx"
         },
         {
           "citation": "Huarte A. The Castilian Spanish Hearing in Noise Test",
-          "year": 2008
+          "year": 2008,
+          "doi": "10.1080/14992020801908269"
         }
-      ]
+      ],
+      "neural_basis_md": "El HINT mide **inteligibilidad del habla en ruido** — métrica funcional que depende de la vía auditiva completa:\n\n- **Cóclea**: resolución frecuencial y procesamiento temporal fino determinan SNR mínimo.\n- **Núcleos cocleares + oliva superior**: efecto de squelch y unmasking binaural (diferencia interaural de nivel y tiempo).\n- **Colículo inferior y cuerpo geniculado medial**: integración temporal y detección de modulación.\n- **Corteza auditiva primaria (Heschl)**: codificación fonémica sobre ruido.\n- **Área de Wernicke + redes lingüísticas**: contexto semántico/sintáctico (top-down) que reconstruye palabras clave faltantes.\n\nUn HINT alterado con audiometría tonal normal sugiere **disfunción central (TPAC)** o presbiacusia central. Un HINT severamente alterado con pérdida leve periférica indica que la pérdida es más discapacitante de lo que sugiere la tonal (típico en cócleas con sinaptopatía).",
+      "scoring_md": "Presentación adaptativa hasta convergencia (20–30 frases).\n\n**Métrica principal: SRT-SNR en dB**\n- **SRT-SNR = promedio(SNRs de los últimos 4–6 trials)** tras convergencia del bracketing.\n- Scoring por **keyword** (3–5 por frase). Trial pasa si acierta ≥50% de keywords.\n\n**Normas:**\n- Adulto joven normoaudiente: SRT-SNR ~ **−3 a 0 dB** en ruido estacionario.\n- >+3 dB: sospecha de pérdida funcional en ruido.\n- >+6 dB: déficit clínicamente significativo (candidato a ayuda auditiva / FM).\n\nUsar la diferencia SRT-SNR ruido estacionario vs. modulado como índice de **unmasking temporal** (fallas reveladoras de TPAC)."
     }
   ],
   "lists": [

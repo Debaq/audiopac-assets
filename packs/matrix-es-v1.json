@@ -13,11 +13,15 @@
   "references": [
     {
       "citation": "Hochmuth S, Brand T, Zokoll MA, Castro FJ, Wardenga N, Kollmeier B (2012). A Spanish matrix sentence test for assessing speech reception thresholds in noise. Int J Audiol 51(7):536-544",
-      "url": null
+      "url": null,
+      "year": 2012,
+      "doi": "10.3109/14992027.2012.670731"
     },
     {
       "citation": "Kollmeier B et al (2015). The multilingual matrix test: Principles, applications, and comparison across languages. Int J Audiol 54 Suppl 2:3-16",
-      "url": null
+      "url": null,
+      "year": 2015,
+      "doi": "10.3109/14992027.2015.1020971"
     }
   ],
   "tests": [
@@ -72,7 +76,9 @@
           "year": 2015,
           "doi": "10.3109/14992027.2015.1020971"
         }
-      ]
+      ],
+      "neural_basis_md": "El Matrix aísla la **inteligibilidad del habla en ruido eliminando la redundancia contextual** que enmascara el déficit auditivo real:\n\n- **Cóclea + sinapsis auditivas**: resolución frecuencial y temporal sub-umbral crucial en SNR negativo.\n- **Vía del complejo olivar superior**: procesamiento de diferencias interaurales para unmasking binaural en ruido co-localizado.\n- **Corteza auditiva primaria**: codificación fonémica de palabras monosilábicas aisladas.\n- **Corteza prefrontal + atención selectiva**: sostener atención en escucha fatigante repetitiva.\n\nA diferencia del HINT, el Matrix **elimina la ayuda de redes semánticas top-down** (Wernicke + giro angular): todas las frases son sintáctica y semánticamente equiparables. Así, el umbral refleja la capacidad **bottom-up** de la vía auditiva, ideal para **detectar mejoras pequeñas pre/post audífono o implante**.",
+      "scoring_md": "Paradigma **closed-set 5-AFC** (5 alternativas forzadas por columna).\n\n**Algoritmo:**\n- SNR inicial: 0 dB (voz = ruido).\n- Trial pasa si ≥3/5 palabras correctas (60%).\n- **Step-down 4 dB** tras 4 trials consecutivos con pass ≥60%.\n- **Step-up 2 dB** tras fail <60%.\n- Convergencia ~20 trials; SRT-SNR = nivel de bracketing final.\n\n**Métrica**: **SRT-SNR en dB SNR**. Test-retest excepcional (±1 dB).\n\n**Normas Hochmuth 2012 (español):** adultos normoaudientes ≈ **−7 a −8 dB** en ruido estacionario. >−5 dB sugiere déficit. Útil para documentar ganancias de 2–3 dB con audífono (clínicamente significativas)."
     }
   ],
   "lists": [

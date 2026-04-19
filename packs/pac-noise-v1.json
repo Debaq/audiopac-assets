@@ -13,15 +13,20 @@
   "references": [
     {
       "citation": "Musiek FE, Shinn JB, Jirsa R, Bamiou DE, Baran JA, Zaida E (2005). GIN (Gaps-In-Noise) test performance in subjects with confirmed central auditory nervous system involvement. Ear Hear 26:608-618",
-      "url": null
+      "url": null,
+      "year": 2005,
+      "doi": "10.1097/01.aud.0000188069.80699.41"
     },
     {
       "citation": "Keith RW (2000). Random Gap Detection Test. Auditec, St. Louis.",
-      "url": null
+      "url": "https://auditec.com/2015/09/28/random-gap-detection-test-rgdt/",
+      "year": 2000
     },
     {
       "citation": "Shinn JB, Chermak GD, Musiek FE (2009). GIN (Gaps-In-Noise) performance in the pediatric population. J Am Acad Audiol 20:229-238",
-      "url": null
+      "url": null,
+      "year": 2009,
+      "doi": "10.3766/jaaa.20.4.3"
     }
   ],
   "tests": [
@@ -151,13 +156,17 @@
         },
         {
           "citation": "Shinn JB, Chermak GD, Musiek FE. GIN (Gaps-In-Noise) performance in the pediatric population",
-          "year": 2009
+          "year": 2009,
+          "doi": "10.3766/jaaa.20.4.3"
         },
         {
           "citation": "Bamiou DE et al. Auditory temporal processing deficits in patients with insular stroke",
-          "year": 2006
+          "year": 2006,
+          "doi": "10.1212/01.wnl.0000230197.40410.db"
         }
-      ]
+      ],
+      "neural_basis_md": "El **Gaps-in-Noise (GIN)** mide resolución temporal fina:\n\n- **Núcleo coclear anteroventral**: neuronas onset con alta resolución temporal.\n- **Oliva superior + colículo inferior**: detección de discontinuidades en la envolvente.\n- **Corteza auditiva primaria**: conciencia perceptual del gap.\n\nEl umbral normal ~4–5 ms correlaciona con la constante de integración temporal del sistema. Umbrales elevados se asocian a **TPAC**, **lesiones corticales**, **envejecimiento auditivo**, **dislexia**.",
+      "scoring_md": "Se presentan ráfagas de ruido de 6 s con gaps embebidos de 2–20 ms en posiciones aleatorias.\n\n**Métrica:**\n- **% detección por duración de gap** → curva psicométrica.\n- **Umbral aproximado**: menor duración detectada ≥50% del tiempo.\n- **Normal Musiek 2005**: umbral ≤6 ms, %detección global ≥65%.\n- **>8 ms** sugiere déficit de resolución temporal."
     },
     {
       "code": "RGD_20",
@@ -220,9 +229,12 @@
       "references": [
         {
           "citation": "Keith RW. Random Gap Detection Test. Auditec",
-          "year": 2000
+          "year": 2000,
+          "url": "https://auditec.com/2015/09/28/random-gap-detection-test-rgdt/"
         }
-      ]
+      ],
+      "neural_basis_md": "El **Random Gap Detection** con **bursts discretos** mide resolución temporal entre eventos separados (distinto del GIN con ruido continuo):\n\n- **Núcleo coclear + oliva superior**: detección del segundo onset antes de terminar la integración del primero.\n- **Colículo inferior**: mapeo temporal de intervalos inter-evento.",
+      "scoring_md": "Forzada elección «uno vs dos» con ítems A (un burst, catch) y AA (dos con gap). % aciertos en AA indica detección; % aciertos en A indica ausencia de falsos positivos.\n\n**Screen 20 ms**: normoaudientes ≥90%. <75% sugiere compromiso marcado."
     },
     {
       "code": "RGD_10",
@@ -285,9 +297,12 @@
       "references": [
         {
           "citation": "Keith RW. Random Gap Detection Test",
-          "year": 2000
+          "year": 2000,
+          "url": "https://auditec.com/2015/09/28/random-gap-detection-test-rgdt/"
         }
-      ]
+      ],
+      "neural_basis_md": "Mismo sustrato neural que RGD_20 pero en rango discriminativo (10 ms, cerca del umbral normal).",
+      "scoring_md": "% aciertos AA. Adultos jóvenes normales ≥90%; adultos mayores 75–85%; <70% sugiere déficit."
     },
     {
       "code": "RGD_5",
@@ -350,9 +365,12 @@
       "references": [
         {
           "citation": "Keith RW. Random Gap Detection Test",
-          "year": 2000
+          "year": 2000,
+          "url": "https://auditec.com/2015/09/28/random-gap-detection-test-rgdt/"
         }
-      ]
+      ],
+      "neural_basis_md": "Mismo sustrato neural. A 5 ms se exploran los límites de la **resolución temporal del tronco auditivo** — muy cerca del umbral psicofísico.",
+      "scoring_md": "Adultos jóvenes normales 75–85%; <60% déficit. Jitter del driver afecta — requiere hardware estable."
     },
     {
       "code": "NBN_SCREEN",
@@ -405,9 +423,12 @@
       "references": [
         {
           "citation": "ANSI S3.6 (2018). Specification for audiometers. American National Standards Institute",
-          "year": 2018
+          "year": 2018,
+          "url": "https://webstore.ansi.org/standards/asa/ansiasas32018"
         }
-      ]
+      ],
+      "neural_basis_md": "Estímulo utilitario (no prueba clínica per se). La percepción de ruido de banda angosta depende de la **banda crítica coclear** en la frecuencia central — evalúa integridad básica de la zona correspondiente de la membrana basilar y su vía aferente.",
+      "scoring_md": "No genera métrica formal. Uso: verificar detección binaural del estímulo antes de pruebas demandantes, o como enmascaramiento contralateral en pruebas monaurales."
     }
   ],
   "lists": [],

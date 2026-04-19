@@ -13,19 +13,25 @@
   "references": [
     {
       "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89",
-      "url": null
+      "url": "https://www.asha.org/policy/gl1988-00008/",
+      "year": 1988
     },
     {
       "citation": "McCullough JA, Wilson RH, Birck JD, Anderson LG (1994). A multimedia Spanish word recognition test. Am J Audiol 3:19-22",
-      "url": null
+      "url": null,
+      "year": 1994,
+      "doi": "10.1044/1059-0889.0301.19"
     },
     {
       "citation": "Lipski JM (2008). Varieties of Spanish in the United States. Georgetown University Press.",
-      "url": null
+      "url": "https://press.georgetown.edu/Book/Varieties-of-Spanish-in-the-United-States",
+      "year": 2008
     },
     {
       "citation": "Wilson RH, McArdle R (2005). Speech signals used to evaluate functional status of the auditory system. J Rehabil Res Dev 42(4 Suppl 2):79-94",
-      "url": null
+      "url": null,
+      "year": 2005,
+      "doi": "10.1682/jrrd.2005.06.0096"
     }
   ],
   "tests": [
@@ -68,21 +74,27 @@
       "references": [
         {
           "citation": "Carhart R, Jerger JF. Preferred method for clinical determination of pure-tone thresholds",
-          "year": 1959
+          "year": 1959,
+          "doi": "10.1044/jshd.2404.330"
         },
         {
           "citation": "McCullough JA et al. A multimedia Spanish word recognition test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1044/1059-0889.0301.19"
         },
         {
           "citation": "Wilson RH, McArdle R. Speech signals used to evaluate functional status of the auditory system",
-          "year": 2005
+          "year": 2005,
+          "doi": "10.1682/jrrd.2005.06.0096"
         },
         {
           "citation": "Lipski JM. Varieties of Spanish in the United States",
-          "year": 2008
+          "year": 2008,
+          "url": "https://press.georgetown.edu/Book/Varieties-of-Spanish-in-the-United-States"
         }
-      ]
+      ],
+      "neural_basis_md": "Idéntico a SRT_LATAM_BISIL en vía neural. Diferencia es **léxica**: el reconocimiento depende de activación de representaciones léxicas en memoria — palabras de baja frecuencia en el dialecto del paciente activan peor la plantilla léxica y elevan el umbral **no por déficit auditivo sino por desconocimiento**.\n\nLa validación de palabras por familiaridad (Hirsh 1952, ASHA 1988) busca asegurar que el SRT mida vía auditiva, no vocabulario.",
+      "scoring_md": "Mismo algoritmo que SRT_LATAM_BISIL (Hughson-Westlake modificado, 4 palabras/nivel, step-down 10 dB, step-up 5 dB, bracketing).\n\n**Diferencia clínica**: si el SRT se desvía del PTA en >15 dB con lista US-ES en paciente LATAM (o viceversa), **repetir con lista del dialecto correcto** antes de diagnosticar pseudohipoacusia."
     }
   ],
   "lists": [

@@ -13,19 +13,24 @@
   "references": [
     {
       "citation": "Tato JM (1949). Logoaudiometría. Libros de la Facultad, Buenos Aires.",
-      "url": null
+      "url": null,
+      "year": 1949
     },
     {
       "citation": "ASHA (1988). Guidelines for determining threshold level for speech. ASHA 30:85-89",
-      "url": null
+      "url": "https://www.asha.org/policy/gl1988-00008/",
+      "year": 1988
     },
     {
       "citation": "Carhart R, Jerger JF (1959). Preferred method for clinical determination of pure-tone thresholds. J Speech Hear Disord 24:330-345",
-      "url": null
+      "url": null,
+      "year": 1959,
+      "doi": "10.1044/jshd.2404.330"
     },
     {
       "citation": "Hughson W, Westlake HD (1944). Manual for program outline of rehabilitation of aural casualties. Trans Am Acad Ophthalmol Otolaryngol Suppl",
-      "url": null
+      "url": "https://www.worldcat.org/title/manual-for-program-outline-for-rehabilitation-of-aural-casualties-both-military-and-civilian/oclc/221510216",
+      "year": 1944
     }
   ],
   "tests": [
@@ -72,17 +77,22 @@
         },
         {
           "citation": "Carhart R, Jerger JF. Preferred method for clinical determination of pure-tone thresholds",
-          "year": 1959
+          "year": 1959,
+          "doi": "10.1044/jshd.2404.330"
         },
         {
           "citation": "ASHA. Guidelines for determining threshold level for speech",
-          "year": 1988
+          "year": 1988,
+          "url": "https://www.asha.org/policy/gl1988-00008/"
         },
         {
           "citation": "Wilson RH, McArdle R. Speech signals used to evaluate functional status of the auditory system",
-          "year": 2005
+          "year": 2005,
+          "doi": "10.1682/jrrd.2005.06.0096"
         }
-      ]
+      ],
+      "neural_basis_md": "El SRT evalúa la integridad de la **vía auditiva aferente hasta corteza temporal izquierda** para reconocimiento lingüístico a umbral.\n\n- **Cóclea**: transducción mecanoeléctrica. Umbral SRT depende fuertemente de umbrales tonales en 500/1000/2000 Hz.\n- **Nervio auditivo + núcleos cocleares**: codificación neural de la envolvente del habla.\n- **Lemnisco lateral, colículo inferior, CGM**: ganancia adaptativa y detección de señal cerca del umbral.\n- **Corteza auditiva primaria + área de Wernicke**: decodificación fonémica y léxica de los espondees.\n\nLa **coincidencia SRT≈PTA (±10 dB)** valida la audiometría tonal al confirmar que la vía central procesa correctamente el estímulo complejo. **Discrepancia SRT < PTA** por >15 dB sugiere pseudohipoacusia (el paciente escucha mejor de lo que reporta).",
+      "scoring_md": "Bracketing Hughson-Westlake modificado (Carhart & Jerger 1959).\n\n**Algoritmo:**\n1. 4 palabras por nivel.\n2. Si ≥50% (2/4) correctas → bajar **10 dB** (paso descendente grueso).\n3. Si <50% → subir **5 dB** (paso ascendente fino).\n4. **Bracketing** establecido cuando hay un nivel con pass + el nivel 5 dB por debajo con fail.\n5. **SRT = menor nivel con pass** que tenga fail por debajo.\n\n**Validación clínica:**\n- SRT debe estar dentro de ±10 dB del **PTA** (promedio tonal 500/1000/2000 Hz).\n- Discrepancia >15 dB → repetir con instrucción reforzada; si persiste, sospechar pseudohipoacusia (Stenger) o hipoacusia retrococlear atípica.\n- Establece base para SDS a **SRT + 30–40 dB HL**."
     }
   ],
   "lists": [

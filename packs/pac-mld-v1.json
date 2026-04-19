@@ -13,23 +13,32 @@
   "references": [
     {
       "citation": "Hirsh IJ (1948). The influence of interaural phase on interaural summation and inhibition. J Acoust Soc Am 20:536-544",
-      "url": null
+      "url": null,
+      "year": 1948,
+      "doi": "10.1121/1.1906407"
     },
     {
       "citation": "Licklider JCR (1948). The influence of interaural phase relations upon the masking of speech by white noise. J Acoust Soc Am 20:150-159",
-      "url": null
+      "url": null,
+      "year": 1948,
+      "doi": "10.1121/1.1906407"
     },
     {
       "citation": "Durlach NI (1963). Equalization and cancellation theory of binaural masking-level differences. J Acoust Soc Am 35:1206-1218",
-      "url": null
+      "url": null,
+      "year": 1963,
+      "doi": "10.1121/1.1918675"
     },
     {
       "citation": "Wilson RH, Moncrieff DW, Townsend EA, Pillion AL (2003). Development of a 500-Hz masking-level difference protocol for clinic use. J Am Acad Audiol 14:1-8",
-      "url": null
+      "url": null,
+      "year": 2003,
+      "doi": "10.3766/jaaa.14.1.2"
     },
     {
       "citation": "Noffsinger D et al. (1972). Auditory and vestibular aberrations in multiple sclerosis. Acta Otolaryngol Suppl 303:1-63",
-      "url": null
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4542210/",
+      "year": 1972
     }
   ],
   "tests": [
@@ -132,17 +141,22 @@
         },
         {
           "citation": "Durlach NI. Equalization and cancellation theory of binaural masking-level differences",
-          "year": 1963
+          "year": 1963,
+          "doi": "10.1121/1.1918675"
         },
         {
           "citation": "Wilson RH et al. Development of a 500-Hz masking-level difference protocol for clinic use",
-          "year": 2003
+          "year": 2003,
+          "doi": "10.3766/jaaa.14.1.2"
         },
         {
           "citation": "Noffsinger D et al. Auditory and vestibular aberrations in multiple sclerosis",
-          "year": 1972
+          "year": 1972,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4542210/"
         }
-      ]
+      ],
+      "neural_basis_md": "El **Masking Level Difference (MLD)** aprovecha el **unmasking binaural** del tronco encefálico:\n\n- **Oliva superior medial (MSO)**: compara fase interaural y genera ventaja de 8–15 dB cuando la señal está en antifase entre oídos (condición SπNo) vs. en fase (SoNo).\n- **Lemnisco lateral + colículo inferior**: integran la ventaja binaural hacia corteza.\n\nEl MLD es **marcador específico de integridad del tronco encefálico auditivo bajo**. Reducido en esclerosis múltiple (lesiones desmielinizantes del lemnisco), neuropatía auditiva, trastornos de procesamiento central de bajo nivel.",
+      "scoring_md": "Se miden umbrales en dos condiciones: **SoNo** (señal y ruido en fase binaural) y **SπNo** (señal antifase).\n\n**MLD = umbral SoNo − umbral SπNo**, en dB. **Normal ≥ 8 dB**; típicamente 10–15 dB en adultos jóvenes. **<6 dB** sugiere compromiso de tronco."
     }
   ],
   "lists": [],

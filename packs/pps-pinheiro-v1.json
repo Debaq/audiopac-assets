@@ -13,11 +13,15 @@
   "references": [
     {
       "citation": "Pinheiro ML, Ptacek PH (1971). Reversals in the perception of noise and tone patterns. J Acoust Soc Am 49:1778-1782",
-      "url": null
+      "url": null,
+      "year": 1971,
+      "doi": "10.1121/1.1912589"
     },
     {
       "citation": "Musiek FE, Pinheiro ML (1987). Frequency patterns in cochlear, brainstem, and cerebral lesions. Audiology 26:79-88",
-      "url": null
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3606474/",
+      "year": 1987,
+      "doi": "10.3109/00206098709078409"
     }
   ],
   "tests": [
@@ -146,13 +150,18 @@
         },
         {
           "citation": "Musiek FE, Pinheiro ML. Frequency patterns in cochlear, brainstem, and cerebral lesions",
-          "year": 1987
+          "year": 1987,
+          "doi": "10.3109/00206098709078409",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3606474/"
         },
         {
           "citation": "Musiek FE. Frequency (pitch) and duration pattern tests",
-          "year": 1994
+          "year": 1994,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7949300/"
         }
-      ]
+      ],
+      "neural_basis_md": "**Pitch Pattern Sequence de Pinheiro** — versión original del paradigma FPT. Evalúa: hemisferio derecho (patrón tonal) + cuerpo calloso (transferencia al hemisferio izquierdo) + corteza lingüística izquierda (verbalización). Disociación **verbal vs humming** orienta a lesión callosal.",
+      "scoring_md": "30 secuencias × 3 tonos. % secuencias correctas. **Normas Pinheiro/Musiek**: adultos ≥75% verbal, ≥85% humming. Disociación verbal<humming por >15 puntos sugiere compromiso callosal."
     }
   ],
   "interpretation": {

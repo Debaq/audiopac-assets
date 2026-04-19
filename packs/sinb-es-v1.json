@@ -13,15 +13,21 @@
   "references": [
     {
       "citation": "Killion MC, Niquette PA, Gudmundsen GI, Revit LJ, Banerjee S (2004). Development of a quick speech-in-noise test for measuring signal-to-noise ratio loss. J Acoust Soc Am 116:2395-2405",
-      "url": null
+      "url": null,
+      "year": 2004,
+      "doi": "10.1121/1.1784440"
     },
     {
       "citation": "Hochmuth S, Brand T, Zokoll MA et al (2012). A Spanish matrix sentence test for assessing speech reception thresholds in noise. Int J Audiol 51:536-544",
-      "url": null
+      "url": null,
+      "year": 2012,
+      "doi": "10.3109/14992027.2012.670731"
     },
     {
       "citation": "Byrne D et al (1994). An international comparison of long-term average speech spectra. J Acoust Soc Am 96:2108-2120",
-      "url": null
+      "url": null,
+      "year": 1994,
+      "doi": "10.1121/1.410152"
     }
   ],
   "tests": [
@@ -76,9 +82,12 @@
         },
         {
           "citation": "Hochmuth S et al. A Spanish matrix sentence test for assessing speech reception thresholds in noise",
-          "year": 2012
+          "year": 2012,
+          "doi": "10.3109/14992027.2012.670731"
         }
-      ]
+      ],
+      "neural_basis_md": "**Speech-In-Noise-Babble**: variante de HINT/Matrix usando **babble** multi-hablante como ruido (en lugar de rosa o speech-shaped estacionario). Exige circuitos adicionales:\n\n- **Corteza auditiva + atención selectiva**: segregar el hablante target de múltiples voces competing (**cocktail party effect**, Cherry 1953).\n- **Redes fronto-parietales + corteza prefrontal**: mantención de foco atencional e inhibición de distractores lingüísticos.\n\nEl babble es el ruido **ecológicamente más válido** — refleja la queja clínica real («restaurante, reunión familiar»). Pacientes con TPAC o pérdida sensorial leve suelen mostrar umbrales SinB **peores que con ruido estacionario**, revelando fallas de atención selectiva no evidentes en otras pruebas.",
+      "scoring_md": "Bracketing adaptativo análogo al HINT. Scoring por keyword. SRT-SNR en dB.\n\n**Normas adultos normoaudientes**: SRT-SNR con babble ≈ **+1 a +4 dB** (peor que ruido estacionario por 3–5 dB típicamente, por efecto informational masking). >+8 dB sugiere déficit significativo en escucha realista."
     }
   ],
   "lists": [

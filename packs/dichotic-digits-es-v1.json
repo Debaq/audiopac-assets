@@ -13,19 +13,25 @@
   "references": [
     {
       "citation": "Musiek FE (1983). Assessment of central auditory dysfunction: The dichotic digit test revisited. Ear Hear 4:79-83",
-      "url": null
+      "url": null,
+      "year": 1983,
+      "doi": "10.1097/00003446-198303000-00002"
     },
     {
       "citation": "Kimura D (1961). Cerebral dominance and the perception of verbal stimuli. Can J Psychol 15:166-171",
-      "url": null
+      "url": null,
+      "year": 1961,
+      "doi": "10.1037/h0083219"
     },
     {
       "citation": "Musiek FE, Gollegly KM, Kibbe KS, Verkest-Lenz SB (1991). Proposed screening test for central auditory disorders: follow-up on the dichotic digits test. Am J Otol 12:109-113",
-      "url": null
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2053600/",
+      "year": 1991
     },
     {
       "citation": "Strouse A, Wilson RH (1999). Recognition of one-, two-, and three-pair dichotic digits under free and directed recall. J Am Acad Audiol 10:557-571",
-      "url": null
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10613352/",
+      "year": 1999
     }
   ],
   "tests": [
@@ -65,17 +71,22 @@
       "references": [
         {
           "citation": "Musiek FE. Assessment of central auditory dysfunction: The dichotic digit test revisited",
-          "year": 1983
+          "year": 1983,
+          "doi": "10.1097/00003446-198303000-00002"
         },
         {
           "citation": "Musiek FE et al. Proposed screening test for central auditory disorders: follow-up on the dichotic digits test",
-          "year": 1991
+          "year": 1991,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2053600/"
         },
         {
           "citation": "Kimura D. Cerebral dominance and the perception of verbal stimuli",
-          "year": 1961
+          "year": 1961,
+          "doi": "10.1037/h0083219"
         }
-      ]
+      ],
+      "neural_basis_md": "La prueba aprovecha el **modelo de Kimura de supresión dicótica**: con estímulo simultáneo bilateral, las vías contralaterales predominan y las ipsilaterales son suprimidas al nivel de la corteza auditiva.\n\n- **Oído derecho → hemisferio izquierdo (lenguaje)**: ruta corta, sin cruce callosal. Ventaja estructural → REA (Right Ear Advantage) de 5–10% es normal en diestros.\n- **Oído izquierdo → hemisferio derecho → cuerpo calloso → hemisferio izquierdo**: ruta larga. Cualquier daño en el istmo auditivo del cuerpo calloso produce **supresión izquierda severa** (efecto Springer & Gazzaniga en split-brain).\n- **Giro de Heschl y plano temporal izquierdo**: decodificación fonémica de los dígitos.\n- **Lemnisco lateral y colículo inferior**: integración temporal del onset simultáneo.\n\nPatrón **LEA (ventaja oído izquierdo)** en diestros sugiere lateralización atípica del lenguaje o lesión temporal derecha/compromiso de proyección izquierda.",
+      "scoring_md": "40 dígitos totales por oído (20 pares × 2 dígitos simultáneos).\n\n**Métricas:**\n- **%R correcto** y **%L correcto** = dígitos correctos / 40 × 100 por oído.\n- **REA (Right Ear Advantage) % = %R − %L**. Normal diestros: +3 a +10%. >+20% sugiere compromiso de proyección izquierda o cuerpo calloso.\n- **LEA (Left Ear Advantage)** = valor negativo de REA. En diestros es anormal.\n- **Supresión** de un oído = cuando ese oído cae >30% bajo norma por edad. Altamente sugerente de disfunción **callosal** si es supresión izquierda con derecha intacta.\n\n**Normas Musiek (adultos diestros)**: ambos oídos ≥90%, REA ≤10%. Niños y adultos mayores tienen normas escaladas por edad."
     },
     {
       "code": "DD_ES_DIRECTED",
@@ -113,13 +124,17 @@
       "references": [
         {
           "citation": "Strouse A, Wilson RH. Recognition of one-, two-, and three-pair dichotic digits under free and directed recall",
-          "year": 1999
+          "year": 1999,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10613352/"
         },
         {
           "citation": "Jerger J, Martin J. Dichotic listening tests in the assessment of auditory processing disorders",
-          "year": 2004
+          "year": 2004,
+          "doi": "10.1080/16513860600567823"
         }
-      ]
+      ],
+      "neural_basis_md": "Versión dirigida activa circuitos **atencionales top-down** adicionales al procesamiento dicótico pasivo del recuerdo libre:\n\n- **Giro frontal inferior izquierdo (área 44/45)**: control ejecutivo del foco atencional auditivo.\n- **Cíngulo anterior**: detección de conflicto y monitoreo de respuesta.\n- **Red fronto-parietal dorsal**: asignación de recursos atencionales al oído target.\n- **Corteza auditiva + plano temporal**: procesamiento lingüístico (compartido con DD_FREE).\n\nUn paciente con supresión izquierda en modo libre que mejora en modo dirigido hacia izquierda sugiere **integridad cortical con fallo atencional** (TDAH, post-TEC frontal, envejecimiento cognitivo). Si ni siquiera dirigido mejora → compromiso estructural (callosal o cortical temporal).",
+      "scoring_md": "20 pares totales divididos en 2 bloques.\n\n**Métricas:**\n- **%L en bloque L-first**: capacidad de atender a oído izquierdo cuando se fuerza.\n- **%R en bloque R-first**: ídem para derecho.\n- **%L en bloque R-first (segundo reportado)**: sensibilidad a decaimiento de memoria ecoica + interferencia.\n- **Comparación directed vs. free**: si DD_FREE tenía asimetría y DD_DIRECTED la normaliza → déficit atencional, no estructural."
     }
   ],
   "lists": [

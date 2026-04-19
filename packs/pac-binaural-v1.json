@@ -13,19 +13,25 @@
   "references": [
     {
       "citation": "Kimura D (1961). Cerebral dominance and the perception of verbal stimuli. Can J Psychol 15:166-171",
-      "url": null
+      "url": null,
+      "year": 1961,
+      "doi": "10.1037/h0083219"
     },
     {
       "citation": "Matzker J (1959). Two new methods for the assessment of central auditory functions in cases of brain disease. Ann Otol Rhinol Laryngol 68:1185-1197",
-      "url": null
+      "url": null,
+      "year": 1959
     },
     {
       "citation": "Musiek FE (1983). Assessment of central auditory dysfunction: the dichotic digit test revisited. Ear Hear 4:79-83",
-      "url": null
+      "url": null,
+      "year": 1983,
+      "doi": "10.1097/00003446-198303000-00002"
     },
     {
       "citation": "Blauert J (1997). Spatial Hearing: The Psychophysics of Human Sound Localization. MIT Press.",
-      "url": null
+      "url": "https://mitpress.mit.edu/9780262024136/spatial-hearing/",
+      "year": 1997
     }
   ],
   "tests": [
@@ -117,9 +123,12 @@
         },
         {
           "citation": "Blauert J. Spatial Hearing: The Psychophysics of Human Sound Localization",
-          "year": 1997
+          "year": 1997,
+          "url": "https://mitpress.mit.edu/9780262024136/spatial-hearing/"
         }
-      ]
+      ],
+      "neural_basis_md": "La lateralización por **diferencia interaural de nivel (ILD)** depende del **complejo olivar superior lateral (LSO)** en el tronco encefálico:\n\n- **LSO**: primera estación que compara intensidades entre oídos (neuronas EI: excitación ipsilateral, inhibición contralateral).\n- **Efecto ILD**: ~3 dB de desequilibrio desplaza la imagen lateralmente. A ILD grande la imagen se lateraliza completo al oído fuerte.\n- **Colículo inferior + corteza auditiva**: integración con diferencias interaurales de tiempo para la imagen final.\n\nLateralización alterada sugiere **lesión del tronco** (oliva, lemnisco lateral) o **asimetría periférica** (pérdida unilateral altera el mapa de intensidades).",
+      "scoring_md": "Por cada trial, paciente reporta lateralización: centro, derecha leve/fuerte, izquierda leve/fuerte.\n\n**Métrica**: % concordancia con la ILD física presentada. Se construye curva **ILD (dB) vs. % respuestas derecha**.\n\n**Umbral de lateralización** ≈ menor ILD que produce >75% de respuestas consistentes. Normal: 1–3 dB."
     },
     {
       "code": "DICHOTIC_NV",
@@ -181,13 +190,17 @@
       "references": [
         {
           "citation": "Kimura D. Cerebral dominance and the perception of verbal stimuli",
-          "year": 1961
+          "year": 1961,
+          "doi": "10.1037/h0083219"
         },
         {
           "citation": "Musiek FE. Assessment of central auditory dysfunction: the dichotic digit test revisited",
-          "year": 1983
+          "year": 1983,
+          "doi": "10.1097/00003446-198303000-00002"
         }
-      ]
+      ],
+      "neural_basis_md": "**Procesamiento dicótico no verbal** (tonos, ruidos breves) — aísla la vía del procesamiento auditivo del procesamiento lingüístico:\n\n- **Corteza auditiva derecha (giro temporal superior)**: especializada en contenido tonal y espectral fino (Zatorre & Belin 2001).\n- **Cuerpo calloso posterior (istmo auditivo)**: transfiere representación tonal a hemisferio izquierdo si la tarea exige verbalización.\n\nDéficit **solo en DD verbal con DD no-verbal normal** → lesión del hemisferio izquierdo / área del lenguaje. Déficit **no-verbal + verbal** → disfunción auditiva más basal (tronco o corteza auditiva primaria).",
+      "scoring_md": "% de respuestas correctas por oído y global. Se compara **asimetría NV** con **asimetría DD verbal** del mismo paciente:\n\n- NV simétrico + DD verbal asimétrico → dominancia hemisférica lingüística o lesión temporal izquierda.\n- Ambos asimétricos → compromiso estructural (tronco, cuerpo calloso, corteza temporal)."
     },
     {
       "code": "FUSION_BIN",
@@ -244,9 +257,12 @@
         },
         {
           "citation": "Noffsinger D et al. Auditory and vestibular aberrations in multiple sclerosis",
-          "year": 1972
+          "year": 1972,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4542210/"
         }
-      ]
+      ],
+      "neural_basis_md": "La **fusión binaural** requiere integrar representaciones parciales de la señal en cada oído a nivel del **colículo inferior y corteza auditiva**:\n\n- **Oliva superior medial (MSO)**: integra diferencias temporales finas.\n- **Lemnisco lateral**: transporta y mantiene coherencia temporal.\n- **Corteza auditiva primaria**: completa el objeto acústico desde fragmentos bilaterales.\n\nFallas sugieren **lesiones del tronco** o desincronía neural. Paciente con fusión pobre no se beneficia de estimulación binaural (FM, implante bilateral) al nivel esperado.",
+      "scoring_md": "% de ítems correctamente identificados cuando se presenta la señal fragmentada entre oídos (filtros complementarios pasa-bajo/alto).\n\n**Normas aproximadas**: adultos normoaudientes ≥90% correctos. <70% sugiere disfunción de integración binaural de bajo nivel."
     }
   ],
   "lists": [],

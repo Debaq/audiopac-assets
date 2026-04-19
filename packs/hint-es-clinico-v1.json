@@ -13,15 +13,21 @@
   "references": [
     {
       "citation": "Aubanel V, García Lecumberri ML, Cooke M (2014). The Sharvard Corpus: A phonemically-balanced Spanish sentence resource for audiology. Int J Audiol 53(9):633-641",
-      "url": "https://zenodo.org/records/3547446"
+      "url": "https://zenodo.org/records/3547446",
+      "year": 2014,
+      "doi": "10.3109/14992027.2014.907507"
     },
     {
       "citation": "Nilsson M, Soli SD, Sullivan JA (1994). Development of the Hearing in Noise Test for the measurement of speech reception thresholds in quiet and in noise. J Acoust Soc Am 95:1085-1099",
-      "url": null
+      "url": null,
+      "year": 1994,
+      "doi": "10.1121/1.408469"
     },
     {
       "citation": "Soli SD, Wong LL (2008). Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-      "url": null
+      "url": null,
+      "year": 2008,
+      "doi": "10.1080/14992020801895136"
     }
   ],
   "tests": [
@@ -71,17 +77,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L02",
@@ -129,17 +140,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L03",
@@ -187,17 +203,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L04",
@@ -245,17 +266,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L05",
@@ -303,17 +329,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L06",
@@ -361,17 +392,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L07",
@@ -419,17 +455,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L08",
@@ -477,17 +518,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L09",
@@ -535,17 +581,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L10",
@@ -593,17 +644,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L11",
@@ -651,17 +707,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L12",
@@ -709,17 +770,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L13",
@@ -767,17 +833,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L14",
@@ -825,17 +896,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L15",
@@ -883,17 +959,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L16",
@@ -941,17 +1022,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L17",
@@ -999,17 +1085,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L18",
@@ -1057,17 +1148,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L19",
@@ -1115,17 +1211,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L20",
@@ -1173,17 +1274,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L21",
@@ -1231,17 +1337,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L22",
@@ -1289,17 +1400,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L23",
@@ -1347,17 +1463,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L24",
@@ -1405,17 +1526,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L25",
@@ -1463,17 +1589,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L26",
@@ -1521,17 +1652,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L27",
@@ -1579,17 +1715,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L28",
@@ -1637,17 +1778,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L29",
@@ -1695,17 +1841,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L30",
@@ -1753,17 +1904,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L31",
@@ -1811,17 +1967,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L32",
@@ -1869,17 +2030,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L33",
@@ -1927,17 +2093,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L34",
@@ -1985,17 +2156,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L35",
@@ -2043,17 +2219,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L36",
@@ -2101,17 +2282,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L37",
@@ -2159,17 +2345,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L38",
@@ -2217,17 +2408,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L39",
@@ -2275,17 +2471,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L40",
@@ -2333,17 +2534,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L41",
@@ -2391,17 +2597,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L42",
@@ -2449,17 +2660,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L43",
@@ -2507,17 +2723,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L44",
@@ -2565,17 +2786,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L45",
@@ -2623,17 +2849,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L46",
@@ -2681,17 +2912,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L47",
@@ -2739,17 +2975,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L48",
@@ -2797,17 +3038,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L49",
@@ -2855,17 +3101,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L50",
@@ -2913,17 +3164,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L51",
@@ -2971,17 +3227,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L52",
@@ -3029,17 +3290,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L53",
@@ -3087,17 +3353,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L54",
@@ -3145,17 +3416,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L55",
@@ -3203,17 +3479,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L56",
@@ -3261,17 +3542,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L57",
@@ -3319,17 +3605,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L58",
@@ -3377,17 +3668,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L59",
@@ -3435,17 +3731,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L60",
@@ -3493,17 +3794,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L61",
@@ -3551,17 +3857,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L62",
@@ -3609,17 +3920,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L63",
@@ -3667,17 +3983,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L64",
@@ -3725,17 +4046,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L65",
@@ -3783,17 +4109,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L66",
@@ -3841,17 +4172,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L67",
@@ -3899,17 +4235,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L68",
@@ -3957,17 +4298,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L69",
@@ -4015,17 +4361,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     },
     {
       "code": "HINT_SHARVARD_L70",
@@ -4073,17 +4424,22 @@
         },
         {
           "citation": "Nilsson M, Soli SD, Sullivan JA. Development of the Hearing in Noise Test",
-          "year": 1994
+          "year": 1994,
+          "doi": "10.1121/1.408469"
         },
         {
           "citation": "Soli SD, Wong LL. Assessment of speech intelligibility in noise with the Hearing in Noise Test. Int J Audiol 47(6):356-361",
-          "year": 2008
+          "year": 2008,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18569108/"
         },
         {
           "citation": "Hall JW III. Introduction to Audiology Today. Pearson. (Caps. sobre speech-in-noise testing y test-retest)",
-          "year": 2014
+          "year": 2014,
+          "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-audiology-today/P200000001186/9780205569236"
         }
-      ]
+      ],
+      "neural_basis_md": "Igual al HINT_ES_CUSTOM: inteligibilidad en ruido dependiente de toda la vía auditiva central — cóclea → tronco (unmasking binaural) → corteza auditiva → redes lingüísticas semánticas (contexto top-down).\n\nLas listas HINT-Sharvard están **equiparadas psicométricamente** entre sí (igual dificultad), lo que permite test-retest fiable sin efectos de aprendizaje específicos de ítem.",
+      "scoring_md": "Presentación de 10 frases por lista. Scoring **por keyword** (3–5 por frase).\n\n**Bracketing adaptativo**: trial pasa si ≥50% keywords. Step-down 4 dB, step-up 2 dB. SRT-SNR = promedio de los últimos 4–6 SNR al converger.\n\n**Normas adultos normoaudientes**: SRT-SNR ≈ −3 a 0 dB. >+3 dB sugiere déficit."
     }
   ],
   "lists": [],

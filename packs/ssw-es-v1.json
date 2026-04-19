@@ -17,15 +17,18 @@
     },
     {
       "citation": "Katz J. SSW Test Manual (5th ed). 1998",
-      "year": 1998
+      "year": 1998,
+      "url": "https://precisionacoustics.org/products/ssw-test-manual"
     },
     {
       "citation": "Brunt M. The Staggered Spondaic Word Test. In: Katz J (ed). Handbook of Clinical Audiology, 7th ed. 2015",
-      "year": 2015
+      "year": 2015,
+      "url": "https://www.worldcat.org/isbn/9781451194050"
     },
     {
       "citation": "Musiek FE. Central auditory tests. Scand Audiol Suppl. 1999;51:33-46",
-      "year": 1999
+      "year": 1999,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10803912/"
     }
   ],
   "tests": [
@@ -70,13 +73,17 @@
         },
         {
           "citation": "Katz J. SSW Test Manual 5th ed",
-          "year": 1998
+          "year": 1998,
+          "url": "https://precisionacoustics.org/products/ssw-test-manual"
         },
         {
           "citation": "Brunt M. The SSW Test. Handbook of Clinical Audiology 7th ed",
-          "year": 2015
+          "year": 2015,
+          "url": "https://www.worldcat.org/isbn/9781451194050"
         }
-      ]
+      ],
+      "neural_basis_md": "El SSW evalúa **procesamiento dicótico** con solapamiento temporal — la condición más exigente para el SNC auditivo. Las vías auditivas **contralaterales** (más fuertes) suprimen a las ipsilaterales en estimulación dicótica (modelo Kimura 1961).\n\n- **Cuerpo calloso** (istmo auditivo, splenio): transfiere información del hemisferio derecho al izquierdo dominante para el lenguaje.\n- **Área de Wernicke / giro temporal superior**: decodifica los spondees competing.\n- **Corteza prefrontal y cíngulo anterior**: atención dividida y monitoreo del orden de respuesta.\n- **Tronco encefálico (colículo inferior, oliva superior)**: integración temporal de los onsets solapados.\n\nFallas específicas orientan el locus: déficit en condición competing contralateral → lesión hemisférica del lado opuesto; déficit ipsilateral → compromiso de tronco o coclear; patrón **order effect** → disfunción frontal / atencional.",
+      "scoring_md": "Cada ítem aporta 4 respuestas (RNC, RC, LC, LNC), total 160 respuestas.\n\n**Métricas principales:**\n- **% error por condición**: RNC, RC, LC, LNC (0 = perfecto; 100 = peor).\n- **Ear effect (EE)** = %err(C+NC oído izq) − %err(C+NC oído der). Positivo → ventaja oído derecho (normal leve); **>+15% sugiere lesión hemisférica izquierda o vía aferente derecha**.\n- **Order effect (OE)** = %err(segundo presentado) − %err(primero). Positivo → *high-low* (normal); negativo → *low-high* (anormal, orienta a disfunción frontal).\n- **Qualifiers**: reversals (invertir el orden), type-A (competing muy asimétrico) — indicadores cualitativos.\n\n**Interpretación**: se compara con normas por edad (Katz 1998). Rendimiento total >15% error en adultos <60 años es sugerente de TPAC."
     }
   ],
   "lists": [

@@ -57,8 +57,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-patterns-v1.json",
-      "sha256": "c902c21e78ce1b82e579ede28752d8c32a3150a9c354f1140d637960dfb43484",
-      "bytes": 20075
+      "sha256": "1e575ec03ef8243687e7b3ec7a8e9066ca362eb62d2992013e165d86434754eb",
+      "bytes": 23964
     },
     {
       "id": "pps-pinheiro-v1",
@@ -68,8 +68,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pps-pinheiro-v1.json",
-      "sha256": "a8cfc7bcfbe95428bf6ecfb53dc702aca8782b96bb81434388643ccf65d085e1",
-      "bytes": 7034
+      "sha256": "d90bcf26ad1516ebfff66a985f74ea859ddeff02f6824f8f62d26b37d870fb62",
+      "bytes": 7892
     },
     {
       "id": "dps-musiek-v1",
@@ -79,8 +79,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/dps-musiek-v1.json",
-      "sha256": "feee7ec65a4d66cbaf6f1e5bb103a44232a5aaf9967f989bd163d6345e4e9797",
-      "bytes": 7076
+      "sha256": "213aa6b819f67f240e4528149bd3dfeb40dec9e53bf5d47272e872146d314e18",
+      "bytes": 8918
     },
     {
       "id": "pac-limens-v1",
@@ -90,8 +90,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-limens-v1.json",
-      "sha256": "e8ce68efcf7fed645f16ca5d649259f1db28ce3de9b74b22f4cb924f31a44ccd",
-      "bytes": 23913
+      "sha256": "a700ce648d3067cd4ed143a736c5be56e2bb12ae5e4331e7c8e628357904284b",
+      "bytes": 28826
     },
     {
       "id": "pac-temporal-v1",
@@ -101,8 +101,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-temporal-v1.json",
-      "sha256": "27dd9dbf869eb60eb3dad51e81a366c30f43a4b9ddde0bbbe8a3640da8420717",
-      "bytes": 20748
+      "sha256": "80829c302106a96097231c9fd8025ed1ef1b9891611daa7f1fc0777b385d5340",
+      "bytes": 24011
     },
     {
       "id": "pac-binaural-v1",
@@ -112,8 +112,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-binaural-v1.json",
-      "sha256": "2b5f0f76adf6d7b291f311e62bd94f9d5c06dff20f5ac4adec062bf319c95cc4",
-      "bytes": 14879
+      "sha256": "a4fe4cd1cd4ddaa195ad9cbab2caad318d09783f75fef4e40da8baa8333cf63e",
+      "bytes": 18320
     },
     {
       "id": "pac-noise-v1",
@@ -123,8 +123,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-noise-v1.json",
-      "sha256": "aa43ba2bdf3d2ee98daabd298afdf967b8cc9a0684ccdbca461e0d1a40317a80",
-      "bytes": 18222
+      "sha256": "2e64f15b0c8c3a823443c2c3cc9533feda84c7b2e9c1e522f3c00faae441e3bf",
+      "bytes": 21438
     },
     {
       "id": "pac-mld-v1",
@@ -134,8 +134,8 @@
       "requirements": "ninguno",
       "license": "CC-BY-SA",
       "url": "packs/pac-mld-v1.json",
-      "sha256": "b522d934dffdcc38767570303e50dc4ad6d065d47cf57fb02723aa04620f6079",
-      "bytes": 10196
+      "sha256": "cc265cbf4399496f3bd27dd7c2738340e4642047674e259c2db6daefa35445f2",
+      "bytes": 11535
     },
     {
       "id": "logoaud-latam-v1",
@@ -145,8 +145,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/logoaud-latam-v1.json",
-      "sha256": "22e76c44d3201969d591919ab3b6e983bffe4b5ef339282fbe747c9c29699001",
-      "bytes": 12995
+      "sha256": "c55903ea9faa86f7b0e9f010f72282f1a30472b108dbc7112a1069c59c3df47e",
+      "bytes": 15037
     },
     {
       "id": "logoaud-us-es-v1",
@@ -156,8 +156,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/logoaud-us-es-v1.json",
-      "sha256": "e5835090ef2a2d30e9624fa97de4bd0c2ba9d13204342efe59588ae2514f2898",
-      "bytes": 8347
+      "sha256": "688872c7d7ee7ac3df43e9ca392bfb49b9b4d646ddd1b6fba317598cccd4d579",
+      "bytes": 9685
     },
     {
       "id": "dichotic-digits-es-v1",
@@ -167,8 +167,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/dichotic-digits-es-v1.json",
-      "sha256": "d2db3368a1c39675dc0aea1cdc2b7a5baf8feade16f90b1d25e56f886b3bafb4",
-      "bytes": 12921
+      "sha256": "64fd5546b40958f6e6e70b2659b3c7f4e1a53f2cfb9cef8aa99b875201ecdde8",
+      "bytes": 16431
     },
     {
       "id": "hint-es-v1",
@@ -178,8 +178,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/hint-es-v1.json",
-      "sha256": "fb756e6342039890dc1428c996483886c7a3dedf32ae2e49b01061f3513a6206",
-      "bytes": 8501
+      "sha256": "d2e6dd06b6b34546cc0d1c2e5945858ab0775b312b4b568644b9e6f49b9e7d9e",
+      "bytes": 10557
     },
     {
       "id": "sinb-es-v1",
@@ -189,8 +189,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/sinb-es-v1.json",
-      "sha256": "77f9bd4b78b57e56efe0e4cf02853f505ad21cadcedf7005479e7735b9406ad2",
-      "bytes": 7446
+      "sha256": "b7429852f60f6319d72dddaa04d9079c84c4d6094cedead3a957e833f0c98cd8",
+      "bytes": 8788
     },
     {
       "id": "palpa-es-v1",
@@ -200,8 +200,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/palpa-es-v1.json",
-      "sha256": "5246942598f56c4771938e37df328d9cdbb8ee87e1d9a432617299c74d960aad",
-      "bytes": 6982
+      "sha256": "a3d90e229fc5867a8b212bcf1b22895adf5b442c05f8834107df71eb83ffa18f",
+      "bytes": 8814
     },
     {
       "id": "matrix-es-v1",
@@ -211,8 +211,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/matrix-es-v1.json",
-      "sha256": "52817c53276678083ed834df3eba62a9abc70a5054caf95df5b7adf9f23cb6fb",
-      "bytes": 15438
+      "sha256": "dab5fc6bf59860987c7fa2256c3c189d2e5bcbf1d5390f57638c7d01865b6107",
+      "bytes": 17160
     },
     {
       "id": "sharvard-es-v1",
@@ -222,8 +222,8 @@
       "requirements": "audio_pack",
       "license": "CC-BY",
       "url": "packs/sharvard-es-v1.json",
-      "sha256": "11ef4ee0b789ac2d672ccd74194729aa8d9d765cbfe5e9d8046e8e7716c33696",
-      "bytes": 7629
+      "sha256": "d4f3c57198b74e3939793047bb8064f0fc81a297d5e19e2a9d6288db117bc724",
+      "bytes": 8601
     },
     {
       "id": "hint-es-clinico-v1",
@@ -233,8 +233,8 @@
       "requirements": "audio_pack",
       "license": "CC-BY",
       "url": "packs/hint-es-clinico-v1.json",
-      "sha256": "7e65c3e672a449ca0f52aaa9937334277b55ea8f27bd66d55285ef70db7627df",
-      "bytes": 336283
+      "sha256": "f380548b2902a68471f161a72a38c640c01d42bb41abf077a30306cc0e4b0ab9",
+      "bytes": 406393
     },
     {
       "id": "ssw-es-v1",
@@ -244,8 +244,8 @@
       "requirements": "recording",
       "license": "CC-BY-SA",
       "url": "packs/ssw-es-v1.json",
-      "sha256": "bf84620b1893b7dd1c6ffe0f9218c3fc50f581b749538f5d3420b041633630d5",
-      "bytes": 40569
+      "sha256": "c9d37c6c273d60b88525419a06b52d4bd16257943a3573e517ee2062e060e10e",
+      "bytes": 42698
     }
   ]
 }
