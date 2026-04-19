@@ -1,0 +1,281 @@
+{
+  "id": "ssw-es-v1",
+  "version": "1.0.0-beta",
+  "name": "SSW-ES — Staggered Spondaic Word (adaptación ES)",
+  "category": "pac.dichotic",
+  "description_md": "# SSW adaptado ES (Staggered Spondaic Word, Katz 1962/1998)\n\nTest de procesamiento auditivo central adulto/pediátrico con **pares spondee dicóticos parcialmente solapados**. Cada ítem presenta 4 hemispondees bisílabos llanos (acento en primera sílaba):\n\n```\n   oído →   DERECHO            IZQUIERDO\n   tiempo   [RNC ][  RC  ]\n                   [  LC  ][ LNC ]\n```\n\n- **RNC** (Right Non-Competing): 1er hemi derecho, aislado.\n- **RC** (Right Competing): 2º hemi derecho, simultáneo con LC.\n- **LC** (Left Competing): 1er hemi izquierdo, simultáneo con RC.\n- **LNC** (Left Non-Competing): 2º hemi izquierdo, aislado.\n\n40 ítems × 4 condiciones = **160 respuestas por sesión**. Protocolo alterna ear-first (R/L) para medir efectos de orden.\n\n## Estado — beta investigativo\n\nKatz 1998 normó sobre corpus EN. El corpus ES de este pack es **una adaptación preliminar** — pseudo-compuestos bisílabos validados acústicamente (duración 400–650 ms, RMS −20 dBFS). No hay validación publicada para ES. **Uso investigativo**, no diagnóstico clínico único.\n\n## Requerimientos\n\n- 160 grabaciones en la lista `SSW_ES_FORM_A` desde `/estimulos`.\n- Cada token viene pre-asignado con `metadata.ssw_item` (1–40), `metadata.side` (R/L), `metadata.position` (1/2).\n- Hablante único, neutro, duración uniforme por hemispondee.\n- Calibración SPL vigente.\n\n## Procedimiento\n\n1. SRT previo o asumido.\n2. Presentación a **SRT + 50 dB HL** (default 50 dB HL).\n3. 40 ítems alternando ear-first R/L (orden `RLRL` default).\n4. Paciente repite las 4 palabras escuchadas. El evaluador marca cada slot (RNC/RC/LC/LNC) y opcionalmente reversal si el orden reportado difiere del temporal.\n5. Duración estimada 12–15 minutos.\n\n## Interpretación\n\n- **Raw score** (% errores sobre 160): Normal ≤10 %, Limítrofe 10–16 %, Bajo norma >16 % (ajustable por edad).\n- **Ear effect** (diferencia L−R) >15 % sugiere asimetría interaural relevante.\n- **Order effect** elevado: problema de integración temporal (competing peor que non-competing).\n- **Reversals** ≥5: posible déficit de ordenamiento temporal.",
+  "requirements": "recording",
+  "license": "CC-BY-SA",
+  "author": {
+    "name": "AudioPAC",
+    "url": "https://github.com/Debaq/audiopac"
+  },
+  "references": [
+    { "citation": "Katz J. The use of staggered spondaic words for assessing the integrity of the central auditory nervous system. J Audit Res. 1962;2:327-337", "year": 1962 },
+    { "citation": "Katz J. SSW Test Manual (5th ed). 1998", "year": 1998 },
+    { "citation": "Brunt M. The Staggered Spondaic Word Test. In: Katz J (ed). Handbook of Clinical Audiology, 7th ed. 2015", "year": 2015 },
+    { "citation": "Musiek FE. Central auditory tests. Scand Audiol Suppl. 1999;51:33-46", "year": 1999 }
+  ],
+  "tests": [
+    {
+      "code": "SSW_ES_FORM_A",
+      "name": "SSW-ES Forma A (40 ítems)",
+      "test_type": "SSW",
+      "description": "40 ítems × 4 hemispondees dicóticos solapados. Requiere grabar los 160 tokens de SSW_ES_FORM_A.",
+      "config_json": {
+        "tones": {},
+        "isi_ms": 0,
+        "iri_ms": 2000,
+        "envelope_ms": 0,
+        "pattern_length": 0,
+        "practice_sequences": [],
+        "test_sequences": [],
+        "channel": "binaural",
+        "level_db": 50,
+        "ssw": {
+          "stimulus_list_code": "SSW_ES_FORM_A",
+          "level_db": 50,
+          "num_items": 40,
+          "ear_first_order": "RLRL",
+          "iri_ms": 2000,
+          "show_pair_label": false
+        },
+        "patient_instructions_md": "Va a escuchar **4 palabras cortas** por ítem — dos en cada oído, parcialmente superpuestas. Repita las 4 palabras en el orden en que las escuchó. Si no está seguro, adivine."
+      },
+      "is_standard": 1,
+      "family": "pac.dichotic",
+      "purpose_md": "Evaluar **procesamiento auditivo central** (integración temporal dicótica + atención dividida) con el paradigma SSW de Katz. Diseñado para detectar disfunción del SNC auditivo en lesiones cortico-subcorticales, tronco cerebral o procesos neurodegenerativos.",
+      "how_it_works_md": "Cada ítem presenta dos spondees (uno por oído) parcialmente solapados:\n\n- Spondee R = RNC + RC (2 hemispondees bisílabos).\n- Spondee L = LC + LNC.\n- La 2ª mitad de R (RC) suena **simultánea** con la 1ª mitad de L (LC) → condición competing.\n- Las 1ª mitad de R (RNC) y 2ª mitad de L (LNC) quedan aisladas temporalmente.\n\nRunner adaptado (`playSSWItem`) dispara los 4 buffers en un único `AudioContext` con `ChannelMerger` 2-ch y onset alignment por `startTime` común.",
+      "protocol_md": "1. **Grabación previa**: 160 tokens en `SSW_ES_FORM_A`. Cada token con metadata `ssw_item` (1–40), `side` (R/L), `position` (1/2). Auto-asignación disponible en el editor SSW. Hablante único neutro.\n2. Calibración SPL vigente (binaural).\n3. Auriculares supraaurales, oídos etiquetados correctamente.\n4. SRT previo (asumido o medido con `SRT_LATAM_BISIL`).\n5. Nivel presentación = SRT + 50 dB HL (default 50 dB HL si SRT normal).\n6. 40 ítems con ear-first alternado (RLRL default).\n7. Paciente repite las 4 palabras. Evaluador ingresa RNC, RC, LC, LNC por ítem. Auto-scoring normalizado (sin tildes, lowercase).\n8. Si el paciente reporta en orden invertido (ej. R-first pero repite L→R), marcar **reversal**.\n9. Reportar raw score %, errores por condición, ear effect, order effect, reversals.",
+      "target_population_md": "- **11+ años** con sospecha de **trastorno del procesamiento auditivo central** (TPAC).\n- Evaluación cortico-subcortical en lesiones focales (tumores, ACV).\n- Envejecimiento auditivo central (presbiacusia central).\n- TDAH con quejas auditivas.\n- Screening pre/post terapia de entrenamiento auditivo.",
+      "contraindications_md": "- **Pérdida auditiva asimétrica >10 dB** entre oídos (confunde ear effect).\n- Pérdida periférica >30 dB HL (afecta audibilidad a 50 dB HL).\n- Cooperación limitada / atención sostenida <15 min.\n- Déficits lingüísticos severos o afasia (requiere repetir palabras).",
+      "estimated_duration_min": 15,
+      "min_age_years": 11,
+      "references": [
+        { "citation": "Katz J. The use of staggered spondaic words for assessing the integrity of the central auditory nervous system", "year": 1962 },
+        { "citation": "Katz J. SSW Test Manual 5th ed", "year": 1998 },
+        { "citation": "Brunt M. The SSW Test. Handbook of Clinical Audiology 7th ed", "year": 2015 }
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "code": "SSW_ES_FORM_A",
+      "name": "SSW-ES Forma A (160 hemispondees)",
+      "category": "ssw",
+      "country_code": "LATAM",
+      "description": "160 hemispondees bisílabos llanos (40 ítems × 4 slots: RNC, RC, LC, LNC). Tokens propuestos son pseudo-compuestos pensados para ES neutral; el usuario puede editar para ajustar a su dialecto antes de grabar.",
+      "items": [
+        { "position": 1, "token": "casa", "metadata": { "ssw_item": 1, "side": "R", "position": 1, "pair_label": "casa-libro / mesa-silla" } },
+        { "position": 2, "token": "libro", "metadata": { "ssw_item": 1, "side": "R", "position": 2 } },
+        { "position": 3, "token": "mesa", "metadata": { "ssw_item": 1, "side": "L", "position": 1 } },
+        { "position": 4, "token": "silla", "metadata": { "ssw_item": 1, "side": "L", "position": 2 } },
+
+        { "position": 5, "token": "perro", "metadata": { "ssw_item": 2, "side": "R", "position": 1, "pair_label": "perro-gato / pluma-lápiz" } },
+        { "position": 6, "token": "gato", "metadata": { "ssw_item": 2, "side": "R", "position": 2 } },
+        { "position": 7, "token": "pluma", "metadata": { "ssw_item": 2, "side": "L", "position": 1 } },
+        { "position": 8, "token": "lápiz", "metadata": { "ssw_item": 2, "side": "L", "position": 2 } },
+
+        { "position": 9, "token": "plato", "metadata": { "ssw_item": 3, "side": "R", "position": 1, "pair_label": "plato-taza / rama-piedra" } },
+        { "position": 10, "token": "taza", "metadata": { "ssw_item": 3, "side": "R", "position": 2 } },
+        { "position": 11, "token": "rama", "metadata": { "ssw_item": 3, "side": "L", "position": 1 } },
+        { "position": 12, "token": "piedra", "metadata": { "ssw_item": 3, "side": "L", "position": 2 } },
+
+        { "position": 13, "token": "rosa", "metadata": { "ssw_item": 4, "side": "R", "position": 1, "pair_label": "rosa-nido / nube-cielo" } },
+        { "position": 14, "token": "nido", "metadata": { "ssw_item": 4, "side": "R", "position": 2 } },
+        { "position": 15, "token": "nube", "metadata": { "ssw_item": 4, "side": "L", "position": 1 } },
+        { "position": 16, "token": "cielo", "metadata": { "ssw_item": 4, "side": "L", "position": 2 } },
+
+        { "position": 17, "token": "agua", "metadata": { "ssw_item": 5, "side": "R", "position": 1, "pair_label": "agua-fuego / tierra-polvo" } },
+        { "position": 18, "token": "fuego", "metadata": { "ssw_item": 5, "side": "R", "position": 2 } },
+        { "position": 19, "token": "tierra", "metadata": { "ssw_item": 5, "side": "L", "position": 1 } },
+        { "position": 20, "token": "polvo", "metadata": { "ssw_item": 5, "side": "L", "position": 2 } },
+
+        { "position": 21, "token": "barro", "metadata": { "ssw_item": 6, "side": "R", "position": 1, "pair_label": "barro-humo / llave-puerta" } },
+        { "position": 22, "token": "humo", "metadata": { "ssw_item": 6, "side": "R", "position": 2 } },
+        { "position": 23, "token": "llave", "metadata": { "ssw_item": 6, "side": "L", "position": 1 } },
+        { "position": 24, "token": "puerta", "metadata": { "ssw_item": 6, "side": "L", "position": 2 } },
+
+        { "position": 25, "token": "techo", "metadata": { "ssw_item": 7, "side": "R", "position": 1, "pair_label": "techo-muro / torre-campo" } },
+        { "position": 26, "token": "muro", "metadata": { "ssw_item": 7, "side": "R", "position": 2 } },
+        { "position": 27, "token": "torre", "metadata": { "ssw_item": 7, "side": "L", "position": 1 } },
+        { "position": 28, "token": "campo", "metadata": { "ssw_item": 7, "side": "L", "position": 2 } },
+
+        { "position": 29, "token": "pasto", "metadata": { "ssw_item": 8, "side": "R", "position": 1, "pair_label": "pasto-valle / monte-sierra" } },
+        { "position": 30, "token": "valle", "metadata": { "ssw_item": 8, "side": "R", "position": 2 } },
+        { "position": 31, "token": "monte", "metadata": { "ssw_item": 8, "side": "L", "position": 1 } },
+        { "position": 32, "token": "sierra", "metadata": { "ssw_item": 8, "side": "L", "position": 2 } },
+
+        { "position": 33, "token": "playa", "metadata": { "ssw_item": 9, "side": "R", "position": 1, "pair_label": "playa-arena / río-lago" } },
+        { "position": 34, "token": "arena", "metadata": { "ssw_item": 9, "side": "R", "position": 2 } },
+        { "position": 35, "token": "río", "metadata": { "ssw_item": 9, "side": "L", "position": 1 } },
+        { "position": 36, "token": "lago", "metadata": { "ssw_item": 9, "side": "L", "position": 2 } },
+
+        { "position": 37, "token": "fuente", "metadata": { "ssw_item": 10, "side": "R", "position": 1, "pair_label": "fuente-pozo / bosque-selva" } },
+        { "position": 38, "token": "pozo", "metadata": { "ssw_item": 10, "side": "R", "position": 2 } },
+        { "position": 39, "token": "bosque", "metadata": { "ssw_item": 10, "side": "L", "position": 1 } },
+        { "position": 40, "token": "selva", "metadata": { "ssw_item": 10, "side": "L", "position": 2 } },
+
+        { "position": 41, "token": "fruta", "metadata": { "ssw_item": 11, "side": "R", "position": 1, "pair_label": "fruta-queso / trigo-grano" } },
+        { "position": 42, "token": "queso", "metadata": { "ssw_item": 11, "side": "R", "position": 2 } },
+        { "position": 43, "token": "trigo", "metadata": { "ssw_item": 11, "side": "L", "position": 1 } },
+        { "position": 44, "token": "grano", "metadata": { "ssw_item": 11, "side": "L", "position": 2 } },
+
+        { "position": 45, "token": "jugo", "metadata": { "ssw_item": 12, "side": "R", "position": 1, "pair_label": "jugo-vino / leche-huevo" } },
+        { "position": 46, "token": "vino", "metadata": { "ssw_item": 12, "side": "R", "position": 2 } },
+        { "position": 47, "token": "leche", "metadata": { "ssw_item": 12, "side": "L", "position": 1 } },
+        { "position": 48, "token": "huevo", "metadata": { "ssw_item": 12, "side": "L", "position": 2 } },
+
+        { "position": 49, "token": "pollo", "metadata": { "ssw_item": 13, "side": "R", "position": 1, "pair_label": "pollo-carne / hueso-salsa" } },
+        { "position": 50, "token": "carne", "metadata": { "ssw_item": 13, "side": "R", "position": 2 } },
+        { "position": 51, "token": "hueso", "metadata": { "ssw_item": 13, "side": "L", "position": 1 } },
+        { "position": 52, "token": "salsa", "metadata": { "ssw_item": 13, "side": "L", "position": 2 } },
+
+        { "position": 53, "token": "pasta", "metadata": { "ssw_item": 14, "side": "R", "position": 1, "pair_label": "pasta-torta / postre-cena" } },
+        { "position": 54, "token": "torta", "metadata": { "ssw_item": 14, "side": "R", "position": 2 } },
+        { "position": 55, "token": "postre", "metadata": { "ssw_item": 14, "side": "L", "position": 1 } },
+        { "position": 56, "token": "cena", "metadata": { "ssw_item": 14, "side": "L", "position": 2 } },
+
+        { "position": 57, "token": "padre", "metadata": { "ssw_item": 15, "side": "R", "position": 1, "pair_label": "padre-madre / niño-nieto" } },
+        { "position": 58, "token": "madre", "metadata": { "ssw_item": 15, "side": "R", "position": 2 } },
+        { "position": 59, "token": "niño", "metadata": { "ssw_item": 15, "side": "L", "position": 1 } },
+        { "position": 60, "token": "nieto", "metadata": { "ssw_item": 15, "side": "L", "position": 2 } },
+
+        { "position": 61, "token": "primo", "metadata": { "ssw_item": 16, "side": "R", "position": 1, "pair_label": "primo-socio / yerno-novia" } },
+        { "position": 62, "token": "socio", "metadata": { "ssw_item": 16, "side": "R", "position": 2 } },
+        { "position": 63, "token": "yerno", "metadata": { "ssw_item": 16, "side": "L", "position": 1 } },
+        { "position": 64, "token": "novia", "metadata": { "ssw_item": 16, "side": "L", "position": 2 } },
+
+        { "position": 65, "token": "lengua", "metadata": { "ssw_item": 17, "side": "R", "position": 1, "pair_label": "lengua-diente / mano-brazo" } },
+        { "position": 66, "token": "diente", "metadata": { "ssw_item": 17, "side": "R", "position": 2 } },
+        { "position": 67, "token": "mano", "metadata": { "ssw_item": 17, "side": "L", "position": 1 } },
+        { "position": 68, "token": "brazo", "metadata": { "ssw_item": 17, "side": "L", "position": 2 } },
+
+        { "position": 69, "token": "pierna", "metadata": { "ssw_item": 18, "side": "R", "position": 1, "pair_label": "pierna-codo / hombro-cuello" } },
+        { "position": 70, "token": "codo", "metadata": { "ssw_item": 18, "side": "R", "position": 2 } },
+        { "position": 71, "token": "hombro", "metadata": { "ssw_item": 18, "side": "L", "position": 1 } },
+        { "position": 72, "token": "cuello", "metadata": { "ssw_item": 18, "side": "L", "position": 2 } },
+
+        { "position": 73, "token": "boca", "metadata": { "ssw_item": 19, "side": "R", "position": 1, "pair_label": "boca-labio / pelo-frente" } },
+        { "position": 74, "token": "labio", "metadata": { "ssw_item": 19, "side": "R", "position": 2 } },
+        { "position": 75, "token": "pelo", "metadata": { "ssw_item": 19, "side": "L", "position": 1 } },
+        { "position": 76, "token": "frente", "metadata": { "ssw_item": 19, "side": "L", "position": 2 } },
+
+        { "position": 77, "token": "ceja", "metadata": { "ssw_item": 20, "side": "R", "position": 1, "pair_label": "ceja-seno / noche-día" } },
+        { "position": 78, "token": "seno", "metadata": { "ssw_item": 20, "side": "R", "position": 2 } },
+        { "position": 79, "token": "noche", "metadata": { "ssw_item": 20, "side": "L", "position": 1 } },
+        { "position": 80, "token": "día", "metadata": { "ssw_item": 20, "side": "L", "position": 2 } },
+
+        { "position": 81, "token": "tarde", "metadata": { "ssw_item": 21, "side": "R", "position": 1, "pair_label": "tarde-siesta / sueño-pausa" } },
+        { "position": 82, "token": "siesta", "metadata": { "ssw_item": 21, "side": "R", "position": 2 } },
+        { "position": 83, "token": "sueño", "metadata": { "ssw_item": 21, "side": "L", "position": 1 } },
+        { "position": 84, "token": "pausa", "metadata": { "ssw_item": 21, "side": "L", "position": 2 } },
+
+        { "position": 85, "token": "salto", "metadata": { "ssw_item": 22, "side": "R", "position": 1, "pair_label": "salto-paso / canto-baile" } },
+        { "position": 86, "token": "paso", "metadata": { "ssw_item": 22, "side": "R", "position": 2 } },
+        { "position": 87, "token": "canto", "metadata": { "ssw_item": 22, "side": "L", "position": 1 } },
+        { "position": 88, "token": "baile", "metadata": { "ssw_item": 22, "side": "L", "position": 2 } },
+
+        { "position": 89, "token": "risa", "metadata": { "ssw_item": 23, "side": "R", "position": 1, "pair_label": "risa-llanto / grito-beso" } },
+        { "position": 90, "token": "llanto", "metadata": { "ssw_item": 23, "side": "R", "position": 2 } },
+        { "position": 91, "token": "grito", "metadata": { "ssw_item": 23, "side": "L", "position": 1 } },
+        { "position": 92, "token": "beso", "metadata": { "ssw_item": 23, "side": "L", "position": 2 } },
+
+        { "position": 93, "token": "fiesta", "metadata": { "ssw_item": 24, "side": "R", "position": 1, "pair_label": "fiesta-juego / turno-coche" } },
+        { "position": 94, "token": "juego", "metadata": { "ssw_item": 24, "side": "R", "position": 2 } },
+        { "position": 95, "token": "turno", "metadata": { "ssw_item": 24, "side": "L", "position": 1 } },
+        { "position": 96, "token": "coche", "metadata": { "ssw_item": 24, "side": "L", "position": 2 } },
+
+        { "position": 97, "token": "auto", "metadata": { "ssw_item": 25, "side": "R", "position": 1, "pair_label": "auto-barco / nave-rueda" } },
+        { "position": 98, "token": "barco", "metadata": { "ssw_item": 25, "side": "R", "position": 2 } },
+        { "position": 99, "token": "nave", "metadata": { "ssw_item": 25, "side": "L", "position": 1 } },
+        { "position": 100, "token": "rueda", "metadata": { "ssw_item": 25, "side": "L", "position": 2 } },
+
+        { "position": 101, "token": "eje", "metadata": { "ssw_item": 26, "side": "R", "position": 1, "pair_label": "eje-cable / clavo-viento" } },
+        { "position": 102, "token": "cable", "metadata": { "ssw_item": 26, "side": "R", "position": 2 } },
+        { "position": 103, "token": "clavo", "metadata": { "ssw_item": 26, "side": "L", "position": 1 } },
+        { "position": 104, "token": "viento", "metadata": { "ssw_item": 26, "side": "L", "position": 2 } },
+
+        { "position": 105, "token": "lluvia", "metadata": { "ssw_item": 27, "side": "R", "position": 1, "pair_label": "lluvia-niebla / rayo-chispa" } },
+        { "position": 106, "token": "niebla", "metadata": { "ssw_item": 27, "side": "R", "position": 2 } },
+        { "position": 107, "token": "rayo", "metadata": { "ssw_item": 27, "side": "L", "position": 1 } },
+        { "position": 108, "token": "chispa", "metadata": { "ssw_item": 27, "side": "L", "position": 2 } },
+
+        { "position": 109, "token": "llama", "metadata": { "ssw_item": 28, "side": "R", "position": 1, "pair_label": "llama-sombra / fresca-verde" } },
+        { "position": 110, "token": "sombra", "metadata": { "ssw_item": 28, "side": "R", "position": 2 } },
+        { "position": 111, "token": "fresca", "metadata": { "ssw_item": 28, "side": "L", "position": 1 } },
+        { "position": 112, "token": "verde", "metadata": { "ssw_item": 28, "side": "L", "position": 2 } },
+
+        { "position": 113, "token": "rojo", "metadata": { "ssw_item": 29, "side": "R", "position": 1, "pair_label": "rojo-blanco / negro-dulce" } },
+        { "position": 114, "token": "blanco", "metadata": { "ssw_item": 29, "side": "R", "position": 2 } },
+        { "position": 115, "token": "negro", "metadata": { "ssw_item": 29, "side": "L", "position": 1 } },
+        { "position": 116, "token": "dulce", "metadata": { "ssw_item": 29, "side": "L", "position": 2 } },
+
+        { "position": 117, "token": "fuerte", "metadata": { "ssw_item": 30, "side": "R", "position": 1, "pair_label": "fuerte-suave / frío-tibio" } },
+        { "position": 118, "token": "suave", "metadata": { "ssw_item": 30, "side": "R", "position": 2 } },
+        { "position": 119, "token": "frío", "metadata": { "ssw_item": 30, "side": "L", "position": 1 } },
+        { "position": 120, "token": "tibio", "metadata": { "ssw_item": 30, "side": "L", "position": 2 } },
+
+        { "position": 121, "token": "limpio", "metadata": { "ssw_item": 31, "side": "R", "position": 1, "pair_label": "limpio-sucio / alto-bajo" } },
+        { "position": 122, "token": "sucio", "metadata": { "ssw_item": 31, "side": "R", "position": 2 } },
+        { "position": 123, "token": "alto", "metadata": { "ssw_item": 31, "side": "L", "position": 1 } },
+        { "position": 124, "token": "bajo", "metadata": { "ssw_item": 31, "side": "L", "position": 2 } },
+
+        { "position": 125, "token": "largo", "metadata": { "ssw_item": 32, "side": "R", "position": 1, "pair_label": "largo-corto / ancho-recto" } },
+        { "position": 126, "token": "corto", "metadata": { "ssw_item": 32, "side": "R", "position": 2 } },
+        { "position": 127, "token": "ancho", "metadata": { "ssw_item": 32, "side": "L", "position": 1 } },
+        { "position": 128, "token": "recto", "metadata": { "ssw_item": 32, "side": "L", "position": 2 } },
+
+        { "position": 129, "token": "simple", "metadata": { "ssw_item": 33, "side": "R", "position": 1, "pair_label": "simple-lento / triste-calmo" } },
+        { "position": 130, "token": "lento", "metadata": { "ssw_item": 33, "side": "R", "position": 2 } },
+        { "position": 131, "token": "triste", "metadata": { "ssw_item": 33, "side": "L", "position": 1 } },
+        { "position": 132, "token": "calmo", "metadata": { "ssw_item": 33, "side": "L", "position": 2 } },
+
+        { "position": 133, "token": "manso", "metadata": { "ssw_item": 34, "side": "R", "position": 1, "pair_label": "manso-loco / sabio-necio" } },
+        { "position": 134, "token": "loco", "metadata": { "ssw_item": 34, "side": "R", "position": 2 } },
+        { "position": 135, "token": "sabio", "metadata": { "ssw_item": 34, "side": "L", "position": 1 } },
+        { "position": 136, "token": "necio", "metadata": { "ssw_item": 34, "side": "L", "position": 2 } },
+
+        { "position": 137, "token": "claro", "metadata": { "ssw_item": 35, "side": "R", "position": 1, "pair_label": "claro-bello / nuevo-viejo" } },
+        { "position": 138, "token": "bello", "metadata": { "ssw_item": 35, "side": "R", "position": 2 } },
+        { "position": 139, "token": "nuevo", "metadata": { "ssw_item": 35, "side": "L", "position": 1 } },
+        { "position": 140, "token": "viejo", "metadata": { "ssw_item": 35, "side": "L", "position": 2 } },
+
+        { "position": 141, "token": "caro", "metadata": { "ssw_item": 36, "side": "R", "position": 1, "pair_label": "caro-bueno / malo-cierto" } },
+        { "position": 142, "token": "bueno", "metadata": { "ssw_item": 36, "side": "R", "position": 2 } },
+        { "position": 143, "token": "malo", "metadata": { "ssw_item": 36, "side": "L", "position": 1 } },
+        { "position": 144, "token": "cierto", "metadata": { "ssw_item": 36, "side": "L", "position": 2 } },
+
+        { "position": 145, "token": "mucho", "metadata": { "ssw_item": 37, "side": "R", "position": 1, "pair_label": "mucho-poco / todo-nada" } },
+        { "position": 146, "token": "poco", "metadata": { "ssw_item": 37, "side": "R", "position": 2 } },
+        { "position": 147, "token": "todo", "metadata": { "ssw_item": 37, "side": "L", "position": 1 } },
+        { "position": 148, "token": "nada", "metadata": { "ssw_item": 37, "side": "L", "position": 2 } },
+
+        { "position": 149, "token": "falso", "metadata": { "ssw_item": 38, "side": "R", "position": 1, "pair_label": "falso-gordo / flaco-grueso" } },
+        { "position": 150, "token": "gordo", "metadata": { "ssw_item": 38, "side": "R", "position": 2 } },
+        { "position": 151, "token": "flaco", "metadata": { "ssw_item": 38, "side": "L", "position": 1 } },
+        { "position": 152, "token": "grueso", "metadata": { "ssw_item": 38, "side": "L", "position": 2 } },
+
+        { "position": 153, "token": "fino", "metadata": { "ssw_item": 39, "side": "R", "position": 1, "pair_label": "fino-ojo / guía-rama" } },
+        { "position": 154, "token": "ojo", "metadata": { "ssw_item": 39, "side": "R", "position": 2 } },
+        { "position": 155, "token": "guía", "metadata": { "ssw_item": 39, "side": "L", "position": 1 } },
+        { "position": 156, "token": "raya", "metadata": { "ssw_item": 39, "side": "L", "position": 2 } },
+
+        { "position": 157, "token": "lumbre", "metadata": { "ssw_item": 40, "side": "R", "position": 1, "pair_label": "lumbre-planta / gajo-hoja" } },
+        { "position": 158, "token": "planta", "metadata": { "ssw_item": 40, "side": "R", "position": 2 } },
+        { "position": 159, "token": "gajo", "metadata": { "ssw_item": 40, "side": "L", "position": 1 } },
+        { "position": 160, "token": "hoja", "metadata": { "ssw_item": 40, "side": "L", "position": 2 } }
+      ]
+    }
+  ],
+  "interpretation": {
+    "metric": "raw_score_pct",
+    "norms_by_age": [
+      { "age_min": 11, "age_max": 60, "normal_min": 10, "mild_min": 16, "severe_max": 25 },
+      { "age_min": 61, "age_max": 70, "normal_min": 13, "mild_min": 19, "severe_max": 28 },
+      { "age_min": 71, "age_max": 120, "normal_min": 16, "mild_min": 22, "severe_max": 31 }
+    ],
+    "description_md": "Raw score (% errores sobre 160). Valores mayores al corte sugieren compromiso PAC. Ear effect (L−R) >15 % indica asimetría interaural relevante. Reversals ≥5 sugieren déficit de ordenamiento temporal. Adaptación ES: cortes ajustados +3 % sobre Katz 1998 (US-EN) por expectativa de mayor variabilidad inter-dialecto."
+  },
+  "report_template_md": "# {{test_name}}\n\n**Paciente:** {{patient_name}} ({{patient_age}} años)\n**Fecha:** {{date}} · **Evaluador/a:** {{examiner}}\n\n## Resultados SSW\n\n- Raw score: **{{ssw_raw_pct}} %** — {{ssw_verdict}}\n- Errores por condición:\n  - RNC: {{ssw_rnc_err}} %\n  - RC: {{ssw_rc_err}} %\n  - LC: {{ssw_lc_err}} %\n  - LNC: {{ssw_lnc_err}} %\n- **Ear effect** (L−R): {{ssw_ear_effect}} %\n- **Order effect**: {{ssw_order_effect}} %\n- **Reversals**: {{ssw_reversals}}\n\nInterpretación basada en {{pack_name}} v{{pack_version}}.\n\n_Uso investigativo — corpus SSW-ES v1 beta, sin validación publicada._"
+}

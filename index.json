@@ -235,6 +235,17 @@
       "url": "packs/hint-es-clinico-v1.json",
       "sha256": "7e65c3e672a449ca0f52aaa9937334277b55ea8f27bd66d55285ef70db7627df",
       "bytes": 336283
+    },
+    {
+      "id": "ssw-es-v1",
+      "version": "1.0.0-beta",
+      "name": "SSW-ES (Staggered Spondaic Word, adaptación ES beta)",
+      "category": "pac.dichotic",
+      "requirements": "recording",
+      "license": "CC-BY-SA",
+      "url": "packs/ssw-es-v1.json",
+      "sha256": "ec2403893bd27a4f97720327963b62b60b05b335c85897ede4614065cbbfc467",
+      "bytes": 27207
     }
   ]
 }
